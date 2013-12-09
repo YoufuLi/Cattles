@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="stax-api-1.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/amazon_ec2/third-party/stax-api-1.0.1/stax-api-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
