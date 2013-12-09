@@ -30,7 +30,7 @@ public interface Platform {
 	 * 
 	 * author:xiong rong
 	 * 功能：创建虚拟机
-	 * @param args
+	 * @param workerNum
 	 */
 	public boolean createPlatform(int workerNum, String uuid) throws Exception;
 	
