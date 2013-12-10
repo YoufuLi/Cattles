@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualClusters>
+    <VirtualCluster>
+        <clusterID></clusterID>    //the ID of one cluster
+        <clusterSize></clusterSize> //the size of one cluster
+        <serverIP></serverIP>       //the ip address of the server in one cluster
+        <nodes>                     //list the ip of all the nodes in one cluster
+            <node></node>
+        </nodes>
+    </VirtualCluster>
+
+</VirtualClusters>

@@ -7,7 +7,7 @@ import java.util.Map;
 
 import com.cattles.cloudplatforms.opennebula.FalkonUserRequest;
 
-import com.cattles.heartbeat.Node;;
+import com.cattles.clusterMonitoring.Node;
 
 /**
  * 
