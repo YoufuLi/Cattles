@@ -26,8 +26,10 @@ import org.globus.GenericPortal.stubs.GPService_instance.WorkerDeRegistration;
 import org.globus.GenericPortal.stubs.GPService_instance.service.GPServiceAddressingLocator;
 import org.globus.axis.util.Util;
 import org.globus.wsrf.ResourceKey;
+import org.globus.wsrf.encoding.DeserializationException;
 import org.globus.wsrf.encoding.ObjectDeserializer;
 import org.globus.wsrf.encoding.ObjectSerializer;
+import org.globus.wsrf.encoding.SerializationException;
 import org.globus.wsrf.security.Constants;
 import org.globus.wsrf.utils.AddressingUtils;
 import org.xml.sax.InputSource;
@@ -73,7 +75,7 @@ public class FalkonMonitor {
 				instanceURI, key);
 	}
 
-	public EndpointReferenceType getEPR(FileInputStream fis) throws Exception {
+	public EndpointReferenceType getEPR(FileInputStream fis) throws Exception, DeserializationException {
 		return (EndpointReferenceType) ObjectDeserializer.deserialize(
 				new InputSource(fis), EndpointReferenceType.class);
 	}
@@ -129,9 +131,14 @@ public class FalkonMonitor {
 					.createResource(new CreateResource());
 			instanceEPR = createResponse.getEndpointReference();
 
-			String endpointString = ObjectSerializer.toString(instanceEPR,
-					GPConstants.RESOURCE_REFERENCE);
-			FileWriter fileWriter = new FileWriter(eprFilename);
+            String endpointString = null;
+            try {
+                endpointString = ObjectSerializer.toString(instanceEPR,
+                        GPConstants.RESOURCE_REFERENCE);
+            } catch (SerializationException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
+            FileWriter fileWriter = new FileWriter(eprFilename);
 			BufferedWriter bfWriter = new BufferedWriter(fileWriter);
 			bfWriter.write(endpointString);
 			bfWriter.close();
@@ -152,10 +159,14 @@ public class FalkonMonitor {
 			// Get endpoint reference of WS-Resource from file
 			FileInputStream fis = new FileInputStream(fileEPR);
 
-			homeEPR = (EndpointReferenceType) ObjectDeserializer.deserialize(
-					new InputSource(fis), EndpointReferenceType.class);
+            try {
+                homeEPR = (EndpointReferenceType) ObjectDeserializer.deserialize(
+                        new InputSource(fis), EndpointReferenceType.class);
+            } catch (DeserializationException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
 
-			if (homeEPR == null) {
+            if (homeEPR == null) {
 				throw new Exception(
 						"parseArgs(): homeEPR == null, probably EPR was not correctly read from file");
 			} else {
@@ -317,7 +328,7 @@ public class FalkonMonitor {
 	 * 
 	 * author:xiong rong
 	 * 功能：对workerIp信息进行处理得到ip地址，去除端口号
-	 * @param args
+	 * @param strArr
 	 */
 	public List<String> getStr(String[] strArr){
 		List<String> workIplist = new ArrayList<String>();
@@ -346,7 +357,7 @@ public class FalkonMonitor {
 	 * author:xiong rong
 	 * 功能： 通过service的ip地址更新serviceWorkerMap,只要falkon service
 	 * 或者falkon worker改变都需要及时更新
-	 * @param args
+	 * @param serviceURI
 	 */
 	public void updateMap(String serviceURI,String serviceIP) throws Exception {
 		List<String> workList = this.getWorkIp();

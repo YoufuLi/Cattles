@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="freemarker-2.3.18">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/amazon_ec2/third-party/freemarker-2.3.18/freemarker-2.3.18.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

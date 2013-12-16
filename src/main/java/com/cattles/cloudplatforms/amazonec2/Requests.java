@@ -41,7 +41,7 @@ import com.amazonaws.services.ec2.model.Tag;
 import com.amazonaws.services.ec2.model.TerminateInstancesRequest;
 
 public class Requests {
-    private AmazonEC2      ec2;
+    private AmazonEC2 ec2;
     private ArrayList<String> instanceIds;
     private ArrayList<String> spotInstanceRequestIds;
     private String instanceType;

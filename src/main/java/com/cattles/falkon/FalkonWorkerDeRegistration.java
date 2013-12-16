@@ -30,8 +30,10 @@ import org.globus.GenericPortal.stubs.GPService_instance.WorkerDeRegistrationRes
 import org.globus.GenericPortal.stubs.GPService_instance.service.GPServiceAddressingLocator;
 import org.globus.axis.util.Util;
 import org.globus.wsrf.ResourceKey;
+import org.globus.wsrf.encoding.DeserializationException;
 import org.globus.wsrf.encoding.ObjectDeserializer;
 import org.globus.wsrf.encoding.ObjectSerializer;
+import org.globus.wsrf.encoding.SerializationException;
 import org.globus.wsrf.security.Constants;
 import org.globus.wsrf.utils.AddressingUtils;
 import org.xml.sax.InputSource;
@@ -81,7 +83,7 @@ public class FalkonWorkerDeRegistration {
 				instanceURI, key);
 	}
 
-	public EndpointReferenceType getEPR(FileInputStream fis) throws Exception {
+	public EndpointReferenceType getEPR(FileInputStream fis) throws Exception, DeserializationException {
 		return (EndpointReferenceType) ObjectDeserializer.deserialize(
 				new InputSource(fis), EndpointReferenceType.class);
 	}
@@ -110,7 +112,7 @@ public class FalkonWorkerDeRegistration {
 
 	}
 
-	public boolean createWorkerResource(String factoryURI, String eprFilename) {
+	public boolean createWorkerResource(String factoryURI, String eprFilename) throws SerializationException {
 		
 		// static final Object EPR_FILENAME = "epr.txt";
 		FactoryServiceAddressingLocator factoryLocator = new FactoryServiceAddressingLocator();
@@ -152,7 +154,7 @@ public class FalkonWorkerDeRegistration {
 		}
 	}
 
-	private boolean readWorkerResource(String fileEPR) throws Exception {
+	private boolean readWorkerResource(String fileEPR) throws Exception, DeserializationException {
 
 		// fileEPR = new String(args[ctr]);
 		boolean exists = (new File(fileEPR)).exists();
@@ -179,7 +181,7 @@ public class FalkonWorkerDeRegistration {
 		}
 	}
 
-	public void deregster(String machID) throws Exception {
+	public void deregster(String machID) throws Exception, SerializationException, DeserializationException {
 		logger.debug("WORKERS-GRAM: " + WORKER_GRAM_VERSION);
 		StopWatch sw = new StopWatch();
 		lt.start();
@@ -255,7 +257,7 @@ public class FalkonWorkerDeRegistration {
 	 * 功能：
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws DeserializationException, SerializationException {
 		String serviceURI = "http://172.16.254.110:50001/wsrf/services/GenericPortal/core/WS/GPFactoryService";
 		FalkonWorkerDeRegistration fwn = new FalkonWorkerDeRegistration(serviceURI);
 		String machID = "172.16.254.198:50100";

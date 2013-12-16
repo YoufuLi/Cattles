@@ -40,8 +40,10 @@ import org.globus.GenericPortal.stubs.GPService_instance.StatusResponse;
 import org.globus.GenericPortal.stubs.GPService_instance.service.GPServiceAddressingLocator;
 import org.globus.axis.util.Util;
 import org.globus.wsrf.ResourceKey;
+import org.globus.wsrf.encoding.DeserializationException;
 import org.globus.wsrf.encoding.ObjectDeserializer;
 import org.globus.wsrf.encoding.ObjectSerializer;
+import org.globus.wsrf.encoding.SerializationException;
 import org.globus.wsrf.security.Constants;
 import org.globus.wsrf.utils.AddressingUtils;
 import org.xml.sax.InputSource;
@@ -498,7 +500,7 @@ public class FalkonWorkerNum implements CalWorkerNum {
 				instanceURI, key);
 	}
 
-	public EndpointReferenceType getEPR(FileInputStream fis) throws Exception {
+	public EndpointReferenceType getEPR(FileInputStream fis) throws Exception, DeserializationException {
 		return (EndpointReferenceType) ObjectDeserializer.deserialize(
 				new InputSource(fis), EndpointReferenceType.class);
 	}
@@ -527,7 +529,7 @@ public class FalkonWorkerNum implements CalWorkerNum {
 
 	}
 
-	public boolean createWorkerResource(String factoryURI, String eprFilename) {
+	public boolean createWorkerResource(String factoryURI, String eprFilename) throws SerializationException {
 
 		// static final Object EPR_FILENAME = "epr.txt";
 		logger.debug("createWorkerResource() started... ");
@@ -582,7 +584,7 @@ public class FalkonWorkerNum implements CalWorkerNum {
 		}
 	}
 
-	public boolean readWorkerResource(String fileEPR) throws Exception {
+	public boolean readWorkerResource(String fileEPR) throws Exception, DeserializationException {
 
 		// fileEPR = new String(args[ctr]);
 		boolean exists = (new File(fileEPR)).exists();
@@ -646,7 +648,7 @@ public class FalkonWorkerNum implements CalWorkerNum {
 	boolean exponential = false;
 	boolean all_at_a_time = false;
 
-	public Map<String, String> main_run() throws Exception {
+	public Map<String, String> main_run() throws Exception, SerializationException, DeserializationException {
 		logger.debug("WORKERS-GRAM: " + WORKER_GRAM_VERSION);
 		StopWatch sw = new StopWatch();
 		lt.start();
@@ -810,9 +812,15 @@ public class FalkonWorkerNum implements CalWorkerNum {
 					+ sw.getElapsedTime() + " ms");
 			sw.reset();
 
-			falkonInfoHM = workers.main_run();
+            try {
+                falkonInfoHM = workers.main_run();
+            } catch (SerializationException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            } catch (DeserializationException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
 
-			all.stop();
+            all.stop();
 
 			logger.debug("WORKERS:WorkTime: " + all.getElapsedTime() + " ms");
 		} catch (Exception e) {
@@ -839,10 +847,16 @@ public class FalkonWorkerNum implements CalWorkerNum {
 		System.out.println(fm.get("deregisteredWorkers"));
 		System.out.println(fm.get("host2Allocate"));
 		try {
-			System.out.println("" + fwn.main_run());
-		} catch (Exception e) {
+            try {
+                System.out.println("" + fwn.main_run());
+            } catch (SerializationException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            } catch (DeserializationException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
+        } catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
+    }
 }
