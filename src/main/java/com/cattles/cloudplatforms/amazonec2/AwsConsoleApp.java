@@ -81,12 +81,13 @@ public class AwsConsoleApp
         {
             RunInstancesRequest runInstancesRequest = new RunInstancesRequest()
                     .withInstanceType("m1.small")
-                    .withImageId("emi-575A398B")
+                    .withImageId("emi-1C8C3ADF")
                     .withMinCount(1)
                     .withMaxCount(2)
-                    .withKeyName("name_of_your_key")
+                    .withKeyName("nicholas-key")
                     ;
             RunInstancesResult runInstances = ec2.runInstances(runInstancesRequest);
+            System.out.println(runInstances.toString());
         } catch (AmazonServiceException ase)
         {
             System.out.println("Caught Exception: " + ase.getMessage());

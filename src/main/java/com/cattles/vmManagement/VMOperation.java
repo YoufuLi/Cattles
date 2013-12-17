@@ -3,6 +3,7 @@ package com.cattles.vmManagement;
 import com.cattles.interfaces.VMOperationInterface;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -32,7 +33,7 @@ public class VMOperation implements VMOperationInterface {
      * @throws Exception
      */
     @Override
-    public List createInstances(int vmNumber) throws Exception {
+    public ArrayList<VMInfo> createInstances(int vmNumber) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -56,10 +57,17 @@ public class VMOperation implements VMOperationInterface {
      * @throws Exception
      */
     @Override
-    public VMInfo launchInstances(List vmList) throws Exception {
+    public ArrayList<VMInfo> launchInstances(ArrayList<VMInfo> vmList) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
+    /**
+     * used to shutdown one instance
+     *
+     * @param _VMInfo
+     * @return
+     * @throws Exception
+     */
     @Override
     public boolean shutdownInstance(VMInfo _VMInfo) throws Exception {
         return false;  //To change body of implemented methods use File | Settings | File Templates.
@@ -73,7 +81,7 @@ public class VMOperation implements VMOperationInterface {
      * @throws Exception
      */
     @Override
-    public boolean shutdownInstances(List vmList) throws Exception {
+    public boolean shutdownInstances(ArrayList<VMInfo> vmList) throws Exception {
         return false;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -84,7 +92,7 @@ public class VMOperation implements VMOperationInterface {
      * @throws Exception
      */
     @Override
-    public List rebootInstance(VMInfo _VMInfo) throws Exception {
+    public VMInfo rebootInstance(VMInfo _VMInfo) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -95,7 +103,7 @@ public class VMOperation implements VMOperationInterface {
      * @throws Exception
      */
     @Override
-    public List rebootInstances(List vmList) throws Exception {
+    public ArrayList<VMInfo> rebootInstances(ArrayList<VMInfo> vmList) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -107,7 +115,7 @@ public class VMOperation implements VMOperationInterface {
      * @throws Exception
      */
     @Override
-    public boolean destoryInstances(List vmList) throws Exception {
+    public boolean destroyInstances(ArrayList<VMInfo> vmList) throws Exception {
         return false;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

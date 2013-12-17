@@ -6,13 +6,22 @@ public class VMInfo {
      */
     String vmID;
     /**
+     * such as m1.small
+     */
+    String vmType;
+    /**
 	 * identify if the vm is available
 	 */
 	String vmState;
 	/**
 	 * the ip or other address of vm
 	 */
-	String vmAddress;
+	String vmPublicIpAddress;
+    String vmPrivateIpAddress;
+    /**
+     * the user key used to create this instance
+     */
+    String vmKeyName;
 	/**
 	 * the port of the vm
 	 */
@@ -20,7 +29,7 @@ public class VMInfo {
 	/**
 	 * the hostname of the vm
 	 */
-	private String vmHostname;
+	String vmHostname;
 
     public String getVmID() {
         return vmID;
@@ -28,6 +37,14 @@ public class VMInfo {
 
     public void setVmID(String vmID) {
         this.vmID = vmID;
+    }
+
+    public String getVmType() {
+        return vmType;
+    }
+
+    public void setVmType(String vmType) {
+        this.vmType = vmType;
     }
 
     public String getVmState() {
@@ -38,12 +55,28 @@ public class VMInfo {
         this.vmState = vmState;
     }
 
-    public String getVmAddress() {
-        return vmAddress;
+    public String getVmPublicIpAddress() {
+        return vmPublicIpAddress;
     }
 
-    public void setVmAddress(String vmAddress) {
-        this.vmAddress = vmAddress;
+    public void setVmPublicIpAddress(String vmPublicIpAddress) {
+        this.vmPublicIpAddress = vmPublicIpAddress;
+    }
+
+    public String getVmPrivateIpAddress() {
+        return vmPrivateIpAddress;
+    }
+
+    public void setVmPrivateIpAddress(String vmPrivateIpAddress) {
+        this.vmPrivateIpAddress = vmPrivateIpAddress;
+    }
+
+    public String getVmKeyName() {
+        return vmKeyName;
+    }
+
+    public void setVmKeyName(String vmKeyName) {
+        this.vmKeyName = vmKeyName;
     }
 
     public String getVmPort() {

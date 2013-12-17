@@ -188,7 +188,7 @@ public class NodeServer extends Thread {
 	 * 
 	 * author:xiong rong 功能： 查询一个用户是否在线
 	 * 
-	 * @param args
+	 * @param name
 	 */
 	public boolean isAlive(String name) {
 		return Constant.nodeMap.containsKey(name);

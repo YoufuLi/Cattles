@@ -3,6 +3,7 @@ package com.cattles.interfaces;
 import com.cattles.vmManagement.VMInfo;
 
 import java.awt.List;
+import java.util.ArrayList;
 
 /**
  * Used to declare the vm operations that supported by platforms
@@ -23,7 +24,7 @@ public interface VMOperationInterface {
 	 * @return
 	 * @throws Exception
 	 */
-	public List createInstances(int vmNumber) throws Exception;
+	public ArrayList<VMInfo> createInstances(int vmNumber) throws Exception;
 
     /**
      * used to launch one instance
@@ -38,7 +39,7 @@ public interface VMOperationInterface {
      * @return
      * @throws Exception
      */
-    public VMInfo launchInstances(List vmList) throws Exception;
+    public ArrayList<VMInfo> launchInstances(ArrayList<VMInfo> vmList) throws Exception;
 
     /**
      * used to shutdown one instance
@@ -53,26 +54,26 @@ public interface VMOperationInterface {
      * @return
      * @throws Exception
      */
-    public boolean shutdownInstances(List vmList) throws Exception;
+    public boolean shutdownInstances(ArrayList<VMInfo> vmList) throws Exception;
 
     /**
      * used to reboot one instance
      * @param _VMInfo
      * @throws Exception
      */
-    public List rebootInstance(VMInfo _VMInfo) throws Exception;
+    public VMInfo rebootInstance(VMInfo _VMInfo) throws Exception;
     /**
      * used to reboot a list of instances
      * @param vmList
      * @throws Exception
      */
-    public List rebootInstances(List vmList) throws Exception;
+    public ArrayList<VMInfo> rebootInstances(ArrayList<VMInfo> vmList) throws Exception;
 
     /**
-	 * Used to destory vms according to the vmList
+	 * Used to destroy vms according to the vmList
 	 * @param vmList
 	 * @return
 	 * @throws Exception
 	 */
-	public boolean destoryInstances(List vmList) throws Exception;
+	public boolean destroyInstances(ArrayList<VMInfo> vmList) throws Exception;
 }
