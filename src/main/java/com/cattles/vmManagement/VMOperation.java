@@ -14,16 +14,6 @@ import java.util.ArrayList;
  */
 public class VMOperation implements VMOperationInterface {
 
-    /**
-     * Used to create one virtual machine
-     *
-     * @return
-     * @throws Exception
-     */
-    @Override
-    public VMInfo createInstance() throws Exception {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
 
     /**
      * Used to create certain number of VMs.

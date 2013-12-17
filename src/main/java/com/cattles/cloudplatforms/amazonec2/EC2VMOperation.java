@@ -4,7 +4,6 @@ import java.awt.List;
 import java.util.ArrayList;
 
 import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonWebServiceRequest;
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2Client;
@@ -98,6 +97,7 @@ public class EC2VMOperation implements VMOperationInterface {
      */
     @Override
     public VMInfo launchInstance(VMInfo _VMInfo) throws Exception {
+
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -157,7 +157,7 @@ public class EC2VMOperation implements VMOperationInterface {
     public boolean shutdownInstances(ArrayList<VMInfo> vmList) throws Exception {
         // TODO Auto-generated method stub
         //============================================================================================//
-        //=================================== Terminating any Instances ==============================//
+        //=================================== Shutting down any Instances ==============================//
         //============================================================================================//
         try {
             // Terminate instances.
@@ -167,9 +167,9 @@ public class EC2VMOperation implements VMOperationInterface {
             }
             StopInstancesRequest stopRequest = new StopInstancesRequest(instanceIds);
 
-            System.out.println("lalala");
-            ec2.stopInstances(stopRequest);
-            System.out.println("lalala98877");
+            System.out.println(instanceIds.size());
+            StopInstancesResult xx=ec2.stopInstances(stopRequest);
+            System.out.println(xx.getStoppingInstances().size());
         } catch (AmazonServiceException e) {
             // Write out any exceptions that may have occurred.
             System.out.println("Error stopping instances");
@@ -209,7 +209,8 @@ public class EC2VMOperation implements VMOperationInterface {
             for(VMInfo vmInfo: vmList){
                 instanceIds.add(vmInfo.getVmID());
             }
-            RebootInstancesRequest rebootRequest = new RebootInstancesRequest(instanceIds);
+            RebootInstancesRequest rebootRequest = new RebootInstancesRequest();
+            rebootRequest.setInstanceIds(instanceIds);
             System.out.println("lalala");
             ec2.rebootInstances(rebootRequest);
             System.out.println("lalala98877");
@@ -267,7 +268,7 @@ public class EC2VMOperation implements VMOperationInterface {
         vmList.add(vmInfo1);
         vmList.add(vmInfo2);
         try {
-            //ec2VMOperation.createInstance();
+            //ec2VMOperation.createInstances(1);
             //ec2VMOperation.getInstanceList();
             //ec2VMOperation.launchInstances(vmList);
             //ec2VMOperation.rebootInstances(vmList);

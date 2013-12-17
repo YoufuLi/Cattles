@@ -12,12 +12,6 @@ import java.util.ArrayList;
  */
 public interface VMOperationInterface {
 
-    /**
-     * Used to create one virtual machine
-     * @return
-     * @throws Exception
-     */
-    public VMInfo createInstance() throws Exception;
 	/**
 	 * Used to create certain number of VMs.
 	 * @param vmNumber
