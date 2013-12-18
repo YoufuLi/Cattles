@@ -41,7 +41,7 @@ public class XMLOperationTool {
 		}
 		catch (ParserConfigurationException e) {
 			// TODO: handle exception
-			
+            System.out.println(e.getMessage());
 		}
 	}
 	public List<VMInfo> readVMResourceXML(){
@@ -60,7 +60,7 @@ public class XMLOperationTool {
 		}
 	}
 }
-class DomDemo {
+/*class DomDemo {
 	private Document document; 
 	private String fileName; 
 	public void init() { 
@@ -136,7 +136,7 @@ class DomDemo {
 			System.out.println(e.getMessage()); 
 		} 
 	} 
-} 
+}*/
 
 
 

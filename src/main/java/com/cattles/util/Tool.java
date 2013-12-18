@@ -11,31 +11,20 @@ public class Tool {
 
 	/**
 	 * 
-	 * author:xiong rong 
+	 * author:Youfu Li
 	 * 功能：生成唯一标识符，用于集群的名称，每一次创建集群，名字不一样
-	 * @param args
+	 * @param uuid
 	 */
 	public static String genUUID() {
-		String s = UUID.randomUUID().toString().substring(0, 8);
-		return s;
+		String uuid = UUID.randomUUID().toString().substring(0, 8);
+		return uuid;
 	}
-
-	/**
-	 * 
-	 * author:xiong rong 
-	 * 功能：虚拟机池子创建虚拟机次数不同，得到的名字不一样，这样做的方便检查每次池子创建的虚拟机是否是运行状态
-	 * 参数vmCreateNum：创建的虚拟机次数，是第几次创建虚拟机
-	 */
-//	public static String genVmName() {
-//		String str = OpennebulaPlatform.VM_NAME_PRE + OpennebulaPlatform.CREATE_VM_NUM++;
-//		return str;
-//	}
 	
 	/**
 	 * 
-	 * author:xiong rong 功能：判断文件是否存在
+	 * author:Youfu Li 功能：判断文件是否存在
 	 * 
-	 * @param args
+	 * @param path
 	 */
 	public static boolean isExist(String path) {
 		File file = new File(path);
