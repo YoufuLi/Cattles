@@ -1,20 +1,18 @@
-package com.cattles.vmManagement;
+package com.cattles.cloudplatforms.opennebula;
 
 import com.cattles.interfaces.VMOperationInterface;
+import com.cattles.vmManagement.VMInfo;
 
-import java.awt.*;
 import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 12/10/13
- * Time: 1:28 PM
+ * Date: 12/18/13
+ * Time: 2:15 PM
  * To change this template use File | Settings | File Templates.
  */
-public class VMOperation implements VMOperationInterface {
-     VMOperationInterface vmOperation=VMOperationFactory.vmOperation();
-
+public class OpenNebulaVMOperationImpl implements VMOperationInterface {
     /**
      * Used to create certain number of VMs.
      *
@@ -24,8 +22,7 @@ public class VMOperation implements VMOperationInterface {
      */
     @Override
     public ArrayList<VMInfo> createInstances(int vmNumber) throws Exception {
-        ArrayList<VMInfo> vmInfoList=vmOperation.createInstances(vmNumber);
-        return vmInfoList;
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**
@@ -37,7 +34,6 @@ public class VMOperation implements VMOperationInterface {
      */
     @Override
     public VMInfo launchInstance(VMInfo _VMInfo) throws Exception {
-
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -50,8 +46,7 @@ public class VMOperation implements VMOperationInterface {
      */
     @Override
     public ArrayList<VMInfo> launchInstances(ArrayList<VMInfo> vmList) throws Exception {
-        ArrayList<VMInfo> vmInfoList=vmOperation.launchInstances(vmList);
-        return vmInfoList;
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**
@@ -75,8 +70,7 @@ public class VMOperation implements VMOperationInterface {
      */
     @Override
     public boolean shutdownInstances(ArrayList<VMInfo> vmList) throws Exception {
-        boolean success=vmOperation.shutdownInstances(vmList);
-        return success;  //To change body of implemented methods use File | Settings | File Templates.
+        return false;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**
@@ -98,12 +92,11 @@ public class VMOperation implements VMOperationInterface {
      */
     @Override
     public ArrayList<VMInfo> rebootInstances(ArrayList<VMInfo> vmList) throws Exception {
-        ArrayList<VMInfo> vmInfoList=vmOperation.rebootInstances(vmList);
-        return vmInfoList;
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**
-     * Used to destory vms according to the vmList
+     * Used to destroy vms according to the vmList
      *
      * @param vmList
      * @return
@@ -111,7 +104,6 @@ public class VMOperation implements VMOperationInterface {
      */
     @Override
     public boolean destroyInstances(ArrayList<VMInfo> vmList) throws Exception {
-        boolean success=vmOperation.destroyInstances(vmList);
-        return success;  //To change body of implemented methods use File | Settings | File Templates.
+        return false;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

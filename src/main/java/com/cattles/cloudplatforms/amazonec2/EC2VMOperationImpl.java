@@ -1,17 +1,14 @@
 package com.cattles.cloudplatforms.amazonec2;
 
-import java.awt.List;
 import java.util.ArrayList;
 
 import com.amazonaws.AmazonServiceException;
-import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.services.ec2.AmazonEC2;
-import com.amazonaws.services.ec2.AmazonEC2Client;
 import com.amazonaws.services.ec2.model.*;
 import com.cattles.interfaces.VMOperationInterface;
 import com.cattles.vmManagement.VMInfo;
 
-public class EC2VMOperation implements VMOperationInterface {
+public class EC2VMOperationImpl implements VMOperationInterface {
 
     EC2ConfigOperation ec2Config = new EC2ConfigOperation();
     // Initialize variables.
@@ -110,7 +107,8 @@ public class EC2VMOperation implements VMOperationInterface {
      */
     @Override
     public ArrayList<VMInfo> launchInstances(ArrayList<VMInfo> vmList) throws Exception {
-
+        ArrayList<VMInfo> instanceList = new ArrayList<VMInfo>();
+        VMInfo vmInstance=new VMInfo();
         // TODO Auto-generated method stub
         //============================================================================================//
         //=================================== Terminating any Instances ==============================//
@@ -121,8 +119,8 @@ public class EC2VMOperation implements VMOperationInterface {
             for(VMInfo vmInfo: vmList){
                 instanceIds.add(vmInfo.getVmID());
             }
-            StartInstancesRequest startRequest = new StartInstancesRequest(instanceIds);
-            ec2.startInstances(startRequest);
+            StartInstancesRequest startRequest = new StartInstancesRequest().withInstanceIds(instanceIds);
+            StartInstancesResult startInstancesResult=ec2.startInstances(startRequest);
         } catch (AmazonServiceException e) {
             // Write out any exceptions that may have occurred.
             System.out.println("Error starting instances");
@@ -165,11 +163,12 @@ public class EC2VMOperation implements VMOperationInterface {
             for(VMInfo vmInfo: vmList){
                 instanceIds.add(vmInfo.getVmID());
             }
-            StopInstancesRequest stopRequest = new StopInstancesRequest(instanceIds);
+            StopInstancesRequest stopRequest = new StopInstancesRequest().withInstanceIds(instanceIds);
 
             System.out.println(instanceIds.size());
-            StopInstancesResult xx=ec2.stopInstances(stopRequest);
-            System.out.println(xx.getStoppingInstances().size());
+            StopInstancesResult stopResult=ec2.stopInstances(stopRequest);
+            System.out.println(stopResult.toString());
+            System.out.println(stopResult.getStoppingInstances().size());
         } catch (AmazonServiceException e) {
             // Write out any exceptions that may have occurred.
             System.out.println("Error stopping instances");
@@ -211,9 +210,7 @@ public class EC2VMOperation implements VMOperationInterface {
             }
             RebootInstancesRequest rebootRequest = new RebootInstancesRequest();
             rebootRequest.setInstanceIds(instanceIds);
-            System.out.println("lalala");
             ec2.rebootInstances(rebootRequest);
-            System.out.println("lalala98877");
         } catch (AmazonServiceException e) {
             // Write out any exceptions that may have occurred.
             System.out.println("Error rebooting instances");
@@ -259,7 +256,7 @@ public class EC2VMOperation implements VMOperationInterface {
 
 
     public static void main(String[] args) throws Exception {
-        EC2VMOperation ec2VMOperation=new EC2VMOperation();
+        EC2VMOperationImpl ec2VMOperation=new EC2VMOperationImpl();
         ArrayList<VMInfo> vmList=new ArrayList<VMInfo>();
         VMInfo vmInfo1=new VMInfo();
         vmInfo1.setVmID("i-52994123");
@@ -274,7 +271,7 @@ public class EC2VMOperation implements VMOperationInterface {
             //ec2VMOperation.rebootInstances(vmList);
             ec2VMOperation.shutdownInstances(vmList);
         }catch (Exception e){
-            System.out.println("yes");
+            System.out.println("error");
         }
 
     }
