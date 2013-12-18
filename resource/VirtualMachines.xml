@@ -10,14 +10,4 @@
         <vmPort>port</vmPort>
         <vmHostname>hostname</vmHostname>
     </VirtualMachine>
-    <VirtualMachine>
-        <vmID>id</vmID>
-        <vmType>type</vmType>
-        <vmState>state</vmState>
-        <vmPublicIpAddress>publidAddress</vmPublicIpAddress>
-        <vmPrivateIpAddress>privateAddress</vmPrivateIpAddress>
-        <vmKeyName>key</vmKeyName>
-        <vmPort>port</vmPort>
-        <vmHostname>hostname</vmHostname>
-    </VirtualMachine>
 </VirtualMachines>
