@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<VirtualMachines>
-    <VirtualMachine>
-        <vmID>id</vmID>
-        <vmType>type</vmType>
-        <vmState>state</vmState>
-        <vmPublicIpAddress>publidAddress</vmPublicIpAddress>
-        <vmPrivateIpAddress>privateAddress</vmPrivateIpAddress>
-        <vmKeyName>key</vmKeyName>
-        <vmPort>port</vmPort>
-        <vmHostname>hostname</vmHostname>
-    </VirtualMachine>
-</VirtualMachines>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><VirtualMachines><VirtualMachine><vmID>i-ba4534d00</vmID><vmType>type00</vmType><vmState>state00</vmState><vmPublicIpAddress>public00</vmPublicIpAddress><vmPrivateIpAddress>private00</vmPrivateIpAddress><vmKeyName>key00</vmKeyName><vmPort>port00</vmPort><vmHostname>hostname00</vmHostname></VirtualMachine><VirtualMachine><vmID>i-ba4534d</vmID><vmType>type</vmType><vmState>state</vmState><vmPublicIpAddress>public</vmPublicIpAddress><vmPrivateIpAddress>private</vmPrivateIpAddress><vmKeyName>key</vmKeyName><vmPort>port</vmPort><vmHostname>hostname</vmHostname></VirtualMachine></VirtualMachines>
