@@ -19,6 +19,6 @@ public class Constant {
     //the path of VirtualCluster.xml
     public static final String VIRTUAL_CLUSTERS_XML_PATH="resource/VirtualClusters.xml";
 	//the path of platform configuration file
-	public static final String CONFIG_FILE_PATH = "conf/managerConfig.config";
+	public static final String PLATFORM_CONF_PATH = "conf/platform_conf.xml";
 
 }

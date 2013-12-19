@@ -3,7 +3,7 @@ package com.cattles.vmManagement;
 import com.cattles.cloudplatforms.amazonec2.EC2VMOperationImpl;
 import com.cattles.cloudplatforms.opennebula.OpenNebulaVMOperationImpl;
 import com.cattles.interfaces.VMOperationInterface;
-import com.cattles.util.PlatformConfiguration;
+import com.cattles.util.XMLOperationPlatform;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,10 +14,10 @@ import com.cattles.util.PlatformConfiguration;
  */
 public class VMOperationFactory {
     public static VMOperationInterface vmOperation(){
-        PlatformConfiguration platformConfiguration=PlatformConfiguration.getPlatformConfiguration();
-        if (platformConfiguration.getPlatformName().equals("EC2")){
+        XMLOperationPlatform xmlOperationPlatform=XMLOperationPlatform.getXmlOperationPlatform();
+        if (xmlOperationPlatform.getPlatformName().equals("EC2")){
             return new EC2VMOperationImpl();
-        }else if (platformConfiguration.getPlatformName().equals("OpenNebula")){
+        }else if (xmlOperationPlatform.getPlatformName().equals("OpenNebula")){
             return new OpenNebulaVMOperationImpl();
         }else{
             return null;
