@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bbfbd08-cf91-45c2-b62c-08eda261260f" name="Default" comment="modify the xml operation classes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/VirtualMachines_backup.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/VirtualMachines.xml" afterPath="$PROJECT_DIR$/resource/VirtualMachines.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/util/XMLOperationVirtualMachine.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/XMLOperationVirtualMachine.java" />
+    <list default="true" id="7bbfbd08-cf91-45c2-b62c-08eda261260f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387433767995" ignored="false" />
+    <file path="/Dummy.txt" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387433790779" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644868307" ignored="false" />
@@ -126,7 +123,7 @@
       <file leaf-file-name="XMLOperationVirtualMachine.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/util/XMLOperationVirtualMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="233" column="61" selection-start="9858" selection-end="9858" vertical-scroll-proportion="0.5984704">
+            <state line="222" column="5" selection-start="9187" selection-end="9385" vertical-scroll-proportion="0.75510204">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2435#2443#0" expanded="true" />
@@ -242,10 +239,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1857" />
-    <option name="height" value="1085" />
+    <option name="x" value="530" />
+    <option name="y" value="98" />
+    <option name="width" value="1148" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -639,11 +636,15 @@
       <created>1387418655876</created>
       <updated>1387418655876</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modify the xml operation classes">
+      <created>1387433798534</created>
+      <updated>1387433798534</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <frame x="530" y="98" width="1148" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -658,10 +659,10 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06965174" sideWeight="0.6221985" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11454546" sideWeight="0.4570552" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1973466" sideWeight="0.6221985" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3778015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32454544" sideWeight="0.4570552" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5429448" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32822084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -840,7 +841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/util/XMLOperationVirtualMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="61" selection-start="9858" selection-end="9858" vertical-scroll-proportion="0.5984704">
+        <state line="222" column="5" selection-start="9187" selection-end="9385" vertical-scroll-proportion="0.75510204">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2435#2443#0" expanded="true" />
