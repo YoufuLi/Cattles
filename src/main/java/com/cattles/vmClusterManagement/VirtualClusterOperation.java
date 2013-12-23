@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public class VirtualClusterOperation {
-
+    //TODO:update the operations upon to cluster management
     public VirtualCluster createCluster(int _clusterSize){
         VirtualCluster virtualCluster=new VirtualCluster();
         return virtualCluster;
@@ -31,12 +31,12 @@ public class VirtualClusterOperation {
         return success;
     }
 
-    public VirtualCluster modifyServer(String _clusterID){
+    public VirtualCluster modifyServerID(String _clusterID){
         VirtualCluster virtualCluster=new VirtualCluster();
         return virtualCluster;
     }
 
-    public boolean setClusterStandby(String _clusterID){
+    public boolean modifyClusterState(String _clusterID){
         boolean success=false;
         return success;
     }

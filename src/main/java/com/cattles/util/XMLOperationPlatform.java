@@ -76,5 +76,6 @@ public class XMLOperationPlatform {
     public static void main(String[] args){
         XMLOperationPlatform xmlOperationPlatform=XMLOperationPlatform.getXmlOperationPlatform();
         System.out.println(xmlOperationPlatform.getPlatformName());
+        System.out.println(xmlOperationPlatform.getPoolInitializationSize());
     }
 }

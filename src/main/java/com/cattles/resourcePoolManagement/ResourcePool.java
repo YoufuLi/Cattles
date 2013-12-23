@@ -3,13 +3,12 @@ package com.cattles.resourcePoolManagement;
 import com.cattles.vmClusterManagement.VirtualCluster;
 import com.cattles.vmManagement.VMInfo;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class ResourcePool {
     private static ResourcePool resourcePool = null;
-    public List<VMInfo> VMResourceList= new LinkedList<VMInfo>();
-    public List<VirtualCluster> VMClusterList=new LinkedList<VirtualCluster>();
     private ResourcePool(){
 
     }
@@ -19,21 +18,11 @@ public class ResourcePool {
         }
         return resourcePool;
     }
-    public List<VMInfo> getVMResourceList() {
+    public ArrayList<VMInfo> getVMResourceList() {
+        ArrayList<VMInfo> VMResourceList=new ArrayList<VMInfo>();
         return VMResourceList;
     }
 
-    public void setVMResourceList(List<VMInfo> VMResourceList) {
-        this.VMResourceList = VMResourceList;
-    }
-
-    public List<VirtualCluster> getVMClusterList() {
-        return VMClusterList;
-    }
-
-    public void setVMClusterList(List<VirtualCluster> VMClusterList) {
-        this.VMClusterList = VMClusterList;
-    }
     public void checkRemainVMs() {
 
     }
