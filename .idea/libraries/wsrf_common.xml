@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="wsrf_common">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core_registry.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core_registry_stubs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core_samples_authzService.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core_samples_authzService_stubs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core_samples_counter.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core_samples_counter_stubs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core_samples_mgmt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core_samples_mgmt_stubs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_core_stubs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_mds_index_stubs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_mds_usefulrp_schema_stubs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_provider_jce.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_test.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_test_interop.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_test_interop_stubs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_test_unit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_test_unit_stubs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/wsrf_tools.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

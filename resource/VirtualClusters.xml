@@ -4,7 +4,7 @@
         <clusterID></clusterID>    //the ID of one cluster
         <clusterState></clusterState>
         <clusterSize></clusterSize> //the size of one cluster
-        <serverIP></serverIP>       //the ip address of the server in one cluster
+        <serverID></serverID>       //the VM ID of the server in one cluster
         <nodes>                     //list the ip of all the nodes in one cluster
             <node>vmid</node>
         </nodes>

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="mail-1.4.3">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/amazon_ec2/third-party/java-mail-1.4.3/mail-1.4.3.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

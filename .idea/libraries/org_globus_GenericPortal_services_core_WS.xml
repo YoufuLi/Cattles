@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="org_globus_GenericPortal_services_core_WS">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/customlibrary/org_globus_GenericPortal_services_core_WS.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customlibrary/org_globus_GenericPortal_services_core_WS_stubs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
