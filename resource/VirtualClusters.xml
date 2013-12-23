@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<VirtualClusters>
-    <VirtualCluster>
-        <clusterID></clusterID>    //the ID of one cluster
-        <clusterState></clusterState>
-        <clusterSize></clusterSize> //the size of one cluster
-        <serverID></serverID>       //the VM ID of the server in one cluster
-        <nodes>                     //list the ip of all the nodes in one cluster
-            <node>vmid</node>
-        </nodes>
-    </VirtualCluster>
-
-</VirtualClusters>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><VirtualClusters><VirtualCluster><clusterID>ti4325cs</clusterID><clusterState>standby</clusterState><clusterSize>2</clusterSize><serverID>server-idsgst</serverID><nodes><node>i-sf453wr</node><node>i-yu4536i</node></nodes></VirtualCluster><VirtualCluster><clusterID>ti43277s</clusterID><clusterState>activated</clusterState><clusterSize>2</clusterSize><serverID>server-idsgst</serverID><nodes><node>i-sf453wr</node><node>i-yu4536i</node></nodes></VirtualCluster><VirtualCluster><clusterID>ti4398cs</clusterID><clusterState>standby</clusterState><clusterSize>2</clusterSize><serverID>server-idsgst</serverID><nodes><node>i-sf453wr</node><node>i-yu4536i</node></nodes></VirtualCluster><VirtualCluster><clusterID>ti432pps</clusterID><clusterState>activated</clusterState><clusterSize>2</clusterSize><serverID>server-idsgst</serverID><nodes><node>i-sf453wr</node><node>i-yu4536i</node></nodes></VirtualCluster></VirtualClusters>

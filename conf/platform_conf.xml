@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Platform>
     <platform_name>EC2</platform_name>
+    <poolInitializationSize>6</poolInitializationSize>
 </Platform>

@@ -84,7 +84,7 @@ public class XMLOperationVirtualMachine {
             vmInfo.setVmPort(vmInfoNodeList.item(6).getTextContent());
             vmInfo.setVmHostname(vmInfoNodeList.item(7).getTextContent());
             vmInfoList.add(vmInfo);
-            System.out.println(vmInfo.getVmHostname()+vmInfo.getVmID()+vmInfo.getVmKeyName()+vmInfo.getVmPort()+vmInfo.getVmPrivateIpAddress()+vmInfo.getVmPublicIpAddress()+vmInfo.getVmState()+vmInfo.getVmType());
+            //System.out.println(vmInfo.getVmHostname()+vmInfo.getVmID()+vmInfo.getVmKeyName()+vmInfo.getVmPort()+vmInfo.getVmPrivateIpAddress()+vmInfo.getVmPublicIpAddress()+vmInfo.getVmState()+vmInfo.getVmType());
                 /*System.out.println("vminfo:"+vmInfoNodeList.getLength());
                 for (int k=0;k<vmInfoNodeList.getLength();k++){
                     System.out.println(k+":"+vmInfoNodeList.item(k).getTextContent());
@@ -190,7 +190,8 @@ public class XMLOperationVirtualMachine {
         for (int i = 0; i < virtualMachineList.getLength(); i++) {
             NodeList vmInfoNodeList = virtualMachineList.item(i).getChildNodes();
             if(vmInfoNodeList.item(0).getTextContent().equals(_vmID)){
-                xmlDocument.getChildNodes().item(0).removeChild(xmlDocument.getChildNodes().item(0).getChildNodes().item(i));
+                //xmlDocument.getChildNodes().item(0).removeChild(xmlDocument.getChildNodes().item(0).getChildNodes().item(i));
+                virtualMachines.removeChild(virtualMachineList.item(i));
             }
         }
         try {
@@ -232,14 +233,20 @@ public class XMLOperationVirtualMachine {
         for (int i = 0; i < virtualMachineList.getLength(); i++) {
             NodeList vmInfoNodeList = virtualMachineList.item(i).getChildNodes();
             if(vmInfoNodeList.item(0).getTextContent().equals(_vmInfo.getVmID())){
-                xmlDocument.getChildNodes().item(0).getChildNodes().item(i).getChildNodes().item(1).setTextContent(_vmInfo.getVmType());
+                vmInfoNodeList.item(1).setTextContent(_vmInfo.getVmType());
+                vmInfoNodeList.item(2).setTextContent(_vmInfo.getVmState());
+                vmInfoNodeList.item(3).setTextContent(_vmInfo.getVmPublicIpAddress());
+                vmInfoNodeList.item(4).setTextContent(_vmInfo.getVmPrivateIpAddress());
+                vmInfoNodeList.item(5).setTextContent(_vmInfo.getVmKeyName());
+                vmInfoNodeList.item(6).setTextContent(_vmInfo.getVmPort());
+                vmInfoNodeList.item(7).setTextContent(_vmInfo.getVmHostname());
+                /*xmlDocument.getChildNodes().item(0).getChildNodes().item(i).getChildNodes().item(1).setTextContent(_vmInfo.getVmType());
                 xmlDocument.getChildNodes().item(0).getChildNodes().item(i).getChildNodes().item(2).setTextContent(_vmInfo.getVmState());
                 xmlDocument.getChildNodes().item(0).getChildNodes().item(i).getChildNodes().item(3).setTextContent(_vmInfo.getVmPublicIpAddress());
                 xmlDocument.getChildNodes().item(0).getChildNodes().item(i).getChildNodes().item(4).setTextContent(_vmInfo.getVmPrivateIpAddress());
                 xmlDocument.getChildNodes().item(0).getChildNodes().item(i).getChildNodes().item(5).setTextContent(_vmInfo.getVmKeyName());
                 xmlDocument.getChildNodes().item(0).getChildNodes().item(i).getChildNodes().item(6).setTextContent(_vmInfo.getVmPort());
-                xmlDocument.getChildNodes().item(0).getChildNodes().item(i).getChildNodes().item(7).setTextContent(_vmInfo.getVmHostname());
-                System.out.println("hah");
+                xmlDocument.getChildNodes().item(0).getChildNodes().item(i).getChildNodes().item(7).setTextContent(_vmInfo.getVmHostname());*/
             }
         }
         try {
@@ -249,7 +256,6 @@ public class XMLOperationVirtualMachine {
             DOMSource source = new DOMSource(xmlDocument);
             StreamResult result = new StreamResult(new java.io.File(Constant.VIRTUAL_MACHINES_XML_PATH));
             transformer.transform(source, result);
-            System.out.println("nishi");
         }catch (TransformerConfigurationException e){
             System.out.println(e.getMessage());
         }catch (TransformerException e){
@@ -264,7 +270,6 @@ public class XMLOperationVirtualMachine {
     public void modifyVMs(ArrayList<VMInfo> _vmInfoList){
         for(VMInfo vmInfo:_vmInfoList){
             modifyVM(vmInfo);
-            System.out.println("lal");
         }
     }
     public static void main(String[] args){
@@ -292,7 +297,8 @@ public class XMLOperationVirtualMachine {
         xmlOperationVirtualMachine.addVMs(vmInfoArrayList);*/
 
         //add a single vm
-        /*vmInfo.setVmID("i-ba4534d");
+        /*VMInfo vmInfo=new VMInfo();
+        vmInfo.setVmID("i-ba4534d");
         vmInfo.setVmType("type");
         vmInfo.setVmState("state");
         vmInfo.setVmPublicIpAddress("public");
@@ -303,7 +309,7 @@ public class XMLOperationVirtualMachine {
         xmlOperationVirtualMachine.addVM(vmInfo);*/
 
         //delete a single vm
-        //xmlOperationVirtualMachine.deleteVM("i-ba4534d");
+        //xmlOperationVirtualMachine.deleteVM("i-ba4534d00");
 
         //delete a list of VMs
         /*ArrayList<String> vmIDList=new ArrayList<String>();
@@ -323,7 +329,7 @@ public class XMLOperationVirtualMachine {
         vmInfo.setVmHostname("hostname1");
         xmlOperationVirtualMachine.modifyVM(vmInfo);*/
 
-        //modify a list of VMs
+        /*//modify a list of VMs
         ArrayList<VMInfo> vmInfoArrayList=new ArrayList<VMInfo>();
         VMInfo vmInfo=new VMInfo();
         VMInfo vmInfo00=new VMInfo();
@@ -345,6 +351,6 @@ public class XMLOperationVirtualMachine {
         vmInfo00.setVmPort("port00");
         vmInfo00.setVmHostname("hostname00");
         vmInfoArrayList.add(vmInfo00);
-        xmlOperationVirtualMachine.modifyVMs(vmInfoArrayList);
+        xmlOperationVirtualMachine.modifyVMs(vmInfoArrayList);*/
     }
 }

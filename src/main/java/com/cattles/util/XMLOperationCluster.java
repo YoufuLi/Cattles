@@ -1,5 +1,6 @@
 package com.cattles.util;
 
+import com.cattles.vmClusterManagement.VirtualCluster;
 import com.cattles.vmManagement.VMInfo;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -9,6 +10,12 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -33,6 +40,10 @@ public class XMLOperationCluster {
         }
         return xmlOperationCluster;
     }
+
+    /**
+     * initialize the xml operation object
+     */
     private void init() {
         // TODO Auto-generated method stub
         try{
@@ -52,34 +63,450 @@ public class XMLOperationCluster {
     }
 
     /**
-     * get all the virtual machines in the resource pool
-     * @return vmInfoList
+     * add a cluster to the VirtualClusters.xml
+     * @param _virtualCluster
+     * @return
      */
-    public ArrayList<VMInfo> getAllVMs(){
-        ArrayList<VMInfo> vmInfoList=new ArrayList<VMInfo>();
-        VMInfo vmInfo=new VMInfo();
-        Node virtualMachines = xmlDocument.getChildNodes().item(0);
-        //System.out.println("nodes:"+virtualMachines.getNodeName());
-        NodeList virtualMachineList=virtualMachines.getChildNodes();
-        //System.out.println("virtual machine:"+virtualMachine.getLength());
-        for (int i = 0; i < virtualMachineList.getLength(); i++) {
-            NodeList vmInfoNodeList = virtualMachineList.item(i).getChildNodes();
-            vmInfo.setVmID(vmInfoNodeList.item(0).getTextContent());
-            vmInfo.setVmType(vmInfoNodeList.item(1).getTextContent());
-            vmInfo.setVmState(vmInfoNodeList.item(2).getTextContent());
-            vmInfo.setVmPublicIpAddress(vmInfoNodeList.item(3).getTextContent());
-            vmInfo.setVmPrivateIpAddress(vmInfoNodeList.item(4).getTextContent());
-            vmInfo.setVmKeyName(vmInfoNodeList.item(5).getTextContent());
-            vmInfo.setVmPort(vmInfoNodeList.item(6).getTextContent());
-            vmInfo.setVmHostname(vmInfoNodeList.item(7).getTextContent());
-            vmInfoList.add(vmInfo);
-            System.out.println(vmInfo.getVmHostname()+vmInfo.getVmID()+vmInfo.getVmKeyName()+vmInfo.getVmPort()+vmInfo.getVmPrivateIpAddress()+vmInfo.getVmPublicIpAddress()+vmInfo.getVmState()+vmInfo.getVmType());
-                /*System.out.println("vminfo:"+vmInfoNodeList.getLength());
-                for (int k=0;k<vmInfoNodeList.getLength();k++){
-                    System.out.println(k+":"+vmInfoNodeList.item(k).getTextContent());
-                } */
-
+    public boolean addCluster(VirtualCluster _virtualCluster){
+        boolean success=false;
+        Node virtualClusters = xmlDocument.getChildNodes().item(0);
+        Node virtualClusterNode=xmlDocument.createElement("VirtualCluster");
+        Node clusterID=xmlDocument.createElement("clusterID");
+        Node clusterState=xmlDocument.createElement("clusterState");
+        Node clusterSize=xmlDocument.createElement("clusterSize");
+        Node serverID=xmlDocument.createElement("serverID");
+        Node nodes=xmlDocument.createElement("nodes");
+        clusterID.setTextContent(_virtualCluster.getClusterID());
+        clusterState.setTextContent(_virtualCluster.getClusterState());
+        clusterSize.setTextContent(String.valueOf(_virtualCluster.getClusterSize()));
+        serverID.setTextContent(_virtualCluster.getClusterServerID());
+        for(int nodeNum=0;nodeNum<_virtualCluster.getNodesIDList().size();nodeNum++){
+            Node node= xmlDocument.createElement("node");
+            node.setTextContent(_virtualCluster.getNodesIDList().get(nodeNum));
+            nodes.appendChild(node);
         }
-        return vmInfoList;
+
+        virtualClusterNode.appendChild(clusterID);
+        virtualClusterNode.appendChild(clusterState);
+        virtualClusterNode.appendChild(clusterSize);
+        virtualClusterNode.appendChild(serverID);
+        virtualClusterNode.appendChild(nodes);
+        virtualClusters.appendChild(virtualClusterNode);
+
+        try {
+            TransformerFactory tFactory = TransformerFactory.newInstance();
+            Transformer transformer;
+            transformer = tFactory.newTransformer();
+            DOMSource source = new DOMSource(xmlDocument);
+            StreamResult result = new StreamResult(new java.io.File(Constant.VIRTUAL_CLUSTERS_XML_PATH));
+            transformer.transform(source, result);
+        }catch (TransformerConfigurationException e){
+            System.out.println(e.getMessage());
+        }catch (TransformerException e){
+            System.out.println(e.getMessage());
+        }
+        return success;
+    }
+
+    /**
+     * call addCluster() method to add a list of clusters
+     * @param _virtualClusterArrayList
+     * @return
+     */
+    public boolean addClusters(ArrayList<VirtualCluster> _virtualClusterArrayList){
+        boolean success=false;
+        for(VirtualCluster virtualCluster:_virtualClusterArrayList){
+            success=addCluster(virtualCluster);
+        }
+        return success;
+    }
+
+    /**
+     * delete a cluster from the VirtualClusters.xml
+     * @param _clusterID
+     * @return
+     */
+    public boolean deleteCluster(String _clusterID){
+        boolean success=false;
+        Node virtualClusters = xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClusters.getChildNodes();
+        for (int i = 0; i < virtualClusterList.getLength(); i++) {
+            NodeList virtualClusterInfoList = virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
+                //xmlDocument.getChildNodes().item(0).removeChild(xmlDocument.getChildNodes().item(0).getChildNodes().item(i));
+                virtualClusters.removeChild(virtualClusterList.item(i));
+            }
+        }
+        try {
+            TransformerFactory tFactory = TransformerFactory.newInstance();
+            Transformer transformer;
+            transformer = tFactory.newTransformer();
+            DOMSource source = new DOMSource(xmlDocument);
+            StreamResult result = new StreamResult(new java.io.File(Constant.VIRTUAL_CLUSTERS_XML_PATH));
+            transformer.transform(source, result);
+            success=true;
+        }catch (TransformerConfigurationException e){
+            System.out.println(e.getMessage());
+        }catch (TransformerException e){
+            System.out.println(e.getMessage());
+        }
+        return success;
+    }
+
+    /**
+     * call the deleteCluster() method to delete a list of clusters
+     * @param _clusterIDList
+     * @return
+     */
+    public boolean deleteClusters(ArrayList<String> _clusterIDList){
+        boolean success=false;
+        for (String clusterID:_clusterIDList){
+            success=deleteCluster(clusterID);
+        }
+        return success;
+    }
+
+    /**
+     * add a node to the VirtualClusters.xml
+     * @param _clusterID
+     * @param _nodeID
+     * @return
+     */
+    public boolean addNode(String _clusterID,String _nodeID){
+        boolean success=false;
+        Node virtualClusters = xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClusters.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
+                Node node=xmlDocument.createElement("node");
+                node.setTextContent(_nodeID);
+                virtualClusterInfoList.item(4).appendChild(node);
+                //modify the cluster size after adding a node
+                int clusterSize= Integer.parseInt(virtualClusterInfoList.item(2).getTextContent());
+                clusterSize++;
+                virtualClusterInfoList.item(2).setTextContent(String.valueOf(clusterSize));
+            }
+        }
+
+        try {
+            TransformerFactory tFactory = TransformerFactory.newInstance();
+            Transformer transformer;
+            transformer = tFactory.newTransformer();
+            DOMSource source = new DOMSource(xmlDocument);
+            StreamResult result = new StreamResult(new java.io.File(Constant.VIRTUAL_CLUSTERS_XML_PATH));
+            transformer.transform(source, result);
+            success=true;
+        }catch (TransformerConfigurationException e){
+            System.out.println(e.getMessage());
+        }catch (TransformerException e){
+            System.out.println(e.getMessage());
+        }
+        return success;
+    }
+
+    /**
+     * call addNode() method to add a list of nodes
+     * @param _clusterID
+     * @param _nodeIDList
+     * @return
+     */
+    public boolean addNodes(String _clusterID, ArrayList<String> _nodeIDList){
+        boolean success=false;
+        for (String nodeID:_nodeIDList){
+            success=addNode(_clusterID, nodeID);
+        }
+        return success;
+    }
+
+    /**
+     * remove a node from the VirtualClusters.xml
+     * @param _clusterID
+     * @param _nodeID
+     * @return
+     */
+    public boolean removeNode(String _clusterID,String _nodeID){
+        boolean success=false;
+        Node virtualClusters = xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClusters.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
+                NodeList nodeList=virtualClusterInfoList.item(4).getChildNodes();
+                for(int j=0;j<nodeList.getLength();j++){
+                    if(nodeList.item(j).getTextContent().equals(_nodeID)){
+                        virtualClusterInfoList.item(4).removeChild(nodeList.item(j));
+                        //modify the cluster size after adding a node
+                        int clusterSize= Integer.parseInt(virtualClusterInfoList.item(2).getTextContent());
+                        clusterSize--;
+                        virtualClusterInfoList.item(2).setTextContent(String.valueOf(clusterSize));
+                    }
+                }
+            }
+        }
+
+        try {
+            TransformerFactory tFactory = TransformerFactory.newInstance();
+            Transformer transformer;
+            transformer = tFactory.newTransformer();
+            DOMSource source = new DOMSource(xmlDocument);
+            StreamResult result = new StreamResult(new java.io.File(Constant.VIRTUAL_CLUSTERS_XML_PATH));
+            transformer.transform(source, result);
+            success=true;
+        }catch (TransformerConfigurationException e){
+            System.out.println(e.getMessage());
+        }catch (TransformerException e){
+            System.out.println(e.getMessage());
+        }
+        return success;
+    }
+
+    /**
+     * call removeNode() method to remove a list of nodes
+     * @param _clusterID
+     * @param _nodeIDList
+     * @return
+     */
+    public boolean removeNodes(String _clusterID,ArrayList<String> _nodeIDList){
+        boolean success=false;
+        for(String nodeID:_nodeIDList){
+            success=removeNode(_clusterID, nodeID);
+        }
+        return success;
+    }
+
+    /**
+     * modify the serverID parameter according to the _clusterID
+     * @param _clusterID
+     * @return
+     */
+    public boolean modifyServerID(String _clusterID,String _serverID){
+        boolean success=false;
+        Node virtualClusters = xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClusters.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
+                virtualClusterInfoList.item(3).setTextContent(_serverID);
+            }
+        }
+
+        try {
+            TransformerFactory tFactory = TransformerFactory.newInstance();
+            Transformer transformer;
+            transformer = tFactory.newTransformer();
+            DOMSource source = new DOMSource(xmlDocument);
+            StreamResult result = new StreamResult(new java.io.File(Constant.VIRTUAL_CLUSTERS_XML_PATH));
+            transformer.transform(source, result);
+            success=true;
+        }catch (TransformerConfigurationException e){
+            System.out.println(e.getMessage());
+        }catch (TransformerException e){
+            System.out.println(e.getMessage());
+        }
+        return success;
+    }
+
+    public boolean modifyClusterState(String _clusterID,String _clusterState){
+        boolean success=false;
+        Node virtualClusters = xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClusters.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
+                virtualClusterInfoList.item(1).setTextContent(_clusterState);
+            }
+        }
+
+        try {
+            TransformerFactory tFactory = TransformerFactory.newInstance();
+            Transformer transformer;
+            transformer = tFactory.newTransformer();
+            DOMSource source = new DOMSource(xmlDocument);
+            StreamResult result = new StreamResult(new java.io.File(Constant.VIRTUAL_CLUSTERS_XML_PATH));
+            transformer.transform(source, result);
+            success=true;
+        }catch (TransformerConfigurationException e){
+            System.out.println(e.getMessage());
+        }catch (TransformerException e){
+            System.out.println(e.getMessage());
+        }
+        return success;
+    }
+
+    /**
+     * get all the clusters in the VirtualClusters.xml
+     * @return
+     */
+    public ArrayList<VirtualCluster> getAllClusters(){
+        ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
+        VirtualCluster virtualCluster=new VirtualCluster();
+        Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClustersXML.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
+            virtualCluster.setClusterState(virtualClusterInfoList.item(1).getTextContent());
+            virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(2).getTextContent()));
+            virtualCluster.setClusterServerID(virtualClusterInfoList.item(3).getTextContent());
+            NodeList nodeList=virtualClusterInfoList.item(4).getChildNodes();
+            ArrayList<String> nodes=new ArrayList<String>();
+            for(int j=0;j<nodeList.getLength();j++){
+                nodes.add(nodeList.item(j).getTextContent());
+            }
+            virtualCluster.setNodesIDList(nodes);
+            virtualClusters.add(virtualCluster);
+        }
+        return virtualClusters;
+    }
+
+    /**
+     * get the cluster list according to the cluster state(activated, standby)
+     * @param _state
+     * @return
+     */
+    public ArrayList<VirtualCluster> getClustersWithState(String _state){
+        ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
+        VirtualCluster virtualCluster=new VirtualCluster();
+        Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClustersXML.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(1).getTextContent().equals(_state)){
+                virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
+                virtualCluster.setClusterState(virtualClusterInfoList.item(1).getTextContent());
+                virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(2).getTextContent()));
+                virtualCluster.setClusterServerID(virtualClusterInfoList.item(3).getTextContent());
+                NodeList nodeList=virtualClusterInfoList.item(4).getChildNodes();
+                ArrayList<String> nodes=new ArrayList<String>();
+                for(int j=0;j<nodeList.getLength();j++){
+                    nodes.add(nodeList.item(j).getTextContent());
+                }
+                virtualCluster.setNodesIDList(nodes);
+                virtualClusters.add(virtualCluster);
+            }
+        }
+        return virtualClusters;
+    }
+
+    /**
+     * get a cluster according to the clusterID specified
+     * @param _clusterID
+     * @return
+     */
+    public VirtualCluster getClusterWithID(String _clusterID){
+        VirtualCluster virtualCluster=new VirtualCluster();
+        Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClustersXML.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
+                virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
+                virtualCluster.setClusterState(virtualClusterInfoList.item(1).getTextContent());
+                virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(2).getTextContent()));
+                virtualCluster.setClusterServerID(virtualClusterInfoList.item(3).getTextContent());
+                NodeList nodeList=virtualClusterInfoList.item(4).getChildNodes();
+                ArrayList<String> nodes=new ArrayList<String>();
+                for(int j=0;j<nodeList.getLength();j++){
+                    nodes.add(nodeList.item(j).getTextContent());
+                }
+                virtualCluster.setNodesIDList(nodes);
+            }
+        }
+        return virtualCluster;
+    }
+    public static void main(String[] args){
+        XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
+
+        //add a cluster
+        /*VirtualCluster virtualCluster=new VirtualCluster();
+        virtualCluster.setClusterID("ti4325cs");
+        virtualCluster.setClusterState("activated");
+        virtualCluster.setClusterSize(2);
+        virtualCluster.setClusterServerID("i-ba4534d");
+        ArrayList<String> nodeList=new ArrayList<String>();
+        nodeList.add("i-sf453wr");
+        nodeList.add("i-yu4536i");
+        virtualCluster.setNodesIDList(nodeList);
+        xmlOperationCluster.addCluster(virtualCluster);*/
+
+        //add a list of clusters
+        /*ArrayList<VirtualCluster> virtualClusterArrayList=new ArrayList<VirtualCluster>();
+        for(int i=0;i<2;i++){
+            VirtualCluster virtualCluster=new VirtualCluster();
+            virtualCluster.setClusterID("ti4325cs");
+            virtualCluster.setClusterState("activated");
+            virtualCluster.setClusterSize(2);
+            virtualCluster.setClusterServerID("i-ba4534d");
+            ArrayList<String> nodeList=new ArrayList<String>();
+            nodeList.add("i-ba4534d");
+            nodeList.add("i-ba4534d");
+            virtualCluster.setNodesIDList(nodeList);
+            virtualClusterArrayList.add(virtualCluster);
+        }
+        xmlOperationCluster.addClusters(virtualClusterArrayList);*/
+
+        //delete a cluster
+        //xmlOperationCluster.deleteCluster("ti4325cs");
+
+        //delete a list of clusters
+        /*ArrayList<String> clusterIDList=new ArrayList<String>();
+        clusterIDList.add("ti4325cs");
+        clusterIDList.add("ti4325cs");
+        xmlOperationCluster.deleteClusters(clusterIDList);*/
+
+        //add a node
+        /*String clusterID="ti4325cs";
+        String nodeID="node-idsgst" ;
+        xmlOperationCluster.addNode(clusterID,nodeID);*/
+
+        //add a list of nodes
+        /*String clusterID="ti4325cs";
+        ArrayList<String> nodeIDList=new ArrayList<String>();
+        String nodeID="node-idsgst";
+        String nodeID2="node-222222";
+        nodeIDList.add(nodeID);
+        nodeIDList.add(nodeID2);
+        xmlOperationCluster.addNodes(clusterID,nodeIDList);*/
+
+        //remove a node
+        /*String clusterID="ti4325cs";
+        String nodeID="node-idsgst" ;
+        xmlOperationCluster.removeNode(clusterID,nodeID);*/
+
+        //remove a list of nodes
+        /*String clusterID="ti4325cs";
+        ArrayList<String> nodeIDList=new ArrayList<String>();
+        String nodeID="node-idsgst";
+        String nodeID2="node-222222";
+        nodeIDList.add(nodeID);
+        nodeIDList.add(nodeID2);
+        xmlOperationCluster.removeNodes(clusterID,nodeIDList);*/
+
+        //modify serverID
+        /*String clusterID="ti4325cs";
+        String serverID="server-idsgst" ;
+        xmlOperationCluster.modifyServerID(clusterID,serverID);*/
+
+        //modify clusterState
+        /*String clusterID="ti4325cs";
+        String clusterState="standby" ;
+        xmlOperationCluster.modifyClusterState(clusterID,clusterState);*/
+
+        //get clusters with the state
+        /*String state="activated";
+        ArrayList<VirtualCluster> virtualClusterArrayList=new ArrayList<VirtualCluster>();
+        virtualClusterArrayList=xmlOperationCluster.getClustersWithState(state);
+        System.out.println(virtualClusterArrayList.get(1).getClusterID());*/
+
+        //get cluster with the clusterID
+        /*String clusterID="ti4325cs";
+        VirtualCluster virtualCluster=xmlOperationCluster.getClusterWithID(clusterID);
+        System.out.println(virtualCluster.getClusterID());*/
+
+        //get all clusters
+        ArrayList<VirtualCluster> virtualClusterArrayList=new ArrayList<VirtualCluster>();
+        virtualClusterArrayList=xmlOperationCluster.getAllClusters();
+        System.out.println(virtualClusterArrayList.get(3).getClusterID());
     }
 }

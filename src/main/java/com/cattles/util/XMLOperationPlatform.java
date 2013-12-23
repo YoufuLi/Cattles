@@ -64,6 +64,14 @@ public class XMLOperationPlatform {
         return platformName;
     }
 
+    public int getPoolInitializationSize(){
+        int initializationSize=6;
+        NodeList initializationSize_List=xmlDocument.getElementsByTagName("poolInitializationSize");
+        if(initializationSize_List.getLength()>=1){
+            initializationSize=Integer.parseInt(initializationSize_List.item(0).getTextContent());
+        }
+        return initializationSize;
+    }
 
     public static void main(String[] args){
         XMLOperationPlatform xmlOperationPlatform=XMLOperationPlatform.getXmlOperationPlatform();

@@ -13,7 +13,7 @@ public class Tool {
 	 * 
 	 * author:Youfu Li
 	 * 功能：生成唯一标识符，用于集群的名称，每一次创建集群，名字不一样
-	 * @param uuid
+	 * @param
 	 */
 	public static String genUUID() {
 		String uuid = UUID.randomUUID().toString().substring(0, 8);
@@ -36,4 +36,9 @@ public class Tool {
 		// 如果不存在，返回true
 		return true;
 	}
+    public static void main(String[] args){
+        Tool tool=new Tool();
+        System.out.println(tool.genUUID());
+        System.out.println(UUID.randomUUID().toString());
+    }
 }
