@@ -307,6 +307,12 @@ public class XMLOperationCluster {
         return success;
     }
 
+    /**
+     * modify the state of cluster, such as "activated", "standby"
+     * @param _clusterID
+     * @param _clusterState
+     * @return
+     */
     public boolean modifyClusterState(String _clusterID,String _clusterState){
         boolean success=false;
         Node virtualClusters = xmlDocument.getChildNodes().item(0);
@@ -332,6 +338,24 @@ public class XMLOperationCluster {
             System.out.println(e.getMessage());
         }
         return success;
+    }
+
+    /**
+     * get the cluster size, which is the number of nodes,except the server node
+     * @param _clusterID
+     * @return
+     */
+    public int getClusterSize(String _clusterID){
+        int clusterSize=0;
+        Node virtualClusters = xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClusters.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
+                clusterSize=Integer.parseInt(virtualClusterInfoList.item(2).getTextContent());
+            }
+        }
+        return clusterSize;
     }
 
     /**
@@ -505,8 +529,11 @@ public class XMLOperationCluster {
         System.out.println(virtualCluster.getClusterID());*/
 
         //get all clusters
-        ArrayList<VirtualCluster> virtualClusterArrayList=new ArrayList<VirtualCluster>();
+        /*ArrayList<VirtualCluster> virtualClusterArrayList=new ArrayList<VirtualCluster>();
         virtualClusterArrayList=xmlOperationCluster.getAllClusters();
-        System.out.println(virtualClusterArrayList.get(3).getClusterID());
+        System.out.println(virtualClusterArrayList.get(3).getClusterID()); */
+
+        //get cluster size
+        System.out.println(xmlOperationCluster.getClusterSize("ti4325cs"));
     }
 }

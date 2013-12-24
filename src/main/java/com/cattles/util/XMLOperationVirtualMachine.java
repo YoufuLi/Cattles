@@ -95,6 +95,34 @@ public class XMLOperationVirtualMachine {
     }
 
     /**
+     * get the list of VMs according to the state: "available","busy","idle"
+     * @param _state
+     * @return
+     */
+    public ArrayList<VMInfo> getVMsWithState(String _state){
+        ArrayList<VMInfo> vmInfoList=new ArrayList<VMInfo>();
+        VMInfo vmInfo=new VMInfo();
+        Node virtualMachines = xmlDocument.getChildNodes().item(0);
+        NodeList virtualMachineList=virtualMachines.getChildNodes();
+        for (int i = 0; i < virtualMachineList.getLength(); i++) {
+            NodeList vmInfoNodeList = virtualMachineList.item(i).getChildNodes();
+            if(vmInfoNodeList.item(2).getTextContent().equals(_state)){
+                vmInfo.setVmID(vmInfoNodeList.item(0).getTextContent());
+                vmInfo.setVmType(vmInfoNodeList.item(1).getTextContent());
+                vmInfo.setVmState(vmInfoNodeList.item(2).getTextContent());
+                vmInfo.setVmPublicIpAddress(vmInfoNodeList.item(3).getTextContent());
+                vmInfo.setVmPrivateIpAddress(vmInfoNodeList.item(4).getTextContent());
+                vmInfo.setVmKeyName(vmInfoNodeList.item(5).getTextContent());
+                vmInfo.setVmPort(vmInfoNodeList.item(6).getTextContent());
+                vmInfo.setVmHostname(vmInfoNodeList.item(7).getTextContent());
+                vmInfoList.add(vmInfo);
+            }
+        }
+        return vmInfoList;
+    }
+
+
+    /**
      * get a vm instance with specified vmID
      * @param _vmID
      * @return vmInfo
@@ -264,13 +292,25 @@ public class XMLOperationVirtualMachine {
     }
 
     /**
-     *
+     * call modifyVM() method to modify a list of virtual machines
      * @param _vmInfoList
      */
     public void modifyVMs(ArrayList<VMInfo> _vmInfoList){
         for(VMInfo vmInfo:_vmInfoList){
             modifyVM(vmInfo);
         }
+    }
+
+    /**
+     * get the count of the VMs listed in the VirtualMachines.xml
+     * @return
+     */
+    public int getVMCount(){
+        int vmCount=0;
+        Node virtualMachines = xmlDocument.getChildNodes().item(0);
+        NodeList virtualMachineList=virtualMachines.getChildNodes();
+        vmCount=virtualMachineList.getLength();
+        return vmCount;
     }
     public static void main(String[] args){
         XMLOperationVirtualMachine xmlOperationVirtualMachine=XMLOperationVirtualMachine.getXmlOperationVirtualMachine();
@@ -286,7 +326,7 @@ public class XMLOperationVirtualMachine {
         for(int i=0;i<2;i++){
             vmInfo.setVmID("i-ba4534d00");
             vmInfo.setVmType("type");
-            vmInfo.setVmState("state");
+            vmInfo.setVmState("available");
             vmInfo.setVmPublicIpAddress("public");
             vmInfo.setVmPrivateIpAddress("private");
             vmInfo.setVmKeyName("key");
@@ -297,16 +337,16 @@ public class XMLOperationVirtualMachine {
         xmlOperationVirtualMachine.addVMs(vmInfoArrayList);*/
 
         //add a single vm
-        /*VMInfo vmInfo=new VMInfo();
-        vmInfo.setVmID("i-ba4534d");
+        VMInfo vmInfo=new VMInfo();
+        vmInfo.setVmID("i-ba4534r");
         vmInfo.setVmType("type");
-        vmInfo.setVmState("state");
+        vmInfo.setVmState("using");
         vmInfo.setVmPublicIpAddress("public");
         vmInfo.setVmPrivateIpAddress("private");
         vmInfo.setVmKeyName("key");
         vmInfo.setVmPort("port");
         vmInfo.setVmHostname("hostname");
-        xmlOperationVirtualMachine.addVM(vmInfo);*/
+        xmlOperationVirtualMachine.addVM(vmInfo);
 
         //delete a single vm
         //xmlOperationVirtualMachine.deleteVM("i-ba4534d00");

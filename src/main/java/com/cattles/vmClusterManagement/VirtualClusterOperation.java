@@ -41,12 +41,17 @@ public class VirtualClusterOperation {
         return success;
     }
 
+    public int getClusterSize(String _clusterID){
+        int clusterSize=0;
+        return clusterSize;
+    }
+
     public ArrayList<VirtualCluster> getAllClusters(){
         ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
         return virtualClusters;
     }
 
-    public ArrayList<VirtualCluster> getStandbyClusters(){
+    public ArrayList<VirtualCluster> getClustersWithState(){
         ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
         return virtualClusters;
     }

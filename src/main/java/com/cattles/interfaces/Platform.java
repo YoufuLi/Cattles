@@ -2,7 +2,7 @@ package com.cattles.interfaces;
 
 import java.util.List;
 
-import com.cattles.resourcePoolManagement.ResourcePool;
+import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
 import com.cattles.vmManagement.*;
 
 public interface Platform {
@@ -16,7 +16,7 @@ public interface Platform {
 	 * 参数port：falkon服务器的端口
 	 * 返回ResponseInfo
 	 */
-	public ResponseInfo createWorkerCluster(int workerNum,String serviceIP, String port,ResourcePool rp) throws Exception;
+	public ResponseInfo createWorkerCluster(int workerNum,String serviceIP, String port,VirtualMachineResourcePool rp) throws Exception;
 	
 	/**
 	 * author:xiong rong
@@ -24,7 +24,7 @@ public interface Platform {
 	 * 参数workerNum:需要创建的worker数目
 	 * 返回VmInfo：只要service创建成功后，就返回创建的service的虚拟机ip和hostname，worker再创建。
 	 */
-	public VMInfo createCluster(int workerNum, ResourcePool rp) throws Exception;
+	public VMInfo createCluster(int workerNum, VirtualMachineResourcePool rp) throws Exception;
 	
 	/**
 	 * 
