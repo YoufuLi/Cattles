@@ -1,7 +1,6 @@
-package com.cattles.util;
+package com.cattles.vmClusterManagement;
 
-import com.cattles.vmClusterManagement.VirtualCluster;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.util.Constant;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

@@ -1,6 +1,5 @@
 package com.cattles.resourcePoolManagement;
 
-import com.cattles.util.XMLOperationVirtualMachine;
 import com.cattles.vmManagement.VMInfo;
 
 import java.util.ArrayList;
@@ -17,11 +16,21 @@ public class VirtualMachineResourcePool {
         }
         return vmResourcePool;
     }
+
+    /**
+     * get all the virtual machines listed in the VirtualMachines.xml
+     * @return
+     */
     public ArrayList<VMInfo> getVMResourceList() {
         ArrayList<VMInfo> VMResourceList= xmlOperationVirtualMachine.getAllVMs();
         return VMResourceList;
     }
 
+    /**
+     * get the virtual machines with specified state.
+     * @param _state
+     * @return
+     */
     public ArrayList<VMInfo> getVMWithState(String _state){
         ArrayList<VMInfo> vmInfoArrayList=xmlOperationVirtualMachine.getVMsWithState(_state);
         return vmInfoArrayList;
@@ -31,7 +40,11 @@ public class VirtualMachineResourcePool {
         int vmCount=xmlOperationVirtualMachine.getVMCount();
         return vmCount;
     }
-    public void requestVMs(int _vmNum) {
-
+    public ArrayList<VMInfo> requestVMs(int _vmNum) {
+        ArrayList<VMInfo> requestVMList=new ArrayList<VMInfo>();
+        return requestVMList;
+    }
+    public void modidyVMState(String _vmID, String _state){
+        xmlOperationVirtualMachine.modifyVMState(_vmID,_state);
     }
 }

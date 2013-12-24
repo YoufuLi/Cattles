@@ -1,5 +1,8 @@
 package com.cattles.vmClusterManagement;
 
+import com.cattles.resourcePoolManagement.VirtualResourcePool;
+import com.cattles.util.Constant;
+
 import java.util.ArrayList;
 
 /**
@@ -11,8 +14,29 @@ import java.util.ArrayList;
  */
 public class VirtualClusterOperation {
     //TODO:update the operations upon to cluster management
+    XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
+    VirtualCluster virtualCluster;
     public VirtualCluster createCluster(int _clusterSize){
-        VirtualCluster virtualCluster=new VirtualCluster();
+        //check if there are any standby cluster,
+        ArrayList<VirtualCluster> virtualClusterList=xmlOperationCluster.getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
+        if(virtualClusterList.size()>=1){
+            //calculate the absolute value of standby cluster size and the required num, then select the smallest absolute value
+            int minABS=Math.abs(virtualClusterList.get(0).getClusterSize()-_clusterSize);
+            int flag=0;
+            for(int i=1;i<virtualClusterList.size();i++){
+                if(minABS>Math.abs(virtualClusterList.get(i).getClusterSize()-_clusterSize)){
+                    minABS=Math.abs(virtualClusterList.get(i).getClusterSize()-_clusterSize);
+                    flag=i;
+                }
+            }
+            virtualCluster=virtualClusterList.get(flag);
+            //set the "standby" state of cluster to "activated"
+            xmlOperationCluster.modifyClusterState(virtualCluster.getClusterID(),Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
+        }else{
+            VirtualResourcePool virtualResourcePool=new VirtualResourcePool();
+            virtualCluster=virtualResourcePool.createCluster(_clusterSize);
+            xmlOperationCluster.addCluster(virtualCluster);
+        }
         return virtualCluster;
     }
 

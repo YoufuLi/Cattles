@@ -1,9 +1,8 @@
-package com.cattles.util;
+package com.cattles.resourcePoolManagement;
 
-import com.cattles.vmClusterManagement.VirtualCluster;
+import com.cattles.util.Constant;
 import com.cattles.vmManagement.VMInfo;
 import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
@@ -17,12 +16,9 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -251,6 +247,33 @@ public class XMLOperationVirtualMachine {
         return success;
     }
 
+    /**
+     * locate the vm location, and modify the state of a vm.
+     * @param _vmID
+     * @param _state
+     */
+    public void modifyVMState(String _vmID, String _state){
+        Node virtualMachines = xmlDocument.getChildNodes().item(0);
+        NodeList virtualMachineList=virtualMachines.getChildNodes();
+        for (int i = 0; i < virtualMachineList.getLength(); i++) {
+            NodeList vmInfoNodeList = virtualMachineList.item(i).getChildNodes();
+            if(vmInfoNodeList.item(0).getTextContent().equals(_vmID)){
+                vmInfoNodeList.item(2).setTextContent(_state);
+            }
+        }
+        try {
+            TransformerFactory tFactory = TransformerFactory.newInstance();
+            Transformer transformer;
+            transformer = tFactory.newTransformer();
+            DOMSource source = new DOMSource(xmlDocument);
+            StreamResult result = new StreamResult(new java.io.File(Constant.VIRTUAL_MACHINES_XML_PATH));
+            transformer.transform(source, result);
+        }catch (TransformerConfigurationException e){
+            System.out.println(e.getMessage());
+        }catch (TransformerException e){
+            System.out.println(e.getMessage());
+        }
+    }
     /**
      * modify a VM with the provided vmInfo
      * @param _vmInfo
