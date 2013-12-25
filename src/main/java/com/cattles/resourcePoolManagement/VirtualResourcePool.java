@@ -10,16 +10,27 @@ import com.cattles.vmManagement.VMInfo;
 
 public class VirtualResourcePool {
     VirtualMachineResourcePool virtualMachineResourcePool=VirtualMachineResourcePool.getResourcePool();
-    public VirtualCluster createCluster(int _clusterSize){
-        VirtualCluster virtualCluster=new VirtualCluster();
+
+    /**
+     * fetch the required VM list
+     * @param vmNum
+     * @return
+     */
+    public ArrayList<VMInfo> fetchVMList(int vmNum){
+        ArrayList<VMInfo> fetchVMs=new ArrayList<VMInfo>();
         ArrayList<VMInfo> availableVMList=virtualMachineResourcePool.getVMWithState(Constant.VIRTUAL_MACHINES_STATE_AVAILABLE);
-        if(availableVMList.size()>=_clusterSize){
+        //there are enough resource in the resource pool
+        if(availableVMList.size()>=vmNum){
+            fetchVMs.addAll(availableVMList.subList(0,vmNum));
 
         }else {
-            int requestSize=Math.abs(_clusterSize-availableVMList.size());
-            ArrayList<VMInfo> requestVMList=virtualMachineResourcePool.requestVMs(requestSize);
+            int applySize=Math.abs(vmNum-availableVMList.size());
+            ArrayList<VMInfo> applyVMList=virtualMachineResourcePool.applyVMs(applySize);
+            fetchVMs.addAll(availableVMList);
+            fetchVMs.addAll(applyVMList);
         }
-        return virtualCluster;
+        //TODO:update VMs' state
+        return fetchVMs;
     }
 
 }

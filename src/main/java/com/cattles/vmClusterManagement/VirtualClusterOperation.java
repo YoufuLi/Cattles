@@ -2,6 +2,7 @@ package com.cattles.vmClusterManagement;
 
 import com.cattles.resourcePoolManagement.VirtualResourcePool;
 import com.cattles.util.Constant;
+import com.cattles.vmManagement.VMInfo;
 
 import java.util.ArrayList;
 
@@ -18,23 +19,26 @@ public class VirtualClusterOperation {
     VirtualCluster virtualCluster;
     public VirtualCluster createCluster(int _clusterSize){
         //check if there are any standby cluster,
-        ArrayList<VirtualCluster> virtualClusterList=xmlOperationCluster.getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
-        if(virtualClusterList.size()>=1){
+        ArrayList<VirtualCluster> standbyClusterList=xmlOperationCluster.getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
+        if(standbyClusterList.size()>=1){
             //calculate the absolute value of standby cluster size and the required num, then select the smallest absolute value
-            int minABS=Math.abs(virtualClusterList.get(0).getClusterSize()-_clusterSize);
+            int minABS=Math.abs(standbyClusterList.get(0).getClusterSize()-_clusterSize);
             int flag=0;
-            for(int i=1;i<virtualClusterList.size();i++){
-                if(minABS>Math.abs(virtualClusterList.get(i).getClusterSize()-_clusterSize)){
-                    minABS=Math.abs(virtualClusterList.get(i).getClusterSize()-_clusterSize);
+            for(int i=1;i<standbyClusterList.size();i++){
+                if(minABS>Math.abs(standbyClusterList.get(i).getClusterSize()-_clusterSize)){
+                    minABS=Math.abs(standbyClusterList.get(i).getClusterSize()-_clusterSize);
                     flag=i;
                 }
             }
-            virtualCluster=virtualClusterList.get(flag);
+            virtualCluster=standbyClusterList.get(flag);
             //set the "standby" state of cluster to "activated"
             xmlOperationCluster.modifyClusterState(virtualCluster.getClusterID(),Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
+            //TODO:check if the num of nodes equals to the required, if not add more nodes , or remove the redundant nodes
+
         }else{
             VirtualResourcePool virtualResourcePool=new VirtualResourcePool();
-            virtualCluster=virtualResourcePool.createCluster(_clusterSize);
+            ArrayList<VMInfo> vmMachineList=virtualResourcePool.fetchVMList(_clusterSize);
+            //TODO: use a method to generate a cluster based to the VMs list
             xmlOperationCluster.addCluster(virtualCluster);
         }
         return virtualCluster;

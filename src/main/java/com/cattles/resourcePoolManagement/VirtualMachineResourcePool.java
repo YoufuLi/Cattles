@@ -40,9 +40,9 @@ public class VirtualMachineResourcePool {
         int vmCount=xmlOperationVirtualMachine.getVMCount();
         return vmCount;
     }
-    public ArrayList<VMInfo> requestVMs(int _vmNum) {
-        ArrayList<VMInfo> requestVMList=new ArrayList<VMInfo>();
-        return requestVMList;
+    public ArrayList<VMInfo> applyVMs(int _vmNum) {
+        ArrayList<VMInfo> applyVMList=new ArrayList<VMInfo>();
+        return applyVMList;
     }
     public void modidyVMState(String _vmID, String _state){
         xmlOperationVirtualMachine.modifyVMState(_vmID,_state);
