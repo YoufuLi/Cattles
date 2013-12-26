@@ -1,21 +1,12 @@
 package com.cattles.ssh.jsch;
 
+import com.cattles.ssh.*;
+import com.jcraft.jsch.*;
+import org.apache.log4j.Logger;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
-import org.apache.log4j.Logger;
-
-import com.jcraft.jsch.Channel;
-import com.jcraft.jsch.ChannelExec;
-import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.Session;
-import com.cattles.ssh.BaseCommandExecutor;
-import com.cattles.ssh.ConnInfo;
-import com.cattles.ssh.SSHException;
-import com.cattles.ssh.SSHMonitor;
-import com.cattles.ssh.SSHResult;
 
 /**
  * one instance per connection info,if using tow user connect the same host,please create tow instance

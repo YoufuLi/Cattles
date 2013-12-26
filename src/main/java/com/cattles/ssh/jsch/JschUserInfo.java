@@ -1,9 +1,9 @@
 package com.cattles.ssh.jsch;
 
+import com.cattles.ssh.ConnInfo;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.UserInfo;
-import com.cattles.ssh.ConnInfo;
 
 public class JschUserInfo implements UserInfo {
 

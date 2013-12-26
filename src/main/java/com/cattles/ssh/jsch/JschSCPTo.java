@@ -1,22 +1,18 @@
 package com.cattles.ssh.jsch;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.List;
-
+import com.cattles.ssh.SSHException;
+import com.cattles.ssh.SSHMonitor;
+import com.cattles.ssh.SSHResult;
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
-import com.cattles.ssh.SSHException;
-import com.cattles.ssh.SSHMonitor;
-import com.cattles.ssh.SSHResult;
 
-import static com.cattles.ssh.SSHResult.makeFailedResult;
+import java.io.*;
+import java.util.List;
+
 import static com.cattles.ssh.SCPUtil.*;
+import static com.cattles.ssh.SSHResult.makeFailedResult;
 
 public class JschSCPTo implements JschSCPExecutable {
     public SSHResult execSCP(Session sshSession, String origin, String dest,
