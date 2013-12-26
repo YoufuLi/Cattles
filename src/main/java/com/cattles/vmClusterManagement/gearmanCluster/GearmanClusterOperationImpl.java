@@ -1,28 +1,22 @@
-package com.cattles.vmClusterManagement;
+package com.cattles.vmClusterManagement.gearmanCluster;
 
 import com.cattles.interfaces.VirtualClusterOperationInterface;
-import com.cattles.resourcePoolManagement.VirtualResourcePool;
-import com.cattles.util.Constant;
-import com.cattles.util.Tool;
+import com.cattles.vmClusterManagement.VirtualCluster;
 import com.cattles.vmManagement.VMInfo;
-import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 12/23/13
- * Time: 10:22 AM
+ * Date: 12/26/13
+ * Time: 4:49 PM
  * To change this template use File | Settings | File Templates.
  */
-public class VirtualClusterOperation implements VirtualClusterOperationInterface{
-    private static Logger log = Logger.getLogger(VirtualClusterOperation.class);
-    VirtualClusterOperationInterface virtualClusterOperation=VirtualClusterOperationFactory.virtualClusterOperation();
+public class GearmanClusterOperationImpl implements VirtualClusterOperationInterface {
     @Override
     public VirtualCluster clusterProvision(int _clusterSize) {
-        VirtualCluster virtualCluster=virtualClusterOperation.clusterProvision(_clusterSize);
-        return virtualCluster;  //To change body of implemented methods use File | Settings | File Templates.
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**

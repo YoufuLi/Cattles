@@ -40,10 +40,23 @@ public class VirtualMachineResourcePool {
         int vmCount=xmlOperationVirtualMachine.getVMCount();
         return vmCount;
     }
+
+    /**
+     * when the VMs number in the resource pool is not enough, use this method to apply VMs from the underlying Cloud Computing platform
+     * @param _vmNum
+     * @return
+     */
     public ArrayList<VMInfo> applyVMs(int _vmNum) {
         ArrayList<VMInfo> applyVMList=new ArrayList<VMInfo>();
+        //TODO:apply VMs from the underlying Cloud Computing platform
         return applyVMList;
     }
+
+    /**
+     * Use the method to modify the state of the specified VM
+     * @param _vmID
+     * @param _state
+     */
     public void modidyVMState(String _vmID, String _state){
         xmlOperationVirtualMachine.modifyVMState(_vmID,_state);
     }

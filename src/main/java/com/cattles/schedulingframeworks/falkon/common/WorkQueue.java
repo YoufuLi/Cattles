@@ -1,5 +1,5 @@
 //portal
-package com.cattles.falkon.common;
+package com.cattles.schedulingframeworks.falkon.common;
 
 import java.io.Serializable;
 import java.util.*;

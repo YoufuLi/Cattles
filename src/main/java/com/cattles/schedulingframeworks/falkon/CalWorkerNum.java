@@ -1,4 +1,4 @@
-package com.cattles.falkon;
+package com.cattles.schedulingframeworks.falkon;
 
 import java.util.Map;
 

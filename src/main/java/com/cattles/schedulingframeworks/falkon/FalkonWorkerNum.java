@@ -1,4 +1,4 @@
-package com.cattles.falkon;
+package com.cattles.schedulingframeworks.falkon;
 
 //SVN v0.8.1
 /*
@@ -48,9 +48,9 @@ import org.globus.wsrf.security.Constants;
 import org.globus.wsrf.utils.AddressingUtils;
 import org.xml.sax.InputSource;
 
-import com.cattles.falkon.common.Notification;
-import com.cattles.falkon.common.StopWatch;
-import com.cattles.falkon.common.WorkQueue;
+import com.cattles.schedulingframeworks.falkon.common.Notification;
+import com.cattles.schedulingframeworks.falkon.common.StopWatch;
+import com.cattles.schedulingframeworks.falkon.common.WorkQueue;
 
 
 public class FalkonWorkerNum implements CalWorkerNum {

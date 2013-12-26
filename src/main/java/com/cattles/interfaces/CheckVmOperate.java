@@ -7,7 +7,7 @@ package com.cattles.interfaces;
 
 import java.util.List;
 
-import com.cattles.falkon.*;
+import com.cattles.schedulingframeworks.falkon.*;
 
 /**
  * @author xiongrong

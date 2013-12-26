@@ -1,15 +1,11 @@
-/**
- * 文件名：FalkonWorkerDeRegistration.java
- * 创建时间：Nov 24, 2011
- * 创建者：xiong rong
- */
-package com.cattles.falkon;
+package com.cattles.schedulingframeworks.falkon;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.xml.rpc.Stub;
@@ -24,9 +20,8 @@ import org.globus.GenericPortal.stubs.Factory.CreateResourceResponse;
 import org.globus.GenericPortal.stubs.Factory.FactoryPortType;
 import org.globus.GenericPortal.stubs.Factory.service.FactoryServiceAddressingLocator;
 import org.globus.GenericPortal.stubs.GPService_instance.GPPortType;
-import org.globus.GenericPortal.stubs.GPService_instance.MonitorState;
-import org.globus.GenericPortal.stubs.GPService_instance.WorkerDeRegistration;
-import org.globus.GenericPortal.stubs.GPService_instance.WorkerDeRegistrationResponse;
+import org.globus.GenericPortal.stubs.GPService_instance.MonitorWorkerState;
+import org.globus.GenericPortal.stubs.GPService_instance.MonitorWorkerStateResponse;
 import org.globus.GenericPortal.stubs.GPService_instance.service.GPServiceAddressingLocator;
 import org.globus.axis.util.Util;
 import org.globus.wsrf.ResourceKey;
@@ -38,16 +33,12 @@ import org.globus.wsrf.security.Constants;
 import org.globus.wsrf.utils.AddressingUtils;
 import org.xml.sax.InputSource;
 
-import com.cattles.falkon.common.StopWatch;
-import com.cattles.falkon.common.WorkQueue;
+import com.cattles.cloudplatforms.Constant;
+import com.cattles.schedulingframeworks.falkon.common.StopWatch;
+import com.cattles.schedulingframeworks.falkon.common.WorkQueue;
 
 
-/**
- * @author xiong rong
- *
- */
-public class FalkonWorkerDeRegistration {
-
+public class FalkonMonitor {
 
 	public static final Log logger = LogFactory.getLog(FalkonMonitor.class);
 
@@ -70,7 +61,7 @@ public class FalkonWorkerDeRegistration {
 
 	long elapsedTime;
 
-	public FalkonWorkerDeRegistration(String serviceURI) {
+	public FalkonMonitor(String serviceURI) {
 		this.lt = new StopWatch();
 		this.serviceURI = serviceURI;
 	}
@@ -112,7 +103,7 @@ public class FalkonWorkerDeRegistration {
 
 	}
 
-	public boolean createWorkerResource(String factoryURI, String eprFilename) throws SerializationException {
+	public boolean createWorkerResource(String factoryURI, String eprFilename) {
 		
 		// static final Object EPR_FILENAME = "epr.txt";
 		FactoryServiceAddressingLocator factoryLocator = new FactoryServiceAddressingLocator();
@@ -124,7 +115,6 @@ public class FalkonWorkerDeRegistration {
 
 			// Get factory portType
 			factoryEPR = new EndpointReferenceType();
-			System.out.println("~~~~~~~~~~~~~~~~~~~" + factoryURI);
 			factoryEPR.setAddress(new Address(factoryURI));
 			apFactory = factoryLocator.getFactoryPortTypePort(factoryEPR);
 
@@ -140,9 +130,14 @@ public class FalkonWorkerDeRegistration {
 					.createResource(new CreateResource());
 			instanceEPR = createResponse.getEndpointReference();
 
-			String endpointString = ObjectSerializer.toString(instanceEPR,
-					GPConstants.RESOURCE_REFERENCE);
-			FileWriter fileWriter = new FileWriter(eprFilename);
+            String endpointString = null;
+            try {
+                endpointString = ObjectSerializer.toString(instanceEPR,
+                        GPConstants.RESOURCE_REFERENCE);
+            } catch (SerializationException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
+            FileWriter fileWriter = new FileWriter(eprFilename);
 			BufferedWriter bfWriter = new BufferedWriter(fileWriter);
 			bfWriter.write(endpointString);
 			bfWriter.close();
@@ -154,7 +149,7 @@ public class FalkonWorkerDeRegistration {
 		}
 	}
 
-	private boolean readWorkerResource(String fileEPR) throws Exception, DeserializationException {
+	private boolean readWorkerResource(String fileEPR) throws Exception {
 
 		// fileEPR = new String(args[ctr]);
 		boolean exists = (new File(fileEPR)).exists();
@@ -163,10 +158,14 @@ public class FalkonWorkerDeRegistration {
 			// Get endpoint reference of WS-Resource from file
 			FileInputStream fis = new FileInputStream(fileEPR);
 
-			homeEPR = (EndpointReferenceType) ObjectDeserializer.deserialize(
-					new InputSource(fis), EndpointReferenceType.class);
+            try {
+                homeEPR = (EndpointReferenceType) ObjectDeserializer.deserialize(
+                        new InputSource(fis), EndpointReferenceType.class);
+            } catch (DeserializationException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
 
-			if (homeEPR == null) {
+            if (homeEPR == null) {
 				throw new Exception(
 						"parseArgs(): homeEPR == null, probably EPR was not correctly read from file");
 			} else {
@@ -181,7 +180,7 @@ public class FalkonWorkerDeRegistration {
 		}
 	}
 
-	public void deregster(String machID) throws Exception, SerializationException, DeserializationException {
+	public List<String> getWorkIp() throws Exception {
 		logger.debug("WORKERS-GRAM: " + WORKER_GRAM_VERSION);
 		StopWatch sw = new StopWatch();
 		lt.start();
@@ -232,21 +231,122 @@ public class FalkonWorkerDeRegistration {
 		logger.info("WORKER:getGPPortType(): " + sw.getElapsedTime() + " ms");
 		sw.reset();
 
-		WorkerDeRegistrationResponse mwsr = this.workerDeReg(machID);
-		System.out.println(mwsr.isValid());
+		
+		List<String> tmpWorkIpList = null;	
+		List<String> workIpList = new ArrayList<String>();	
+		MonitorWorkerStateResponse mwsr = this.getMonitorWorkerState();
+		String[] strArr = mwsr.getFreeWorkers();
+
+		if(strArr != null){
+			tmpWorkIpList = this.getStr(strArr);
+			workIpList.addAll(tmpWorkIpList);
+		}
+		strArr = mwsr.getPendWorkers();
+		if(strArr != null){
+			tmpWorkIpList = this.getStr(strArr);
+			workIpList.addAll(tmpWorkIpList);
+		}
+		strArr = mwsr.getBusyWorkers();
+		if(strArr != null){
+			tmpWorkIpList = this.getStr(strArr);
+			workIpList.addAll(tmpWorkIpList);
+		}
+		return workIpList;
 	}
 	
-	public WorkerDeRegistrationResponse workerDeReg(String machID) {
-		WorkerDeRegistration sr = new WorkerDeRegistration();
-		sr.setMachID(machID);
-		sr.setService(false);
+	public List<String> getMachIDList() throws Exception {
+		logger.debug("WORKERS-GRAM: " + WORKER_GRAM_VERSION);
+		StopWatch sw = new StopWatch();
+		lt.start();
+
+		if (fileEPR == null)
+			fileEPR = "WorkerEPR.txt";
+
+		logger.debug("WORKERS: Creating worker resource...");
+		if (createWorkerResource(serviceURI, fileEPR)) {
+			logger.debug("WORKERS: Created worker resource... saved in '"
+					+ fileEPR + "'");
+		} else
+			throw new Exception(
+					"main_run(): createWorkerResource() failed, could not create worker resource...");
+
+		if (readWorkerResource(fileEPR)) {
+			logger.debug("WORKERS: initialized worker reasource state from '"
+					+ fileEPR + "'");
+
+		} else
+			throw new Exception(
+					"main_run(): readWorkerResource() failed, could not read worker resource from '"
+							+ fileEPR + "'");
+
+		if (homeEPR == null) {
+			throw new Exception(
+					"main_run(): homeEPR == null, something is wrong");
+		} else {
+
+			logger.debug("main_run(): homeEPR is OK");
+		}
+
+		sw.start();
+		// Get PortType
+		ap = getGPPortType();// = instanceLocator
+
+		if (CLIENT_DESC != null && (new File(CLIENT_DESC)).exists()) {
+			logger.debug("Setting appropriate security from file '"
+					+ CLIENT_DESC + "'");
+			((Stub) ap)._setProperty(Constants.CLIENT_DESCRIPTOR_FILE,
+					CLIENT_DESC);
+
+		}
+
+		sw.stop();
+		logger.debug("WORKER: Get PortType (" + sw.getElapsedTime() + "ms)");
+
+		logger.info("WORKER:getGPPortType(): " + sw.getElapsedTime() + " ms");
+		sw.reset();
+
 		
-		logger.debug("Retrieving GPWS WorkerDeRegistration...");
+		List<String> machIDList = new ArrayList<String>();	
+		MonitorWorkerStateResponse mwsr = this.getMonitorWorkerState();
+		String[] strArr = mwsr.getFreeWorkers();
+		if(strArr != null){
+			machIDList.addAll(Arrays.asList(strArr));
+		}
+		strArr = mwsr.getPendWorkers();
+		if(strArr != null){
+			machIDList.addAll(Arrays.asList(strArr));
+		}
+		strArr = mwsr.getBusyWorkers();
+		if(strArr != null){
+			machIDList.addAll(Arrays.asList(strArr));
+		}
+		return machIDList;
+	}
+
+	/**
+	 * 
+	 * author:xiong rong
+	 * 功能：对workerIp信息进行处理得到ip地址，去除端口号
+	 * @param strArr
+	 */
+	public List<String> getStr(String[] strArr){
+		List<String> workIplist = new ArrayList<String>();
+		for(String str : strArr){
+			String[] s = str.split(":");
+			workIplist.add(s[0]);
+		}
+		return workIplist;
+	}
+	
+	public MonitorWorkerStateResponse getMonitorWorkerState() {
+
+		MonitorWorkerState stat = new MonitorWorkerState("");
+		logger.debug("Retrieving GPWS MonitorWorkerState...");
 
 		try {
 
-			WorkerDeRegistrationResponse wdrr = ap.workerDeRegistration(sr);
-			return wdrr;
+			MonitorWorkerStateResponse sr = ap.monitorWorkerState(stat);
+			return sr;
 		} catch (Exception e) {
 			return null;
 		}
@@ -254,32 +354,30 @@ public class FalkonWorkerDeRegistration {
 
 	/**
 	 * author:xiong rong
-	 * 功能：
-	 * @param args
+	 * 功能： 通过service的ip地址更新serviceWorkerMap,只要falkon service
+	 * 或者falkon worker改变都需要及时更新
+	 * @param serviceURI
 	 */
-	public static void main(String[] args) throws DeserializationException, SerializationException {
-		String serviceURI = "http://172.16.254.110:50001/wsrf/services/GenericPortal/core/WS/GPFactoryService";
-		FalkonWorkerDeRegistration fwn = new FalkonWorkerDeRegistration(serviceURI);
-		String machID = "172.16.254.198:50100";
-		try {
-			fwn.deregster(machID);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	public void updateMap(String serviceURI,String serviceIP) throws Exception {
+		List<String> workList = this.getWorkIp();
+		if (workList != null) {
+			if (Constant.serviceWorkerMap.containsKey(serviceIP)) {
+				Constant.serviceWorkerMap.remove(serviceIP);
+			}
+			Constant.serviceWorkerMap.put(serviceIP, workList);
 		}
-		
-
-//		try {
-//			List<String> workIps = fwn.getWorkIp();
-//			for(String workIp : workIps){
-//				System.out.println(workIp);
-//			}
-//		} catch (Exception e1) {
-//			e1.printStackTrace();
-//		}
+	}
+	public static void main(String[] args) {
+		String serviceURI = "http://172.16.254.110:50001/wsrf/services/GenericPortal/core/WS/GPFactoryService";
+		FalkonMonitor fwn = new FalkonMonitor(serviceURI);
+		try {
+			List<String> workIps = fwn.getMachIDList();
+			for(String workIp : workIps){
+				System.out.println(workIp);
+			}
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
 
 	}
-
-
-
 }

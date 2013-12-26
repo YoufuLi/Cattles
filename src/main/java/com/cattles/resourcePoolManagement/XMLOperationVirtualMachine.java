@@ -91,7 +91,7 @@ public class XMLOperationVirtualMachine {
     }
 
     /**
-     * get the list of VMs according to the state: "available","busy","idle"
+     * get the list of VMs according to the state: "available","busy"
      * @param _state
      * @return
      */
