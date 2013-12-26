@@ -7,5 +7,5 @@ import com.cattles.ssh.SSHMonitor;
 import com.cattles.ssh.SSHResult;
 
 public interface JschSCPExecutable {
-	public SSHResult execSCP(Session sshSession, String origin, String dest, String option, List<SSHMonitor> monitors);
+    public SSHResult execSCP(Session sshSession, String origin, String dest, String option, List<SSHMonitor> monitors);
 }

@@ -5,8 +5,8 @@ import com.cattles.ssh.SSHFactory;
 
 public class CmdExecFactory implements SSHFactory {
 
-	public CommandExecutable getCmdExec() {
-		return new JschCommandExecutor();
-	}
+    public CommandExecutable getCmdExec() {
+        return new JschCommandExecutor();
+    }
 
 }

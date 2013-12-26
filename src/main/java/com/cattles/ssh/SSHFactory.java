@@ -1,9 +1,10 @@
 package com.cattles.ssh;
+
 /**
  * rerurn the CommandExecutable instance
- * @author Tom
  *
+ * @author Tom
  */
 public interface SSHFactory {
-	public CommandExecutable getCmdExec();
+    public CommandExecutable getCmdExec();
 }
