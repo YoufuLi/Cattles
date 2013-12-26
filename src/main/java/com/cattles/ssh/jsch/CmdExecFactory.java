@@ -8,5 +8,4 @@ public class CmdExecFactory implements SSHFactory {
     public CommandExecutable getCmdExec() {
         return new JschCommandExecutor();
     }
-
 }
