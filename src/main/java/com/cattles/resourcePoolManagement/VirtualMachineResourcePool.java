@@ -41,6 +41,12 @@ public class VirtualMachineResourcePool {
         return vmCount;
     }
 
+    public VMInfo getVMWithID(String _vmID){
+        VMInfo vmInfo=new VMInfo();
+        vmInfo=xmlOperationVirtualMachine.getVMByID(_vmID);
+        return vmInfo;
+    }
+
     /**
      * when the VMs number in the resource pool is not enough, use this method to apply VMs from the underlying Cloud Computing platform
      * @param _vmNum

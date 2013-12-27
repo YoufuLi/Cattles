@@ -4,8 +4,9 @@ import java.util.ArrayList;
 
 public class VirtualCluster {
 	String clusterID; //the id of a cluster
-    String clusterState;  //if the cluster is in "standby" state
-	int clusterSize;   //cluster size, the number of worker
+	String clusterType; // identify whether the cluster is a "falkon" cluster, "gearman" cluster or the other cluster
+    String clusterState;  //if the cluster is in "standby" state or in "activated" state
+    int clusterSize;   //cluster size, the number of worker
 	String clusterServerID;    //the server ID in this cluster
     ArrayList<String> nodesIDList;
 
@@ -15,6 +16,14 @@ public class VirtualCluster {
 
     public void setClusterID(String clusterID) {
         this.clusterID = clusterID;
+    }
+
+    public String getClusterType() {
+        return clusterType;
+    }
+
+    public void setClusterType(String clusterType) {
+        this.clusterType = clusterType;
     }
 
     public String getClusterState() {

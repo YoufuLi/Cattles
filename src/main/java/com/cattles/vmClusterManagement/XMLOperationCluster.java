@@ -71,11 +71,13 @@ public class XMLOperationCluster {
         Node virtualClusters = xmlDocument.getChildNodes().item(0);
         Node virtualClusterNode=xmlDocument.createElement("VirtualCluster");
         Node clusterID=xmlDocument.createElement("clusterID");
+        Node clusterType=xmlDocument.createElement("clusterType");
         Node clusterState=xmlDocument.createElement("clusterState");
         Node clusterSize=xmlDocument.createElement("clusterSize");
         Node serverID=xmlDocument.createElement("serverID");
         Node nodes=xmlDocument.createElement("nodes");
         clusterID.setTextContent(_virtualCluster.getClusterID());
+        clusterType.setTextContent(_virtualCluster.getClusterType());
         clusterState.setTextContent(_virtualCluster.getClusterState());
         clusterSize.setTextContent(String.valueOf(_virtualCluster.getClusterSize()));
         serverID.setTextContent(_virtualCluster.getClusterServerID());
@@ -86,6 +88,7 @@ public class XMLOperationCluster {
         }
 
         virtualClusterNode.appendChild(clusterID);
+        virtualClusterNode.appendChild(clusterType);
         virtualClusterNode.appendChild(clusterState);
         virtualClusterNode.appendChild(clusterSize);
         virtualClusterNode.appendChild(serverID);
@@ -180,11 +183,11 @@ public class XMLOperationCluster {
             if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
                 Node node=xmlDocument.createElement("node");
                 node.setTextContent(_nodeID);
-                virtualClusterInfoList.item(4).appendChild(node);
+                virtualClusterInfoList.item(5).appendChild(node);
                 //modify the cluster size after adding a node
-                int clusterSize= Integer.parseInt(virtualClusterInfoList.item(2).getTextContent());
+                int clusterSize= Integer.parseInt(virtualClusterInfoList.item(3).getTextContent());
                 clusterSize++;
-                virtualClusterInfoList.item(2).setTextContent(String.valueOf(clusterSize));
+                virtualClusterInfoList.item(3).setTextContent(String.valueOf(clusterSize));
             }
         }
 
@@ -231,14 +234,14 @@ public class XMLOperationCluster {
         for (int i=0;i<virtualClusterList.getLength();i++){
             NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
             if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
-                NodeList nodeList=virtualClusterInfoList.item(4).getChildNodes();
+                NodeList nodeList=virtualClusterInfoList.item(5).getChildNodes();
                 for(int j=0;j<nodeList.getLength();j++){
                     if(nodeList.item(j).getTextContent().equals(_nodeID)){
-                        virtualClusterInfoList.item(4).removeChild(nodeList.item(j));
+                        virtualClusterInfoList.item(5).removeChild(nodeList.item(j));
                         //modify the cluster size after adding a node
-                        int clusterSize= Integer.parseInt(virtualClusterInfoList.item(2).getTextContent());
+                        int clusterSize= Integer.parseInt(virtualClusterInfoList.item(3).getTextContent());
                         clusterSize--;
-                        virtualClusterInfoList.item(2).setTextContent(String.valueOf(clusterSize));
+                        virtualClusterInfoList.item(3).setTextContent(String.valueOf(clusterSize));
                     }
                 }
             }
@@ -286,7 +289,7 @@ public class XMLOperationCluster {
         for (int i=0;i<virtualClusterList.getLength();i++){
             NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
             if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
-                virtualClusterInfoList.item(3).setTextContent(_serverID);
+                virtualClusterInfoList.item(4).setTextContent(_serverID);
             }
         }
 
@@ -319,7 +322,7 @@ public class XMLOperationCluster {
         for (int i=0;i<virtualClusterList.getLength();i++){
             NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
             if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
-                virtualClusterInfoList.item(1).setTextContent(_clusterState);
+                virtualClusterInfoList.item(2).setTextContent(_clusterState);
             }
         }
 
@@ -351,7 +354,7 @@ public class XMLOperationCluster {
         for (int i=0;i<virtualClusterList.getLength();i++){
             NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
             if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
-                clusterSize=Integer.parseInt(virtualClusterInfoList.item(2).getTextContent());
+                clusterSize=Integer.parseInt(virtualClusterInfoList.item(3).getTextContent());
             }
         }
         return clusterSize;
@@ -369,45 +372,17 @@ public class XMLOperationCluster {
         for (int i=0;i<virtualClusterList.getLength();i++){
             NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
             virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
-            virtualCluster.setClusterState(virtualClusterInfoList.item(1).getTextContent());
-            virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(2).getTextContent()));
-            virtualCluster.setClusterServerID(virtualClusterInfoList.item(3).getTextContent());
-            NodeList nodeList=virtualClusterInfoList.item(4).getChildNodes();
+            virtualCluster.setClusterType(virtualClusterInfoList.item(1).getTextContent());
+            virtualCluster.setClusterState(virtualClusterInfoList.item(2).getTextContent());
+            virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(3).getTextContent()));
+            virtualCluster.setClusterServerID(virtualClusterInfoList.item(4).getTextContent());
+            NodeList nodeList=virtualClusterInfoList.item(5).getChildNodes();
             ArrayList<String> nodes=new ArrayList<String>();
             for(int j=0;j<nodeList.getLength();j++){
                 nodes.add(nodeList.item(j).getTextContent());
             }
             virtualCluster.setNodesIDList(nodes);
             virtualClusters.add(virtualCluster);
-        }
-        return virtualClusters;
-    }
-
-    /**
-     * get the cluster list according to the cluster state(activated, standby)
-     * @param _state
-     * @return
-     */
-    public ArrayList<VirtualCluster> getClustersWithState(String _state){
-        ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
-        VirtualCluster virtualCluster=new VirtualCluster();
-        Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
-        NodeList virtualClusterList=virtualClustersXML.getChildNodes();
-        for (int i=0;i<virtualClusterList.getLength();i++){
-            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
-            if(virtualClusterInfoList.item(1).getTextContent().equals(_state)){
-                virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
-                virtualCluster.setClusterState(virtualClusterInfoList.item(1).getTextContent());
-                virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(2).getTextContent()));
-                virtualCluster.setClusterServerID(virtualClusterInfoList.item(3).getTextContent());
-                NodeList nodeList=virtualClusterInfoList.item(4).getChildNodes();
-                ArrayList<String> nodes=new ArrayList<String>();
-                for(int j=0;j<nodeList.getLength();j++){
-                    nodes.add(nodeList.item(j).getTextContent());
-                }
-                virtualCluster.setNodesIDList(nodes);
-                virtualClusters.add(virtualCluster);
-            }
         }
         return virtualClusters;
     }
@@ -425,10 +400,11 @@ public class XMLOperationCluster {
             NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
             if(virtualClusterInfoList.item(0).getTextContent().equals(_clusterID)){
                 virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
-                virtualCluster.setClusterState(virtualClusterInfoList.item(1).getTextContent());
-                virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(2).getTextContent()));
-                virtualCluster.setClusterServerID(virtualClusterInfoList.item(3).getTextContent());
-                NodeList nodeList=virtualClusterInfoList.item(4).getChildNodes();
+                virtualCluster.setClusterType(virtualClusterInfoList.item(1).getTextContent());
+                virtualCluster.setClusterState(virtualClusterInfoList.item(2).getTextContent());
+                virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(3).getTextContent()));
+                virtualCluster.setClusterServerID(virtualClusterInfoList.item(4).getTextContent());
+                NodeList nodeList=virtualClusterInfoList.item(5).getChildNodes();
                 ArrayList<String> nodes=new ArrayList<String>();
                 for(int j=0;j<nodeList.getLength();j++){
                     nodes.add(nodeList.item(j).getTextContent());
@@ -438,6 +414,68 @@ public class XMLOperationCluster {
         }
         return virtualCluster;
     }
+
+    /**
+     * get the cluster list according to the cluster type(falkon, gearman)
+     * @param _clusterType
+     * @return
+     */
+    public ArrayList<VirtualCluster> getClustersWithType(String _clusterType){
+        ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
+        VirtualCluster virtualCluster=new VirtualCluster();
+        Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClustersXML.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(1).getTextContent().equals(_clusterType)){
+                virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
+                virtualCluster.setClusterType(virtualClusterInfoList.item(1).getTextContent());
+                virtualCluster.setClusterState(virtualClusterInfoList.item(2).getTextContent());
+                virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(3).getTextContent()));
+                virtualCluster.setClusterServerID(virtualClusterInfoList.item(4).getTextContent());
+                NodeList nodeList=virtualClusterInfoList.item(5).getChildNodes();
+                ArrayList<String> nodes=new ArrayList<String>();
+                for(int j=0;j<nodeList.getLength();j++){
+                    nodes.add(nodeList.item(j).getTextContent());
+                }
+                virtualCluster.setNodesIDList(nodes);
+                virtualClusters.add(virtualCluster);
+            }
+        }
+        return virtualClusters;
+    }
+
+    /**
+     * get the cluster list according to the cluster state(activated, standby)
+     * @param _state
+     * @return
+     */
+    public ArrayList<VirtualCluster> getClustersWithState(String _state){
+        ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
+        VirtualCluster virtualCluster=new VirtualCluster();
+        Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
+        NodeList virtualClusterList=virtualClustersXML.getChildNodes();
+        for (int i=0;i<virtualClusterList.getLength();i++){
+            NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            if(virtualClusterInfoList.item(2).getTextContent().equals(_state)){
+                virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
+                virtualCluster.setClusterType(virtualClusterInfoList.item(1).getTextContent());
+                virtualCluster.setClusterState(virtualClusterInfoList.item(2).getTextContent());
+                virtualCluster.setClusterSize(Integer.parseInt(virtualClusterInfoList.item(3).getTextContent()));
+                virtualCluster.setClusterServerID(virtualClusterInfoList.item(4).getTextContent());
+                NodeList nodeList=virtualClusterInfoList.item(5).getChildNodes();
+                ArrayList<String> nodes=new ArrayList<String>();
+                for(int j=0;j<nodeList.getLength();j++){
+                    nodes.add(nodeList.item(j).getTextContent());
+                }
+                virtualCluster.setNodesIDList(nodes);
+                virtualClusters.add(virtualCluster);
+            }
+        }
+        return virtualClusters;
+    }
+
+
     public static void main(String[] args){
         XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
 

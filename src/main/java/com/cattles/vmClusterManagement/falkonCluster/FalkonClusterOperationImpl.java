@@ -2,6 +2,8 @@ package com.cattles.vmClusterManagement.falkonCluster;
 
 import com.cattles.interfaces.VirtualClusterOperationInterface;
 import com.cattles.resourcePoolManagement.VirtualResourcePool;
+import com.cattles.schedulingframeworks.falkon.FalkonServer;
+import com.cattles.schedulingframeworks.falkon.FalkonWorker;
 import com.cattles.util.Constant;
 import com.cattles.util.Tool;
 import com.cattles.vmClusterManagement.VirtualCluster;
@@ -20,40 +22,86 @@ import java.util.ArrayList;
 public class FalkonClusterOperationImpl implements VirtualClusterOperationInterface {
     //TODO:update the operations upon to cluster management
     XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
-    VirtualCluster virtualCluster;
+    VirtualResourcePool virtualResourcePool=new VirtualResourcePool();
+    FalkonWorker falkonWorker=new FalkonWorker();
+    FalkonServer falkonServer=new FalkonServer();
     public VirtualCluster clusterProvision(int _clusterSize){
         //check if there are any standby cluster,
-        ArrayList<VirtualCluster> standbyClusterList=xmlOperationCluster.getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
-        if(standbyClusterList.size()>=1){
+        VirtualCluster virtualCluster;
+        ArrayList<VirtualCluster> standbyFalkonClusterList=this.getStandbyFalkonCluster();
+        if(standbyFalkonClusterList.size()>=1){
             //calculate the absolute value of standby cluster size and the required num, then select the smallest absolute value
-            int minABS=Math.abs(standbyClusterList.get(0).getClusterSize()-_clusterSize);
+            int minABS=Math.abs(standbyFalkonClusterList.get(0).getClusterSize()-_clusterSize);
             int flag=0;
-            for(int i=1;i<standbyClusterList.size();i++){
-                if(minABS>Math.abs(standbyClusterList.get(i).getClusterSize()-_clusterSize)){
-                    minABS=Math.abs(standbyClusterList.get(i).getClusterSize()-_clusterSize);
+            for(int i=1;i<standbyFalkonClusterList.size();i++){
+                if(minABS>Math.abs(standbyFalkonClusterList.get(i).getClusterSize()-_clusterSize)){
+                    minABS=Math.abs(standbyFalkonClusterList.get(i).getClusterSize()-_clusterSize);
                     flag=i;
                 }
             }
-            virtualCluster=standbyClusterList.get(flag);
-            //TODO:check if the num of nodes equals to the required, if not add more nodes , or remove the redundant nodes
+            virtualCluster=standbyFalkonClusterList.get(flag);
+            //check if the num of nodes equals to the required, if not add more nodes , or remove the redundant nodes
             if(virtualCluster.getClusterSize()!=_clusterSize){
                 if(virtualCluster.getClusterSize()>_clusterSize){
-                    //TODO: Deregister the node from the cluster
-
-                    //TODO: Remove the redundant nodes
-
-
+                    int deregisterNum=virtualCluster.getClusterSize()-_clusterSize;
+                    //Deregister the node from the cluster
+                    ArrayList<String> deregisterNodeIDList=new ArrayList<String>();
+                    for(int j=0;j<deregisterNum;j++){
+                        deregisterNodeIDList.add(virtualCluster.getNodesIDList().get(j));
+                    }
+                    falkonWorker.deregisterFromServer(virtualCluster.getClusterServerID(),deregisterNodeIDList);
+                    //Remove the redundant nodes
+                    this.removeNodes(virtualCluster.getClusterID(),deregisterNodeIDList);
                 }else{
                     //TODO: Fetch a list of VMs and add to the cluster, then do the node registration
+                    int requestVMsNum=_clusterSize-virtualCluster.getClusterSize();
+                    ArrayList<VMInfo> virtualMachineList=virtualResourcePool.fetchVMList(requestVMsNum);
+                    ArrayList<String> registerNodeIDList=new ArrayList<String>();
+                    for(int j=0;j<virtualMachineList.size();j++){
+                        registerNodeIDList.add(virtualMachineList.get(j).getVmID());
+                    }
+                    this.addNodes(virtualCluster.getClusterID(),registerNodeIDList);
+                    falkonWorker.register2Server(virtualCluster.getClusterServerID(),registerNodeIDList);
                 }
             }
 
         }else{
             virtualCluster=this.createCluster(_clusterSize);
+            //TODO:the registeration of workers
+            this.launchFalkonCluster(virtualCluster);
         }
         //update the cluster state from "standby" to "activated"
         xmlOperationCluster.modifyClusterState(virtualCluster.getClusterID(),Constant.VIRTUAL_CLUSTER_STATE_ACTIVATED);
         return virtualCluster;
+    }
+
+    /**
+     * use getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY) and getClustersWithType(Constant.FALKON_FRAMEWORK_NAME) to find the standby falkon cluster
+     * @return
+     */
+    public ArrayList<VirtualCluster> getStandbyFalkonCluster(){
+        ArrayList<VirtualCluster> standbyFalkonClusterList=new ArrayList<VirtualCluster>();
+        ArrayList<VirtualCluster> standbyClusterList=xmlOperationCluster.getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
+        ArrayList<VirtualCluster> falkonClusterList=xmlOperationCluster.getClustersWithType(Constant.FALKON_FRAMEWORK_NAME);
+        for(int i=0;i<falkonClusterList.size();i++){
+            for (int j=0;j<standbyClusterList.size();j++){
+                if(falkonClusterList.get(i).getClusterID().equals(standbyClusterList.get(j).getClusterID())){
+                    standbyFalkonClusterList.add(falkonClusterList.get(i));
+                }
+            }
+        }
+        return standbyFalkonClusterList;
+    }
+
+    /**
+     * launch a falkon cluster, including falkon service start and falkon worker registration
+     * @param virtualCluster
+     */
+    public void launchFalkonCluster(VirtualCluster virtualCluster){
+        String serverID=virtualCluster.getClusterServerID();
+        ArrayList<String> nodeIDList=virtualCluster.getNodesIDList();
+        falkonServer.startFalkonService(serverID);
+        falkonWorker.register2Server(serverID,nodeIDList);
     }
 
     /**
@@ -64,7 +112,6 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
      */
     public VirtualCluster createCluster(int _clusterSize){
         VirtualCluster virtualCluster=new VirtualCluster();
-        VirtualResourcePool virtualResourcePool=new VirtualResourcePool();
         ArrayList<VMInfo> virtualMachineList=virtualResourcePool.fetchVMList(_clusterSize);
         //TODO: use a method to generate a cluster based to the VMs list
         virtualCluster=this.generateCluster(virtualMachineList);
