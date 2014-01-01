@@ -12,7 +12,7 @@ import com.cattles.vmClusterManagement.VirtualClusterOperationFactory;
  * To change this template use File | Settings | File Templates.
  */
 public class FalkonClusterManagement {
-    public static void main(String args){
+    public static void main(String[] args){
         VirtualClusterOperation virtualClusterOperation=new VirtualClusterOperation();
         VirtualCluster virtualCluster=virtualClusterOperation.clusterProvision(2);
         System.out.println(virtualCluster.getClusterID());
