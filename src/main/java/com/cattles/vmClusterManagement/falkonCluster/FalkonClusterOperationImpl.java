@@ -9,6 +9,7 @@ import com.cattles.util.Tool;
 import com.cattles.vmClusterManagement.VirtualCluster;
 import com.cattles.vmClusterManagement.XMLOperationCluster;
 import com.cattles.vmManagement.VMInfo;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 
@@ -21,6 +22,7 @@ import java.util.ArrayList;
  */
 public class FalkonClusterOperationImpl implements VirtualClusterOperationInterface {
     //TODO:update the operations upon to cluster management
+    private static Logger log = Logger.getLogger(FalkonClusterOperationImpl.class);
     XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
     VirtualResourcePool virtualResourcePool=new VirtualResourcePool();
     FalkonWorker falkonWorker=new FalkonWorker();
@@ -29,8 +31,10 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
         //check if there are any standby cluster,
         VirtualCluster virtualCluster;
         ArrayList<VirtualCluster> standbyFalkonClusterList=this.getStandbyFalkonCluster();
+        log.info("Standby cluster size:"+standbyFalkonClusterList.size());
         if(standbyFalkonClusterList.size()>=1){
             //calculate the absolute value of standby cluster size and the required num, then select the smallest absolute value
+
             int minABS=Math.abs(standbyFalkonClusterList.get(0).getClusterSize()-_clusterSize);
             int flag=0;
             for(int i=1;i<standbyFalkonClusterList.size();i++){
@@ -83,6 +87,8 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
         ArrayList<VirtualCluster> standbyFalkonClusterList=new ArrayList<VirtualCluster>();
         ArrayList<VirtualCluster> standbyClusterList=xmlOperationCluster.getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
         ArrayList<VirtualCluster> falkonClusterList=xmlOperationCluster.getClustersWithType(Constant.FALKON_FRAMEWORK_NAME);
+        log.info("standby:"+standbyClusterList.size());
+        log.info("falkon:"+falkonClusterList.size());
         for(int i=0;i<falkonClusterList.size();i++){
             for (int j=0;j<standbyClusterList.size();j++){
                 if(falkonClusterList.get(i).getClusterID().equals(standbyClusterList.get(j).getClusterID())){

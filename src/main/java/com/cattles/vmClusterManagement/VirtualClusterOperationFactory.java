@@ -5,6 +5,7 @@ import com.cattles.util.Constant;
 import com.cattles.util.XMLOperationSchedulingFramework;
 import com.cattles.vmClusterManagement.falkonCluster.FalkonClusterOperationImpl;
 import com.cattles.vmClusterManagement.gearmanCluster.GearmanClusterOperationImpl;
+import org.apache.log4j.Logger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,9 +15,11 @@ import com.cattles.vmClusterManagement.gearmanCluster.GearmanClusterOperationImp
  * To change this template use File | Settings | File Templates.
  */
 public class VirtualClusterOperationFactory {
+    private static Logger log = Logger.getLogger(VirtualClusterOperationFactory.class);
     public static VirtualClusterOperationInterface virtualClusterOperation(){
         XMLOperationSchedulingFramework xmlOperationSchedulingFramework=XMLOperationSchedulingFramework.getXmlOperationPlatform();
         if(xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.FALKON_FRAMEWORK_NAME)){
+            log.info(Constant.FALKON_FRAMEWORK_NAME);
             return new FalkonClusterOperationImpl();
 
         }else if(xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.GEARMAN_FRAMEWORK_NAME)){

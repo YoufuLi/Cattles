@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="import the ssh module to enable the execution of shell command remotely">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" afterPath="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperationFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperationFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/VirtualClusters.xml" afterPath="$PROJECT_DIR$/resource/VirtualClusters.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388583532097" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388667505855" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644868307" ignored="false" />
@@ -18,7 +21,7 @@
     <file path="/vmResources.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386655419180" ignored="false" />
     <file path="/VMInfo.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387267697642" ignored="false" />
     <file path="/VirtualResourcePool.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386655624078" ignored="false" />
-    <file path="/VirtualClusters.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387791817231" ignored="false" />
+    <file path="/VirtualClusters.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388675305386" ignored="false" />
     <file path="/EC2VMOperation.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387345327883" ignored="false" />
     <file path="/VirtualMachines.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1388024030367" ignored="false" />
     <file path="/EC2ConfigOperation.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387338408424" ignored="false" />
@@ -33,7 +36,7 @@
     <file path="/XMLOperationVirtualMachine.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387873173784" ignored="false" />
     <file path="/Tool.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387769140006" ignored="false" />
     <file path="/XMLOperationPlatform.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387807285933" ignored="false" />
-    <file path="/XMLOperationCluster.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388135695766" ignored="false" />
+    <file path="/XMLOperationCluster.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388676898176" ignored="false" />
     <file path="/VirtualCluster.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388134032216" ignored="false" />
     <file path="/VirtualClusterOperation.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388138069568" ignored="false" />
     <file path="/VirtualResourcePool.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388132412414" ignored="false" />
@@ -41,8 +44,8 @@
     <file path="/CmdExecFactory.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387948196701" ignored="false" />
     <file path="/JschSCPFrom.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387948342477" ignored="false" />
     <file path="/ClusterOperationInterface.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1388047337784" ignored="false" />
-    <file path="/FalkonClusterOperationImpl.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388136546229" ignored="false" />
-    <file path="/VirtualClusterOperationFactory.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1388049507430" ignored="false" />
+    <file path="/FalkonClusterOperationImpl.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388676806762" ignored="false" />
+    <file path="/VirtualClusterOperationFactory.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388675078603" ignored="false" />
     <file path="/schedulingframework_conf.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1388048469915" ignored="false" />
     <file path="/XMLOperationSchedulingFramework.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1388050862636" ignored="false" />
     <file path="/GearmanClusterOperationImpl.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1388049467820" ignored="false" />
@@ -110,10 +113,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FalkonClusterOperationImpl.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FalkonClusterOperationImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="62" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
+            <state line="48" column="46" selection-start="2462" selection-end="2462" vertical-scroll-proportion="0.3880597">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XMLOperationSchedulingFramework.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/util/XMLOperationSchedulingFramework.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="39" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VirtualClusters.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/VirtualClusters.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XMLOperationCluster.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="438" column="30" selection-start="18996" selection-end="18996" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,45 +152,16 @@
       <file leaf-file-name="FalkonClusterManagement.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="44" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="16" column="55" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XMLOperationVirtualMachine.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="XMLOperationVirtualMachine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/XMLOperationVirtualMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="21" selection-start="4158" selection-end="4158" vertical-scroll-proportion="0.6865672">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VMOperationFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmManagement/VMOperationFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VMOperation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmManagement/VMOperation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="40" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VirtualClusterOperation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="91" selection-start="716" selection-end="746" vertical-scroll-proportion="0.0">
+            <state line="104" column="62" selection-start="4583" selection-end="4583" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,7 +170,7 @@
       <file leaf-file-name="VirtualMachineResourcePool.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualMachineResourcePool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="17" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
+            <state line="34" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,16 +179,16 @@
       <file leaf-file-name="VirtualResourcePool.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualResourcePool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="41" selection-start="620" selection-end="635" vertical-scroll-proportion="0.0">
+            <state line="20" column="104" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VirtualCluster.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualCluster.java">
+      <file leaf-file-name="VirtualClusterOperation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
+            <state line="33" column="26" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -196,7 +197,7 @@
       <file leaf-file-name="VirtualClusterOperationFactory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperationFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="53" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
+            <state line="20" column="29" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -226,8 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/cattles/ssh/SSHFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattles/ssh/SSHMonitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/ssh/SSHResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/CmdExecFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/CmdExecFactoryCopy.java" />
@@ -237,11 +236,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualResourcePool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualCluster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperation.java" />
         <option value="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperationFactory.java" />
+        <option value="$PROJECT_DIR$/resource/VirtualClusters.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java" />
       </list>
     </option>
   </component>
@@ -267,10 +268,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="256" />
-    <option name="y" value="109" />
-    <option name="width" value="1217" />
-    <option name="height" value="805" />
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -505,6 +506,36 @@
               <option name="myItemId" value="cattles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -604,9 +635,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -714,7 +745,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Cattles" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -730,19 +767,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -771,6 +795,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -999,7 +1036,11 @@
       <created>1388137417104</created>
       <updated>1388137417104</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="import the ssh module to enable the execution of shell command remotely">
+      <created>1388590698543</created>
+      <updated>1388590698543</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1023,7 +1064,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="256" y="109" width="1217" height="805" extended-state="0" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
@@ -1031,9 +1072,9 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.71080667" sideWeight="0.50213856" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36392742" sideWeight="0.50248754" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15781488" sideWeight="0.49871686" order="7" side_tool="false" content_ui="tabs" />
@@ -1041,11 +1082,11 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21984603" sideWeight="0.2891933" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1448314" sideWeight="0.6360726" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3396065" sideWeight="0.2891933" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.71080667" sideWeight="0.49786142" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21945827" sideWeight="0.6360726" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36392742" sideWeight="0.49751243" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1123,20 +1164,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/VirtualMachines.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/VirtualClusters.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="37" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/util/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0" />
@@ -1150,41 +1177,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="62" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="446" column="0" selection-start="19207" selection-end="19207" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualCluster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperationFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="53" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualMachineResourcePool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualResourcePool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="41" selection-start="620" selection-end="635" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmManagement/VMOperationFactory.java">
@@ -1201,32 +1193,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualCluster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="62" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
+        <state line="6" column="121" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/XMLOperationVirtualMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="62" selection-start="4583" selection-end="4583" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualMachineResourcePool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualResourcePool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="104" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/util/XMLOperationSchedulingFramework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="39" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="91" selection-start="716" selection-end="746" vertical-scroll-proportion="0.0">
+        <state line="33" column="26" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="29" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="438" column="30" selection-start="18996" selection-end="18996" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/VirtualClusters.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="16" column="55" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/XMLOperationVirtualMachine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="21" selection-start="4158" selection-end="4158" vertical-scroll-proportion="0.6865672">
+        <state line="48" column="46" selection-start="2462" selection-end="2462" vertical-scroll-proportion="0.3880597">
           <folding />
         </state>
       </provider>

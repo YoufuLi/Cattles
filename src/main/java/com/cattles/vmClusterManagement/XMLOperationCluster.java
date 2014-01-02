@@ -366,11 +366,11 @@ public class XMLOperationCluster {
      */
     public ArrayList<VirtualCluster> getAllClusters(){
         ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
-        VirtualCluster virtualCluster=new VirtualCluster();
         Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
         NodeList virtualClusterList=virtualClustersXML.getChildNodes();
         for (int i=0;i<virtualClusterList.getLength();i++){
             NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
+            VirtualCluster virtualCluster=new VirtualCluster();
             virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
             virtualCluster.setClusterType(virtualClusterInfoList.item(1).getTextContent());
             virtualCluster.setClusterState(virtualClusterInfoList.item(2).getTextContent());
@@ -422,12 +422,12 @@ public class XMLOperationCluster {
      */
     public ArrayList<VirtualCluster> getClustersWithType(String _clusterType){
         ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
-        VirtualCluster virtualCluster=new VirtualCluster();
         Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
         NodeList virtualClusterList=virtualClustersXML.getChildNodes();
         for (int i=0;i<virtualClusterList.getLength();i++){
             NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
             if(virtualClusterInfoList.item(1).getTextContent().equals(_clusterType)){
+                VirtualCluster virtualCluster=new VirtualCluster();
                 virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
                 virtualCluster.setClusterType(virtualClusterInfoList.item(1).getTextContent());
                 virtualCluster.setClusterState(virtualClusterInfoList.item(2).getTextContent());
@@ -452,12 +452,13 @@ public class XMLOperationCluster {
      */
     public ArrayList<VirtualCluster> getClustersWithState(String _state){
         ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
-        VirtualCluster virtualCluster=new VirtualCluster();
+
         Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
         NodeList virtualClusterList=virtualClustersXML.getChildNodes();
         for (int i=0;i<virtualClusterList.getLength();i++){
             NodeList virtualClusterInfoList=virtualClusterList.item(i).getChildNodes();
             if(virtualClusterInfoList.item(2).getTextContent().equals(_state)){
+                VirtualCluster virtualCluster=new VirtualCluster();
                 virtualCluster.setClusterID(virtualClusterInfoList.item(0).getTextContent());
                 virtualCluster.setClusterType(virtualClusterInfoList.item(1).getTextContent());
                 virtualCluster.setClusterState(virtualClusterInfoList.item(2).getTextContent());
