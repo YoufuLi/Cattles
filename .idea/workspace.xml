@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="import the ssh module to enable the execution of shell command remotely">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperationFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperationFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/VirtualClusters.xml" afterPath="$PROJECT_DIR$/resource/VirtualClusters.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388667505855" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1388677488524" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644868307" ignored="false" />
@@ -1040,7 +1036,11 @@
       <created>1388590698543</created>
       <updated>1388590698543</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="import the ssh module to enable the execution of shell command remotely">
+      <created>1388677501172</created>
+      <updated>1388677501172</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
