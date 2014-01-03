@@ -64,13 +64,13 @@ public class XMLOperationVirtualMachine {
      */
     public ArrayList<VMInfo> getAllVMs(){
         ArrayList<VMInfo> vmInfoList=new ArrayList<VMInfo>();
-        VMInfo vmInfo=new VMInfo();
         Node virtualMachines = xmlDocument.getChildNodes().item(0);
         //System.out.println("nodes:"+virtualMachines.getNodeName());
         NodeList virtualMachineList=virtualMachines.getChildNodes();
         //System.out.println("virtual machine:"+virtualMachine.getLength());
         for (int i = 0; i < virtualMachineList.getLength(); i++) {
             NodeList vmInfoNodeList = virtualMachineList.item(i).getChildNodes();
+            VMInfo vmInfo=new VMInfo();
             vmInfo.setVmID(vmInfoNodeList.item(0).getTextContent());
             vmInfo.setVmType(vmInfoNodeList.item(1).getTextContent());
             vmInfo.setVmState(vmInfoNodeList.item(2).getTextContent());
@@ -97,12 +97,12 @@ public class XMLOperationVirtualMachine {
      */
     public ArrayList<VMInfo> getVMsWithState(String _state){
         ArrayList<VMInfo> vmInfoList=new ArrayList<VMInfo>();
-        VMInfo vmInfo=new VMInfo();
         Node virtualMachines = xmlDocument.getChildNodes().item(0);
         NodeList virtualMachineList=virtualMachines.getChildNodes();
         for (int i = 0; i < virtualMachineList.getLength(); i++) {
             NodeList vmInfoNodeList = virtualMachineList.item(i).getChildNodes();
             if(vmInfoNodeList.item(2).getTextContent().equals(_state)){
+                VMInfo vmInfo=new VMInfo();
                 vmInfo.setVmID(vmInfoNodeList.item(0).getTextContent());
                 vmInfo.setVmType(vmInfoNodeList.item(1).getTextContent());
                 vmInfo.setVmState(vmInfoNodeList.item(2).getTextContent());
@@ -252,7 +252,8 @@ public class XMLOperationVirtualMachine {
      * @param _vmID
      * @param _state
      */
-    public void modifyVMState(String _vmID, String _state){
+    public boolean modifyVMState(String _vmID, String _state){
+        boolean success=false;
         Node virtualMachines = xmlDocument.getChildNodes().item(0);
         NodeList virtualMachineList=virtualMachines.getChildNodes();
         for (int i = 0; i < virtualMachineList.getLength(); i++) {
@@ -268,11 +269,26 @@ public class XMLOperationVirtualMachine {
             DOMSource source = new DOMSource(xmlDocument);
             StreamResult result = new StreamResult(new java.io.File(Constant.VIRTUAL_MACHINES_XML_PATH));
             transformer.transform(source, result);
+            success=true;
         }catch (TransformerConfigurationException e){
             System.out.println(e.getMessage());
         }catch (TransformerException e){
             System.out.println(e.getMessage());
         }
+        return success;
+    }
+
+    /**
+     * modify a list of VMs according the vmID list
+     * @param _vmIDList
+     * @return
+     */
+    public boolean modifyVMsState(ArrayList<String> _vmIDList, String _state){
+        boolean success=false;
+        for (String vmID:_vmIDList){
+            success=modifyVMState(vmID, _state);
+        }
+        return success;
     }
     /**
      * modify a VM with the provided vmInfo

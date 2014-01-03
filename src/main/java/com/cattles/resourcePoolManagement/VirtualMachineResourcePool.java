@@ -63,7 +63,21 @@ public class VirtualMachineResourcePool {
      * @param _vmID
      * @param _state
      */
-    public void modidyVMState(String _vmID, String _state){
-        xmlOperationVirtualMachine.modifyVMState(_vmID,_state);
+    public boolean modidyVMState(String _vmID, String _state){
+        boolean success=false;
+        success=xmlOperationVirtualMachine.modifyVMState(_vmID,_state);
+        return success;
+    }
+
+    /**
+     * use this method to modify a batch of VMs' state
+     * @param _vmIDList
+     * @param _state
+     * @return
+     */
+    public boolean modifyVMsState(ArrayList<String> _vmIDList, String _state){
+        boolean success=false;
+        success=xmlOperationVirtualMachine.modifyVMsState(_vmIDList,_state);
+        return success;
     }
 }

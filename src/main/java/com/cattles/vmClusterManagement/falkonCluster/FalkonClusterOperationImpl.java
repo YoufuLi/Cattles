@@ -22,7 +22,7 @@ import java.util.ArrayList;
  */
 public class FalkonClusterOperationImpl implements VirtualClusterOperationInterface {
     //TODO:update the operations upon to cluster management
-    private static Logger log = Logger.getLogger(FalkonClusterOperationImpl.class);
+    private static Logger logger = Logger.getLogger(FalkonClusterOperationImpl.class);
     XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
     VirtualResourcePool virtualResourcePool=new VirtualResourcePool();
     FalkonWorker falkonWorker=new FalkonWorker();
@@ -31,10 +31,9 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
         //check if there are any standby cluster,
         VirtualCluster virtualCluster;
         ArrayList<VirtualCluster> standbyFalkonClusterList=this.getStandbyFalkonCluster();
-        log.info("Standby cluster size:"+standbyFalkonClusterList.size());
+        logger.info("get "+standbyFalkonClusterList.size()+" standby cluster, and choosing one appropriate from them.");
         if(standbyFalkonClusterList.size()>=1){
             //calculate the absolute value of standby cluster size and the required num, then select the smallest absolute value
-
             int minABS=Math.abs(standbyFalkonClusterList.get(0).getClusterSize()-_clusterSize);
             int flag=0;
             for(int i=1;i<standbyFalkonClusterList.size();i++){
@@ -48,17 +47,22 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
             if(virtualCluster.getClusterSize()!=_clusterSize){
                 if(virtualCluster.getClusterSize()>_clusterSize){
                     int deregisterNum=virtualCluster.getClusterSize()-_clusterSize;
+                    logger.info("the request cluster size is "+_clusterSize+", and the size of the standby cluster is "+virtualCluster.getClusterSize()
+                            +". We need to deregister "+deregisterNum+" nodes from the cluster.");
                     //Deregister the node from the cluster
                     ArrayList<String> deregisterNodeIDList=new ArrayList<String>();
                     for(int j=0;j<deregisterNum;j++){
                         deregisterNodeIDList.add(virtualCluster.getNodesIDList().get(j));
                     }
+                    logger.info("deregister nodes number:"+deregisterNodeIDList.size());
                     falkonWorker.deregisterFromServer(virtualCluster.getClusterServerID(),deregisterNodeIDList);
                     //Remove the redundant nodes
+
                     this.removeNodes(virtualCluster.getClusterID(),deregisterNodeIDList);
                 }else{
                     //TODO: Fetch a list of VMs and add to the cluster, then do the node registration
                     int requestVMsNum=_clusterSize-virtualCluster.getClusterSize();
+                    logger.info("fetching "+requestVMsNum+" nodes from the virtual resource pool");
                     ArrayList<VMInfo> virtualMachineList=virtualResourcePool.fetchVMList(requestVMsNum);
                     ArrayList<String> registerNodeIDList=new ArrayList<String>();
                     for(int j=0;j<virtualMachineList.size();j++){
@@ -87,8 +91,8 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
         ArrayList<VirtualCluster> standbyFalkonClusterList=new ArrayList<VirtualCluster>();
         ArrayList<VirtualCluster> standbyClusterList=xmlOperationCluster.getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
         ArrayList<VirtualCluster> falkonClusterList=xmlOperationCluster.getClustersWithType(Constant.FALKON_FRAMEWORK_NAME);
-        log.info("standby:"+standbyClusterList.size());
-        log.info("falkon:"+falkonClusterList.size());
+        logger.info("standby:"+standbyClusterList.size());
+        logger.info("falkon:"+falkonClusterList.size());
         for(int i=0;i<falkonClusterList.size();i++){
             for (int j=0;j<standbyClusterList.size();j++){
                 if(falkonClusterList.get(i).getClusterID().equals(standbyClusterList.get(j).getClusterID())){

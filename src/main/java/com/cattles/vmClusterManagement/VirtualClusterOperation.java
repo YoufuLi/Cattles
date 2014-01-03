@@ -17,7 +17,7 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public class VirtualClusterOperation implements VirtualClusterOperationInterface{
-    private static Logger log = Logger.getLogger(VirtualClusterOperation.class);
+    private static Logger logger = Logger.getLogger(VirtualClusterOperation.class);
     VirtualClusterOperationInterface virtualClusterOperation=VirtualClusterOperationFactory.virtualClusterOperation();
     @Override
     public VirtualCluster clusterProvision(int _clusterSize) {

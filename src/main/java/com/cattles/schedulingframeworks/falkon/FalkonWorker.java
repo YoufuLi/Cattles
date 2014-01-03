@@ -17,7 +17,7 @@ public class FalkonWorker {
 
     }
     public void deregisterFromServer(String serverID, ArrayList<String> nodeIDList){
-        String serverIP=virtualMachineResourcePool.getVMWithID(serverID).getVmPublicIpAddress();
+        //String serverIP=virtualMachineResourcePool.getVMWithID(serverID).getVmPublicIpAddress();
 
     }
 }

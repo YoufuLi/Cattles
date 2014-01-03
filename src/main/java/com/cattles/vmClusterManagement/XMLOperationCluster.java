@@ -452,7 +452,6 @@ public class XMLOperationCluster {
      */
     public ArrayList<VirtualCluster> getClustersWithState(String _state){
         ArrayList<VirtualCluster> virtualClusters=new ArrayList<VirtualCluster>();
-
         Node virtualClustersXML=xmlDocument.getChildNodes().item(0);
         NodeList virtualClusterList=virtualClustersXML.getChildNodes();
         for (int i=0;i<virtualClusterList.getLength();i++){
