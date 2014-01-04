@@ -53,7 +53,6 @@ public class EC2VMOperationImpl implements VMOperationInterface {
     @Override
     public ArrayList<VMInfo> createInstances(int vmNumber) throws Exception {
         ArrayList<VMInfo> instanceList = new ArrayList<VMInfo>();
-        VMInfo vmInstance=new VMInfo();
         try
         {
             RunInstancesRequest runInstancesRequest = new RunInstancesRequest()
@@ -70,6 +69,7 @@ public class EC2VMOperationImpl implements VMOperationInterface {
             System.out.println("You have " + instances.size() + " instances.");
             for (Instance instance : instances)
             {
+                VMInfo vmInstance=new VMInfo();
                 vmInstance.setVmID(instance.getInstanceId());
                 vmInstance.setVmType(instance.getInstanceType());
                 vmInstance.setVmPrivateIpAddress(instance.getPrivateIpAddress());
@@ -257,7 +257,7 @@ public class EC2VMOperationImpl implements VMOperationInterface {
 
     public static void main(String[] args) throws Exception {
         EC2VMOperationImpl ec2VMOperation=new EC2VMOperationImpl();
-        ArrayList<VMInfo> vmList=new ArrayList<VMInfo>();
+        /*ArrayList<VMInfo> vmList=new ArrayList<VMInfo>();
         VMInfo vmInfo1=new VMInfo();
         vmInfo1.setVmID("i-52994123");
         VMInfo vmInfo2=new VMInfo();
@@ -272,7 +272,8 @@ public class EC2VMOperationImpl implements VMOperationInterface {
             ec2VMOperation.shutdownInstances(vmList);
         }catch (Exception e){
             System.out.println("error");
-        }
+        }*/
+        ec2VMOperation.getInstanceList();
 
     }
 }
