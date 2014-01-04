@@ -56,8 +56,8 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
                     }
                     logger.info("deregister nodes number:"+deregisterNodeIDList.size());
                     falkonWorker.deregisterFromServer(virtualCluster.getClusterServerID(),deregisterNodeIDList);
+                    virtualResourcePool.deregisterVMs(deregisterNodeIDList);
                     //Remove the redundant nodes
-
                     this.removeNodes(virtualCluster.getClusterID(),deregisterNodeIDList);
                 }else{
                     //TODO: Fetch a list of VMs and add to the cluster, then do the node registration
@@ -91,8 +91,6 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
         ArrayList<VirtualCluster> standbyFalkonClusterList=new ArrayList<VirtualCluster>();
         ArrayList<VirtualCluster> standbyClusterList=xmlOperationCluster.getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
         ArrayList<VirtualCluster> falkonClusterList=xmlOperationCluster.getClustersWithType(Constant.FALKON_FRAMEWORK_NAME);
-        logger.info("standby:"+standbyClusterList.size());
-        logger.info("falkon:"+falkonClusterList.size());
         for(int i=0;i<falkonClusterList.size();i++){
             for (int j=0;j<standbyClusterList.size();j++){
                 if(falkonClusterList.get(i).getClusterID().equals(standbyClusterList.get(j).getClusterID())){
@@ -123,6 +121,10 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
     public VirtualCluster createCluster(int _clusterSize){
         VirtualCluster virtualCluster=new VirtualCluster();
         ArrayList<VMInfo> virtualMachineList=virtualResourcePool.fetchVMList(_clusterSize);
+        logger.info("fetched "+virtualMachineList.size()+" virtual machines");
+        for (VMInfo vmInfo:virtualMachineList){
+            logger.info("the vm ID is: "+vmInfo.getVmID());
+        }
         //TODO: use a method to generate a cluster based to the VMs list
         virtualCluster=this.generateCluster(virtualMachineList);
         xmlOperationCluster.addCluster(virtualCluster);
@@ -141,16 +143,21 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
             String clusterState=Constant.VIRTUAL_CLUSTER_STATE_STANDBY;
             int clusterSize=VMList.size();
             String clusterServerID=VMList.get(0).getVmID();
-            ArrayList<String> nodesIDList=null;
+            ArrayList<String> nodesIDList=new ArrayList<String>();
             for(int i=1;i<VMList.size();i++){
                 nodesIDList.add(VMList.get(i).getVmID());
             }
             virtualCluster.setClusterID(clusterID);
+            virtualCluster.setClusterType(Constant.FALKON_FRAMEWORK_NAME);
             virtualCluster.setClusterState(clusterState);
             virtualCluster.setClusterSize(clusterSize);
             virtualCluster.setClusterServerID(clusterServerID);
             virtualCluster.setNodesIDList(nodesIDList);
         }
+        else {
+            logger.info("we did not get enough virtual machines to generate a cluster");
+        }
+        logger.info("the virtual cluster ID is :"+virtualCluster.getClusterID());
         return virtualCluster;
     }
     public boolean addNodes(String _clusterID, ArrayList<String> _nodeIDList) {

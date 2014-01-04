@@ -38,5 +38,12 @@ public class VirtualResourcePool {
         virtualMachineResourcePool.modifyVMsState(fetchVMsIDList,Constant.VIRTUAL_MACHINES_STATE_BUSY);
         return fetchVMs;
     }
+    public boolean deregisterVMs(ArrayList<String> vmIDList){
+        for (String vmID:vmIDList){
+            logger.info("deregistering virtual machines:"+vmID);
+        }
+        virtualMachineResourcePool.modifyVMsState(vmIDList,Constant.VIRTUAL_MACHINES_STATE_AVAILABLE);
+        return true;
+    }
 
 }
