@@ -15,33 +15,6 @@ public class EC2VMOperationImpl implements VMOperationInterface {
 
     // Create the AmazonEC2Client object so we can call various APIs.
     AmazonEC2 ec2 = ec2Config.initAmazonEC2();
-    public void getInstanceList(){
-        try
-        {
-            DescribeInstancesResult describeInstancesResult = ec2.describeInstances();
-            java.util.List<Reservation> reservations = describeInstancesResult.getReservations();
-            System.out.println("You have " + reservations.size() + " reservations.");
-            for (Reservation reservation : reservations)
-            {
-                System.out.println(" " + reservation.getReservationId());
-                java.util.List<Instance> instances = reservation.getInstances();
-                System.out.println("You have " + instances.size() + " instances.");
-                for (Instance instance : instances)
-                {
-                    System.out.println(instance.getInstanceId());
-                    System.out.println(instance.getInstanceType());
-                    System.out.println(instance.getPrivateIpAddress());
-                    System.out.println(instance.getPublicIpAddress());
-                    System.out.println(instance.getKeyName());
-                    //System.out.println(instance.getState());
-                    //System.out.println(" " + instance.getInstanceId() + " " + instance.getInstanceType() + " " + instance.getPrivateIpAddress() + " " + instance.getPublicIpAddress() + " key: " + instance.getKeyName() + " " + instance.getState().getName());
-                }
-            }
-        } catch (AmazonServiceException ase)
-        {
-            System.out.println("Caught Exception: " + ase.getMessage());
-        }
-    }
 
     /**
      * Used to create certain number of VMs.
@@ -164,7 +137,6 @@ public class EC2VMOperationImpl implements VMOperationInterface {
                 instanceIds.add(vmInfo.getVmID());
             }
             StopInstancesRequest stopRequest = new StopInstancesRequest().withInstanceIds(instanceIds);
-
             System.out.println(instanceIds.size());
             StopInstancesResult stopResult=ec2.stopInstances(stopRequest);
             System.out.println(stopResult.toString());
@@ -273,7 +245,6 @@ public class EC2VMOperationImpl implements VMOperationInterface {
         }catch (Exception e){
             System.out.println("error");
         }*/
-        ec2VMOperation.getInstanceList();
 
     }
 }

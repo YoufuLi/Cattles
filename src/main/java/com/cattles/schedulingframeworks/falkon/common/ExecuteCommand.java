@@ -101,5 +101,15 @@ public class ExecuteCommand {
 		((ChannelExec)channel1).setCommand("ps ax|grep "+proc+"|grep -v grep|awk '{print $1}'|xargs kill -s 9");
 		channel1.connect();
 	}
+
+    public static void main(String[] args){
+        ExecuteCommand executeCommand=new ExecuteCommand("192.168.145.131","youfuli-swift","lyf");
+        try {
+            //executeCommand.execShell("falkon-service-stdout.sh 50001 ${FALKON_CONFIG}/Falkon.config");
+            executeCommand.execShell("sh /home/youfuli-swift/Desktop/start.sh");
+        } catch (Exception e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+    }
 	
 }
