@@ -92,21 +92,21 @@ public class ExecuteCommand {
 	}
 	
 	/**
-	 * 找到lightningdb进程，并结束进程
+	 * 找到falkon service进程，并结束进程
 	 * @param proc
 	 * @throws com.jcraft.jsch.JSchException
 	 */
-	public void killProc(String proc) throws JSchException {
+	public void killServiceProc(String proc) throws JSchException {
 		Channel channel1 = jschSession.openChannel("exec");
 		((ChannelExec)channel1).setCommand("ps ax|grep "+proc+"|grep -v grep|awk '{print $1}'|xargs kill -s 9");
 		channel1.connect();
 	}
 
     public static void main(String[] args){
-        ExecuteCommand executeCommand=new ExecuteCommand("192.168.145.131","youfuli-swift","lyf");
+        ExecuteCommand executeCommand=new ExecuteCommand("172.16.1.87","youfuli","lz");
         try {
             //executeCommand.execShell("falkon-service-stdout.sh 50001 ${FALKON_CONFIG}/Falkon.config");
-            executeCommand.execShell("sh /home/youfuli-swift/Desktop/start.sh");
+            executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startService.sh");
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }

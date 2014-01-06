@@ -40,5 +40,7 @@ public class Constant {
     public static final String FALKON_FRAMEWORK_NAME="falkon";
     public static final String GEARMAN_FRAMEWORK_NAME="gearman";
 
-
+    //the account information of virtual machine
+    public static final String VIRTUAL_MACHINE_ACCOUNT="youfuli";
+    public static final String VIRTUAL_MACHINE_PASSWORD="lz";
 }
