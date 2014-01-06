@@ -5,7 +5,7 @@ echo $ID
 echo "---------------"
 for id in $ID
 do
-#kill -9 $id
+kill -9 $id
 echo "killed $id"
 done
 echo "---------------"
