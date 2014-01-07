@@ -106,7 +106,7 @@ public class ExecuteCommand {
         ExecuteCommand executeCommand=new ExecuteCommand("192.168.145.130","youfuli","lz");
         try {
             //executeCommand.execShell("falkon-service-stdout.sh 50001 ${FALKON_CONFIG}/Falkon.config");
-            executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startService.sh");
+            //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startWorker.sh 192.168.145.130");
             //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/stopService.sh");
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
