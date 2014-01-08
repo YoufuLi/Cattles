@@ -31,7 +31,7 @@ public interface CheckVmOperate {
 	 * 参数port：注册server的端口
 	 * 参数workerNum：注册到server的worker个数
 	 */
-	public boolean checkVmRegeister(CalWorkerNum fwn,
+	public boolean checkVmRegeister(String fwn,
 			List<Object> vmList, String serviceIp, String port,
 			int workerNum) throws Exception ;
 	

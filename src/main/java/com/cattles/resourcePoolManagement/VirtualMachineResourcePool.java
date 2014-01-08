@@ -7,8 +7,8 @@ import org.apache.log4j.Logger;
 import java.util.ArrayList;
 
 public class VirtualMachineResourcePool {
-    private static VirtualMachineResourcePool vmResourcePool = null;
     private static Logger logger = Logger.getLogger(VirtualMachineResourcePool.class);
+    private static VirtualMachineResourcePool vmResourcePool = null;
     XMLOperationVirtualMachine xmlOperationVirtualMachine=XMLOperationVirtualMachine.getXmlOperationVirtualMachine();
     VMOperation vmOperation=new VMOperation();
     private VirtualMachineResourcePool(){
@@ -69,11 +69,15 @@ public class VirtualMachineResourcePool {
         try {
             logger.info("Applying virtual resources from the underlying Cloud Computing platform!");
             applyVMList= vmOperation.createInstances(_vmNum);
-            xmlOperationVirtualMachine.addVMs(applyVMList);
+            this.addVMs(applyVMList);
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
         return applyVMList;
+    }
+
+    public void addVMs(ArrayList<VMInfo> VMList){
+        xmlOperationVirtualMachine.addVMs(VMList);
     }
 
     /**

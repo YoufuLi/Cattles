@@ -6,10 +6,12 @@ import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.model.*;
 import com.cattles.interfaces.VMOperationInterface;
+import com.cattles.util.Constant;
 import com.cattles.vmManagement.VMInfo;
+import org.apache.log4j.Logger;
 
 public class EC2VMOperationImpl implements VMOperationInterface {
-
+    private static Logger logger = Logger.getLogger(EC2VMOperationImpl.class);
     EC2ConfigOperation ec2Config = new EC2ConfigOperation();
     // Initialize variables.
 
@@ -28,6 +30,7 @@ public class EC2VMOperationImpl implements VMOperationInterface {
         ArrayList<VMInfo> instanceList = new ArrayList<VMInfo>();
         try
         {
+            logger.info("creating virtual machines***************************");
             RunInstancesRequest runInstancesRequest = new RunInstancesRequest()
                     .withInstanceType("m1.small")
                     .withImageId("emi-1C8C3ADF")
@@ -37,13 +40,13 @@ public class EC2VMOperationImpl implements VMOperationInterface {
                     ;
             RunInstancesResult runInstances = ec2.runInstances(runInstancesRequest);
             Reservation reservation = runInstances.getReservation();
-            System.out.println(" " + reservation.getReservationId());
             java.util.List<Instance> instances = reservation.getInstances();
-            System.out.println("You have " + instances.size() + " instances.");
+            logger.info("we have created " + instances.size() + " instances.");
             for (Instance instance : instances)
             {
                 VMInfo vmInstance=new VMInfo();
                 vmInstance.setVmID(instance.getInstanceId());
+                vmInstance.setVmState(Constant.VIRTUAL_MACHINES_STATE_AVAILABLE);
                 vmInstance.setVmType(instance.getInstanceType());
                 vmInstance.setVmPrivateIpAddress(instance.getPrivateIpAddress());
                 vmInstance.setVmPublicIpAddress(instance.getPublicIpAddress());
@@ -126,7 +129,6 @@ public class EC2VMOperationImpl implements VMOperationInterface {
      */
     @Override
     public boolean shutdownInstances(ArrayList<VMInfo> vmList) throws Exception {
-        // TODO Auto-generated method stub
         //============================================================================================//
         //=================================== Shutting down any Instances ==============================//
         //============================================================================================//
@@ -137,17 +139,15 @@ public class EC2VMOperationImpl implements VMOperationInterface {
                 instanceIds.add(vmInfo.getVmID());
             }
             StopInstancesRequest stopRequest = new StopInstancesRequest().withInstanceIds(instanceIds);
-            System.out.println(instanceIds.size());
+            logger.info("shutting down "+instanceIds.size()+" instances");
             StopInstancesResult stopResult=ec2.stopInstances(stopRequest);
-            System.out.println(stopResult.toString());
-            System.out.println(stopResult.getStoppingInstances().size());
         } catch (AmazonServiceException e) {
             // Write out any exceptions that may have occurred.
-            System.out.println("Error stopping instances");
-            System.out.println("Caught Exception: " + e.getMessage());
-            System.out.println("Response Status Code: " + e.getStatusCode());
-            System.out.println("Error Code: " + e.getErrorCode());
-            System.out.println("Request ID: " + e.getRequestId());
+            logger.info("Error stopping instances");
+            logger.info("Caught Exception: " + e.getMessage());
+            logger.info("Response Status Code: " + e.getStatusCode());
+            logger.info("Error Code: " + e.getErrorCode());
+            logger.info("Request ID: " + e.getRequestId());
         }
         return false;
     }
@@ -185,11 +185,11 @@ public class EC2VMOperationImpl implements VMOperationInterface {
             ec2.rebootInstances(rebootRequest);
         } catch (AmazonServiceException e) {
             // Write out any exceptions that may have occurred.
-            System.out.println("Error rebooting instances");
-            System.out.println("Caught Exception: " + e.getMessage());
-            System.out.println("Response Status Code: " + e.getStatusCode());
-            System.out.println("Error Code: " + e.getErrorCode());
-            System.out.println("Request ID: " + e.getRequestId());
+            logger.info("Error rebooting instances");
+            logger.info("Caught Exception: " + e.getMessage());
+            logger.info("Response Status Code: " + e.getStatusCode());
+            logger.info("Error Code: " + e.getErrorCode());
+            logger.info("Request ID: " + e.getRequestId());
         }
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
@@ -217,11 +217,11 @@ public class EC2VMOperationImpl implements VMOperationInterface {
             ec2.terminateInstances(terminateRequest);
         } catch (AmazonServiceException e) {
             // Write out any exceptions that may have occurred.
-            System.out.println("Error terminating instances");
-            System.out.println("Caught Exception: " + e.getMessage());
-            System.out.println("Response Status Code: " + e.getStatusCode());
-            System.out.println("Error Code: " + e.getErrorCode());
-            System.out.println("Request ID: " + e.getRequestId());
+            logger.info("Error terminating instances");
+            logger.info("Caught Exception: " + e.getMessage());
+            logger.info("Response Status Code: " + e.getStatusCode());
+            logger.info("Error Code: " + e.getErrorCode());
+            logger.info("Request ID: " + e.getRequestId());
         }
         return false;
     }

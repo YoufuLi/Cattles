@@ -6,6 +6,7 @@ import com.amazonaws.services.ec2.model.DescribeInstancesResult;
 import com.amazonaws.services.ec2.model.Instance;
 import com.amazonaws.services.ec2.model.Reservation;
 import com.cattles.interfaces.VMInformationMaintainInterface;
+import com.cattles.util.Constant;
 import com.cattles.vmManagement.VMInfo;
 import org.apache.log4j.Logger;
 
@@ -42,6 +43,8 @@ public class VMInformationMaintainImpl implements VMInformationMaintainInterface
                 {
                     VMInfo vmInfo=new VMInfo();
                     vmInfo.setVmID(instance.getInstanceId());
+                    //TODO:the virtual machine state should not be set here,update in the next version.
+                    vmInfo.setVmState(Constant.VIRTUAL_MACHINES_STATE_AVAILABLE);
                     vmInfo.setVmType(instance.getInstanceType());
                     vmInfo.setVmPrivateIpAddress(instance.getPrivateIpAddress());
                     vmInfo.setVmPublicIpAddress(instance.getPublicIpAddress());
