@@ -66,6 +66,9 @@ public class JschCommandExecutor extends BaseCommandExecutor {
                         }
                     }
                     logger.info(msg);
+                    if(msg.contains("already")){
+                        logger.info("**********************interceptor**************************");
+                    }
                     result.append(msg);
                 }
                 while (errIn.available() > 0) {

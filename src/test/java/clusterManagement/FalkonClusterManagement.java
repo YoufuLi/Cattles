@@ -14,7 +14,7 @@ import com.cattles.vmClusterManagement.VirtualClusterOperationFactory;
 public class FalkonClusterManagement {
     public static void main(String[] args){
         VirtualClusterOperation virtualClusterOperation=new VirtualClusterOperation();
-        VirtualCluster virtualCluster=virtualClusterOperation.clusterProvision(3);
+        VirtualCluster virtualCluster=virtualClusterOperation.clusterProvision(4);
         System.out.println(virtualCluster.getClusterID());
     }
 }

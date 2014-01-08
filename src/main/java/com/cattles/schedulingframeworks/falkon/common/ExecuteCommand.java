@@ -61,7 +61,7 @@ public class ExecuteCommand {
 	 * 执行命令
 	 */
 	public SSHResult execShell(String command) throws Exception {
-		logger.info("start execu command!");
+		logger.info("start to execute command!");
 		CommandExecutable ce = (new CmdExecFactory()).getCmdExec();
 		ConnInfo ci = new ConnInfo(ipAddress, username, passwd);
 		SSHResult result = ce.connect(ci);

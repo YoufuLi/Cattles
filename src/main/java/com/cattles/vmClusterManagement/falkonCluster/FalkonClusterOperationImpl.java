@@ -79,6 +79,7 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
             this.launchFalkonCluster(virtualCluster);
         }
         //update the cluster state from "standby" to "activated"
+        logger.info("modifying cluster state------------------------------------");
         xmlOperationCluster.modifyClusterState(virtualCluster.getClusterID(),Constant.VIRTUAL_CLUSTER_STATE_ACTIVATED);
         return virtualCluster;
     }
