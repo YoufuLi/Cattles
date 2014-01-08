@@ -1,12 +1,16 @@
 package com.cattles.resourcePoolManagement;
 
 import com.cattles.vmManagement.VMInfo;
+import com.cattles.vmManagement.VMOperation;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 
 public class VirtualMachineResourcePool {
     private static VirtualMachineResourcePool vmResourcePool = null;
+    private static Logger logger = Logger.getLogger(VirtualMachineResourcePool.class);
     XMLOperationVirtualMachine xmlOperationVirtualMachine=XMLOperationVirtualMachine.getXmlOperationVirtualMachine();
+    VMOperation vmOperation=new VMOperation();
     private VirtualMachineResourcePool(){
 
     }
@@ -15,6 +19,13 @@ public class VirtualMachineResourcePool {
             vmResourcePool=new VirtualMachineResourcePool();
         }
         return vmResourcePool;
+    }
+
+    public ArrayList<VMInfo> initialization(int poolSize){
+        ArrayList<VMInfo> vmInfoArrayList=new ArrayList<VMInfo>();
+        logger.info("Initializing the Resource Pool!");
+        vmInfoArrayList=applyVMs(poolSize);
+        return vmInfoArrayList;
     }
 
     /**
@@ -54,7 +65,14 @@ public class VirtualMachineResourcePool {
      */
     public ArrayList<VMInfo> applyVMs(int _vmNum) {
         ArrayList<VMInfo> applyVMList=new ArrayList<VMInfo>();
-        //TODO:apply VMs from the underlying Cloud Computing platform
+        //apply VMs from the underlying Cloud Computing platform
+        try {
+            logger.info("Applying virtual resources from the underlying Cloud Computing platform!");
+            applyVMList= vmOperation.createInstances(_vmNum);
+            xmlOperationVirtualMachine.addVMs(applyVMList);
+        } catch (Exception e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
         return applyVMList;
     }
 

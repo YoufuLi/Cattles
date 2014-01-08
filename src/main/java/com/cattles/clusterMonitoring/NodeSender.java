@@ -21,7 +21,7 @@ public class NodeSender {
 	 * @throws Exception
 	 */
 	public static void send() throws Exception {
-		System.out.println(InetAddress.getLocalHost().getHostAddress());
+		/*System.out.println(InetAddress.getLocalHost().getHostAddress());
 		String serverIp = ReadManagerConfig.heartbeatServer;
 		int port = ReadManagerConfig.heartbeatPort;
 		server = new Socket(serverIp, port);
@@ -31,6 +31,6 @@ public class NodeSender {
 			System.out.println("发生数字长度：" + bs.length);
 			out.write(bs);
 			Thread.sleep(5000);
-		}
+		} */
 	}
 }

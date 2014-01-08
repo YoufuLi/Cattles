@@ -1,13 +1,5 @@
 package com.cattles.util;
 
-import com.cattles.cloudplatforms.opennebula.FalkonUserRequest;
-import com.cattles.clusterMonitoring.Node;
-
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 /**
  * 
  * @author YoufuLi 功能：常量声明类

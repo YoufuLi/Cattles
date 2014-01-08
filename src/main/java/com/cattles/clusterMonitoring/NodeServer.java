@@ -12,7 +12,7 @@ import java.net.Socket;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.cattles.cloudplatforms.Constant;
+
 //import com.cattles.cloudplatforms.factory.DealwithStopVmFactory;
 import com.cattles.interfaces.DealwithStopVm;
 import com.cattles.exception.OpennebulaException;
@@ -44,7 +44,7 @@ public class NodeServer extends Thread {
 
 	public void run() {
 		// 绑定端口，并开始侦听用户心跳包
-		serverSocket = startListenUserReport(ReadManagerConfig.heartbeatPort);
+		/*serverSocket = startListenUserReport(ReadManagerConfig.heartbeatPort);
 		if (serverSocket == null) {
 			logger.error("server socket error!");
 			return;
@@ -63,7 +63,7 @@ public class NodeServer extends Thread {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-		}
+		}*/
 	}
 
 	/**
@@ -71,7 +71,7 @@ public class NodeServer extends Thread {
 	 * 
 	 */
 	public ServerSocket startListenUserReport(int port) {
-		try {
+		/*try {
 			ServerSocket serverSocket = new ServerSocket();
 			if (!serverSocket.getReuseAddress()) {
 				serverSocket.setReuseAddress(true);
@@ -92,7 +92,7 @@ public class NodeServer extends Thread {
 					}
 				}
 			}
-		}
+		}*/
 		return serverSocket;
 	}
 
@@ -107,7 +107,7 @@ public class NodeServer extends Thread {
 		}
 
 		public void run() {
-			Node node = null;
+			/*Node node = null;
 			try {
 				workThreadNum = workThreadNum + 1;
 				logger.info(workThreadNum + " connect:"
@@ -180,7 +180,7 @@ public class NodeServer extends Thread {
 						e.printStackTrace();
 					}
 				}
-			}
+			} */
 		}
 	}
 
@@ -191,7 +191,8 @@ public class NodeServer extends Thread {
 	 * @param name
 	 */
 	public boolean isAlive(String name) {
-		return Constant.nodeMap.containsKey(name);
+		//return Constant.nodeMap.containsKey(name);
+        return false;
 	}
 
 	public static void main(String arg[]) {
