@@ -1,7 +1,5 @@
 package com.cattles.cloudplatforms.amazonec2;
 
-import java.util.ArrayList;
-
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.model.*;
@@ -9,6 +7,8 @@ import com.cattles.interfaces.VMOperationInterface;
 import com.cattles.util.Constant;
 import com.cattles.vmManagement.VMInfo;
 import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
 
 public class EC2VMOperationImpl implements VMOperationInterface {
     private static Logger logger = Logger.getLogger(EC2VMOperationImpl.class);

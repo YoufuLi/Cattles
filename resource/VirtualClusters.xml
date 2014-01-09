@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><VirtualClusters></VirtualClusters>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><VirtualClusters><VirtualCluster><clusterID>e0785438</clusterID><clusterType>falkon</clusterType><clusterState>activated</clusterState><clusterSize>4</clusterSize><serverID>i-021C4604</serverID><nodes><node>i-273D448C</node><node>i-38BF401F</node><node>i-031B456B</node></nodes></VirtualCluster></VirtualClusters>

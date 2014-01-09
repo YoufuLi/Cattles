@@ -1,8 +1,5 @@
 package com.cattles.interfaces;
 
-import com.cattles.resourcePoolManagement.VirtualResourcePool;
-import com.cattles.util.Constant;
-import com.cattles.util.Tool;
 import com.cattles.vmClusterManagement.VirtualCluster;
 import com.cattles.vmManagement.VMInfo;
 

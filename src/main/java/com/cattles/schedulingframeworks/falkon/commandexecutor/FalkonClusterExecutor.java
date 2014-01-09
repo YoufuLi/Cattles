@@ -1,6 +1,8 @@
-package com.cattles.ssh.jsch;
+package com.cattles.schedulingframeworks.falkon.commandexecutor;
 
 import com.cattles.ssh.*;
+import com.cattles.ssh.jsch.JschSCP;
+import com.cattles.ssh.jsch.JschUserInfo;
 import com.jcraft.jsch.*;
 import org.apache.log4j.Logger;
 
@@ -9,22 +11,20 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * one instance per connection info,if using tow user connect the same host,please create tow instance
- * The JSch is a globe static var,if use key to authenticate ,it must the same to all host
- * If the command execute a shell,the script's owner must handle error in script.
- * The SSHResult's cmdExitCode is the last command return in the shell unless the shell set it explicitly
- * The SSHResult's sysout does't guaranty the message'sequence properly because tow stream handle normal msg and error msg
- *
- * @author Tom
+ * Created with IntelliJ IDEA.
+ * User: youfuli
+ * Date: 1/9/14
+ * Time: 2:56 PM
+ * To change this template use File | Settings | File Templates.
  */
-public class JschCommandExecutor extends BaseCommandExecutor {
-    private Logger logger = Logger.getLogger(JschCommandExecutor.class);
+public class FalkonClusterExecutor extends BaseCommandExecutor {
+    private Logger logger = Logger.getLogger(FalkonClusterExecutor.class);
 
     private Session sshSession;
     private volatile static JSch jsch;
 
     private void initJsch() {
-        synchronized (JschCommandExecutor.class) {
+        synchronized (FalkonClusterExecutor.class) {
             if (jsch == null) {
                 jsch = new JSch();
             }
@@ -37,7 +37,6 @@ public class JschCommandExecutor extends BaseCommandExecutor {
             sshSession.setUserInfo(new JschUserInfo(jsch, connInfo));
         }
     }
-
     public SSHResult execute(String command) {
         SSHResult result = new SSHResult(command);
         boolean success = true;
@@ -66,6 +65,11 @@ public class JschCommandExecutor extends BaseCommandExecutor {
                         }
                     }
                     logger.info(msg);
+                    if(msg.contains("[26]")){
+                        logger.info("**********************interceptor**************************");
+                        result.append(msg);
+                        return result;
+                    }
                     result.append(msg);
                 }
                 while (errIn.available() > 0) {
@@ -116,7 +120,6 @@ public class JschCommandExecutor extends BaseCommandExecutor {
         }
         try {
             if (sshSession == null) initSession(info);
-//			sshSession.setUserInfo(userInfo);
             sshSession.connect();
             result.setSuccess(true);
             result.append("Connect to host " + info.getHost() + " successful!\n");
@@ -133,51 +136,8 @@ public class JschCommandExecutor extends BaseCommandExecutor {
         return result;
     }
 
-    /*	private class JschUserInfo implements UserInfo{
-            private String password;
-            private String passphrase;
-            public JschUserInfo(ConnInfo connInfo) throws JSchException{
-                switch(connInfo.getAuthType()){
-                case PASS:
-                    this.password = connInfo.getPassword();
-                    break;
-                case KEY:
-                    jsch.addIdentity(connInfo.getKeyPath());
-                    this.passphrase = connInfo.getPassphrase();
-                    break;
-                }
-            }
-
-            public String getPassphrase() {
-                return this.passphrase;
-            }
-
-            public String getPassword() {
-                return this.password;
-            }
-
-            public boolean promptPassphrase(String arg0) {
-                return true;
-            }
-
-            public boolean promptPassword(String arg0) {
-                return true;
-            }
-
-            public boolean promptYesNo(String arg0) {
-                return true;
-            }
-
-            public void showMessage(String arg0) {
-                // TODO Auto-generated method stub
-
-            }
-
-        }
-    */
     public SSHResult scp(String origin, String dest, String option) {
         if (option == null) option = "";
         return JschSCP.SCP(sshSession, origin, dest, option, getMonitors());
     }
-
 }

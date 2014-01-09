@@ -2,8 +2,6 @@ package com.cattles.interfaces;
 
 import com.cattles.vmManagement.VMInfo;
 
-import java.util.ArrayList;
-
 /**
  * Used to declare the vm operations that supported by platforms
  * @author youfuli

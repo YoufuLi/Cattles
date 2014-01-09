@@ -14,11 +14,11 @@ import org.apache.log4j.Logger;
  * Time: 11:43 AM
  * To change this template use File | Settings | File Templates.
  */
-public class FalkonWorkerRegisteraton extends Thread {
-    private static Logger logger = Logger.getLogger(FalkonWorkerRegisteraton.class);
+public class FalkonWorkerDeregisteraton extends Thread {
+    private static Logger logger = Logger.getLogger(FalkonWorkerDeregisteraton.class);
     public String falkonServerIP=null;
     public String falkonWorkerIP=null;
-    public FalkonWorkerRegisteraton(String _threadName,String _falkonServerIP,String _falkonWorkerIP){
+    public FalkonWorkerDeregisteraton(String _threadName, String _falkonServerIP, String _falkonWorkerIP){
         super(_threadName);
         falkonServerIP=_falkonServerIP;
         falkonWorkerIP=_falkonWorkerIP;
@@ -35,6 +35,6 @@ public class FalkonWorkerRegisteraton extends Thread {
                 e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
             }
         }
-        result = ce.execute(Constant.FALKON_WORKER_REGISTERATION_COMMAND);
+        result = ce.execute(Constant.FALKON_WORKER_DEREGISTERATION_COMMAND);
     }
 }

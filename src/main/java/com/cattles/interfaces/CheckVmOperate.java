@@ -7,8 +7,6 @@ package com.cattles.interfaces;
 
 import java.util.List;
 
-import com.cattles.schedulingframeworks.falkon.*;
-
 /**
  * @author xiongrong
  * 用法：检查vm操作的接口

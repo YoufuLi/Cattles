@@ -1,8 +1,6 @@
 package com.cattles.schedulingframeworks.falkon;
 
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
-import com.cattles.schedulingframeworks.falkon.common.ExecuteCommand;
-import com.cattles.util.Constant;
 import com.cattles.vmManagement.VMInfo;
 import org.apache.log4j.Logger;
 
@@ -39,20 +37,14 @@ public class FalkonWorker {
     public void deregisterFromServer(String serverID, ArrayList<String> nodeIDList){
         //String serverIP=virtualMachineResourcePool.getVMWithID(serverID).getVmPublicIpAddress();
         //get the vm information according to the serverID, which is also the ID of a virtual machine.
+        logger.info("Begin to deregister workers:*********************"+System.currentTimeMillis()+"******************");
         VMInfo falkonServer=virtualMachineResourcePool.getVMWithID(serverID);
         for (String workerID:nodeIDList){
             VMInfo falkonWorker=virtualMachineResourcePool.getVMWithID(workerID);
             logger.info("deregistering worker "+workerID+" from server!");
-            ExecuteCommand executeCommand= new ExecuteCommand(falkonWorker.getVmPublicIpAddress(), Constant.VIRTUAL_MACHINE_ACCOUNT,Constant.VIRTUAL_MACHINE_PASSWORD);
-            try {
-                executeCommand.execShell("sh /usr/local/falkon.r174/cattles/stopWorker.sh falkon-worker-s");
-            } catch (Exception e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-                logger.info(e.getMessage());
-            }
+            FalkonWorkerDeregisteraton falkonWorkerDeregisteraton=new FalkonWorkerDeregisteraton(falkonWorker.getVmID(),falkonServer.getVmPublicIpAddress(),falkonWorker.getVmPublicIpAddress());
+            falkonWorkerDeregisteraton.start();
         }
-    }
-    public static void main(String[] args){
-        FalkonWorker falkonWorker=new FalkonWorker();
+        logger.info("Finished deregistering the workers:*******************"+System.currentTimeMillis()+"****************************");
     }
 }

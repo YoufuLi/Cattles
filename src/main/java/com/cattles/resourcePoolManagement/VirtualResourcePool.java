@@ -1,13 +1,10 @@
 package com.cattles.resourcePoolManagement;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
 import com.cattles.util.Constant;
-import com.cattles.vmClusterManagement.VirtualCluster;
 import com.cattles.vmManagement.VMInfo;
 import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
 
 public class VirtualResourcePool {
     VirtualMachineResourcePool virtualMachineResourcePool=VirtualMachineResourcePool.getResourcePool();

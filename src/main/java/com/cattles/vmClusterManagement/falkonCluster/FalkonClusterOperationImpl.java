@@ -2,6 +2,7 @@ package com.cattles.vmClusterManagement.falkonCluster;
 
 import com.cattles.interfaces.VirtualClusterOperationInterface;
 import com.cattles.resourcePoolManagement.VirtualResourcePool;
+import com.cattles.schedulingframeworks.falkon.FalkonClusterInitialization;
 import com.cattles.schedulingframeworks.falkon.FalkonServer;
 import com.cattles.schedulingframeworks.falkon.FalkonWorker;
 import com.cattles.util.Constant;
@@ -75,7 +76,6 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
 
         }else{
             virtualCluster=this.createCluster(_clusterSize);
-            //TODO:the registeration of workers
             this.launchFalkonCluster(virtualCluster);
         }
         //update the cluster state from "standby" to "activated"
@@ -109,8 +109,8 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
     public void launchFalkonCluster(VirtualCluster virtualCluster){
         String serverID=virtualCluster.getClusterServerID();
         ArrayList<String> nodeIDList=virtualCluster.getNodesIDList();
-        falkonServer.startFalkonService(serverID);
-        falkonWorker.register2Server(serverID,nodeIDList);
+        FalkonClusterInitialization falkonClusterInitialization=new FalkonClusterInitialization(serverID,nodeIDList);
+        falkonClusterInitialization.run();
     }
 
     /**

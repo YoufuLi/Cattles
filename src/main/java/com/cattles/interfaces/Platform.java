@@ -1,9 +1,10 @@
 package com.cattles.interfaces;
 
-import java.util.List;
-
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
-import com.cattles.vmManagement.*;
+import com.cattles.vmManagement.ResponseInfo;
+import com.cattles.vmManagement.VMInfo;
+
+import java.util.List;
 
 public interface Platform {
 	

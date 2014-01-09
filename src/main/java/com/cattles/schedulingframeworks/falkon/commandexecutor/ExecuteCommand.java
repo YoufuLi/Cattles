@@ -1,9 +1,8 @@
-package com.cattles.schedulingframeworks.falkon.common;
+package com.cattles.schedulingframeworks.falkon.commandexecutor;
 
 import com.cattles.ssh.CommandExecutable;
 import com.cattles.ssh.ConnInfo;
 import com.cattles.ssh.SSHResult;
-import com.cattles.ssh.jsch.CmdExecFactory;
 import com.cattles.ssh.jsch.JschUserInfo;
 import com.jcraft.jsch.*;
 import org.apache.log4j.Logger;
@@ -37,32 +36,11 @@ public class ExecuteCommand {
 	}
 	
 	/**
-	 * 执行安装
-	 * @return
-	 * @throws Exception
-	 */
-	public SSHResult execute() throws Exception {
-		
-		CommandExecutable ce = (new CmdExecFactory()).getCmdExec();
-		ConnInfo ci = new ConnInfo(ipAddress, username, passwd);
-		SSHResult result = ce.connect(ci);
-		if(!result.isSuccess()){
-			Exception exception = result.getError();
-			throw exception;
-		}
-		
-		result = ce.execute("dpkg -i "+filePath);
-		
-		logger.info(result.getSysOut());
-		return result;
-	}
-	
-	/**
 	 * 执行命令
 	 */
 	public SSHResult execShell(String command) throws Exception {
 		logger.info("start to execute command!");
-		CommandExecutable ce = (new CmdExecFactory()).getCmdExec();
+            CommandExecutable ce = (new FalkonExecFactory()).getCmdExec();
 		ConnInfo ci = new ConnInfo(ipAddress, username, passwd);
 		SSHResult result = ce.connect(ci);
 		if(!result.isSuccess()){
@@ -103,11 +81,13 @@ public class ExecuteCommand {
 	}
 
     public static void main(String[] args){
-        ExecuteCommand executeCommand=new ExecuteCommand("192.168.145.130","youfuli","lz");
+        ExecuteCommand executeCommand=new ExecuteCommand("172.16.1.97","youfuli","lz");
         try {
             //executeCommand.execShell("falkon-service-stdout.sh 50001 ${FALKON_CONFIG}/Falkon.config");
             //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startWorker.sh 192.168.145.130");
-            //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/stopService.sh");
+            //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startService.sh");
+            executeCommand.execShell("sh /usr/local/falkon.r174/cattles/stopService.sh falkon");
+            //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/stopWorker.sh falkon");
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }

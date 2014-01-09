@@ -11,21 +11,19 @@ import org.apache.log4j.Logger;
  * Created with IntelliJ IDEA.
  * User: youfuli
  * Date: 1/8/14
- * Time: 11:43 AM
+ * Time: 1:13 PM
  * To change this template use File | Settings | File Templates.
  */
-public class FalkonWorkerRegisteraton extends Thread {
-    private static Logger logger = Logger.getLogger(FalkonWorkerRegisteraton.class);
-    public String falkonServerIP=null;
-    public String falkonWorkerIP=null;
-    public FalkonWorkerRegisteraton(String _threadName,String _falkonServerIP,String _falkonWorkerIP){
+public class FalkonServerStop extends Thread{
+    private static Logger logger = Logger.getLogger(FalkonServer.class);
+    String falkonServerIP=null;
+    public FalkonServerStop(String _threadName, String _falkonServerIP){
         super(_threadName);
         falkonServerIP=_falkonServerIP;
-        falkonWorkerIP=_falkonWorkerIP;
     }
     public void run(){
-        CommandExecutable ce = (new FalkonExecFactory()).getCmdExec("worker");
-        ConnInfo ci = new ConnInfo(falkonWorkerIP, Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_PASSWORD);
+        CommandExecutable ce = (new FalkonExecFactory()).getCmdExec("server");
+        ConnInfo ci = new ConnInfo(falkonServerIP, Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_PASSWORD);
         SSHResult result = ce.connect(ci);
         if(!result.isSuccess()){
             Exception exception = result.getError();
@@ -35,6 +33,6 @@ public class FalkonWorkerRegisteraton extends Thread {
                 e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
             }
         }
-        result = ce.execute(Constant.FALKON_WORKER_REGISTERATION_COMMAND);
+        result = ce.execute(Constant.FALKON_SERVICE_CLOSE_COMMAND);
     }
 }
