@@ -22,8 +22,8 @@ public class VirtualResourceManagement {
         //virtualMachineResourcePool.initialization(10);
         VMInformationMaintainImpl vmInformationMaintain=new VMInformationMaintainImpl();
         ArrayList<VMInfo> vmInfoArrayList=vmInformationMaintain.getInstanceList();
-        //virtualMachineResourcePool.addVMs(vmInfoArrayList);
-        virtualResourceManagement.shutdownVMs(vmInfoArrayList);
+        virtualMachineResourcePool.addVMs(vmInfoArrayList);
+        //virtualResourceManagement.shutdownVMs(vmInfoArrayList);
 
 
     }
