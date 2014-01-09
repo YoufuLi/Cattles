@@ -35,6 +35,9 @@ public class FalkonWorkerRegisteraton extends Thread {
                 e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
             }
         }
-        result = ce.execute(Constant.FALKON_WORKER_REGISTERATION_COMMAND);
+        result = ce.execute(Constant.FALKON_WORKER_REGISTERATION_COMMAND+" "+falkonServerIP);
+        if(result!=null){
+            ce.disconnect();
+        }
     }
 }

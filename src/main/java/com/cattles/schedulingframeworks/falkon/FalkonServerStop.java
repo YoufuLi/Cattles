@@ -34,5 +34,8 @@ public class FalkonServerStop extends Thread{
             }
         }
         result = ce.execute(Constant.FALKON_SERVICE_CLOSE_COMMAND);
+        if(result!=null){
+            ce.disconnect();
+        }
     }
 }

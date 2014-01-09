@@ -20,6 +20,7 @@ public class FalkonWorker {
     public void register2Server(String serverID, ArrayList<String> nodeIDList){
         //get the vm information according to the serverID, which is also the ID of a virtual machine.
         VMInfo falkonServer=virtualMachineResourcePool.getVMWithID(serverID);
+        logger.info("Registering to server*************************"+System.currentTimeMillis()+"******************************");
         for (String workerID:nodeIDList){
             VMInfo falkonWorker=virtualMachineResourcePool.getVMWithID(workerID);
             logger.info("registering worker "+workerID+" to server!");

@@ -38,7 +38,7 @@ public class Constant {
 
     //various command
     public static final String FALKON_SERVICE_INTIALIZATION_COMMAND="sh /usr/local/falkon.r174/cattles/startService.sh";
-    public static final String FALKON_SERVICE_CLOSE_COMMAND="sh /usr/local/falkon.r174/cattles/stopService.sh";
+    public static final String FALKON_SERVICE_CLOSE_COMMAND="sh /usr/local/falkon.r174/cattles/stopService.sh falkon";
     public static final String FALKON_WORKER_REGISTERATION_COMMAND="sh /usr/local/falkon.r174/cattles/startWorker.sh";
-    public static final String FALKON_WORKER_DEREGISTERATION_COMMAND="sh /usr/local/falkon.r174/cattles/stopWorker.sh";
+    public static final String FALKON_WORKER_DEREGISTERATION_COMMAND="sh /usr/local/falkon.r174/cattles/stopWorker.sh falkon";
 }
