@@ -16,9 +16,9 @@ import org.apache.log4j.Logger;
 public class FalkonClusterManagement {
     private static Logger logger = Logger.getLogger(FalkonClusterManagement.class);
     public static void main(String[] args){
-        logger.info("Begin to start cluster provision:***********    "+System.currentTimeMillis()+"   **************");
+        logger.info("Begin to start cluster provision:***********"+System.currentTimeMillis()+"**************");
         VirtualClusterOperation virtualClusterOperation=new VirtualClusterOperation();
-        VirtualCluster virtualCluster=virtualClusterOperation.clusterProvision(4);
+        VirtualCluster virtualCluster=virtualClusterOperation.clusterProvision(3);
         System.out.println(virtualCluster.getClusterID());
     }
 }

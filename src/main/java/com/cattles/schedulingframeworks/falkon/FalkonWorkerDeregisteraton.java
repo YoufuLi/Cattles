@@ -36,8 +36,8 @@ public class FalkonWorkerDeregisteraton extends Thread {
             }
         }
         result = ce.execute(Constant.FALKON_WORKER_DEREGISTERATION_COMMAND);
-        if(result!=null){
+        /*if(result!=null){
             ce.disconnect();
-        }
+        }*/
     }
 }

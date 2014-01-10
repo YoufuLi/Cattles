@@ -46,7 +46,7 @@ public class FalkonClusterInitialization extends Thread {
 
         logger.info("Finish initializing the Falkon service***********    "+System.currentTimeMillis()+"   **************");
         if (result!=null){
-            ce.disconnect();
+            //ce.disconnect();
             for (String workerID:nodeIDList){
                 VMInfo falkonWorker=virtualMachineResourcePool.getVMWithID(workerID);
                 logger.info("registering worker "+workerID+" to server!");

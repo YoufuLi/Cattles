@@ -89,7 +89,7 @@ public class ExecuteCommand {
 	}
 
     public static void main(String[] args){
-        ExecuteCommand executeCommand=new ExecuteCommand("149.165.158.226","ubuntu","/home/youfuli/Documents/fg239/nicholas-key.pem",null);
+        ExecuteCommand executeCommand=new ExecuteCommand("149.165.158.227","ubuntu","/home/youfuli/Documents/fg239/nicholas-key.pem",null);
         try {
             //executeCommand.execShell("falkon-service-stdout.sh 50001 ${FALKON_CONFIG}/Falkon.config");
             //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startWorker.sh 192.168.145.130");

@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="improve the falkon scheduling framework module">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/util/Constant.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/Constant.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerInitialization.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerInitialization.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" afterPath="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/VirtualMachines.xml" afterPath="$PROJECT_DIR$/resource/VirtualMachines.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java" afterPath="$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389327988078" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389328446859" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644868307" ignored="false" />
@@ -67,7 +69,7 @@
     <file path="/JschCommandExecutor.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389257257748" ignored="false" />
     <file path="/FalkonWorkerRegisteraton.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389322573308" ignored="false" />
     <file path="/FalkonServerInitialization.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389322511465" ignored="false" />
-    <file path="/VirtualResourceManagement.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389168834181" ignored="false" />
+    <file path="/VirtualResourceManagement.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389344953978" ignored="false" />
     <file path="/CheckVmOperate.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389163719559" ignored="false" />
     <file path="/FalkonCommandFactory.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389247539806" ignored="false" />
     <file path="/FalkonCommandExecutor.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389248782113" ignored="false" />
@@ -76,6 +78,8 @@
     <file path="/FalkonExecFactory.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389258890892" ignored="false" />
     <file path="/FalkonWorkerDeregisteraton.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389322562612" ignored="false" />
     <file path="/FalkonServerStop.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389322533792" ignored="false" />
+    <file path="/FalkonWorkerExecutor.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389342154516" ignored="false" />
+    <file path="/FalkonServerExecutor.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389342492591" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,73 +140,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FalkonServerInitialization.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerInitialization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="123" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FalkonServer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="51" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FalkonWorker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="81" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FalkonWorkerRegisteraton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="71" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+            <state line="37" column="91" selection-start="1555" selection-end="1569" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FalkonExecFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonExecFactory.java">
+      <file leaf-file-name="FalkonWorkerExecutor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="43" selection-start="565" selection-end="585" vertical-scroll-proportion="0.0">
+            <state line="135" column="80" selection-start="5184" selection-end="5184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FalkonClusterExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonClusterExecutor.java">
+      <file leaf-file-name="FalkonClusterInitialization.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="18" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+            <state line="51" column="39" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VirtualResourceManagement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FalkonClusterManagement.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FalkonClusterManagement.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="28" selection-start="427" selection-end="427" vertical-scroll-proportion="0.2857143">
+            <state line="16" column="41" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VirtualResourceManagement.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="34" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.53571427">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FalkonServerExecutor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonServerExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="37" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExecuteCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="54" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -211,16 +206,7 @@
       <file leaf-file-name="FalkonWorkerDeregisteraton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="123" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FalkonServerStop.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="123" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
+            <state line="19" column="40" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -249,22 +235,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonServerExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/JschCommandExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonExecFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServer.java" />
-        <option value="$PROJECT_DIR$/resource/VirtualMachines.xml" />
-        <option value="$PROJECT_DIR$/resource/VirtualClusters.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/util/Constant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerInitialization.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonServerExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" />
+        <option value="$PROJECT_DIR$/resource/VirtualClusters.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java" />
+        <option value="$PROJECT_DIR$/resource/VirtualMachines.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java" />
       </list>
     </option>
   </component>
@@ -306,8 +292,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
     <option name="y" value="-4" />
-    <option name="width" value="1217" />
-    <option name="height" value="805" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -792,6 +778,10 @@
               <option name="myItemId" value="cloudplatforms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="opennebula" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -935,7 +925,7 @@
       <recent name="com.cattles.schedulingframeworks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExecuteCommand">
+  <component name="RunManager" selected="Application.VirtualResourceManagement">
     <configuration default="false" name="EC2VMOperationImpl" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.cattles.cloudplatforms.amazonec2.EC2VMOperationImpl" />
@@ -1201,9 +1191,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ExecuteCommand" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FalkonClusterManagement" />
-        <item index="2" class="java.lang.String" itemvalue="Application.VirtualResourceManagement" />
+        <item index="0" class="java.lang.String" itemvalue="Application.VirtualResourceManagement" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ExecuteCommand" />
+        <item index="2" class="java.lang.String" itemvalue="Application.FalkonClusterManagement" />
         <item index="3" class="java.lang.String" itemvalue="Application.EC2VMOperationImpl" />
         <item index="4" class="java.lang.String" itemvalue="Application.XMLOperationSchedulingFramework" />
       </list>
@@ -1400,7 +1390,11 @@
       <created>1389263396101</created>
       <updated>1389263396102</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="improve the falkon scheduling framework module">
+      <created>1389328462816</created>
+      <updated>1389328462816</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1424,7 +1418,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1217" height="805" extended-state="6" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
@@ -1433,15 +1427,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27162367" sideWeight="0.50193477" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26254" sideWeight="0.28745162" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4108858" sideWeight="0.498618" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39381003" sideWeight="0.498618" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16680925" sideWeight="0.7283763" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10779436" sideWeight="0.73745996" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26518393" sideWeight="0.7283763" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40875134" sideWeight="0.49143174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23161969" sideWeight="0.73745996" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26254" sideWeight="0.7125484" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1451,7 +1446,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27214515" sideWeight="0.49806523" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39381003" sideWeight="0.498618" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1526,90 +1520,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/VirtualMachines.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="67" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/util/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="47" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonServerExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="27" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/ssh/ConnInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="27" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="40" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="51" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerInitialization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="123" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="123" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="81" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="123" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="71" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonExecFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="43" selection-start="565" selection-end="585" vertical-scroll-proportion="0.0">
@@ -1624,16 +1534,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+        <state line="35" column="20" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="39" selection-start="2517" selection-end="2517" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerInitialization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="24" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="51" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="40" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="91" selection-start="1555" selection-end="1569" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="39" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonServerExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="37" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="80" selection-start="5184" selection-end="5184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="427" selection-end="427" vertical-scroll-proportion="0.2857143">
+        <state line="16" column="41" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/VirtualClusters.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="62" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/VirtualMachines.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="71" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="54" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="34" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.53571427">
           <folding />
         </state>
       </provider>

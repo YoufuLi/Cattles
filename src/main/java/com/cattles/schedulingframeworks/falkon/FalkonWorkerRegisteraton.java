@@ -36,8 +36,8 @@ public class FalkonWorkerRegisteraton extends Thread {
             }
         }
         result = ce.execute(Constant.FALKON_WORKER_REGISTERATION_COMMAND+" "+falkonServerIP);
-        if(result!=null){
+        /*if(result!=null){
             ce.disconnect();
-        }
+        }*/
     }
 }

@@ -19,9 +19,10 @@ public class VirtualResourceManagement {
     public static void main(String[] args){
         VirtualResourceManagement virtualResourceManagement=new VirtualResourceManagement();
         VirtualMachineResourcePool virtualMachineResourcePool=VirtualMachineResourcePool.getResourcePool();
-        //virtualMachineResourcePool.initialization(10);
+        //virtualMachineResourcePool.initialization(11);
         VMInformationMaintainImpl vmInformationMaintain=new VMInformationMaintainImpl();
         ArrayList<VMInfo> vmInfoArrayList=vmInformationMaintain.getInstanceList();
+        System.out.println("vm nubmer:"+vmInfoArrayList.size());
         virtualMachineResourcePool.addVMs(vmInfoArrayList);
         //virtualResourceManagement.shutdownVMs(vmInfoArrayList);
 
