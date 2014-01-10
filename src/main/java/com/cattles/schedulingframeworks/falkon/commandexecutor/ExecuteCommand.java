@@ -20,6 +20,7 @@ public class ExecuteCommand {
 	protected String username;
 	protected String passwd;
 	protected String filePath;
+    protected String passphrase;
 	
 	protected Session jschSession;//
 	protected JSch jsch;//jsch对象
@@ -28,12 +29,19 @@ public class ExecuteCommand {
 		this(ipAddress, username, passwd, null);
 	}
 	
-	public ExecuteCommand(String ipAddress, String username, String passwd, String filePath){
+	/*public ExecuteCommand(String ipAddress, String username, String passwd, String filePath){
 		this.ipAddress = ipAddress;
 		this.username = username;
 		this.passwd = passwd;
 		this.filePath = filePath;
-	}
+	} */
+    public ExecuteCommand(String ipAddress, String username, String keyPath, String passphrase){
+        this.ipAddress = ipAddress;
+        this.username = username;
+        this.filePath = keyPath;
+        this.passphrase=passphrase;
+
+    }
 	
 	/**
 	 * 执行命令
@@ -41,7 +49,7 @@ public class ExecuteCommand {
 	public SSHResult execShell(String command) throws Exception {
 		logger.info("start to execute command!");
             CommandExecutable ce = (new FalkonExecFactory()).getCmdExec();
-		ConnInfo ci = new ConnInfo(ipAddress, username, passwd);
+		ConnInfo ci = new ConnInfo(ipAddress, username, filePath,passphrase);
 		SSHResult result = ce.connect(ci);
 		if(!result.isSuccess()){
 			Exception exception = result.getError();
@@ -81,12 +89,12 @@ public class ExecuteCommand {
 	}
 
     public static void main(String[] args){
-        ExecuteCommand executeCommand=new ExecuteCommand("172.16.1.97","youfuli","lz");
+        ExecuteCommand executeCommand=new ExecuteCommand("149.165.158.226","ubuntu","/home/youfuli/Documents/fg239/nicholas-key.pem",null);
         try {
             //executeCommand.execShell("falkon-service-stdout.sh 50001 ${FALKON_CONFIG}/Falkon.config");
             //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startWorker.sh 192.168.145.130");
             //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startService.sh");
-            executeCommand.execShell("sh /usr/local/falkon.r174/cattles/stopService.sh falkon");
+            executeCommand.execShell("sh /home/ubuntu/software/falkon.r174/cattles/stopService.sh falkon");
             //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/stopWorker.sh falkon");
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.

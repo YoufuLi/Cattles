@@ -32,7 +32,7 @@ public class FalkonClusterInitialization extends Thread {
         logger.info("Begin to Initialize Falkon service***********    "+System.currentTimeMillis()+"   **************");
         VMInfo falkonServer=virtualMachineResourcePool.getVMWithID(serverID);
         CommandExecutable ce = (new FalkonExecFactory()).getCmdExec("cluster");
-        ConnInfo ci = new ConnInfo(falkonServer.getVmPublicIpAddress(), Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_PASSWORD);
+        ConnInfo ci = new ConnInfo(falkonServer.getVmPublicIpAddress(), Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_KEY_PATH,null);
         SSHResult result = ce.connect(ci);
         if(!result.isSuccess()){
             Exception exception = result.getError();

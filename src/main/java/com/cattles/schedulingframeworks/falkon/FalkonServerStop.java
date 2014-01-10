@@ -23,7 +23,7 @@ public class FalkonServerStop extends Thread{
     }
     public void run(){
         CommandExecutable ce = (new FalkonExecFactory()).getCmdExec("server");
-        ConnInfo ci = new ConnInfo(falkonServerIP, Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_PASSWORD);
+        ConnInfo ci = new ConnInfo(falkonServerIP, Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_KEY_PATH,null);
         SSHResult result = ce.connect(ci);
         if(!result.isSuccess()){
             Exception exception = result.getError();

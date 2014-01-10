@@ -33,12 +33,14 @@ public class Constant {
     public static final String GEARMAN_FRAMEWORK_NAME="gearman";
 
     //the account information of virtual machine
-    public static final String VIRTUAL_MACHINE_ACCOUNT="youfuli";
+    public static final String VIRTUAL_MACHINE_ACCOUNT="ubuntu";
     public static final String VIRTUAL_MACHINE_PASSWORD="lz";
+    public static final String VIRTUAL_MACHINE_KEY_PATH="/home/youfuli/Documents/fg239/nicholas-key.pem";
 
     //various command
-    public static final String FALKON_SERVICE_INTIALIZATION_COMMAND="sh /usr/local/falkon.r174/cattles/startService.sh";
-    public static final String FALKON_SERVICE_CLOSE_COMMAND="sh /usr/local/falkon.r174/cattles/stopService.sh falkon";
-    public static final String FALKON_WORKER_REGISTERATION_COMMAND="sh /usr/local/falkon.r174/cattles/startWorker.sh";
-    public static final String FALKON_WORKER_DEREGISTERATION_COMMAND="sh /usr/local/falkon.r174/cattles/stopWorker.sh falkon";
+
+    public static final String FALKON_SERVICE_INTIALIZATION_COMMAND="sh /home/ubuntu/software/falkon.r174/cattles/startService.sh";
+    public static final String FALKON_SERVICE_CLOSE_COMMAND="sh /home/ubuntu/software/falkon.r174/cattles/stopService.sh falkon";
+    public static final String FALKON_WORKER_REGISTERATION_COMMAND="sh /home/ubuntu/software/falkon.r174/cattles/startWorker.sh";
+    public static final String FALKON_WORKER_DEREGISTERATION_COMMAND="sh /home/ubuntu/software/falkon.r174/cattles/stopWorker.sh falkon";
 }

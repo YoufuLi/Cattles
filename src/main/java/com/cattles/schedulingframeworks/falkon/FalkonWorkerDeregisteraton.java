@@ -25,7 +25,7 @@ public class FalkonWorkerDeregisteraton extends Thread {
     }
     public void run(){
         CommandExecutable ce = (new FalkonExecFactory()).getCmdExec("worker");
-        ConnInfo ci = new ConnInfo(falkonWorkerIP, Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_PASSWORD);
+        ConnInfo ci = new ConnInfo(falkonWorkerIP, Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_KEY_PATH,null);
         SSHResult result = ce.connect(ci);
         if(!result.isSuccess()){
             Exception exception = result.getError();
