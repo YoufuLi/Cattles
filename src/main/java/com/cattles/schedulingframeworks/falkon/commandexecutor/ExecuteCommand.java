@@ -1,11 +1,16 @@
 package com.cattles.schedulingframeworks.falkon.commandexecutor;
 
+import com.cattles.cloudplatforms.amazonec2.VMInformationMaintainImpl;
+import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
 import com.cattles.ssh.CommandExecutable;
 import com.cattles.ssh.ConnInfo;
 import com.cattles.ssh.SSHResult;
 import com.cattles.ssh.jsch.JschUserInfo;
+import com.cattles.vmManagement.VMInfo;
 import com.jcraft.jsch.*;
 import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
 
 /**
  * 在远程主机上执行安装
@@ -89,16 +94,25 @@ public class ExecuteCommand {
 	}
 
     public static void main(String[] args){
-        ExecuteCommand executeCommand=new ExecuteCommand("149.165.158.227","ubuntu","/home/youfuli/Documents/fg239/nicholas-key.pem",null);
-        try {
-            //executeCommand.execShell("falkon-service-stdout.sh 50001 ${FALKON_CONFIG}/Falkon.config");
-            //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startWorker.sh 192.168.145.130");
-            //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startService.sh");
-            executeCommand.execShell("sh /home/ubuntu/software/falkon.r174/cattles/stopService.sh falkon");
-            //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/stopWorker.sh falkon");
-        } catch (Exception e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        VirtualMachineResourcePool virtualMachineResourcePool=VirtualMachineResourcePool.getResourcePool();
+        ArrayList<VMInfo> vmInfoArrayList=virtualMachineResourcePool.getVMResourceList();
+        System.out.println("vm nubmer:"+vmInfoArrayList.size());
+        for (VMInfo vmInfo:vmInfoArrayList){
+            String ipAddress=vmInfo.getVmPublicIpAddress();
+            ExecuteCommand executeCommand=new ExecuteCommand(ipAddress,"ubuntu","/home/youfuli/Documents/fg239/nicholas-key.pem",null);
+            try {
+                //executeCommand.execShell("falkon-service-stdout.sh 50001 ${FALKON_CONFIG}/Falkon.config");
+                //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startWorker.sh 192.168.145.130");
+                //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/startService.sh");
+                executeCommand.execShell("sh /home/ubuntu/software/falkon.r174/cattles/stopService.sh falkon");
+                //executeCommand.execShell("sh /usr/local/falkon.r174/cattles/stopWorker.sh falkon");
+            } catch (Exception e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
         }
+        System.out.println("finish");
+
+
     }
 	
 }
