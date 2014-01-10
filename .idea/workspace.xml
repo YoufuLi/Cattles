@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="improve the falkon scheduling framework module">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" afterPath="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/VirtualMachines.xml" afterPath="$PROJECT_DIR$/resource/VirtualMachines.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java" afterPath="$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389328446859" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389351324047" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644868307" ignored="false" />
@@ -179,7 +170,7 @@
       <file leaf-file-name="VirtualResourceManagement.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="34" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.53571427">
+            <state line="28" column="34" selection-start="1141" selection-end="1141" vertical-scroll-proportion="1.1165049">
               <folding />
             </state>
           </provider>
@@ -292,8 +283,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
     <option name="y" value="-4" />
-    <option name="width" value="1857" />
-    <option name="height" value="1085" />
+    <option name="width" value="1217" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1394,7 +1385,11 @@
       <created>1389328462816</created>
       <updated>1389328462816</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="improve the falkon scheduling framework module">
+      <created>1389351332889</created>
+      <updated>1389351332889</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1418,7 +1413,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <frame x="64" y="-4" width="1217" height="805" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
@@ -1427,16 +1422,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26254" sideWeight="0.28745162" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37442923" sideWeight="0.28742516" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4108858" sideWeight="0.498618" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39381003" sideWeight="0.498618" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10779436" sideWeight="0.73745996" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16680925" sideWeight="0.6255708" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23161969" sideWeight="0.73745996" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26254" sideWeight="0.7125484" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.358426" sideWeight="0.6255708" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37442923" sideWeight="0.71257484" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1627,7 +1622,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="34" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.53571427">
+        <state line="28" column="34" selection-start="1141" selection-end="1141" vertical-scroll-proportion="1.1165049">
           <folding />
         </state>
       </provider>
