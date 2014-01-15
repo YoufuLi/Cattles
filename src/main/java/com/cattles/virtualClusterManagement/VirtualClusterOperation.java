@@ -1,6 +1,6 @@
 package com.cattles.virtualClusterManagement;
 
-import com.cattles.interfaces.VirtualClusterOperationInterface;
+import com.cattles.virtualClusterManagement.interfaces.VirtualClusterOperationInterface;
 import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
@@ -16,11 +16,6 @@ import java.util.ArrayList;
 public class VirtualClusterOperation implements VirtualClusterOperationInterface{
     private static Logger logger = Logger.getLogger(VirtualClusterOperation.class);
     VirtualClusterOperationInterface virtualClusterOperation=VirtualClusterOperationFactory.virtualClusterOperation();
-    @Override
-    public VirtualCluster clusterProvision(int _clusterSize) {
-        VirtualCluster virtualCluster=virtualClusterOperation.clusterProvision(_clusterSize);
-        return virtualCluster;  //To change body of implemented methods use File | Settings | File Templates.
-    }
 
     /**
      * fetch a list of VMs from the resource pool, then generate a virtual machine cluster.
@@ -31,7 +26,7 @@ public class VirtualClusterOperation implements VirtualClusterOperationInterface
      */
     @Override
     public VirtualCluster createCluster(int _clusterSize) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.createCluster(_clusterSize);
     }
 
     /**
@@ -42,22 +37,22 @@ public class VirtualClusterOperation implements VirtualClusterOperationInterface
      */
     @Override
     public VirtualCluster generateCluster(ArrayList<VMInfo> VMList) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.generateCluster(VMList);
     }
 
     @Override
     public boolean addNodes(String _clusterID, ArrayList<String> _nodeIDList) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.addNodes(_clusterID,_nodeIDList);
     }
 
     @Override
     public boolean removeNodes(String _clusterID, ArrayList<String> _nodeIDList) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.removeNodes(_clusterID,_nodeIDList);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public boolean modifyServerID(String _clusterID, String _serverID) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.modifyServerID(_clusterID,_serverID);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**
@@ -69,7 +64,7 @@ public class VirtualClusterOperation implements VirtualClusterOperationInterface
      */
     @Override
     public boolean modifyClusterState(String _clusterID, String _state) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.modifyClusterState(_clusterID,_state);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**
@@ -80,22 +75,22 @@ public class VirtualClusterOperation implements VirtualClusterOperationInterface
      */
     @Override
     public int getClusterSize(String _clusterID) {
-        return 0;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.getClusterSize(_clusterID);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public ArrayList<VirtualCluster> getAllClusters() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.getAllClusters();  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public ArrayList<VirtualCluster> getClustersWithState(String _state) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.getClustersWithState(_state);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public VirtualCluster getClusterWithID(String _clusterID) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.getClusterWithID(_clusterID);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**
@@ -107,6 +102,6 @@ public class VirtualClusterOperation implements VirtualClusterOperationInterface
      */
     @Override
     public boolean deleteCluster(String _clusterID) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.deleteCluster(_clusterID);  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

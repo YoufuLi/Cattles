@@ -1,4 +1,4 @@
-package com.cattles.interfaces;
+package com.cattles.cloudplatforms.interfaces;
 
 import com.cattles.virtualMachineManagement.VMInfo;
 

@@ -3,7 +3,7 @@ package com.cattles.cloudplatforms.amazonec2;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.model.*;
-import com.cattles.interfaces.VMOperationInterface;
+import com.cattles.cloudplatforms.interfaces.VMOperationInterface;
 import com.cattles.util.Constant;
 import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;

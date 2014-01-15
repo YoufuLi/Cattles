@@ -1,4 +1,4 @@
-package com.cattles.interfaces;
+package com.cattles.virtualClusterManagement.interfaces;
 
 import com.cattles.virtualClusterManagement.VirtualCluster;
 import com.cattles.virtualMachineManagement.VMInfo;
@@ -13,8 +13,6 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public interface VirtualClusterOperationInterface {
-    public VirtualCluster clusterProvision(int _clusterSize);
-
     /**
      * fetch a list of VMs from the resource pool, then generate a virtual machine cluster.
      * add the virtual machine cluster to the VirtualCluster.xml

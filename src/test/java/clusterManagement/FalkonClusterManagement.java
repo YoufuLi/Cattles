@@ -1,7 +1,8 @@
 package clusterManagement;
 
 import com.cattles.virtualClusterManagement.VirtualCluster;
-import com.cattles.virtualClusterManagement.VirtualClusterOperation;
+import com.cattles.virtualClusterProvision.VirtualClusterProvision;
+import com.cattles.virtualClusterProvision.interfaces.VirtualClusterProvisionInterface;
 import org.apache.log4j.Logger;
 
 /**
@@ -15,8 +16,8 @@ public class FalkonClusterManagement {
     private static Logger logger = Logger.getLogger(FalkonClusterManagement.class);
     public static void main(String[] args){
         logger.info("Begin to start cluster provision:***********"+System.currentTimeMillis()+"**************");
-        VirtualClusterOperation virtualClusterOperation=new VirtualClusterOperation();
-        VirtualCluster virtualCluster=virtualClusterOperation.clusterProvision(6);
+        VirtualClusterProvisionInterface virtualClusterProvision=new VirtualClusterProvision();
+        VirtualCluster virtualCluster=virtualClusterProvision.clusterProvision(6);
         System.out.println(virtualCluster.getClusterID());
     }
 }

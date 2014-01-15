@@ -2,7 +2,7 @@ package com.cattles.virtualMachineManagement;
 
 import com.cattles.cloudplatforms.amazonec2.EC2VMOperationImpl;
 import com.cattles.cloudplatforms.opennebula.OpenNebulaVMOperationImpl;
-import com.cattles.interfaces.VMOperationInterface;
+import com.cattles.cloudplatforms.interfaces.VMOperationInterface;
 import com.cattles.util.Constant;
 import com.cattles.util.XMLOperationPlatform;
 

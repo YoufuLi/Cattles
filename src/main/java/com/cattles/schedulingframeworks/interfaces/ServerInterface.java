@@ -1,4 +1,4 @@
-package com.cattles.schedulingframeworks;
+package com.cattles.schedulingframeworks.interfaces;
 
 import com.cattles.virtualClusterManagement.VirtualCluster;
 
@@ -12,19 +12,13 @@ import com.cattles.virtualClusterManagement.VirtualCluster;
 public interface ServerInterface {
     /**
      * Initialize the cluster according to provided cluster
-     * @param virtualCluster
+     * @param serverID
      */
-    public void initializeCluster(VirtualCluster virtualCluster);
-
-    /**
-     *
-     * @param virtualCluster
-     */
-    public void modifyCluster(VirtualCluster virtualCluster);
+    public void startServer(String serverID);
 
     /**
      * terminate the cluster according to provided cluster
-     * @param virtualCluster
+     * @param serverID
      */
-    public void terminateCluster(VirtualCluster virtualCluster);
+    public void stopServer(String serverID);
 }

@@ -1,4 +1,4 @@
-package com.cattles.schedulingframeworks;
+package com.cattles.schedulingframeworks.interfaces;
 
 import com.cattles.virtualClusterManagement.VirtualCluster;
 
@@ -15,12 +15,6 @@ public interface ClusterInterface {
      * @param virtualCluster
      */
     public void initializeCluster(VirtualCluster virtualCluster);
-
-    /**
-     *
-     * @param virtualCluster
-     */
-    public void modifyCluster(VirtualCluster virtualCluster);
 
     /**
      * terminate the cluster according to provided cluster

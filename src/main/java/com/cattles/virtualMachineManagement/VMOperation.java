@@ -1,6 +1,6 @@
 package com.cattles.virtualMachineManagement;
 
-import com.cattles.interfaces.VMOperationInterface;
+import com.cattles.cloudplatforms.interfaces.VMOperationInterface;
 
 import java.util.ArrayList;
 

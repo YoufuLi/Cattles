@@ -1,6 +1,7 @@
 package com.cattles.schedulingframeworks.falkon;
 
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
+import com.cattles.schedulingframeworks.interfaces.WorkerInterface;
 import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
@@ -13,7 +14,7 @@ import java.util.ArrayList;
  * Time: 3:59 PM
  * To change this template use File | Settings | File Templates.
  */
-public class FalkonWorker {
+public class FalkonWorker implements WorkerInterface {
     private static Logger logger = Logger.getLogger(FalkonWorker.class);
     VirtualMachineResourcePool virtualMachineResourcePool=VirtualMachineResourcePool.getResourcePool();
 

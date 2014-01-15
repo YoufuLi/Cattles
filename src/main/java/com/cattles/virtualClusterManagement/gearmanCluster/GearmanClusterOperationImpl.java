@@ -1,6 +1,6 @@
 package com.cattles.virtualClusterManagement.gearmanCluster;
 
-import com.cattles.interfaces.VirtualClusterOperationInterface;
+import com.cattles.virtualClusterManagement.interfaces.VirtualClusterOperationInterface;
 import com.cattles.virtualClusterManagement.VirtualCluster;
 import com.cattles.virtualMachineManagement.VMInfo;
 
