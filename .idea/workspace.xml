@@ -2,70 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="improve the falkon scheduling framework module">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/ClusterInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterProvision/FalkonClusterProvision.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualMachineManagement/ResponseInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/ServerInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterProvision/VirtualClusterProvision.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/WorkerInterface.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmManagement/ResponseInfo.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/BaseCommandExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/BaseCommandExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/CommandExecutable.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/CommandExecutable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/ConnInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/ConnInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/SCPUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/SCPUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/SSHException.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/SSHException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/SSHFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/SSHFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/SSHMonitor.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/SSHMonitor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/SSHResult.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/SSHResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/CmdExecFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/jsch/CmdExecFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/JschCommandExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/jsch/JschCommandExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/JschSCP.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/jsch/JschSCP.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/JschSCPExecutable.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/jsch/JschSCPExecutable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/JschSCPFrom.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/jsch/JschSCPFrom.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/JschSCPTo.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/jsch/JschSCPTo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/jsch/JschUserInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/jsch/JschUserInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/profile/Command.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/profile/Command.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/profile/Profile.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/profile/Profile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/ssh/profile/ProfileManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/util/ssh/profile/ProfileManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualCluster.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterManagement/VirtualCluster.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperation.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterManagement/VirtualClusterOperation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/VirtualClusterOperationFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterManagement/VirtualClusterOperationFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/XMLOperationCluster.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterManagement/XMLOperationCluster.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/falkonCluster/FalkonClusterOperationImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterManagement/falkonCluster/FalkonClusterOperationImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmClusterManagement/gearmanCluster/GearmanClusterOperationImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterManagement/gearmanCluster/GearmanClusterOperationImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmManagement/VMInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualMachineManagement/VMInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmManagement/VMOperation.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualMachineManagement/VMOperation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/vmManagement/VMOperationFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualMachineManagement/VMOperationFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cattles.iml" afterPath="$PROJECT_DIR$/Cattles.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2VMOperationImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2VMOperationImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/ExecuteCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonClusterExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonClusterExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonClusterInitialization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" afterPath="$PROJECT_DIR$/src/test/java/clusterManagement/FalkonClusterManagement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonExecFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonExecFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServer.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonServerExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonServerExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerInitialization.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerInitialization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonServerStop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorker.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerDeregisteraton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor/FalkonWorkerExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/FalkonWorkerRegisteraton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaVMOperationImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaVMOperationImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/interfaces/Platform.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/interfaces/Platform.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/cloudplatforms/amazonec2/VMInformationMaintainImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/cloudplatforms/amazonec2/VMInformationMaintainImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/interfaces/VMInformationMaintainInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/interfaces/VMInformationMaintainInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/interfaces/VMOperationInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/interfaces/VMOperationInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/interfaces/VirtualClusterOperationInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/interfaces/VirtualClusterOperationInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualMachineResourcePool.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualMachineResourcePool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java" afterPath="$PROJECT_DIR$/src/test/java/vmManagement/VirtualResourceManagement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualResourcePool.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/VirtualResourcePool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/XMLOperationVirtualMachine.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/resourcePoolManagement/XMLOperationVirtualMachine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389770522011" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389771962851" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644868307" ignored="false" />
@@ -132,7 +73,7 @@
     <file path="/FalkonServerExecutor.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389370180361" ignored="false" />
     <file path="$PROJECT_DIR$/../ETLTools/.idea/misc.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389701677560" ignored="false" />
     <file path="$PROJECT_DIR$/../ETLTools/.idea/workspace.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389702074787" ignored="false" />
-    <file path="/FalkonClusterInterface.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389771519999" ignored="false" />
+    <file path="/FalkonClusterInterface.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389772639920" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,10 +143,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClusterInterface.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ClusterInterface.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/ClusterInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="1" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
+            <state line="11" column="17" selection-start="276" selection-end="276" vertical-scroll-proportion="0.3846154">
               <folding />
             </state>
           </provider>
@@ -214,7 +155,7 @@
       <file leaf-file-name="ServerInterface.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/ServerInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+            <state line="16" column="16" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -265,10 +206,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FalkonClusterProvision.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FalkonClusterProvision.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterProvision/FalkonClusterProvision.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="236" selection-end="236" vertical-scroll-proportion="0.31322506">
+            <state line="9" column="35" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -362,7 +303,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="458" />
+    <option name="x" value="377" />
     <option name="y" value="91" />
     <option name="width" value="1148" />
     <option name="height" value="800" />
@@ -619,6 +560,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedulingframeworks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1202,7 +1173,11 @@
       <created>1389351332889</created>
       <updated>1389351332889</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="improve the falkon scheduling framework module">
+      <created>1389772019753</created>
+      <updated>1389772019753</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1226,7 +1201,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="458" y="91" width="1148" height="800" extended-state="0" />
+    <frame x="377" y="91" width="1148" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
@@ -1235,14 +1210,15 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23700306" sideWeight="0.12917022" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23773006" sideWeight="0.12917022" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4108858" sideWeight="0.498618" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39381003" sideWeight="0.498618" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16937554" sideWeight="0.80974126" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38454545" sideWeight="0.762997" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38454545" sideWeight="0.7622699" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55982274" sideWeight="0.87082976" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1253,7 +1229,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27214515" sideWeight="0.49806523" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39381003" sideWeight="0.498618" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1398,23 +1373,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/ServerInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/WorkerInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="17" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/ClusterInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="1" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1435,7 +1396,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterProvision/FalkonClusterProvision.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="236" selection-end="236" vertical-scroll-proportion="0.31322506">
+        <state line="9" column="35" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/ServerInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/ClusterInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="276" selection-end="276" vertical-scroll-proportion="0.3846154">
           <folding />
         </state>
       </provider>
