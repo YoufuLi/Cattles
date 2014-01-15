@@ -1,7 +1,7 @@
 package com.cattles.resourcePoolManagement;
 
 import com.cattles.util.Constant;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VMInfo;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

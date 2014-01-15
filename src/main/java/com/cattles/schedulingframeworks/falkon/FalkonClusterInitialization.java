@@ -2,11 +2,11 @@ package com.cattles.schedulingframeworks.falkon;
 
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
 import com.cattles.schedulingframeworks.falkon.commandexecutor.FalkonExecFactory;
-import com.cattles.ssh.CommandExecutable;
-import com.cattles.ssh.ConnInfo;
-import com.cattles.ssh.SSHResult;
+import com.cattles.util.ssh.CommandExecutable;
+import com.cattles.util.ssh.ConnInfo;
+import com.cattles.util.ssh.SSHResult;
 import com.cattles.util.Constant;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;

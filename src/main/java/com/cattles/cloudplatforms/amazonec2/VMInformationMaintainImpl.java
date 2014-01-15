@@ -7,7 +7,7 @@ import com.amazonaws.services.ec2.model.Instance;
 import com.amazonaws.services.ec2.model.Reservation;
 import com.cattles.interfaces.VMInformationMaintainInterface;
 import com.cattles.util.Constant;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;

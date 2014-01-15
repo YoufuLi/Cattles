@@ -1,12 +1,11 @@
 package com.cattles.schedulingframeworks.falkon.commandexecutor;
 
-import com.cattles.cloudplatforms.amazonec2.VMInformationMaintainImpl;
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
-import com.cattles.ssh.CommandExecutable;
-import com.cattles.ssh.ConnInfo;
-import com.cattles.ssh.SSHResult;
-import com.cattles.ssh.jsch.JschUserInfo;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.util.ssh.CommandExecutable;
+import com.cattles.util.ssh.ConnInfo;
+import com.cattles.util.ssh.SSHResult;
+import com.cattles.util.ssh.jsch.JschUserInfo;
+import com.cattles.virtualMachineManagement.VMInfo;
 import com.jcraft.jsch.*;
 import org.apache.log4j.Logger;
 

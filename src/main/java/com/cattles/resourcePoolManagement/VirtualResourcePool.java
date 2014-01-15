@@ -1,7 +1,7 @@
 package com.cattles.resourcePoolManagement;
 
 import com.cattles.util.Constant;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;

@@ -1,8 +1,8 @@
 package com.cattles.schedulingframeworks.falkon.commandexecutor;
 
-import com.cattles.ssh.*;
-import com.cattles.ssh.jsch.JschSCP;
-import com.cattles.ssh.jsch.JschUserInfo;
+import com.cattles.util.ssh.*;
+import com.cattles.util.ssh.jsch.JschSCP;
+import com.cattles.util.ssh.jsch.JschUserInfo;
 import com.jcraft.jsch.*;
 import org.apache.log4j.Logger;
 

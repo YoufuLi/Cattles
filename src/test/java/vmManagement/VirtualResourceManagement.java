@@ -2,8 +2,8 @@ package vmManagement;
 
 import com.cattles.cloudplatforms.amazonec2.VMInformationMaintainImpl;
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
-import com.cattles.vmManagement.VMInfo;
-import com.cattles.vmManagement.VMOperation;
+import com.cattles.virtualMachineManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VMOperation;
 
 import java.util.ArrayList;
 

@@ -1,6 +1,6 @@
 package com.cattles.interfaces;
 
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VMInfo;
 
 /**
  * Used to declare the vm operations that supported by platforms

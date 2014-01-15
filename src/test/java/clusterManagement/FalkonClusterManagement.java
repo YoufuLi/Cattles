@@ -1,9 +1,7 @@
 package clusterManagement;
 
-import com.cattles.schedulingframeworks.falkon.FalkonServer;
-import com.cattles.vmClusterManagement.VirtualCluster;
-import com.cattles.vmClusterManagement.VirtualClusterOperation;
-import com.cattles.vmClusterManagement.VirtualClusterOperationFactory;
+import com.cattles.virtualClusterManagement.VirtualCluster;
+import com.cattles.virtualClusterManagement.VirtualClusterOperation;
 import org.apache.log4j.Logger;
 
 /**

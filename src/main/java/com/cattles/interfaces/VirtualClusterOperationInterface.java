@@ -1,7 +1,7 @@
 package com.cattles.interfaces;
 
-import com.cattles.vmClusterManagement.VirtualCluster;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.virtualClusterManagement.VirtualCluster;
+import com.cattles.virtualMachineManagement.VMInfo;
 
 import java.util.ArrayList;
 

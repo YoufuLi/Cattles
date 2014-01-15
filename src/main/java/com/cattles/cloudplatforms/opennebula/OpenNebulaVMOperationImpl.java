@@ -1,7 +1,7 @@
 package com.cattles.cloudplatforms.opennebula;
 
 import com.cattles.interfaces.VMOperationInterface;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VMInfo;
 
 import java.util.ArrayList;
 

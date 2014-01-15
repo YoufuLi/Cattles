@@ -1,8 +1,8 @@
 package com.cattles.interfaces;
 
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
-import com.cattles.vmManagement.ResponseInfo;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.virtualMachineManagement.ResponseInfo;
+import com.cattles.virtualMachineManagement.VMInfo;
 
 import java.util.List;
 

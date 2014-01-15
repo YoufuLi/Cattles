@@ -1,7 +1,7 @@
 package com.cattles.schedulingframeworks.falkon;
 
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
-import com.cattles.vmManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
