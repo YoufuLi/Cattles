@@ -17,7 +17,7 @@ public class FalkonClusterManagement {
     public static void main(String[] args){
         logger.info("Begin to start cluster provision:***********"+System.currentTimeMillis()+"**************");
         VirtualClusterProvisionInterface virtualClusterProvision=new VirtualClusterProvision();
-        VirtualCluster virtualCluster=virtualClusterProvision.clusterProvision(6);
+        VirtualCluster virtualCluster=virtualClusterProvision.clusterProvision(2);
         System.out.println(virtualCluster.getClusterID());
     }
 }

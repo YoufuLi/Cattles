@@ -14,11 +14,6 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public class GearmanClusterOperationImpl implements VirtualClusterOperationInterface {
-    @Override
-    public VirtualCluster clusterProvision(int _clusterSize) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
-
     /**
      * fetch a list of VMs from the resource pool, then generate a virtual machine cluster.
      * add the virtual machine cluster to the VirtualCluster.xml

@@ -65,7 +65,7 @@ public class FalkonServerExecutor extends BaseCommandExecutor {
                         }
                     }
                     logger.info(msg);
-                    if(msg.contains("starting GT4.0.4 container")){
+                    if(msg.contains("config file /home/ubuntu/software/")){
                         logger.info("Falkon server yeyeye"+System.currentTimeMillis()+"#############");
                     }
                     if(msg.contains("[26]")){

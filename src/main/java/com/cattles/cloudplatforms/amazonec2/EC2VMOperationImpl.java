@@ -32,7 +32,7 @@ public class EC2VMOperationImpl implements VMOperationInterface {
         {
             logger.info("creating virtual machines***************************");
             RunInstancesRequest runInstancesRequest = new RunInstancesRequest()
-                    .withInstanceType("m1.small")
+                    .withInstanceType("m1.large")
                     .withImageId("emi-1C8C3ADF")
                     .withMinCount(1)
                     .withMaxCount(vmNumber)
