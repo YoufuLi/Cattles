@@ -27,4 +27,10 @@ public interface VirtualClusterProvisionInterface {
      * @return
      */
     public VirtualCluster clusterProvision(int _clusterSize);
+
+    /**
+     * upper layer can invoke this method to release the idle cluster
+     * @param virtualCluster
+     */
+    public void releaseCluster(VirtualCluster virtualCluster);
 }

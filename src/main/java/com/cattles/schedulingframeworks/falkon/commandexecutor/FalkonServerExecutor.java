@@ -66,10 +66,9 @@ public class FalkonServerExecutor extends BaseCommandExecutor {
                     }
                     logger.info(msg);
                     if(msg.contains("config file /home/ubuntu/software/")){
-                        logger.info("Falkon server yeyeye"+System.currentTimeMillis()+"#############");
+                        logger.info("Falkon server creation:"+System.currentTimeMillis()+"#############");
                     }
                     if(msg.contains("[26]")){
-                        logger.info("**********************interceptor**************************");
                         result.append(msg);
                         return result;
                     }

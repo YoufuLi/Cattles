@@ -30,7 +30,8 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
      * use getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY) and getClustersWithType(Constant.FALKON_FRAMEWORK_NAME) to find the standby falkon cluster
      * @return
      */
-    public ArrayList<VirtualCluster> getStandbyFalkonCluster(){
+    @Override
+    public ArrayList<VirtualCluster> getStandbyCluster(){
         ArrayList<VirtualCluster> standbyFalkonClusterList=new ArrayList<VirtualCluster>();
         ArrayList<VirtualCluster> standbyClusterList=xmlOperationCluster.getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
         ArrayList<VirtualCluster> falkonClusterList=xmlOperationCluster.getClustersWithType(Constant.FALKON_FRAMEWORK_NAME);
@@ -48,7 +49,8 @@ public class FalkonClusterOperationImpl implements VirtualClusterOperationInterf
      * launch a falkon cluster, including falkon service start and falkon worker registration
      * @param virtualCluster
      */
-    public void launchFalkonCluster(VirtualCluster virtualCluster){
+    @Override
+    public void launchCluster(VirtualCluster virtualCluster){
         String serverID=virtualCluster.getClusterServerID();
         ArrayList<String> nodeIDList=virtualCluster.getNodesIDList();
         FalkonClusterInitialization falkonClusterInitialization=new FalkonClusterInitialization(serverID,nodeIDList);

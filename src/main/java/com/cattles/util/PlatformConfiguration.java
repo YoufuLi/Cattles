@@ -10,6 +10,7 @@ package com.cattles.util;
 public class PlatformConfiguration {
     private static PlatformConfiguration platformConfiguration;
     private PlatformConfiguration(){}
+    XMLOperationPlatform xmlOperationPlatform=XMLOperationPlatform.getXmlOperationPlatform();
     public static synchronized PlatformConfiguration getPlatformConfiguration(){
         if(platformConfiguration==null){
             platformConfiguration=new PlatformConfiguration();
@@ -17,7 +18,7 @@ public class PlatformConfiguration {
         return platformConfiguration;
     }
     public String getPlatformName(){
-        String platformName="EC2";
+        String platformName=xmlOperationPlatform.getPlatformName();
         return platformName;
     }
 }

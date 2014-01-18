@@ -5,6 +5,7 @@ import com.cattles.schedulingframeworks.falkon.FalkonServer;
 import com.cattles.schedulingframeworks.falkon.FalkonWorker;
 import com.cattles.util.Constant;
 import com.cattles.virtualClusterManagement.VirtualCluster;
+import com.cattles.virtualClusterManagement.VirtualClusterOperation;
 import com.cattles.virtualClusterManagement.XMLOperationCluster;
 import com.cattles.virtualClusterManagement.falkonCluster.FalkonClusterOperationImpl;
 import com.cattles.virtualClusterProvision.interfaces.VirtualClusterProvisionInterface;
@@ -26,7 +27,7 @@ public class FalkonClusterProvisionImpl implements VirtualClusterProvisionInterf
     VirtualResourcePool virtualResourcePool=new VirtualResourcePool();
     FalkonWorker falkonWorker=new FalkonWorker();
     FalkonServer falkonServer=new FalkonServer();
-    FalkonClusterOperationImpl falkonClusterOperation=new FalkonClusterOperationImpl();
+    VirtualClusterOperation falkonClusterOperation=new VirtualClusterOperation();
     /**
      * provision cluster to upper layer
      *
@@ -37,7 +38,7 @@ public class FalkonClusterProvisionImpl implements VirtualClusterProvisionInterf
     public VirtualCluster clusterProvision(int _clusterSize){
         //check if there are any standby cluster,
         VirtualCluster virtualCluster;
-        ArrayList<VirtualCluster> standbyFalkonClusterList=falkonClusterOperation.getStandbyFalkonCluster();
+        ArrayList<VirtualCluster> standbyFalkonClusterList=falkonClusterOperation.getStandbyCluster();
         logger.info("get "+standbyFalkonClusterList.size()+" standby cluster, and choosing one appropriate from them.");
         if(standbyFalkonClusterList.size()>=1){
             //calculate the absolute value of standby cluster size and the required num, then select the smallest absolute value
@@ -82,11 +83,22 @@ public class FalkonClusterProvisionImpl implements VirtualClusterProvisionInterf
 
         }else{
             virtualCluster=falkonClusterOperation.createCluster(_clusterSize);
-            falkonClusterOperation.launchFalkonCluster(virtualCluster);
+            falkonClusterOperation.launchCluster(virtualCluster);
         }
         //update the cluster state from "standby" to "activated"
         logger.info("modifying cluster state------------------------------------");
         xmlOperationCluster.modifyClusterState(virtualCluster.getClusterID(), Constant.VIRTUAL_CLUSTER_STATE_ACTIVATED);
         return virtualCluster;
+    }
+
+    /**
+     * upper layer can invoke this method to release the idle cluster
+     *
+     * @param virtualCluster
+     */
+    @Override
+    public void releaseCluster(VirtualCluster virtualCluster) {
+        String clusterID=virtualCluster.getClusterID();
+        falkonClusterOperation.modifyClusterState(clusterID,Constant.VIRTUAL_CLUSTER_STATE_STANDBY);
     }
 }

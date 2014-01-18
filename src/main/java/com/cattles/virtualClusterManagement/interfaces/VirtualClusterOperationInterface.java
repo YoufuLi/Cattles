@@ -1,5 +1,7 @@
 package com.cattles.virtualClusterManagement.interfaces;
 
+import com.cattles.schedulingframeworks.falkon.FalkonClusterInitialization;
+import com.cattles.util.Constant;
 import com.cattles.virtualClusterManagement.VirtualCluster;
 import com.cattles.virtualMachineManagement.VMInfo;
 
@@ -13,6 +15,18 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public interface VirtualClusterOperationInterface {
+
+    /**
+     * use getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY) and getClustersWithType(Constant.FALKON_FRAMEWORK_NAME) to find the standby falkon cluster
+     * @return
+     */
+    public ArrayList<VirtualCluster> getStandbyCluster();
+
+    /**
+     * launch a falkon cluster, including falkon service start and falkon worker registration
+     * @param virtualCluster
+     */
+    public void launchCluster(VirtualCluster virtualCluster);
     /**
      * fetch a list of VMs from the resource pool, then generate a virtual machine cluster.
      * add the virtual machine cluster to the VirtualCluster.xml

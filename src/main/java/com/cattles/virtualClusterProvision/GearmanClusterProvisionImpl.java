@@ -34,4 +34,14 @@ public class GearmanClusterProvisionImpl implements VirtualClusterProvisionInter
     public VirtualCluster clusterProvision(int _clusterSize){
         return null;
     }
+
+    /**
+     * upper layer can invoke this method to release the idle cluster
+     *
+     * @param virtualCluster
+     */
+    @Override
+    public void releaseCluster(VirtualCluster virtualCluster) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
 }

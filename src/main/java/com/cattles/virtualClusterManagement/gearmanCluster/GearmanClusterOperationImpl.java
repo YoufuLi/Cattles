@@ -15,6 +15,26 @@ import java.util.ArrayList;
  */
 public class GearmanClusterOperationImpl implements VirtualClusterOperationInterface {
     /**
+     * use getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY) and getClustersWithType(Constant.FALKON_FRAMEWORK_NAME) to find the standby falkon cluster
+     *
+     * @return
+     */
+    @Override
+    public ArrayList<VirtualCluster> getStandbyCluster() {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * launch a falkon cluster, including falkon service start and falkon worker registration
+     *
+     * @param virtualCluster
+     */
+    @Override
+    public void launchCluster(VirtualCluster virtualCluster) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
      * fetch a list of VMs from the resource pool, then generate a virtual machine cluster.
      * add the virtual machine cluster to the VirtualCluster.xml
      *
