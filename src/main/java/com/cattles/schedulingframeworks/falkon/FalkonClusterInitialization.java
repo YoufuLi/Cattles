@@ -14,8 +14,6 @@ import java.util.ArrayList;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 1/9/14
- * Time: 2:30 PM
  * To change this template use File | Settings | File Templates.
  */
 public class FalkonClusterInitialization extends Thread {

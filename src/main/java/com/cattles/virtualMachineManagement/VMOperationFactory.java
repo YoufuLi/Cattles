@@ -10,8 +10,6 @@ import com.cattles.util.XMLOperationPlatform;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 12/18/13
- * Time: 1:50 PM
  * To change this template use File | Settings | File Templates.
  */
 public class VMOperationFactory {

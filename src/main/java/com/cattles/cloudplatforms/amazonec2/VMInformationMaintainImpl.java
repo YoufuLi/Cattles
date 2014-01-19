@@ -15,8 +15,6 @@ import java.util.ArrayList;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 1/4/14
- * Time: 8:05 PM
  * To change this template use File | Settings | File Templates.
  */
 public class VMInformationMaintainImpl implements VMInformationMaintainInterface {

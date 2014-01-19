@@ -10,8 +10,6 @@ import org.apache.log4j.Logger;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 1/8/14
- * Time: 11:43 AM
  * To change this template use File | Settings | File Templates.
  */
 public class FalkonWorkerRegisteraton extends Thread {

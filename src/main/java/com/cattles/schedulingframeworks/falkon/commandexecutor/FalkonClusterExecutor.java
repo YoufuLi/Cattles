@@ -13,8 +13,6 @@ import java.io.InputStream;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 1/9/14
- * Time: 2:56 PM
  * To change this template use File | Settings | File Templates.
  */
 public class FalkonClusterExecutor extends BaseCommandExecutor {

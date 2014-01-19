@@ -23,8 +23,6 @@ import java.util.ArrayList;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 12/18/13
- * Time: 3:36 PM
  * read and modify the VirtualMachine.xml.
  */
 public class XMLOperationVirtualMachine {

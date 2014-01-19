@@ -9,13 +9,21 @@ import java.util.ArrayList;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 12/23/13
- * Time: 10:22 AM
  * To change this template use File | Settings | File Templates.
  */
 public class VirtualClusterOperation implements VirtualClusterOperationInterface{
     private static Logger logger = Logger.getLogger(VirtualClusterOperation.class);
     VirtualClusterOperationInterface virtualClusterOperation=VirtualClusterOperationFactory.virtualClusterOperation();
+
+    @Override
+    public ArrayList<VirtualCluster> getStandbyCluster() {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public void launchCluster(VirtualCluster virtualCluster) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
 
     /**
      * fetch a list of VMs from the resource pool, then generate a virtual machine cluster.

@@ -7,8 +7,6 @@ import java.util.ArrayList;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 12/10/13
- * Time: 1:28 PM
  * To change this template use File | Settings | File Templates.
  */
 public class VMOperation implements VMOperationInterface {

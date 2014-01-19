@@ -9,8 +9,6 @@ import org.apache.log4j.Logger;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 1/15/14
- * Time: 4:42 PM
  * To change this template use File | Settings | File Templates.
  */
 public class VirtualClusterProvision implements VirtualClusterProvisionInterface {

@@ -9,8 +9,6 @@ import java.util.ArrayList;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Date: 12/26/13
- * Time: 4:49 PM
  * To change this template use File | Settings | File Templates.
  */
 public class GearmanClusterOperationImpl implements VirtualClusterOperationInterface {
