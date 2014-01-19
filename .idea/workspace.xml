@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="modify the coding format and some annotations">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterManagement/interfaces/VirtualClusterOperationInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterManagement/interfaces/VirtualClusterOperationInterface.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1390147621968" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1390147831142" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644868307" ignored="false" />
@@ -146,10 +145,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GearmanClusterOperationImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterManagement/gearmanCluster/GearmanClusterOperationImpl.java">
+      <file leaf-file-name="VirtualClusterProvisionInterface.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterProvision/interfaces/VirtualClusterProvisionInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="26" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+            <state line="20" column="25" selection-start="826" selection-end="826" vertical-scroll-proportion="0.3324468">
               <folding />
             </state>
           </provider>
@@ -218,10 +217,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkerInterface.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="WorkerInterface.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/interfaces/WorkerInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="17" selection-start="0" selection-end="697" vertical-scroll-proportion="0.45212767">
+            <state line="17" column="34" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1676,7 +1675,11 @@
       <created>1390147648364</created>
       <updated>1390147648364</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="modify the coding format and some annotations">
+      <created>1390147837702</created>
+      <updated>1390147837702</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1701,7 +1704,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="0" width="1215" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1721,7 +1724,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16937554" sideWeight="0.80974126" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34961438" sideWeight="0.7131902" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34961438" sideWeight="0.7131902" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33103448" sideWeight="0.87082976" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1803,13 +1806,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/virtualMachineManagement/ResponseInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/virtualMachineManagement/VMInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
@@ -1910,7 +1906,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/interfaces/WorkerInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="0" selection-end="697" vertical-scroll-proportion="0.45212767">
+        <state line="17" column="34" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattles/virtualClusterProvision/interfaces/VirtualClusterProvisionInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="25" selection-start="826" selection-end="826" vertical-scroll-proportion="0.3324468">
           <folding />
         </state>
       </provider>
