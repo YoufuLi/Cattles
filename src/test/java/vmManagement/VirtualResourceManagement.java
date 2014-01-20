@@ -1,9 +1,8 @@
 package vmManagement;
 
-import com.cattles.cloudplatforms.amazonec2.VMInformationMaintainImpl;
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
 import com.cattles.virtualMachineManagement.VMInfo;
-import com.cattles.virtualMachineManagement.VMOperation;
+import com.cattles.virtualMachineManagement.IVMOperation;
 
 import java.util.ArrayList;
 
@@ -18,16 +17,9 @@ public class VirtualResourceManagement {
         VirtualResourceManagement virtualResourceManagement=new VirtualResourceManagement();
         VirtualMachineResourcePool virtualMachineResourcePool=VirtualMachineResourcePool.getResourcePool();
         virtualMachineResourcePool.initialization(2);
-        /*VMInformationMaintainImpl vmInformationMaintain=new VMInformationMaintainImpl();
-        ArrayList<VMInfo> vmInfoArrayList=vmInformationMaintain.getInstanceList();
-        System.out.println("vm nubmer:"+vmInfoArrayList.size());
-        virtualMachineResourcePool.addVMs(vmInfoArrayList); */
-        //virtualResourceManagement.shutdownVMs(vmInfoArrayList);
-
-
     }
     public static void shutdownVMs(ArrayList<VMInfo> vmInfoArrayList){
-        VMOperation vmOperation=new VMOperation();
+        IVMOperation vmOperation=new IVMOperation();
         try {
             vmOperation.shutdownInstances(vmInfoArrayList);
         } catch (Exception e) {

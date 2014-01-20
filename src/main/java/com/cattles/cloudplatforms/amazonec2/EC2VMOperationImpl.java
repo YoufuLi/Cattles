@@ -3,14 +3,14 @@ package com.cattles.cloudplatforms.amazonec2;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.model.*;
-import com.cattles.cloudplatforms.interfaces.VMOperationInterface;
+import com.cattles.cloudplatforms.interfaces.IVMOperationBiz;
 import com.cattles.util.Constant;
 import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 
-public class EC2VMOperationImpl implements VMOperationInterface {
+public class EC2VMOperationImpl implements IVMOperationBiz {
     private static Logger logger = Logger.getLogger(EC2VMOperationImpl.class);
     EC2ConfigOperation ec2Config = new EC2ConfigOperation();
     // Initialize variables.

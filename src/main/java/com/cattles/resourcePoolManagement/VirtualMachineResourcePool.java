@@ -1,7 +1,7 @@
 package com.cattles.resourcePoolManagement;
 
 import com.cattles.virtualMachineManagement.VMInfo;
-import com.cattles.virtualMachineManagement.VMOperation;
+import com.cattles.virtualMachineManagement.IVMOperation;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ public class VirtualMachineResourcePool {
     private static Logger logger = Logger.getLogger(VirtualMachineResourcePool.class);
     private static VirtualMachineResourcePool vmResourcePool = null;
     XMLOperationVirtualMachine xmlOperationVirtualMachine=XMLOperationVirtualMachine.getXmlOperationVirtualMachine();
-    VMOperation vmOperation=new VMOperation();
+    IVMOperation vmOperation=new IVMOperation();
     private VirtualMachineResourcePool(){
 
     }
