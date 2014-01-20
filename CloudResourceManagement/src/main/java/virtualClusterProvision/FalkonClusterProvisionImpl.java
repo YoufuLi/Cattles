@@ -1,8 +1,8 @@
 package virtualClusterProvision;
 
 import com.cattles.resourcePoolManagement.VirtualResourcePool;
-import com.cattles.schedulingframeworks.falkon.FalkonIServer;
-import com.cattles.schedulingframeworks.falkon.FalkonIWorker;
+import com.cattles.schedulingframeworks.falkon.FalkonISchedulingServer;
+import com.cattles.schedulingframeworks.falkon.FalkonISchedulingWorker;
 import com.cattles.util.Constant;
 import com.cattles.virtualClusterManagement.IVirtualClusterOperation;
 import com.cattles.virtualClusterManagement.VirtualCluster;
@@ -24,8 +24,8 @@ public class FalkonClusterProvisionImpl implements IVirtualClusterProvisionBiz {
     private static Logger logger = Logger.getLogger(FalkonClusterProvisionImpl.class);
     XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
     VirtualResourcePool virtualResourcePool=new VirtualResourcePool();
-    FalkonIWorker falkonWorker=new FalkonIWorker();
-    FalkonIServer falkonServer=new FalkonIServer();
+    FalkonISchedulingWorker falkonWorker=new FalkonISchedulingWorker();
+    FalkonISchedulingServer falkonServer=new FalkonISchedulingServer();
     IVirtualClusterOperation falkonClusterOperation=new IVirtualClusterOperation();
     /**
      * provision cluster to upper layer

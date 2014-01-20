@@ -7,16 +7,16 @@ import com.cattles.virtualClusterManagement.VirtualCluster;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public interface IServerBiz {
+public interface ISchedulingClusterBiz {
     /**
      * Initialize the cluster according to provided cluster
-     * @param serverID
+     * @param virtualCluster
      */
-    public void startServer(String serverID);
+    public void initializeCluster(VirtualCluster virtualCluster);
 
     /**
      * terminate the cluster according to provided cluster
-     * @param serverID
+     * @param virtualCluster
      */
-    public void stopServer(String serverID);
+    public void terminateCluster(VirtualCluster virtualCluster);
 }

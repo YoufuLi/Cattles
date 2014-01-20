@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
  * To change this template use File | Settings | File Templates.
  */
 public class FalkonServerStop extends Thread{
-    private static Logger logger = Logger.getLogger(FalkonIServer.class);
+    private static Logger logger = Logger.getLogger(FalkonISchedulingServer.class);
     String falkonServerIP=null;
     public FalkonServerStop(String _threadName, String _falkonServerIP){
         super(_threadName);
