@@ -1,6 +1,6 @@
 package virtualClusterManagement;
 
-import com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperationBiz;
+import com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperation;
 import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
@@ -13,9 +13,9 @@ import java.util.ArrayList;
  * Time: 10:22 AM
  * To change this template use File | Settings | File Templates.
  */
-public class VirtualClusterOperation implements IVirtualClusterOperationBiz {
+public class VirtualClusterOperation implements IVirtualClusterOperation {
     private static Logger logger = Logger.getLogger(VirtualClusterOperation.class);
-    IVirtualClusterOperationBiz virtualClusterOperation=VirtualClusterOperationFactory.virtualClusterOperation();
+    IVirtualClusterOperation virtualClusterOperation=VirtualClusterOperationFactory.virtualClusterOperation();
 
     /**
      * fetch a list of VMs from the resource pool, then generate a virtual machine cluster.

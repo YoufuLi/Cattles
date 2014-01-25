@@ -1,7 +1,6 @@
 package com.cattles.virtualClusterProvision;
 
 import com.cattles.virtualClusterManagement.VirtualCluster;
-import com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvisionBiz;
 import org.apache.log4j.Logger;
 
 /**
@@ -9,9 +8,9 @@ import org.apache.log4j.Logger;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class IVirtualClusterProvision implements IVirtualClusterProvisionBiz {
+public class IVirtualClusterProvision implements com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision {
     private static Logger logger = Logger.getLogger(IVirtualClusterProvision.class);
-    IVirtualClusterProvisionBiz virtualClusterProvision= VirtualClusterProvisionFactory.virtualClusterProvision();
+    com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision virtualClusterProvision= VirtualClusterProvisionFactory.virtualClusterProvision();
     /**
      * provision cluster to upper layer
      *

@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author youfuli
  *
  */
-public interface IVMInformationMaintainBiz {
+public interface IVMInformationMaintain {
     public ArrayList<VMInfo> getInstanceList();
     /**
      * use cloud platform API to get the last VM information.

@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author youfuli
  *
  */
-public interface IVMOperationBiz {
+public interface IVMOperation {
 
 	/**
 	 * Used to create certain number of VMs.

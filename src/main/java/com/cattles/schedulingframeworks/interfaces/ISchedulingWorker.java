@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public interface ISchedulingWorkerBiz {
+public interface ISchedulingWorker {
     /**
      * Initialize the server according to provided serverID
      * @param serverID

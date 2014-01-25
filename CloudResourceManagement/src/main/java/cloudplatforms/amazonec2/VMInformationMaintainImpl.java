@@ -5,7 +5,7 @@ import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.model.DescribeInstancesResult;
 import com.amazonaws.services.ec2.model.Instance;
 import com.amazonaws.services.ec2.model.Reservation;
-import com.cattles.cloudplatforms.interfaces.IVMInformationMaintainBiz;
+import com.cattles.cloudplatforms.interfaces.IVMInformationMaintain;
 import com.cattles.util.Constant;
 import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * Time: 8:05 PM
  * To change this template use File | Settings | File Templates.
  */
-public class VMInformationMaintainImpl implements IVMInformationMaintainBiz {
+public class VMInformationMaintainImpl implements IVMInformationMaintain {
     private static Logger logger = Logger.getLogger(VMInformationMaintainImpl.class);
     EC2ConfigOperation ec2Config = new EC2ConfigOperation();
     // Initialize variables.

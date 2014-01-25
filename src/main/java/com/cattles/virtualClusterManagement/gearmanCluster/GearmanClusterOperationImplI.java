@@ -1,6 +1,6 @@
 package com.cattles.virtualClusterManagement.gearmanCluster;
 
-import com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperationBiz;
+import com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperation;
 import com.cattles.virtualClusterManagement.VirtualCluster;
 import com.cattles.virtualMachineManagement.VMInfo;
 
@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class GearmanClusterOperationImplI implements IVirtualClusterOperationBiz {
+public class GearmanClusterOperationImplI implements IVirtualClusterOperation {
     /**
      * use getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY) and getClustersWithType(Constant.FALKON_FRAMEWORK_NAME) to find the standby falkon cluster
      *

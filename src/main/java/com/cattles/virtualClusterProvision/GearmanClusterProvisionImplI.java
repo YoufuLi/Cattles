@@ -3,7 +3,6 @@ package com.cattles.virtualClusterProvision;
 import com.cattles.resourcePoolManagement.VirtualResourcePool;
 import com.cattles.virtualClusterManagement.VirtualCluster;
 import com.cattles.virtualClusterManagement.XMLOperationCluster;
-import com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvisionBiz;
 import org.apache.log4j.Logger;
 
 /**
@@ -11,7 +10,7 @@ import org.apache.log4j.Logger;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class GearmanClusterProvisionImplI implements IVirtualClusterProvisionBiz {
+public class GearmanClusterProvisionImplI implements com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision {
     private static Logger logger = Logger.getLogger(GearmanClusterProvisionImplI.class);
     XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
     VirtualResourcePool virtualResourcePool=new VirtualResourcePool();

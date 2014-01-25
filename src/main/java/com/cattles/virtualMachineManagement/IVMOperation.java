@@ -1,7 +1,5 @@
 package com.cattles.virtualMachineManagement;
 
-import com.cattles.cloudplatforms.interfaces.IVMOperationBiz;
-
 import java.util.ArrayList;
 
 /**
@@ -9,8 +7,8 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class IVMOperation implements IVMOperationBiz {
-     IVMOperationBiz vmOperation=VMOperationFactory.vmOperation();
+public class IVMOperation implements com.cattles.cloudplatforms.interfaces.IVMOperation {
+     com.cattles.cloudplatforms.interfaces.IVMOperation vmOperation=VMOperationFactory.vmOperation();
 
     /**
      * Used to create certain number of VMs.

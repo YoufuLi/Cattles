@@ -1,6 +1,5 @@
 package com.cattles.virtualClusterManagement;
 
-import com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperationBiz;
 import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
@@ -11,9 +10,9 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class IVirtualClusterOperation implements IVirtualClusterOperationBiz {
+public class IVirtualClusterOperation implements com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperation {
     private static Logger logger = Logger.getLogger(IVirtualClusterOperation.class);
-    IVirtualClusterOperationBiz virtualClusterOperation=VirtualClusterOperationFactory.virtualClusterOperation();
+    com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperation virtualClusterOperation=VirtualClusterOperationFactory.virtualClusterOperation();
 
     @Override
     public ArrayList<VirtualCluster> getStandbyCluster() {

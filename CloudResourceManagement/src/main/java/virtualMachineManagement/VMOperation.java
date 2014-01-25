@@ -1,6 +1,6 @@
 package virtualMachineManagement;
 
-import com.cattles.cloudplatforms.interfaces.IVMOperationBiz;
+import com.cattles.cloudplatforms.interfaces.IVMOperation;
 
 import java.util.ArrayList;
 
@@ -11,8 +11,8 @@ import java.util.ArrayList;
  * Time: 1:28 PM
  * To change this template use File | Settings | File Templates.
  */
-public class VMOperation implements IVMOperationBiz {
-     IVMOperationBiz vmOperation=VMOperationFactory.vmOperation();
+public class VMOperation implements IVMOperation {
+     IVMOperation vmOperation=VMOperationFactory.vmOperation();
 
     /**
      * Used to create certain number of VMs.

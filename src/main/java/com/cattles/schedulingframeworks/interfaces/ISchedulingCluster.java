@@ -7,7 +7,7 @@ import com.cattles.virtualClusterManagement.VirtualCluster;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public interface ISchedulingClusterBiz {
+public interface ISchedulingCluster {
     /**
      * Initialize the cluster according to provided cluster
      * @param virtualCluster

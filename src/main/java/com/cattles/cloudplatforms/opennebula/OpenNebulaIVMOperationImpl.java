@@ -1,6 +1,6 @@
 package com.cattles.cloudplatforms.opennebula;
 
-import com.cattles.cloudplatforms.interfaces.IVMOperationBiz;
+import com.cattles.cloudplatforms.interfaces.IVMOperation;
 import com.cattles.virtualMachineManagement.VMInfo;
 
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class OpenNebulaIVMOperationImpl implements IVMOperationBiz {
+public class OpenNebulaIVMOperationImpl implements IVMOperation {
     /**
      * Used to create certain number of VMs.
      *

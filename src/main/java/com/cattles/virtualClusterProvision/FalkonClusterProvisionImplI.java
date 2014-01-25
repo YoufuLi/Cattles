@@ -7,7 +7,6 @@ import com.cattles.util.Constant;
 import com.cattles.virtualClusterManagement.IVirtualClusterOperation;
 import com.cattles.virtualClusterManagement.VirtualCluster;
 import com.cattles.virtualClusterManagement.XMLOperationCluster;
-import com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvisionBiz;
 import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
@@ -18,7 +17,7 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class FalkonClusterProvisionImplI implements IVirtualClusterProvisionBiz {
+public class FalkonClusterProvisionImplI implements com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision {
     private static Logger logger = Logger.getLogger(FalkonClusterProvisionImplI.class);
     XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
     VirtualResourcePool virtualResourcePool=new VirtualResourcePool();

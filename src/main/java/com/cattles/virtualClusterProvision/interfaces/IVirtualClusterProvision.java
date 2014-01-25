@@ -7,7 +7,7 @@ import com.cattles.virtualClusterManagement.VirtualCluster;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public interface IVirtualClusterProvisionBiz {
+public interface IVirtualClusterProvision {
     /**
      * provision cluster to upper layer
      * @param _clusterSize

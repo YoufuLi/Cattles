@@ -2,7 +2,7 @@ package virtualClusterProvision;
 
 import com.cattles.util.Constant;
 import com.cattles.util.XMLOperationSchedulingFramework;
-import com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvisionBiz;
+import com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision;
 import org.apache.log4j.Logger;
 
 /**
@@ -14,7 +14,7 @@ import org.apache.log4j.Logger;
  */
 public class VirtualClusterProvisionFactory {
     private static Logger log = Logger.getLogger(VirtualClusterProvisionFactory.class);
-    public static IVirtualClusterProvisionBiz virtualClusterProvision(){
+    public static IVirtualClusterProvision virtualClusterProvision(){
         XMLOperationSchedulingFramework xmlOperationSchedulingFramework=XMLOperationSchedulingFramework.getXmlOperationPlatform();
         if(xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.FALKON_FRAMEWORK_NAME)){
             log.info(Constant.FALKON_FRAMEWORK_NAME);

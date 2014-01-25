@@ -1,7 +1,7 @@
 package com.cattles.schedulingframeworks.falkon;
 
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
-import com.cattles.schedulingframeworks.interfaces.ISchedulingServerBiz;
+import com.cattles.schedulingframeworks.interfaces.ISchedulingServer;
 import com.cattles.virtualMachineManagement.VMInfo;
 import org.apache.log4j.Logger;
 
@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class FalkonISchedulingServer implements ISchedulingServerBiz {
+public class FalkonISchedulingServer implements ISchedulingServer {
     private static Logger logger = Logger.getLogger(FalkonISchedulingServer.class);
     VirtualMachineResourcePool virtualMachineResourcePool=VirtualMachineResourcePool.getResourcePool();
 

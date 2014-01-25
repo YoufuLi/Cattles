@@ -1,6 +1,6 @@
 package virtualClusterManagement.falkonCluster;
 
-import com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperationBiz;
+import com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperation;
 import com.cattles.resourcePoolManagement.VirtualResourcePool;
 import com.cattles.schedulingframeworks.falkon.FalkonClusterInitialization;
 import com.cattles.util.Constant;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * Time: 4:47 PM
  * To change this template use File | Settings | File Templates.
  */
-public class FalkonClusterOperationImpl implements IVirtualClusterOperationBiz {
+public class FalkonClusterOperationImpl implements IVirtualClusterOperation {
     //TODO:update the operations upon to cluster management
     private static Logger logger = Logger.getLogger(FalkonClusterOperationImpl.class);
     XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
