@@ -1,5 +1,6 @@
 package com.cattles.schedulingframeworks.interfaces;
 
+import com.cattles.schedulingframeworks.SchedulingConfiguration;
 import com.cattles.virtualClusterManagement.VirtualCluster;
 
 import java.util.ArrayList;
@@ -14,13 +15,14 @@ public interface ISchedulingWorker {
      * Initialize the server according to provided serverID
      * @param serverID
      * @param nodeIDList
+     * @param configuration
      */
-    public void register2Server(String serverID, ArrayList<String> nodeIDList);
+    public boolean register2Server(String serverID, ArrayList<String> nodeIDList, SchedulingConfiguration configuration);
 
     /**
      * deregister the worker from server
      * @param serverID
      * @param nodeIDList
      */
-    public void deregisterFromServer(String serverID, ArrayList<String> nodeIDList);
+    public boolean deregisterFromServer(String serverID, ArrayList<String> nodeIDList);
 }

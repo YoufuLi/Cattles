@@ -1,5 +1,6 @@
 package com.cattles.schedulingframeworks.interfaces;
 
+import com.cattles.schedulingframeworks.SchedulingConfiguration;
 import com.cattles.virtualClusterManagement.VirtualCluster;
 
 /**
@@ -11,12 +12,13 @@ public interface ISchedulingServer {
     /**
      * Initialize the cluster according to provided cluster
      * @param serverID
+     * @param configuration
      */
-    public void startServer(String serverID);
+    public boolean startServer(String serverID, SchedulingConfiguration configuration);
 
     /**
      * terminate the cluster according to provided cluster
      * @param serverID
      */
-    public void stopServer(String serverID);
+    public boolean stopServer(String serverID);
 }
