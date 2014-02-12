@@ -63,7 +63,7 @@ public class FalkonClusterExecutor extends BaseCommandExecutor {
                         }
                     }
                     if(msg.contains("config file /home/ubuntu/software/")){
-                        logger.info("Falkon cluster server creation:"+System.currentTimeMillis()+"#############");
+                        logger.info("Falkon cluster server creation");
                     }
                     logger.info(msg);
                     if(msg.contains("[26]")){

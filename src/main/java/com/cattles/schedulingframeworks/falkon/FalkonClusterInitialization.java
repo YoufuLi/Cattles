@@ -27,7 +27,7 @@ public class FalkonClusterInitialization extends Thread {
     }
 
     public void run(){
-        logger.info("Begin to Initialize Falkon service***********    "+System.currentTimeMillis()+"   **************");
+        logger.info("Begin to Initialize Falkon service**************");
         VMInfo falkonServer=virtualMachineResourcePool.getVMWithID(serverID);
         CommandExecutable ce = (new FalkonExecFactory()).getCmdExec("cluster");
         ConnInfo ci = new ConnInfo(falkonServer.getVmPublicIpAddress(), Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_KEY_PATH,null);
@@ -42,10 +42,10 @@ public class FalkonClusterInitialization extends Thread {
         }
         result = ce.execute(Constant.FALKON_SERVICE_INTIALIZATION_COMMAND);
 
-        logger.info("Finish initializing the Falkon service***********    "+System.currentTimeMillis()+"   **************");
+        logger.info("Finish initializing the Falkon service**************");
         if (result!=null){
             //ce.disconnect();
-            logger.info("Finish initializing the Falkon service***********    "+System.currentTimeMillis()+"   **************");
+            logger.info("Finish initializing the Falkon service**************");
             for (String workerID:nodeIDList){
                 VMInfo falkonWorker=virtualMachineResourcePool.getVMWithID(workerID);
                 logger.info("registering worker "+workerID+" to server!");

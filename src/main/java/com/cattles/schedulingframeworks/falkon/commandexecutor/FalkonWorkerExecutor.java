@@ -64,10 +64,10 @@ public class FalkonWorkerExecutor extends BaseCommandExecutor {
                     }
                     logger.info(msg);
                     if(msg.contains("creating Falkon Java Executor resource")){
-                        logger.info("one worker starts the registeration at time:************************   "+System.currentTimeMillis()+"   ************************");
+                        logger.info("one worker starts the registeration");
                     }
                     if(msg.contains("WORKER: lifeListen Thread not started")){
-                        logger.info("one worker finished the registeration at time:************************   "+System.currentTimeMillis()+"   ************************");
+                        logger.info("one worker finished the registeration");
                         result.append(msg);
                         return result;
                     }

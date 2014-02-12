@@ -37,6 +37,6 @@ public class FalkonWorkerDeregisteraton extends Thread {
         if(result!=null){
             ce.disconnect();
         }
-        logger.info("Finished deregistering the workers:*******************"+System.currentTimeMillis()+"****************************");
+        logger.info("Finished deregistering the workers****************************");
     }
 }
