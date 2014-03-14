@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cattles.iml" filepath="$PROJECT_DIR$/Cattles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudresourcemanagement/cloudresourcemanagement.iml" filepath="$PROJECT_DIR$/cloudresourcemanagement/cloudresourcemanagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/schedulingframeworks/schedulingframeworks.iml" filepath="$PROJECT_DIR$/schedulingframeworks/schedulingframeworks.iml" />
     </modules>
   </component>
 </project>

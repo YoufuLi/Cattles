@@ -22,7 +22,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="cloudresourcemanagement" />
         <module name="CloudResourceManagement" />
+        <module name="schedulingframeworks" />
       </profile>
     </annotationProcessing>
   </component>
