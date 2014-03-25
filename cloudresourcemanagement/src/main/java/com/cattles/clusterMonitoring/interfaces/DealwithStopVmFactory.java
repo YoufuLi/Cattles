@@ -10,8 +10,8 @@ import com.cattles.interfaces.DealwithStopVm;
  * To change this template use File | Settings | File Templates.
  */
 public class DealwithStopVmFactory {
-    public static DealwithStopVm getInstance(String s){
-        DealwithStopVm a= new DealwithStopVm() {
+    public static DealwithStopVm getInstance(String s) {
+        DealwithStopVm a = new DealwithStopVm() {
             @Override
             public int stopVmType(String vmIp) throws Exception {
                 return 0;  //To change body of implemented methods use File | Settings | File Templates.

@@ -1,6 +1,4 @@
-package com.cattles.schedulingframeworks.interfaces;
-
-import com.cattles.schedulingframeworks.SchedulingConfiguration;
+package com.cattles.executionservice.interfaces;
 
 import java.util.ArrayList;
 
@@ -12,6 +10,7 @@ import java.util.ArrayList;
 public interface ISchedulingWorker {
     /**
      * Initialize the server according to provided serverID
+     *
      * @param serverID
      * @param nodeIDList
      */
@@ -19,6 +18,7 @@ public interface ISchedulingWorker {
 
     /**
      * deregister the worker from server
+     *
      * @param serverID
      * @param nodeIDList
      */

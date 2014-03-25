@@ -3,11 +3,11 @@ package com.cattles.virtualClusterManagement;
 import java.util.ArrayList;
 
 public class VirtualCluster {
-	String clusterID; //the id of a cluster
-	String clusterType; // identify whether the cluster is a "falkon" cluster, "gearman" cluster or the other cluster
+    String clusterID; //the id of a cluster
+    String clusterType; // identify whether the cluster is a "falkon" cluster, "gearman" cluster or the other cluster
     String clusterState;  //if the cluster is in "standby" state or in "activated" state
     int clusterSize;   //cluster size, the number of worker
-	String clusterServerID;    //the server ID in this cluster
+    String clusterServerID;    //the server ID in this cluster
     ArrayList<String> nodesIDList;
 
     public String getClusterID() {

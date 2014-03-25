@@ -2,7 +2,7 @@ package com.cattles.virtualClusterManagement.gearmanCluster;
 
 import com.cattles.virtualClusterManagement.VirtualCluster;
 import com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperation;
-import com.cattles.virtualMachineManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VirtualMachineInformation;
 
 import java.util.ArrayList;
 
@@ -51,7 +51,7 @@ public class GearmanClusterOperationImplI implements IVirtualClusterOperation {
      * @return
      */
     @Override
-    public VirtualCluster generateCluster(ArrayList<VMInfo> VMList) {
+    public VirtualCluster generateCluster(ArrayList<VirtualMachineInformation> VMList) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 

@@ -1,9 +1,9 @@
-package com.cattles.schedulingframeworks.falkon;
+package com.cattles.executionservice.falkon;
 
+import com.cattles.executionservice.ExecutionServiceConfiguration;
+import com.cattles.executionservice.interfaces.ISchedulingServer;
 import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
-import com.cattles.schedulingframeworks.SchedulingConfiguration;
-import com.cattles.schedulingframeworks.interfaces.ISchedulingServer;
-import com.cattles.virtualMachineManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VirtualMachineInformation;
 import org.apache.log4j.Logger;
 
 /**
@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
  */
 public class FalkonISchedulingServer implements ISchedulingServer {
     private static Logger logger = Logger.getLogger(FalkonISchedulingServer.class);
-    VirtualMachineResourcePool virtualMachineResourcePool=VirtualMachineResourcePool.getResourcePool();
+    VirtualMachineResourcePool virtualMachineResourcePool = VirtualMachineResourcePool.getResourcePool();
 
     /**
      * Initialize the cluster according to provided cluster
@@ -21,11 +21,11 @@ public class FalkonISchedulingServer implements ISchedulingServer {
      * @param serverID
      */
     @Override
-    public boolean startServer(String serverID, SchedulingConfiguration configuration) {
+    public boolean startServer(String serverID, ExecutionServiceConfiguration configuration) {
         //get the vm information according to the serverID, which is also the ID of a virtual machine.
-        VMInfo falkonServer=virtualMachineResourcePool.getVMWithID(serverID);
+        VirtualMachineInformation falkonServer = virtualMachineResourcePool.getVMWithID(serverID);
         logger.info("Initializing the falkon server!");
-        FalkonServerInitialization falkonServerInitialization=new FalkonServerInitialization(falkonServer.getVmID(),falkonServer.getVmPublicIpAddress());
+        FalkonServerInitialization falkonServerInitialization = new FalkonServerInitialization(falkonServer.getVmID(), falkonServer.getVmPublicIpAddress());
         falkonServerInitialization.start();
         return true;
     }
@@ -37,9 +37,9 @@ public class FalkonISchedulingServer implements ISchedulingServer {
      */
     @Override
     public boolean stopServer(String serverID) {
-        VMInfo falkonServer=virtualMachineResourcePool.getVMWithID(serverID);
+        VirtualMachineInformation falkonServer = virtualMachineResourcePool.getVMWithID(serverID);
         logger.info("Stopping falkon service");
-        FalkonServerStop falkonServerStop=new FalkonServerStop(falkonServer.getVmID(),falkonServer.getVmPublicIpAddress());
+        FalkonServerStop falkonServerStop = new FalkonServerStop(falkonServer.getVmID(), falkonServer.getVmPublicIpAddress());
         falkonServerStop.start();
         return true;
     }

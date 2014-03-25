@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.cattles.clusterMonitoring.heartbeat;
 
@@ -16,27 +16,27 @@ import java.net.Socket;
  */
 public class NodeServer extends Thread {
 
-	public static final Log logger = LogFactory.getLog(NodeServer.class);
+    public static final Log logger = LogFactory.getLog(NodeServer.class);
 
-	// 当前的连接数和工作线程数
-	static int workThreadNum = 0;
-	static int socketConnect = 0;
+    // 当前的连接数和工作线程数
+    static int workThreadNum = 0;
+    static int socketConnect = 0;
 
-	private ServerSocket serverSocket;
+    private ServerSocket serverSocket;
 
-	// 服务的IP
-	// private static final String SERVER = "172.16.254.180";
+    // 服务的IP
+    // private static final String SERVER = "172.16.254.180";
 
-	// 端口
-	// private static final int PORT = 60001;
-	public NodeServer(){
-		//确保ctrl＋c的时候会关闭serverSocket
-		Runtime.getRuntime().addShutdownHook(this);
-	}
+    // 端口
+    // private static final int PORT = 60001;
+    public NodeServer() {
+        //确保ctrl＋c的时候会关闭serverSocket
+        Runtime.getRuntime().addShutdownHook(this);
+    }
 
-	public void run() {
-		// 绑定端口，并开始侦听用户心跳包
-		/*serverSocket = startListenUserReport(ReadManagerConfig.heartbeatPort);
+    public void run() {
+        // 绑定端口，并开始侦听用户心跳包
+        /*serverSocket = startListenUserReport(ReadManagerConfig.heartbeatPort);
 		if (serverSocket == null) {
 			logger.error("server socket error!");
 			return;
@@ -56,13 +56,12 @@ public class NodeServer extends Thread {
 				e.printStackTrace();
 			}
 		}*/
-	}
+    }
 
-	/**
-	 * 创建一个ServerSocket来侦听用户心跳包请求
-	 * 
-	 */
-	public ServerSocket startListenUserReport(int port) {
+    /**
+     * 创建一个ServerSocket来侦听用户心跳包请求
+     */
+    public ServerSocket startListenUserReport(int port) {
 		/*try {
 			ServerSocket serverSocket = new ServerSocket();
 			if (!serverSocket.getReuseAddress()) {
@@ -85,20 +84,20 @@ public class NodeServer extends Thread {
 				}
 			}
 		}*/
-		return serverSocket;
-	}
+        return serverSocket;
+    }
 
-	/**
-	 * @author xiongrong 用法：工作线程类
-	 */
-	class Handler implements Runnable {
-		private Socket socket;
+    /**
+     * @author xiongrong 用法：工作线程类
+     */
+    class Handler implements Runnable {
+        private Socket socket;
 
-		public Handler(Socket socket) {
-			this.socket = socket;
-		}
+        public Handler(Socket socket) {
+            this.socket = socket;
+        }
 
-		public void run() {
+        public void run() {
 			/*Node node = null;
 			try {
 				workThreadNum = workThreadNum + 1;
@@ -173,23 +172,22 @@ public class NodeServer extends Thread {
 					}
 				}
 			} */
-		}
-	}
+        }
+    }
 
-	/**
-	 * 
-	 * author:xiong rong 功能： 查询一个用户是否在线
-	 * 
-	 * @param name
-	 */
-	public boolean isAlive(String name) {
-		//return Constant.nodeMap.containsKey(name);
+    /**
+     * author:xiong rong 功能： 查询一个用户是否在线
+     *
+     * @param name
+     */
+    public boolean isAlive(String name) {
+        //return Constant.nodeMap.containsKey(name);
         return false;
-	}
+    }
 
-	public static void main(String arg[]) {
-		NodeServer server = new NodeServer();
-		System.out.println("..............start server.................");
-		server.start();
-	}
+    public static void main(String arg[]) {
+        NodeServer server = new NodeServer();
+        System.out.println("..............start server.................");
+        server.start();
+    }
 }

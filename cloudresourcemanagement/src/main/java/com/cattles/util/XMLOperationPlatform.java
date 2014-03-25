@@ -20,24 +20,27 @@ import java.io.IOException;
 public class XMLOperationPlatform {
     public Document xmlDocument;
     private static XMLOperationPlatform xmlOperationPlatform = null;
-    private XMLOperationPlatform(){
+
+    private XMLOperationPlatform() {
 
     }
-    public static synchronized XMLOperationPlatform getXmlOperationPlatform(){
-        if (xmlOperationPlatform==null){
-            xmlOperationPlatform=new XMLOperationPlatform();
+
+    public static synchronized XMLOperationPlatform getXmlOperationPlatform() {
+        if (xmlOperationPlatform == null) {
+            xmlOperationPlatform = new XMLOperationPlatform();
             xmlOperationPlatform.init();
         }
         return xmlOperationPlatform;
     }
+
     private void init() {
         // TODO Auto-generated method stub
-        try{
-            DocumentBuilderFactory factory= DocumentBuilderFactory.newInstance();
-            DocumentBuilder builder=factory.newDocumentBuilder();
-            this.xmlDocument=builder.parse(Constant.PLATFORM_CONF_PATH);
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            this.xmlDocument = builder.parse(Constant.PLATFORM_CONF_PATH);
             xmlDocument.normalize();
-        }catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         } catch (ParserConfigurationException e) {
             System.out.println(e.getMessage());
@@ -51,28 +54,29 @@ public class XMLOperationPlatform {
     /**
      * get the platform name from the platform_conf file.
      * tagName platform_name
+     *
      * @return vmInfoList
      */
-    public String getPlatformName(){
-        String platformName="";
-        NodeList platform_nameList=xmlDocument.getElementsByTagName("platform_name");
-        if(platform_nameList.getLength()>=1){
-            platformName=platform_nameList.item(0).getTextContent();
+    public String getPlatformName() {
+        String platformName = "";
+        NodeList platform_nameList = xmlDocument.getElementsByTagName("platform_name");
+        if (platform_nameList.getLength() >= 1) {
+            platformName = platform_nameList.item(0).getTextContent();
         }
         return platformName;
     }
 
-    public int getPoolInitializationSize(){
-        int initializationSize=6;
-        NodeList initializationSize_List=xmlDocument.getElementsByTagName("poolInitializationSize");
-        if(initializationSize_List.getLength()>=1){
-            initializationSize=Integer.parseInt(initializationSize_List.item(0).getTextContent());
+    public int getPoolInitializationSize() {
+        int initializationSize = 6;
+        NodeList initializationSize_List = xmlDocument.getElementsByTagName("poolInitializationSize");
+        if (initializationSize_List.getLength() >= 1) {
+            initializationSize = Integer.parseInt(initializationSize_List.item(0).getTextContent());
         }
         return initializationSize;
     }
 
-    public static void main(String[] args){
-        XMLOperationPlatform xmlOperationPlatform=XMLOperationPlatform.getXmlOperationPlatform();
+    public static void main(String[] args) {
+        XMLOperationPlatform xmlOperationPlatform = XMLOperationPlatform.getXmlOperationPlatform();
         System.out.println(xmlOperationPlatform.getPlatformName());
         System.out.println(xmlOperationPlatform.getPoolInitializationSize());
     }

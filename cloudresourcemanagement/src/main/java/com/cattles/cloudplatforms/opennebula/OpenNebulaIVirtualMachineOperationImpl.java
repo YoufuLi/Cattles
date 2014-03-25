@@ -1,7 +1,7 @@
 package com.cattles.cloudplatforms.opennebula;
 
-import com.cattles.cloudplatforms.interfaces.IVMOperation;
-import com.cattles.virtualMachineManagement.VMInfo;
+import com.cattles.cloudplatforms.interfaces.IVirtualMachineOperation;
+import com.cattles.virtualMachineManagement.VirtualMachineInformation;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class OpenNebulaIVMOperationImpl implements IVMOperation {
+public class OpenNebulaIVirtualMachineOperationImpl implements IVirtualMachineOperation {
     /**
      * Used to create certain number of VMs.
      *
@@ -19,7 +19,7 @@ public class OpenNebulaIVMOperationImpl implements IVMOperation {
      * @throws Exception
      */
     @Override
-    public ArrayList<VMInfo> createInstances(int vmNumber) throws Exception {
+    public ArrayList<VirtualMachineInformation> createInstances(int vmNumber) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -31,7 +31,7 @@ public class OpenNebulaIVMOperationImpl implements IVMOperation {
      * @throws Exception
      */
     @Override
-    public VMInfo launchInstance(VMInfo _VMInfo) throws Exception {
+    public VirtualMachineInformation launchInstance(VirtualMachineInformation _VMInfo) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -43,7 +43,7 @@ public class OpenNebulaIVMOperationImpl implements IVMOperation {
      * @throws Exception
      */
     @Override
-    public ArrayList<VMInfo> launchInstances(ArrayList<VMInfo> vmList) throws Exception {
+    public ArrayList<VirtualMachineInformation> launchInstances(ArrayList<VirtualMachineInformation> vmList) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -55,7 +55,7 @@ public class OpenNebulaIVMOperationImpl implements IVMOperation {
      * @throws Exception
      */
     @Override
-    public boolean shutdownInstance(VMInfo _VMInfo) throws Exception {
+    public boolean shutdownInstance(VirtualMachineInformation _VMInfo) throws Exception {
         return false;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -67,7 +67,7 @@ public class OpenNebulaIVMOperationImpl implements IVMOperation {
      * @throws Exception
      */
     @Override
-    public boolean shutdownInstances(ArrayList<VMInfo> vmList) throws Exception {
+    public boolean shutdownInstances(ArrayList<VirtualMachineInformation> vmList) throws Exception {
         return false;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -78,7 +78,7 @@ public class OpenNebulaIVMOperationImpl implements IVMOperation {
      * @throws Exception
      */
     @Override
-    public VMInfo rebootInstance(VMInfo _VMInfo) throws Exception {
+    public VirtualMachineInformation rebootInstance(VirtualMachineInformation _VMInfo) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -89,7 +89,7 @@ public class OpenNebulaIVMOperationImpl implements IVMOperation {
      * @throws Exception
      */
     @Override
-    public ArrayList<VMInfo> rebootInstances(ArrayList<VMInfo> vmList) throws Exception {
+    public ArrayList<VirtualMachineInformation> rebootInstances(ArrayList<VirtualMachineInformation> vmList) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -101,7 +101,7 @@ public class OpenNebulaIVMOperationImpl implements IVMOperation {
      * @throws Exception
      */
     @Override
-    public boolean destroyInstances(ArrayList<VMInfo> vmList) throws Exception {
+    public boolean destroyInstances(ArrayList<VirtualMachineInformation> vmList) throws Exception {
         return false;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

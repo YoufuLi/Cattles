@@ -1,6 +1,6 @@
-package com.cattles.schedulingframeworks.falkon;
+package com.cattles.executionservice.falkon;
 
-import com.cattles.schedulingframeworks.falkon.commandexecutor.FalkonExecFactory;
+import com.cattles.executionservice.falkon.commandexecutor.FalkonExecFactory;
 import com.cattles.util.Constant;
 import com.cattles.util.ssh.CommandExecutable;
 import com.cattles.util.ssh.ConnInfo;
@@ -12,18 +12,20 @@ import org.apache.log4j.Logger;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class FalkonServerStop extends Thread{
+public class FalkonServerStop extends Thread {
     private static Logger logger = Logger.getLogger(FalkonISchedulingServer.class);
-    String falkonServerIP=null;
-    public FalkonServerStop(String _threadName, String _falkonServerIP){
+    String falkonServerIP = null;
+
+    public FalkonServerStop(String _threadName, String _falkonServerIP) {
         super(_threadName);
-        falkonServerIP=_falkonServerIP;
+        falkonServerIP = _falkonServerIP;
     }
-    public void run(){
+
+    public void run() {
         CommandExecutable ce = (new FalkonExecFactory()).getCmdExec("server");
-        ConnInfo ci = new ConnInfo(falkonServerIP, Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_KEY_PATH,null);
+        ConnInfo ci = new ConnInfo(falkonServerIP, Constant.VIRTUAL_MACHINE_ACCOUNT, Constant.VIRTUAL_MACHINE_KEY_PATH, null);
         SSHResult result = ce.connect(ci);
-        if(!result.isSuccess()){
+        if (!result.isSuccess()) {
             Exception exception = result.getError();
             try {
                 throw exception;

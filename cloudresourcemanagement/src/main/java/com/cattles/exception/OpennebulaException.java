@@ -7,28 +7,27 @@ package com.cattles.exception;
 
 /**
  * @author xiong rong
- *
  */
-public class OpennebulaException extends Exception{
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -1414505232444617324L;
+public class OpennebulaException extends Exception {
 
-	public OpennebulaException(){
-		super();
-	}
-	
-	public OpennebulaException(String msg){
-		super(msg);
-	}
-	
-	public OpennebulaException(Throwable cause){
-		super(cause);
-	}
-	
-	public OpennebulaException(String msg,Throwable cause){
-		super(msg,cause);
-	}
+    /**
+     *
+     */
+    private static final long serialVersionUID = -1414505232444617324L;
+
+    public OpennebulaException() {
+        super();
+    }
+
+    public OpennebulaException(String msg) {
+        super(msg);
+    }
+
+    public OpennebulaException(Throwable cause) {
+        super(cause);
+    }
+
+    public OpennebulaException(String msg, Throwable cause) {
+        super(msg, cause);
+    }
 }

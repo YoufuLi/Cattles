@@ -1,4 +1,4 @@
-package com.cattles.schedulingframeworks.falkon.commandexecutor;
+package com.cattles.executionservice.falkon.commandexecutor;
 
 import com.cattles.util.ssh.CommandExecutable;
 import com.cattles.util.ssh.SSHFactory;
@@ -8,14 +8,15 @@ public class FalkonExecFactory implements SSHFactory {
     public CommandExecutable getCmdExec() {
         return new JschCommandExecutor();
     }
+
     public CommandExecutable getCmdExec(String type) {
-        if (type.equalsIgnoreCase("cluster")){
+        if (type.equalsIgnoreCase("cluster")) {
             return new FalkonClusterExecutor();
-        }else if(type.equalsIgnoreCase("server")) {
+        } else if (type.equalsIgnoreCase("server")) {
             return new FalkonServerExecutor();
-        }else if(type.equalsIgnoreCase("worker")){
+        } else if (type.equalsIgnoreCase("worker")) {
             return new FalkonWorkerExecutor();
-        }else {
+        } else {
             return new JschCommandExecutor();
         }
     }

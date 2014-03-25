@@ -7,16 +7,21 @@ package com.cattles.util;
  */
 public class PlatformConfiguration {
     private static PlatformConfiguration platformConfiguration;
-    private PlatformConfiguration(){}
-    XMLOperationPlatform xmlOperationPlatform=XMLOperationPlatform.getXmlOperationPlatform();
-    public static synchronized PlatformConfiguration getPlatformConfiguration(){
-        if(platformConfiguration==null){
-            platformConfiguration=new PlatformConfiguration();
+
+    private PlatformConfiguration() {
+    }
+
+    XMLOperationPlatform xmlOperationPlatform = XMLOperationPlatform.getXmlOperationPlatform();
+
+    public static synchronized PlatformConfiguration getPlatformConfiguration() {
+        if (platformConfiguration == null) {
+            platformConfiguration = new PlatformConfiguration();
         }
         return platformConfiguration;
     }
-    public String getPlatformName(){
-        String platformName=xmlOperationPlatform.getPlatformName();
+
+    public String getPlatformName() {
+        String platformName = xmlOperationPlatform.getPlatformName();
         return platformName;
     }
 }

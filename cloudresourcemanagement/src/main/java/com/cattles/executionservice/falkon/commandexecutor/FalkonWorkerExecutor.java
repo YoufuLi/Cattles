@@ -1,4 +1,4 @@
-package com.cattles.schedulingframeworks.falkon.commandexecutor;
+package com.cattles.executionservice.falkon.commandexecutor;
 
 import com.cattles.util.ssh.*;
 import com.cattles.util.ssh.jsch.JschSCP;
@@ -15,8 +15,8 @@ import java.io.InputStream;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class FalkonClusterExecutor extends BaseCommandExecutor {
-    private Logger logger = Logger.getLogger(FalkonClusterExecutor.class);
+public class FalkonWorkerExecutor extends BaseCommandExecutor {
+    private Logger logger = Logger.getLogger(FalkonWorkerExecutor.class);
 
     private Session sshSession;
     private volatile static JSch jsch;
@@ -35,6 +35,7 @@ public class FalkonClusterExecutor extends BaseCommandExecutor {
             sshSession.setUserInfo(new JschUserInfo(jsch, connInfo));
         }
     }
+
     public SSHResult execute(String command) {
         SSHResult result = new SSHResult(command);
         boolean success = true;
@@ -62,11 +63,12 @@ public class FalkonClusterExecutor extends BaseCommandExecutor {
                             m.info(msg);
                         }
                     }
-                    if(msg.contains("config file /home/ubuntu/software/")){
-                        logger.info("Falkon cluster server creation");
-                    }
                     logger.info(msg);
-                    if(msg.contains("[26]")){
+                    if (msg.contains("creating Falkon Java Executor resource")) {
+                        logger.info("one worker starts the registeration");
+                    }
+                    if (msg.contains("WORKER: lifeListen Thread not started")) {
+                        logger.info("one worker finished the registeration");
                         result.append(msg);
                         return result;
                     }

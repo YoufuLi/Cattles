@@ -11,13 +11,14 @@ import org.apache.log4j.Logger;
  */
 public class VirtualClusterProvisionFactory {
     private static Logger log = Logger.getLogger(VirtualClusterProvisionFactory.class);
-    public static com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision virtualClusterProvision(){
-        XMLOperationSchedulingFramework xmlOperationSchedulingFramework=XMLOperationSchedulingFramework.getXmlOperationPlatform();
-        if(xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.FALKON_FRAMEWORK_NAME)){
+
+    public static com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision virtualClusterProvision() {
+        XMLOperationSchedulingFramework xmlOperationSchedulingFramework = XMLOperationSchedulingFramework.getXmlOperationPlatform();
+        if (xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.FALKON_FRAMEWORK_NAME)) {
             log.info(Constant.FALKON_FRAMEWORK_NAME);
             return new FalkonClusterProvisionImpl();
 
-        }else if(xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.GEARMAN_FRAMEWORK_NAME)){
+        } else if (xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.GEARMAN_FRAMEWORK_NAME)) {
             return new GearmanClusterProvisionImplI();
         }
         return null;

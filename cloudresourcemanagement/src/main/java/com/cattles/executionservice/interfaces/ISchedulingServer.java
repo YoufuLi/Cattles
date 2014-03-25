@@ -1,6 +1,6 @@
-package com.cattles.schedulingframeworks.interfaces;
+package com.cattles.executionservice.interfaces;
 
-import com.cattles.schedulingframeworks.SchedulingConfiguration;
+import com.cattles.executionservice.ExecutionServiceConfiguration;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,13 +10,15 @@ import com.cattles.schedulingframeworks.SchedulingConfiguration;
 public interface ISchedulingServer {
     /**
      * Initialize the cluster according to provided cluster
+     *
      * @param serverID
      * @param configuration
      */
-    public boolean startServer(String serverID, SchedulingConfiguration configuration);
+    public boolean startServer(String serverID, ExecutionServiceConfiguration configuration);
 
     /**
      * terminate the cluster according to provided cluster
+     *
      * @param serverID
      */
     public boolean stopServer(String serverID);

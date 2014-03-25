@@ -12,8 +12,9 @@ import org.apache.log4j.Logger;
  */
 public class GearmanClusterProvisionImplI implements com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision {
     private static Logger logger = Logger.getLogger(GearmanClusterProvisionImplI.class);
-    XMLOperationCluster xmlOperationCluster=XMLOperationCluster.getXmlOperationCluster();
-    VirtualResourcePool virtualResourcePool=new VirtualResourcePool();
+    XMLOperationCluster xmlOperationCluster = XMLOperationCluster.getXmlOperationCluster();
+    VirtualResourcePool virtualResourcePool = new VirtualResourcePool();
+
     /**
      * provision cluster to upper layer
      *
@@ -21,7 +22,7 @@ public class GearmanClusterProvisionImplI implements com.cattles.virtualClusterP
      * @return
      */
     @Override
-    public VirtualCluster clusterProvision(int _clusterSize){
+    public VirtualCluster clusterProvision(int _clusterSize) {
         return null;
     }
 

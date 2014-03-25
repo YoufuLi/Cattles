@@ -22,25 +22,28 @@ public class XMLOperationSchedulingFramework {
     private static Logger logger = Logger.getLogger(XMLOperationSchedulingFramework.class);
     public Document xmlDocument;
     private static XMLOperationSchedulingFramework xmlOperationSchedulingFramework = null;
-    private XMLOperationSchedulingFramework(){
+
+    private XMLOperationSchedulingFramework() {
 
     }
-    public static synchronized XMLOperationSchedulingFramework getXmlOperationPlatform(){
-        if (xmlOperationSchedulingFramework==null){
-            xmlOperationSchedulingFramework=new XMLOperationSchedulingFramework();
+
+    public static synchronized XMLOperationSchedulingFramework getXmlOperationPlatform() {
+        if (xmlOperationSchedulingFramework == null) {
+            xmlOperationSchedulingFramework = new XMLOperationSchedulingFramework();
             xmlOperationSchedulingFramework.init();
         }
         return xmlOperationSchedulingFramework;
     }
+
     private void init() {
         // TODO Auto-generated method stub
-        try{
-            DocumentBuilderFactory factory= DocumentBuilderFactory.newInstance();
-            DocumentBuilder builder=factory.newDocumentBuilder();
-            this.xmlDocument=builder.parse(Constant.SCHEDULING_FRAMEWORK_CONF_PATH);
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            this.xmlDocument = builder.parse(Constant.SCHEDULING_FRAMEWORK_CONF_PATH);
             xmlDocument.normalize();
             logger.info("initialize successfully!");
-        }catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         } catch (ParserConfigurationException e) {
             System.out.println(e.getMessage());
@@ -54,19 +57,20 @@ public class XMLOperationSchedulingFramework {
     /**
      * get the platform name from the platform_conf file.
      * tagName platform_name
+     *
      * @return vmInfoList
      */
-    public String getFrameworkName(){
-        String frameworkName="";
-        NodeList framework_nameList=xmlDocument.getElementsByTagName("framework_name");
-        if(framework_nameList.getLength()>=1){
-            frameworkName=framework_nameList.item(0).getTextContent();
+    public String getFrameworkName() {
+        String frameworkName = "";
+        NodeList framework_nameList = xmlDocument.getElementsByTagName("framework_name");
+        if (framework_nameList.getLength() >= 1) {
+            frameworkName = framework_nameList.item(0).getTextContent();
         }
         return frameworkName;
     }
 
-    public static void main(String[] args){
-        XMLOperationSchedulingFramework xmlOperationSchedulingFramework=XMLOperationSchedulingFramework.getXmlOperationPlatform();
+    public static void main(String[] args) {
+        XMLOperationSchedulingFramework xmlOperationSchedulingFramework = XMLOperationSchedulingFramework.getXmlOperationPlatform();
         System.out.println(xmlOperationSchedulingFramework.getFrameworkName());
     }
 }

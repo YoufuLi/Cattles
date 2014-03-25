@@ -1,5 +1,7 @@
 package com.cattles.virtualMachineManagement;
 
+import com.cattles.cloudplatforms.interfaces.IVirtualMachineOperation;
+
 import java.util.ArrayList;
 
 /**
@@ -7,8 +9,8 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class IVMOperationimpl implements com.cattles.cloudplatforms.interfaces.IVMOperation {
-     com.cattles.cloudplatforms.interfaces.IVMOperation vmOperation=VMOperationFactory.vmOperation();
+public class IVirtualMachineOperationimpl implements IVirtualMachineOperation {
+    IVirtualMachineOperation vmOperation = VMOperationFactory.vmOperation();
 
     /**
      * Used to create certain number of VMs.
@@ -18,8 +20,8 @@ public class IVMOperationimpl implements com.cattles.cloudplatforms.interfaces.I
      * @throws Exception
      */
     @Override
-    public ArrayList<VMInfo> createInstances(int vmNumber) throws Exception {
-        ArrayList<VMInfo> vmInfoList=vmOperation.createInstances(vmNumber);
+    public ArrayList<VirtualMachineInformation> createInstances(int vmNumber) throws Exception {
+        ArrayList<VirtualMachineInformation> vmInfoList = vmOperation.createInstances(vmNumber);
         return vmInfoList;
     }
 
@@ -31,7 +33,7 @@ public class IVMOperationimpl implements com.cattles.cloudplatforms.interfaces.I
      * @throws Exception
      */
     @Override
-    public VMInfo launchInstance(VMInfo _VMInfo) throws Exception {
+    public VirtualMachineInformation launchInstance(VirtualMachineInformation _VMInfo) throws Exception {
 
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
@@ -44,8 +46,8 @@ public class IVMOperationimpl implements com.cattles.cloudplatforms.interfaces.I
      * @throws Exception
      */
     @Override
-    public ArrayList<VMInfo> launchInstances(ArrayList<VMInfo> vmList) throws Exception {
-        ArrayList<VMInfo> vmInfoList=vmOperation.launchInstances(vmList);
+    public ArrayList<VirtualMachineInformation> launchInstances(ArrayList<VirtualMachineInformation> vmList) throws Exception {
+        ArrayList<VirtualMachineInformation> vmInfoList = vmOperation.launchInstances(vmList);
         return vmInfoList;
     }
 
@@ -57,7 +59,7 @@ public class IVMOperationimpl implements com.cattles.cloudplatforms.interfaces.I
      * @throws Exception
      */
     @Override
-    public boolean shutdownInstance(VMInfo _VMInfo) throws Exception {
+    public boolean shutdownInstance(VirtualMachineInformation _VMInfo) throws Exception {
         return false;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -69,8 +71,8 @@ public class IVMOperationimpl implements com.cattles.cloudplatforms.interfaces.I
      * @throws Exception
      */
     @Override
-    public boolean shutdownInstances(ArrayList<VMInfo> vmList) throws Exception {
-        boolean success=vmOperation.shutdownInstances(vmList);
+    public boolean shutdownInstances(ArrayList<VirtualMachineInformation> vmList) throws Exception {
+        boolean success = vmOperation.shutdownInstances(vmList);
         return success;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -81,7 +83,7 @@ public class IVMOperationimpl implements com.cattles.cloudplatforms.interfaces.I
      * @throws Exception
      */
     @Override
-    public VMInfo rebootInstance(VMInfo _VMInfo) throws Exception {
+    public VirtualMachineInformation rebootInstance(VirtualMachineInformation _VMInfo) throws Exception {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -92,8 +94,8 @@ public class IVMOperationimpl implements com.cattles.cloudplatforms.interfaces.I
      * @throws Exception
      */
     @Override
-    public ArrayList<VMInfo> rebootInstances(ArrayList<VMInfo> vmList) throws Exception {
-        ArrayList<VMInfo> vmInfoList=vmOperation.rebootInstances(vmList);
+    public ArrayList<VirtualMachineInformation> rebootInstances(ArrayList<VirtualMachineInformation> vmList) throws Exception {
+        ArrayList<VirtualMachineInformation> vmInfoList = vmOperation.rebootInstances(vmList);
         return vmInfoList;
     }
 
@@ -105,8 +107,8 @@ public class IVMOperationimpl implements com.cattles.cloudplatforms.interfaces.I
      * @throws Exception
      */
     @Override
-    public boolean destroyInstances(ArrayList<VMInfo> vmList) throws Exception {
-        boolean success=vmOperation.destroyInstances(vmList);
+    public boolean destroyInstances(ArrayList<VirtualMachineInformation> vmList) throws Exception {
+        boolean success = vmOperation.destroyInstances(vmList);
         return success;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

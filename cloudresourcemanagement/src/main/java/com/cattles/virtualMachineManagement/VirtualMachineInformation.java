@@ -1,6 +1,6 @@
 package com.cattles.virtualMachineManagement;
 
-public class VMInfo {
+public class VirtualMachineInformation {
     /**
      * the id of vm
      */
@@ -10,26 +10,26 @@ public class VMInfo {
      */
     String vmType;
     /**
-	 * identify if the vm is available
-	 */
-	String vmState;
-	/**
-	 * the ip or other address of vm
-	 */
-	String vmPublicIpAddress;
+     * identify if the vm is available
+     */
+    String vmState;
+    /**
+     * the ip or other address of vm
+     */
+    String vmPublicIpAddress;
     String vmPrivateIpAddress;
     /**
      * the user key used to create this instance
      */
     String vmKeyName;
-	/**
-	 * the port of the vm
-	 */
-	String vmPort;
-	/**
-	 * the hostname of the vm
-	 */
-	String vmHostname;
+    /**
+     * the port of the vm
+     */
+    String vmPort;
+    /**
+     * the hostname of the vm
+     */
+    String vmHostname;
 
     public String getVmID() {
         return vmID;

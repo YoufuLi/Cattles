@@ -10,7 +10,8 @@ import org.apache.log4j.Logger;
  */
 public class IVirtualClusterProvision implements com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision {
     private static Logger logger = Logger.getLogger(IVirtualClusterProvision.class);
-    com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision virtualClusterProvision= VirtualClusterProvisionFactory.virtualClusterProvision();
+    com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision virtualClusterProvision = VirtualClusterProvisionFactory.virtualClusterProvision();
+
     /**
      * provision cluster to upper layer
      *

@@ -1,4 +1,4 @@
-package com.cattles.schedulingframeworks;
+package com.cattles.executionservice;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,5 +7,5 @@ package com.cattles.schedulingframeworks;
  * Time: 6:44 AM
  * To change this template use File | Settings | File Templates.
  */
-public class SchedulingConfiguration {
+public class ExecutionServiceConfiguration {
 }

@@ -1,6 +1,6 @@
 package com.cattles.virtualClusterManagement;
 
-import com.cattles.virtualMachineManagement.VMInfo;
+import com.cattles.virtualMachineManagement.VirtualMachineInformation;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class IVirtualClusterOperation implements com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperation {
     private static Logger logger = Logger.getLogger(IVirtualClusterOperation.class);
-    com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperation virtualClusterOperation=VirtualClusterOperationFactory.virtualClusterOperation();
+    com.cattles.virtualClusterManagement.interfaces.IVirtualClusterOperation virtualClusterOperation = VirtualClusterOperationFactory.virtualClusterOperation();
 
     @Override
     public ArrayList<VirtualCluster> getStandbyCluster() {
@@ -43,23 +43,23 @@ public class IVirtualClusterOperation implements com.cattles.virtualClusterManag
      * @return
      */
     @Override
-    public VirtualCluster generateCluster(ArrayList<VMInfo> VMList) {
+    public VirtualCluster generateCluster(ArrayList<VirtualMachineInformation> VMList) {
         return virtualClusterOperation.generateCluster(VMList);
     }
 
     @Override
     public boolean addNodes(String _clusterID, ArrayList<String> _nodeIDList) {
-        return virtualClusterOperation.addNodes(_clusterID,_nodeIDList);
+        return virtualClusterOperation.addNodes(_clusterID, _nodeIDList);
     }
 
     @Override
     public boolean removeNodes(String _clusterID, ArrayList<String> _nodeIDList) {
-        return virtualClusterOperation.removeNodes(_clusterID,_nodeIDList);  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.removeNodes(_clusterID, _nodeIDList);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public boolean modifyServerID(String _clusterID, String _serverID) {
-        return virtualClusterOperation.modifyServerID(_clusterID,_serverID);  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.modifyServerID(_clusterID, _serverID);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**
@@ -71,7 +71,7 @@ public class IVirtualClusterOperation implements com.cattles.virtualClusterManag
      */
     @Override
     public boolean modifyClusterState(String _clusterID, String _state) {
-        return virtualClusterOperation.modifyClusterState(_clusterID,_state);  //To change body of implemented methods use File | Settings | File Templates.
+        return virtualClusterOperation.modifyClusterState(_clusterID, _state);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     /**
