@@ -28,7 +28,7 @@ public class Constant {
     public static final String OPENSTACK_PLATFORM_NAME = "openstack";
 
     //scheduling framework name
-    public static final String FALKON_FRAMEWORK_NAME = "falkon";
+    public static final String FALKON_FRAMEWORK_NAME = "com/cattles/schedulingmanagementservice/falkon";
     public static final String GEARMAN_FRAMEWORK_NAME = "gearman";
 
     //the account information of virtual machine
