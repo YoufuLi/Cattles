@@ -7,7 +7,7 @@ import com.cattles.schedulingmanagementservice.VirtualCluster;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
- * Defined to complete the deployment of user-specified scheduling framework and its
+ * Defined to complete the deployment of user-specified scheduling framework and its modification
  */
 public interface ISchedulingFrameworkDeployment {
     /**
