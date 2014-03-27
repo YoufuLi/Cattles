@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="cloudresourcemanagement" />
         <module name="CloudResourceManagement" />
+        <module name="cloudresourcemanager" />
         <module name="schedulingframeworks" />
         <module name="schedulingmanagementService" />
       </profile>

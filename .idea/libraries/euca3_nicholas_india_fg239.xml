@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="euca3-nicholas-india-fg239">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca3-nicholas-india-fg239.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

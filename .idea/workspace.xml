@@ -2,159 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="refactor the project">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/configuration.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca3-nicholas-india-fg239.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/jssecacerts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/AwsCredentials.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualClusters.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualClusters_backup.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualMachines.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualMachines_backup.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/log/cattles.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/cloud-cert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca2-nicholas-d7d36811-cert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca2-nicholas-d7d36811-pk.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/eucarc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/iamrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/nicholas-key.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/falkon/startService.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/falkon/startWorker.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/falkon/stopService.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__axis_axis_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__axis_axis_wsdl4j_1_5_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_1_6_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_20030211_134440.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_20040117_000000.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_20040616.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_discovery_commons_discovery_20040218_194635.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_api_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_addressing_addressing_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_axis_axis_jaxrpc_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_axis_axis_saaj_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk16_1_45.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jglobus_axisg_2_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jglobus_gss_2_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jglobus_jsse_2_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jglobus_ssl_proxies_2_0_6.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/pom.xml" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2ConfigOperation.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2ConfigOperation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2VMOperationImpl.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2VMOperationImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/cloudplatforms/amazonec2/IVMInformationMaintainImpl.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/cloudplatforms/amazonec2/IVMInformationMaintainImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/cloudplatforms/interfaces/IVMInformationMaintain.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/cloudplatforms/interfaces/IVMInformationMaintain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/cloudplatforms/interfaces/IVirtualMachineOperation.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/cloudplatforms/interfaces/IVirtualMachineOperation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaConfigOperation.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaConfigOperation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaIVirtualMachineOperationImpl.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaIVirtualMachineOperationImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/clusterMonitoring/IDealWithVMStopBiz.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/clusterMonitoring/IDealWithVMStopBiz.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/clusterMonitoring/heartbeat/Node.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/clusterMonitoring/heartbeat/Node.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/clusterMonitoring/heartbeat/NodeClient.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/clusterMonitoring/heartbeat/NodeClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/clusterMonitoring/heartbeat/NodeSender.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/clusterMonitoring/heartbeat/NodeSender.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/clusterMonitoring/heartbeat/NodeServer.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/clusterMonitoring/heartbeat/NodeServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/clusterMonitoring/heartbeat/Persistence.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/clusterMonitoring/heartbeat/Persistence.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/clusterMonitoring/interfaces/DealwithStopVmFactory.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/clusterMonitoring/interfaces/DealwithStopVmFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/exception/OpennebulaException.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/exception/OpennebulaException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/exception/XMLException.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/exception/XMLException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/ExecutionServiceConfiguration.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/ExecutionServiceConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/ExecutionServiceInformation.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/ExecutionServiceInformation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/FalkonClusterInitialization.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/FalkonClusterInitialization.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/FalkonISchedulingServer.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/FalkonISchedulingServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/FalkonISchedulingWorker.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/FalkonISchedulingWorker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/FalkonServerInitialization.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/FalkonServerInitialization.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/FalkonServerStop.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/FalkonServerStop.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerRegisteraton.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerRegisteraton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/commandexecutor/ExecuteCommand.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/commandexecutor/ExecuteCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonClusterExecutor.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonClusterExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonExecFactory.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonExecFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonServerExecutor.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonServerExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonWorkerExecutor.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonWorkerExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/gearman/Gearman.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/gearman/Gearman.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/interfaces/IExecutionServiceDeployment.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/interfaces/IExecutionServiceDeployment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/interfaces/ISchedulingServer.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/interfaces/ISchedulingServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/interfaces/ISchedulingWorker.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/interfaces/ISchedulingWorker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/interfaces/CheckVmOperate.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/interfaces/CheckVmOperate.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/interfaces/DealwithStopVm.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/interfaces/DealwithStopVm.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/interfaces/Platform.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/interfaces/Platform.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/resourcePoolManagement/VirtualMachineResourcePool.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/resourcePoolManagement/VirtualMachineResourcePool.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/resourcePoolManagement/VirtualResourcePool.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/resourcePoolManagement/VirtualResourcePool.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/resourcePoolManagement/XMLOperationVirtualMachine.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/resourcePoolManagement/XMLOperationVirtualMachine.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/Constant.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/Constant.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/PlatformConfiguration.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/PlatformConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/Tool.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/Tool.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/XMLOperationPlatform.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/XMLOperationPlatform.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/XMLOperationSchedulingFramework.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/XMLOperationSchedulingFramework.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/BaseCommandExecutor.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/BaseCommandExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/CommandExecutable.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/CommandExecutable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/ConnInfo.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/ConnInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/SCPUtil.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/SCPUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/SSHException.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/SSHException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/SSHFactory.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/SSHFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/SSHMonitor.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/SSHMonitor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/SSHResult.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/SSHResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/jsch/CmdExecFactory.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/jsch/CmdExecFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/jsch/JschCommandExecutor.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/jsch/JschCommandExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/jsch/JschSCP.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/jsch/JschSCP.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/jsch/JschSCPExecutable.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/jsch/JschSCPExecutable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/jsch/JschSCPFrom.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/jsch/JschSCPFrom.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/jsch/JschSCPTo.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/jsch/JschSCPTo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/jsch/JschUserInfo.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/jsch/JschUserInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/profile/Command.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/profile/Command.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/profile/Profile.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/profile/Profile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/util/ssh/profile/ProfileManager.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/profile/ProfileManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterManagement/IVirtualClusterOperation.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/IVirtualClusterOperation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterManagement/VirtualCluster.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/VirtualCluster.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterManagement/VirtualClusterOperationFactory.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/VirtualClusterOperationFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterManagement/XMLOperationCluster.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/XMLOperationCluster.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterManagement/falkonCluster/FalkonClusterOperationImplI.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/falkonCluster/FalkonClusterOperationImplI.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterManagement/gearmanCluster/GearmanClusterOperationImplI.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/gearmanCluster/GearmanClusterOperationImplI.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterManagement/interfaces/IVirtualClusterOperation.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/interfaces/IVirtualClusterOperation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterProvision/FalkonClusterProvisionImpl.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/FalkonClusterProvisionImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterProvision/GearmanClusterProvisionImplI.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/GearmanClusterProvisionImplI.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterProvision/IVirtualClusterProvision.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/IVirtualClusterProvision.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterProvision/VirtualClusterProvisionFactory.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/VirtualClusterProvisionFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualClusterProvision/interfaces/IVirtualClusterProvision.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/interfaces/IVirtualClusterProvision.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualMachineManagement/IVirtualMachineOperationimpl.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualMachineManagement/IVirtualMachineOperationimpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualMachineManagement/ResponseInfo.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualMachineManagement/ResponseInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualMachineManagement/VMOperationFactory.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualMachineManagement/VMOperationFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/virtualMachineManagement/VirtualMachineInformation.java" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualMachineManagement/VirtualMachineInformation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/VirtualClusters.xml" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/VirtualClusters.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/VirtualClusters_backup.xml" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/VirtualClusters_backup.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/VirtualMachines.xml" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/VirtualMachines.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/VirtualMachines_backup.xml" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/VirtualMachines_backup.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/amazon_ec2/AwsCredentials.properties" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/amazon_ec2/AwsCredentials.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/amazon_ec2/fg239/cloud-cert.pem" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/amazon_ec2/fg239/cloud-cert.pem" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/amazon_ec2/fg239/euca2-nicholas-d7d36811-cert.pem" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/amazon_ec2/fg239/euca2-nicholas-d7d36811-cert.pem" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/amazon_ec2/fg239/euca2-nicholas-d7d36811-pk.pem" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/amazon_ec2/fg239/euca2-nicholas-d7d36811-pk.pem" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/amazon_ec2/fg239/euca3-nicholas-india-fg239.zip" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/amazon_ec2/fg239/euca3-nicholas-india-fg239.zip" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/amazon_ec2/fg239/eucarc" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/amazon_ec2/fg239/eucarc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/amazon_ec2/fg239/iamrc" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/amazon_ec2/fg239/iamrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/amazon_ec2/fg239/jssecacerts" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/amazon_ec2/fg239/jssecacerts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/amazon_ec2/fg239/nicholas-key.pem" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/amazon_ec2/fg239/nicholas-key.pem" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/com/cattles/schedulingmanagementservice/falkon/startService.sh" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/com/cattles/schedulingmanagementservice/falkon/startService.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/com/cattles/schedulingmanagementservice/falkon/startWorker.sh" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/com/cattles/schedulingmanagementservice/falkon/startWorker.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/com/cattles/schedulingmanagementservice/falkon/stopService.sh" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/com/cattles/schedulingmanagementservice/falkon/stopService.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/configuration.docx" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/configuration.docx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources/log/cattles.log" afterPath="$PROJECT_DIR$/cloudresourcemanagemer/src/main/resources/log/cattles.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/euca3_nicholas_india_fg239.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/euca3_nicholas_india_fg2391.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_50.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cattles.iml" afterPath="$PROJECT_DIR$/Cattles.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395887223041" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395887682602" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
-    <file path="/pom.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644868307" ignored="false" />
+    <file path="/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395888364272" ignored="false" />
     <file path="/NodeServer.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389163113769" ignored="false" />
     <file path="/VMOperation.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387349209724" ignored="false" />
     <file path="/ResourcePool.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387853427633" ignored="false" />
@@ -301,24 +164,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IVirtualClusterProvision.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/interfaces/IVirtualClusterProvision.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="7" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VirtualClusterProvisionFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/VirtualClusterProvisionFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schedulingmanagementService/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -340,7 +185,7 @@
       <file leaf-file-name="ISchedulingFrameworkOperation.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/interfaces/ISchedulingFrameworkOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="44" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -348,10 +193,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IVirtualMachineOperation.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IVirtualMachineOperation.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/cloudplatforms/interfaces/IVirtualMachineOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="14" selection-start="1019" selection-end="1019" vertical-scroll-proportion="-3.417178">
+            <state line="54" column="24" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FalkonWorkerDeregisteraton.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="37" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="20" selection-start="712" selection-end="712" vertical-scroll-proportion="0.37138927">
               <folding />
             </state>
           </provider>
@@ -407,7 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/taskexecutionservice/interfaces/ISchedulingCluster.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/interfaces/ISchedulingCluster.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/interfaces/lal.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanagement/src/main/java/com/cattles/executionservice/interfaces/IExecutionServiceDeployment.java" />
@@ -423,6 +298,7 @@
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/SchedulingFrameworkInformation.java" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/interfaces/ISchedulingFrameworkDeployment.java" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/interfaces/ISchedulingFrameworkOperation.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -471,8 +347,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
     <option name="y" value="-4" />
-    <option name="width" value="1217" />
-    <option name="height" value="805" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -550,16 +426,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -567,15 +433,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../falkon.r174" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloudresourcemanagemer" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -601,12 +467,12 @@
       <recent name="$PROJECT_DIR$/CloudResourceManagement/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.cattles.schedulingframeworks" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources" />
       <recent name="$PROJECT_DIR$/resource/log" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.cattles.schedulingframeworks" />
     </key>
   </component>
   <component name="RunManager" selected="Application.VirtualResourceManagement">
@@ -1146,7 +1012,15 @@
       <created>1395828067195</created>
       <updated>1395828067196</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="refactor the project">
+      <created>1395887558117</created>
+      <updated>1395887558118</updated>
+    </task>
+    <task id="LOCAL-00061" summary="refactor the project">
+      <created>1395887684846</created>
+      <updated>1395887684847</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1170,7 +1044,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1217" height="805" extended-state="6" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
@@ -1179,14 +1053,15 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43854326" sideWeight="0.50193477" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15154749" sideWeight="0.50248754" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4108858" sideWeight="0.498618" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15154749" sideWeight="0.49751243" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26090676" sideWeight="0.56145674" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16860144" sideWeight="0.8484525" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36869118" sideWeight="0.56145674" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23825318" sideWeight="0.8484525" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50406504" sideWeight="0.85368216" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1197,7 +1072,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5026681" sideWeight="0.49751243" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25720385" sideWeight="0.49751243" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1275,31 +1149,18 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/IVirtualClusterProvision.java">
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/IVirtualClusterOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/VirtualClusterProvisionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+        <state line="23" column="34" selection-start="963" selection-end="963" vertical-scroll-proportion="0.51724136">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/VirtualCluster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="508" selection-end="508" vertical-scroll-proportion="0.24916944" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/IVirtualClusterOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="963" selection-end="963" vertical-scroll-proportion="0.51724136" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterManagement/interfaces/IVirtualClusterOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="434" selection-end="434" vertical-scroll-proportion="-0.9137931" />
+        <state line="15" column="41" selection-start="434" selection-end="434" vertical-scroll-proportion="-0.9137931">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/virtualClusterProvision/interfaces/IVirtualClusterProvision.java">
@@ -1311,12 +1172,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/interfaces/ISchedulingServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="273" selection-end="273" vertical-scroll-proportion="0.22765599" />
+        <state line="9" column="34" selection-start="273" selection-end="273" vertical-scroll-proportion="0.22765599">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/util/ssh/jsch/JschSCPExecutable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="189" selection-end="189" vertical-scroll-proportion="0.20236088" />
+        <state line="8" column="17" selection-start="189" selection-end="189" vertical-scroll-proportion="0.20236088">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCPExecutable.java">
@@ -1347,7 +1214,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/interfaces/ISchedulingFrameworkOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="44" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
+        <state line="20" column="0" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1370,7 +1237,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/cloudplatforms/interfaces/IVirtualMachineOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="14" selection-start="1019" selection-end="1019" vertical-scroll-proportion="-3.417178">
+        <state line="54" column="24" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="37" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanagemer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="20" selection-start="712" selection-end="712" vertical-scroll-proportion="0.37138927">
           <folding />
         </state>
       </provider>
@@ -1427,12 +1319,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>schedulingframeworks</last-edited>
+          <last-edited>schedulingmanagementservice</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
