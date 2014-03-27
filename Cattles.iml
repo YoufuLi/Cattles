@@ -7,6 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/CloudResourceManagement/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/cloudresourcemanagemer/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cloudresourcemanagemer/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cloudresourcemanagemer/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
