@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<VirtualMachines>
+    <VirtualMachine>
+        <vmID>i-ba4534d</vmID>
+        <vmType>type</vmType>
+        <vmState>state</vmState>
+        <vmPublicIpAddress>publicAddress</vmPublicIpAddress>
+        <vmPrivateIpAddress>privateAddress</vmPrivateIpAddress>
+        <vmKeyName>key</vmKeyName>
+        <vmPort>port</vmPort>
+        <vmHostname>hostname</vmHostname>
+    </VirtualMachine>
+</VirtualMachines>
