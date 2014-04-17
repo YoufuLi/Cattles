@@ -2,29 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="refactor the module schedulingmanagementservice">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/VirtualClusters.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/VirtualClusters_backup.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/VirtualMachines.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/VirtualMachines_backup.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/amazon_ec2/AwsCredentials.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/amazon_ec2/fg239/cloud-cert.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/amazon_ec2/fg239/euca2-nicholas-d7d36811-cert.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/amazon_ec2/fg239/euca2-nicholas-d7d36811-pk.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/amazon_ec2/fg239/euca3-nicholas-india-fg239.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/amazon_ec2/fg239/eucarc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/amazon_ec2/fg239/iamrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/amazon_ec2/fg239/jssecacerts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/amazon_ec2/fg239/nicholas-key.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/configuration.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/falkon/startService.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/falkon/startWorker.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/falkon/stopService.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/target/classes/log/cattles.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualClusters.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualClusters_backup.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualMachines.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualMachines_backup.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/AwsCredentials.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/cloud-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca2-nicholas-d7d36811-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca2-nicholas-d7d36811-pk.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca3-nicholas-india-fg239.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/eucarc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/iamrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/jssecacerts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/nicholas-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/configuration.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/falkon/startService.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/falkon/startWorker.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/falkon/stopService.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/log/cattles.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397706420379" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397706630100" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397701456456" ignored="false" />
@@ -107,7 +108,7 @@
     <file path="/FalkonISchedulingServer.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1392198395793" ignored="false" />
     <file path="/FalkonISchedulingWorker.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1392198536962" ignored="false" />
     <file path="/README.md" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1394776174122" ignored="false" />
-    <file path="/.gitignore" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397670128531" ignored="false" />
+    <file path="/.gitignore" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397706702443" ignored="false" />
     <file path="/IExecutionServiceDeployment.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395716197174" ignored="false" />
     <file path="/lal.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395717318981" ignored="false" />
     <file path="/ISchedulingFrameworkDeployment.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395826684759" ignored="false" />
@@ -248,19 +249,10 @@
       <file leaf-file-name="ExecuteCommand.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/commandexecutor/ExecuteCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="72" selection-start="2264" selection-end="2264" vertical-scroll-proportion="1.656">
+            <state line="14" column="10" selection-start="447" selection-end="447" vertical-scroll-proportion="0.7241379">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JschSCP.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="38" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -287,6 +279,7 @@
         <option value="youfuli" />
       </list>
     </option>
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
@@ -300,7 +293,6 @@
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/interfaces/ISchedulingFrameworkOperation.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/pom.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/pom.xml" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/falkon/commandexecutor/ExecuteCommand.java" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/falkon/commandexecutor/FalkonClusterExecutor.java" />
@@ -313,6 +305,7 @@
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCPFrom.java" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/falkon/commandexecutor/FalkonServerExecutor.java" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/falkon/commandexecutor/FalkonWorkerExecutor.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -337,8 +330,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
     <option name="y" value="-4" />
-    <option name="width" value="1871" />
-    <option name="height" value="1092" />
+    <option name="width" value="1231" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1126,7 +1119,11 @@
       <created>1397706446390</created>
       <updated>1397706446391</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="refactor the module schedulingmanagementservice">
+      <created>1397706657731</created>
+      <updated>1397706657733</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1150,7 +1147,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1871" height="1092" extended-state="6" />
+    <frame x="57" y="-4" width="1231" height="812" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
@@ -1160,7 +1157,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2828175" sideWeight="0.50213856" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40334857" sideWeight="0.50213856" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4108858" sideWeight="0.498618" order="7" side_tool="false" content_ui="tabs" />
@@ -1168,10 +1165,10 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.112216696" sideWeight="0.7171825" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1736527" sideWeight="0.59665143" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26810393" sideWeight="0.7171825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4148845" sideWeight="0.59665143" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50406504" sideWeight="0.85368216" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1257,13 +1254,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/ConnInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/CommandExecutable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
@@ -1370,9 +1360,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="70" selection-end="70" vertical-scroll-proportion="0.192">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/commandexecutor/ExecuteCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="72" selection-start="2264" selection-end="2264" vertical-scroll-proportion="1.656">
+        <state line="14" column="10" selection-start="447" selection-end="447" vertical-scroll-proportion="0.7241379">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
