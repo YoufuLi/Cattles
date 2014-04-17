@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="refactor the module schedulingmanagementservice">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualClusters.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualClusters_backup.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualMachines.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/VirtualMachines_backup.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/AwsCredentials.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/cloud-cert.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca2-nicholas-d7d36811-cert.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca2-nicholas-d7d36811-pk.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/euca3-nicholas-india-fg239.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/eucarc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/iamrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/jssecacerts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/amazon_ec2/fg239/nicholas-key.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/configuration.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/falkon/startService.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/falkon/startWorker.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/falkon/stopService.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanagemer/target/classes/log/cattles.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397706630100" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397707046038" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397701456456" ignored="false" />
@@ -1123,7 +1104,11 @@
       <created>1397706657731</created>
       <updated>1397706657733</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="refactor the module schedulingmanagementservice">
+      <created>1397707062775</created>
+      <updated>1397707062775</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
