@@ -1,8 +1,8 @@
 package com.cattles.schedulingmanagementservice.falkon.commandexecutor;
 
-import com.cattles.util.ssh.CommandExecutable;
-import com.cattles.util.ssh.SSHFactory;
-import com.cattles.util.ssh.jsch.JschCommandExecutor;
+import com.cattles.schedulingmanagementservice.ssh.CommandExecutable;
+import com.cattles.schedulingmanagementservice.ssh.SSHFactory;
+import com.cattles.schedulingmanagementservice.ssh.jsch.JschCommandExecutor;
 
 public class FalkonExecFactory implements SSHFactory {
     public CommandExecutable getCmdExec() {

@@ -1,8 +1,8 @@
 package com.cattles.schedulingmanagementservice.ssh.jsch;
 
-import com.cattles.util.ssh.SSHException;
-import com.cattles.util.ssh.SSHMonitor;
-import com.cattles.util.ssh.SSHResult;
+import com.cattles.schedulingmanagementservice.ssh.SSHException;
+import com.cattles.schedulingmanagementservice.ssh.SSHMonitor;
+import com.cattles.schedulingmanagementservice.ssh.SSHResult;
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSchException;
@@ -11,8 +11,8 @@ import com.jcraft.jsch.Session;
 import java.io.*;
 import java.util.List;
 
-import static com.cattles.util.ssh.SCPUtil.*;
-import static com.cattles.util.ssh.SSHResult.makeFailedResult;
+import static com.cattles.schedulingmanagementservice.ssh.SCPUtil.*;
+import static com.cattles.schedulingmanagementservice.ssh.SSHResult.makeFailedResult;
 
 public class JschSCPFrom implements JschSCPExecutable {
 

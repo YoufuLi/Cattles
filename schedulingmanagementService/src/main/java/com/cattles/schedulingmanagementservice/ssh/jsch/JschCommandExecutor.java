@@ -1,5 +1,7 @@
 package com.cattles.schedulingmanagementservice.ssh.jsch;
 
+import com.cattles.schedulingmanagementservice.ssh.*;
+import com.jcraft.jsch.*;
 import org.apache.log4j.Logger;
 
 import java.io.ByteArrayOutputStream;

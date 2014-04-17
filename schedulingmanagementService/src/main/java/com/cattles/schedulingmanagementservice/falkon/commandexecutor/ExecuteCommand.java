@@ -1,14 +1,11 @@
 package com.cattles.schedulingmanagementservice.falkon.commandexecutor;
 
-import com.cattles.resourcePoolManagement.VirtualMachineResourcePool;
-import com.cattles.util.ssh.CommandExecutable;
-import com.cattles.util.ssh.ConnInfo;
-import com.cattles.util.ssh.SSHResult;
-import com.cattles.util.ssh.jsch.JschUserInfo;
-import com.cattles.virtualMachineManagement.VirtualMachineInformation;
+import com.cattles.schedulingmanagementservice.ssh.CommandExecutable;
+import com.cattles.schedulingmanagementservice.ssh.ConnInfo;
+import com.cattles.schedulingmanagementservice.ssh.SSHResult;
+import com.cattles.schedulingmanagementservice.ssh.jsch.JschUserInfo;
+import com.jcraft.jsch.*;
 import org.apache.log4j.Logger;
-
-import java.util.ArrayList;
 
 /**
  * 在远程主机上执行安装
@@ -92,7 +89,7 @@ public class ExecuteCommand {
         channel1.connect();
     }
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         VirtualMachineResourcePool virtualMachineResourcePool = VirtualMachineResourcePool.getResourcePool();
         ArrayList<VirtualMachineInformation> vmInfoArrayList = virtualMachineResourcePool.getVMResourceList();
         System.out.println("vm nubmer:" + vmInfoArrayList.size());
@@ -112,6 +109,6 @@ public class ExecuteCommand {
         System.out.println("finish");
 
 
-    }
+    }*/
 
 }

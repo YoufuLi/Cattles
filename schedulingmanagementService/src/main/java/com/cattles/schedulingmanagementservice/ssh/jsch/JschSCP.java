@@ -1,9 +1,9 @@
 package com.cattles.schedulingmanagementservice.ssh.jsch;
 
-import com.cattles.util.ssh.SCPUtil;
-import com.cattles.util.ssh.SSHException;
-import com.cattles.util.ssh.SSHMonitor;
-import com.cattles.util.ssh.SSHResult;
+import com.cattles.schedulingmanagementservice.ssh.SCPUtil;
+import com.cattles.schedulingmanagementservice.ssh.SSHException;
+import com.cattles.schedulingmanagementservice.ssh.SSHMonitor;
+import com.cattles.schedulingmanagementservice.ssh.SSHResult;
 import com.jcraft.jsch.Session;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.cattles.schedulingmanagementservice.ssh.jsch;
 
-import com.cattles.util.ssh.ConnInfo;
+import com.cattles.schedulingmanagementservice.ssh.ConnInfo;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.UserInfo;
