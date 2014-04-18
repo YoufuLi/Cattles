@@ -52,6 +52,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloudresourcemanagemer/pom.xml" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/pom.xml" />
       </list>
     </option>
   </component>
