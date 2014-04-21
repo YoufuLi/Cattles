@@ -13,9 +13,9 @@ We propose a structured service framework (illustrated in following Figure) that
 ![service framework](http://www.cloud-uestc.cn/projects/serviceframework/images/Service%20Framework-small.png)
 ------
 
-## Cloud Resource Manager (namely, Cattles)
+## Cloud Resource Manager
 
-Aimed at cloud resource management and provisioning, Cattles is a key module in the Service framework, which is responsible for supporting various underlying Cloud Computing Infrastructures. Introducing the reference architecture for CRM can contribute to the standardization of CRM implementation in the proposed service framework and achieve the reusability of resource management modules. Application developers do not need to implement different resource management modules on different IaaS Cloud platforms.
+Aimed at cloud resource management and provisioning, Cloud Resource Manager is a key module in the Service framework, which is responsible for supporting various underlying Cloud Computing Infrastructures. Introducing the reference architecture for CRM can contribute to the standardization of CRM implementation in the proposed service framework and achieve the reusability of resource management modules. Application developers do not need to implement different resource management modules on different IaaS Cloud platforms.
 
 ## Contributing to Cattles
 Developers interested in our work can fork the project and we can work together to make the project more valuable. Currently, we are mainly focused on the integration of other Clouds and the dynamic resource scheduling mechanism, which can adjust the amount of computing/storage resource dynamically according to current workload.
