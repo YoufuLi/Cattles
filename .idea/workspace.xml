@@ -1,41 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="refactor the module schedulingmanagementservice">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/commandexecutor/ExecuteCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonClusterExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonExecFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonServerExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonWorkerExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/BaseCommandExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/CommandExecutable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/ConnInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/SCPUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/SSHException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/SSHFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/SSHMonitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/SSHResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/CmdExecFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/JschCommandExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/JschSCP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/JschSCPExecutable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/JschSCPFrom.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/JschSCPTo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/JschUserInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/profile/Command.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/profile/Profile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/profile/ProfileManager.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonClusterInitialization.java" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonClusterInitialization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerInitialization.java" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerInitialization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerStop.java" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerStop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerRegisteraton.java" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerRegisteraton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="update README.md and the dependencies">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonClusterInitialization.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonISchedulingServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonISchedulingWorker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonServerInitialization.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonServerStop.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonWorkerDeregisteraton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonWorkerRegisteraton.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/schedulingframeworks/pom.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1398051661536" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1399039163523" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397701456456" ignored="false" />
@@ -185,59 +164,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="32" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.4383117">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FalkonClusterInitialization.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonClusterInitialization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FalkonISchedulingServer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonISchedulingServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="27" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FalkonISchedulingWorker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonISchedulingWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FalkonServerInitialization.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerInitialization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="14" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FalkonServerStop.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerStop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0">
+            <state line="14" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -246,7 +176,7 @@
       <file leaf-file-name="FalkonWorkerDeregisteraton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="46" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+            <state line="14" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -255,7 +185,70 @@
       <file leaf-file-name="FalkonWorkerRegisteraton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerRegisteraton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="15" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.0">
+            <state line="25" column="30" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FalkonClusterOperationImplI.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualClusterManagement/falkonCluster/FalkonClusterOperationImplI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="36" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FalkonClusterInitialization.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonClusterInitialization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="86" selection-start="903" selection-end="929" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ISchedulingFrameworkDeployment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/interfaces/ISchedulingFrameworkDeployment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="29" selection-start="670" selection-end="670" vertical-scroll-proportion="0.36482084">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IExecutionServiceDeployment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/interfaces/IExecutionServiceDeployment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="90" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IVirtualClusterOperation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualClusterManagement/interfaces/IVirtualClusterOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="8" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VirtualClusterOperationFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualClusterManagement/VirtualClusterOperationFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="42" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GearmanClusterOperationImplI.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualClusterManagement/gearmanCluster/GearmanClusterOperationImplI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="40" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -285,8 +278,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/falkon/commandexecutor/FalkonExecFactory.java" />
-        <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCP.java" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschUserInfo.java" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschCommandExecutor.java" />
         <option value="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/CmdExecFactory.java" />
@@ -301,6 +292,8 @@
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerStop.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerRegisteraton.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/gearman/FalkonWorkerRegisteraton.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonWorkerRegisteraton.java" />
       </list>
     </option>
   </component>
@@ -440,57 +433,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schedulingframeworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
+              <option name="myItemId" value="schedulingmanagementservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -506,7 +449,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cattles" />
+              <option name="myItemId" value="schedulingmanagementservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -520,7 +463,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
+              <option name="myItemId" value="schedulingmanagementservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -536,11 +479,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cattles" />
+              <option name="myItemId" value="schedulingmanagementservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
+              <option name="myItemId" value="interfaces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -554,7 +497,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
+              <option name="myItemId" value="schedulingmanagementservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -570,11 +513,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cattles" />
+              <option name="myItemId" value="schedulingmanagementservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="executionservice" />
+              <option name="myItemId" value="gearman" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -588,7 +531,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
+              <option name="myItemId" value="schedulingmanagementservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -604,11 +547,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="executionservice" />
+              <option name="myItemId" value="schedulingmanagementservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -629,6 +568,42 @@
               <option name="myItemId" value="cloudresourcemanager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloudresourcemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloudresourcemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -643,10 +618,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudplatforms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -683,18 +654,18 @@
       <recent name="com.cattles.ssh.jsch" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/gearman" />
       <recent name="$PROJECT_DIR$/schedulingmanagementService/src/main/java/com/cattles/schedulingmanagementservice" />
       <recent name="$PROJECT_DIR$/schedulingmanagementService/src/main/java" />
       <recent name="$PROJECT_DIR$/cloudresourcemanagement/src/main/java" />
       <recent name="$PROJECT_DIR$/CloudResourceManagement/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/cattles/schedulingframeworks/falkon/commandexecutor" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.cattles.schedulingframeworks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources" />
       <recent name="$PROJECT_DIR$/resource/log" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.cattles.schedulingframeworks" />
     </key>
   </component>
   <component name="RunManager" selected="Application.VirtualResourceManagement">
@@ -1274,7 +1245,11 @@
       <created>1397824581090</created>
       <updated>1397824581090</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="update README.md and the dependencies">
+      <created>1398052338891</created>
+      <updated>1398052338891</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1308,23 +1283,23 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2800852" sideWeight="0.50213856" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25985092" sideWeight="0.4867181" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4108858" sideWeight="0.498618" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11608624" sideWeight="0.7199148" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11995578" sideWeight="0.7401491" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26589274" sideWeight="0.7199148" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23217247" sideWeight="0.7401491" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50406504" sideWeight="0.85368216" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5026681" sideWeight="0.49751243" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37767583" sideWeight="0.51328194" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15068494" sideWeight="0.497006" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1371,7 +1346,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor the module schedulingmanagementservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md and the dependencies" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1396,6 +1371,7 @@
     <MESSAGE value="refactor the project" />
     <MESSAGE value="refactor the module schedulingmanagementService" />
     <MESSAGE value="refactor the module schedulingmanagementservice" />
+    <MESSAGE value="update README.md and the dependencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1405,118 +1381,108 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/commandexecutor/FalkonWorkerExecutor.java">
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/interfaces/ISchedulingWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="40" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0">
+        <state line="9" column="17" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.50/jsch-0.1.50-sources.jar!/com/jcraft/jsch/ChannelExec.java">
+    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/interfaces/ISchedulingFrameworkOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="51" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.0">
+        <state line="12" column="17" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonWorkerRegisteraton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="70" selection-end="70" vertical-scroll-proportion="0.192" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/commandexecutor/ExecuteCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="16" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/CommandExecutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/interfaces/IExecutionServiceDeployment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonClusterInitialization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="18" column="13" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonISchedulingServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonISchedulingWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="13" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerInitialization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="14" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerStop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="46" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerRegisteraton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="15" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.0">
+        <state line="25" column="30" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/schedulingmanagementservice.iml">
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualClusterManagement/VirtualClusterOperationFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="16" column="42" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/schedulingmanagementservice.iml">
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualClusterManagement/gearmanCluster/GearmanClusterOperationImplI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="23" column="40" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualClusterManagement/interfaces/IVirtualClusterOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.4383117">
+        <state line="9" column="8" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualClusterManagement/falkonCluster/FalkonClusterOperationImplI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="36" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/interfaces/IExecutionServiceDeployment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="90" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/falkon/FalkonClusterInitialization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="86" selection-start="903" selection-end="929" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/interfaces/ISchedulingFrameworkDeployment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="670" selection-end="670" vertical-scroll-proportion="0.36482084">
           <folding />
         </state>
       </provider>

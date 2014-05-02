@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cattles.iml" filepath="$PROJECT_DIR$/Cattles.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudresourcemanager/cloudresourcemanager.iml" filepath="$PROJECT_DIR$/cloudresourcemanager/cloudresourcemanager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/schedulingframeworks/schedulingframeworks.iml" filepath="$PROJECT_DIR$/schedulingframeworks/schedulingframeworks.iml" />
       <module fileurl="file://$PROJECT_DIR$/schedulingmanagementservice/schedulingmanagementservice.iml" filepath="$PROJECT_DIR$/schedulingmanagementservice/schedulingmanagementservice.iml" />
     </modules>
   </component>
