@@ -26,6 +26,7 @@
         <module name="CloudResourceManagement" />
         <module name="cloudresourcemanager" />
         <module name="schedulingmanagementService" />
+        <module name="schedulingmanagementservice" />
       </profile>
     </annotationProcessing>
   </component>
