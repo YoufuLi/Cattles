@@ -1,10 +1,10 @@
 package com.cattles.executionservice.falkon;
 
-import com.cattles.schedulingmanagementservice.falkon.commandexecutor.FalkonExecFactory;
-import com.cattles.schedulingmanagementservice.ssh.CommandExecutable;
-import com.cattles.schedulingmanagementservice.ssh.ConnInfo;
-import com.cattles.schedulingmanagementservice.ssh.SSHResult;
+import com.cattles.executionservice.falkon.commandexecutor.FalkonExecFactory;
 import com.cattles.util.Constant;
+import com.cattles.util.ssh.CommandExecutable;
+import com.cattles.util.ssh.ConnInfo;
+import com.cattles.util.ssh.SSHResult;
 import org.apache.log4j.Logger;
 
 /**

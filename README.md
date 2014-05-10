@@ -19,4 +19,3 @@ Aimed at cloud resource management and provisioning, Cloud Resource Manager is a
 
 ## Contributing to Cattles
 Developers interested in our work can fork the project and we can work together to make the project more valuable. Currently, we are mainly focused on the integration of other Clouds and the dynamic resource scheduling mechanism, which can adjust the amount of computing/storage resource dynamically according to current workload.
-

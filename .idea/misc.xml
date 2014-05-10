@@ -58,6 +58,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/schedulingframeworks/pom.xml" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/pom.xml" />
       </set>
     </option>
   </component>
