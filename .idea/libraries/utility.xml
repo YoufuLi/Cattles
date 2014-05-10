@@ -5,7 +5,7 @@
       <root url="jar://$PROJECT_DIR$/lib/utility/puretls.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/resolver.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/naming-factory.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/utility/xmlrpc-common-3.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/opennebula/xmlrpc-common-3.1.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/xercesImpl.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/log4j-1.2.8.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/ws-commons-util-1.0.2.jar!/" />
@@ -36,7 +36,7 @@
       <root url="jar://$PROJECT_DIR$/lib/utility/gram-client.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/globus_wsrf_rft_stubs.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/wsrf_core_stubs.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/utility/org.opennebula.client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/opennebula/org.opennebula.client.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/activation.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/junit.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/addressing-1.0.jar!/" />
@@ -76,7 +76,7 @@
       <root url="jar://$PROJECT_DIR$/lib/utility/wsrf_common.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/opensaml.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/wsrf_test_unit_stubs.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/utility/xmlrpc-client-3.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/opennebula/xmlrpc-client-3.1.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/wsrf_mds_usefulrp_schema_stubs.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/cog-url.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/utility/concurrent.jar!/" />
