@@ -1,9 +1,9 @@
 package com.cattles.executionservice.gearman.commandexecutor;
 
-import com.cattles.schedulingmanagementservice.ssh.CommandExecutable;
-import com.cattles.schedulingmanagementservice.ssh.ConnInfo;
-import com.cattles.schedulingmanagementservice.ssh.SSHResult;
-import com.cattles.schedulingmanagementservice.ssh.jsch.JschUserInfo;
+import com.cattles.util.ssh.CommandExecutable;
+import com.cattles.util.ssh.ConnInfo;
+import com.cattles.util.ssh.SSHResult;
+import com.cattles.util.ssh.jsch.JschUserInfo;
 import com.jcraft.jsch.*;
 import org.apache.log4j.Logger;
 

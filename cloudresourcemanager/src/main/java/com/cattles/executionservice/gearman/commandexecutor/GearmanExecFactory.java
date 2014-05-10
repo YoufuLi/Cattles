@@ -1,8 +1,8 @@
 package com.cattles.executionservice.gearman.commandexecutor;
 
-import com.cattles.schedulingmanagementservice.ssh.CommandExecutable;
-import com.cattles.schedulingmanagementservice.ssh.SSHFactory;
-import com.cattles.schedulingmanagementservice.ssh.jsch.JschCommandExecutor;
+import com.cattles.util.ssh.CommandExecutable;
+import com.cattles.util.ssh.SSHFactory;
+import com.cattles.util.ssh.jsch.JschCommandExecutor;
 
 public class GearmanExecFactory implements SSHFactory {
     public CommandExecutable getCmdExec() {
