@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class GearmanClusterOperationImplI implements IVirtualClusterOperation {
+public class GearmanClusterOperationImpl implements IVirtualClusterOperation {
     /**
      * use getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY) and getClustersWithType(Constant.FALKON_FRAMEWORK_NAME) to find the standby falkon cluster
      *

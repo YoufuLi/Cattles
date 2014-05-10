@@ -2,8 +2,8 @@ package com.cattles.virtualClusterManagement;
 
 import com.cattles.util.Constant;
 import com.cattles.util.XMLOperationSchedulingFramework;
-import com.cattles.virtualClusterManagement.falkonCluster.FalkonClusterOperationImplI;
-import com.cattles.virtualClusterManagement.gearmanCluster.GearmanClusterOperationImplI;
+import com.cattles.virtualClusterManagement.falkonCluster.FalkonClusterOperationImpl;
+import com.cattles.virtualClusterManagement.gearmanCluster.GearmanClusterOperationImpl;
 import org.apache.log4j.Logger;
 
 /**
@@ -18,10 +18,10 @@ public class VirtualClusterOperationFactory {
         XMLOperationSchedulingFramework xmlOperationSchedulingFramework = XMLOperationSchedulingFramework.getXmlOperationPlatform();
         if (xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.FALKON_FRAMEWORK_NAME)) {
             log.info(Constant.FALKON_FRAMEWORK_NAME);
-            return new FalkonClusterOperationImplI();
+            return new FalkonClusterOperationImpl();
 
         } else if (xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.GEARMAN_FRAMEWORK_NAME)) {
-            return new GearmanClusterOperationImplI();
+            return new GearmanClusterOperationImpl();
         }
         return null;
     }

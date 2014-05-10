@@ -17,9 +17,9 @@ import java.util.ArrayList;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class FalkonClusterOperationImplI implements IVirtualClusterOperation {
+public class FalkonClusterOperationImpl implements IVirtualClusterOperation {
     //TODO:update the operations upon to cluster management
-    private static Logger logger = Logger.getLogger(FalkonClusterOperationImplI.class);
+    private static Logger logger = Logger.getLogger(FalkonClusterOperationImpl.class);
     XMLOperationCluster xmlOperationCluster = XMLOperationCluster.getXmlOperationCluster();
     VirtualResourcePool virtualResourcePool = new VirtualResourcePool();
 
