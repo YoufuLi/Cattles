@@ -7,7 +7,7 @@
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1403775566145" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1403775674914" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1399040204149" ignored="false" />
@@ -89,7 +89,7 @@
     <file path="/ISchedulingCluster.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395717089577" ignored="false" />
     <file path="/FalkonISchedulingServer.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1392198395793" ignored="false" />
     <file path="/FalkonISchedulingWorker.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1392198536962" ignored="false" />
-    <file path="/README.md" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1399709105473" ignored="false" />
+    <file path="/README.md" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1403775776603" ignored="false" />
     <file path="/.gitignore" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397706702443" ignored="false" />
     <file path="/IExecutionServiceDeployment.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395716197174" ignored="false" />
     <file path="/lal.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395717318981" ignored="false" />
@@ -246,7 +246,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.6653226">
+            <state line="16" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.78629035">
               <folding />
             </state>
           </provider>
@@ -1131,7 +1131,11 @@
       <created>1403775570870</created>
       <updated>1403775570870</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="revise the README file">
+      <created>1403775677819</created>
+      <updated>1403775677819</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1371,7 +1375,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.6653226">
+        <state line="16" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.78629035">
           <folding />
         </state>
       </provider>

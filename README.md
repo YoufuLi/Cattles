@@ -12,8 +12,8 @@ We propose a structured service framework (illustrated in following Figure) that
 > * Cloud Resource Management and Provisioning
 ![service framework](http://www.cloud-uestc.cn/projects/serviceframework/images/Service%20Framework-small.png)
 
-Further details about these interfaces are available at our website(http://www.cloud-uestc.cn/projects/serviceframework/index.html)
 ------
+Further details about this project are available at our website(http://www.cloud-uestc.cn/projects/serviceframework/index.html), and the interface definition can be found at page http://www.cloud-uestc.cn/projects/serviceframework/interfaces.html
 
 ## Cloud Resource Manager
 
