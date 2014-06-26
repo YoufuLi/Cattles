@@ -11,6 +11,7 @@ We propose a structured service framework (illustrated in following Figure) that
 > * Task Scheduling and Execution
 > * Cloud Resource Management and Provisioning
 ![service framework](http://www.cloud-uestc.cn/projects/serviceframework/images/Service%20Framework-small.png)
+Further details about these interfaces are available at our website(http://www.cloud-uestc.cn/projects/serviceframework/index.html)
 ------
 
 ## Cloud Resource Manager
