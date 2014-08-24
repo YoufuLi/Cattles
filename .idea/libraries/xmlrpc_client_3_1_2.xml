@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="xmlrpc-client-3.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/opennebula/xmlrpc-client-3.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/opennebula/xmlrpc-common-3.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

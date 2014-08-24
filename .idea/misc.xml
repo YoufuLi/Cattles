@@ -43,6 +43,9 @@
     <breakpoint_rules />
     <ui_properties />
   </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
   <component name="IdProvider" IDEtalkID="B076EE1C6042B9665FB6B993DCC85F5E" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">

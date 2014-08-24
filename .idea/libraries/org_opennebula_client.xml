@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.opennebula.client">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/opennebula/org.opennebula.client.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
