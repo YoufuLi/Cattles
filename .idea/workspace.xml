@@ -2,318 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="revise the README file">
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\.idea\compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\Maven__com_jcraft_jsch_0_1_50.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\.idea\uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\Cattles.iml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\cloudplatforms\amazonec2\EC2ConfigOperation.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\cloudplatforms\amazonec2\EC2VMOperationImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\cloudplatforms\amazonec2\IVMInformationMaintainImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\cloudplatforms\interfaces\IVMInformationMaintain.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\cloudplatforms\interfaces\IVirtualMachineOperation.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\cloudplatforms\opennebula\OpenNebulaConfigOperation.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\cloudplatforms\opennebula\OpenNebulaVMOperationImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\clusterMonitoring\IDealWithVMStopBiz.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\clusterMonitoring\heartbeat\Node.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\clusterMonitoring\heartbeat\NodeClient.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\clusterMonitoring\heartbeat\NodeSender.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\clusterMonitoring\heartbeat\NodeServer.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\clusterMonitoring\heartbeat\Persistence.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\clusterMonitoring\interfaces\DealwithStopVmFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\exception\OpennebulaException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\exception\XMLException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\ExecutionServiceConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\ExecutionServiceInformation.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\FalkonClusterInitialization.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\FalkonISchedulingServer.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\FalkonISchedulingWorker.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\FalkonServerInitialization.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\FalkonServerStop.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\FalkonWorkerDeregisteraton.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\FalkonWorkerRegisteraton.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\commandexecutor\ExecuteCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\commandexecutor\FalkonClusterExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\commandexecutor\FalkonExecFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\commandexecutor\FalkonServerExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\falkon\commandexecutor\FalkonWorkerExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\gearman\Gearman.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\gearman\commandexecutor\ExecuteCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\gearman\commandexecutor\GearmanClusterExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\gearman\commandexecutor\GearmanExecFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\gearman\commandexecutor\GearmanServerExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\gearman\commandexecutor\GearmanWorkerExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\interfaces\IExecutionServiceDeployment.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\interfaces\ISchedulingServer.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\executionservice\interfaces\ISchedulingWorker.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\interfaces\CheckVmOperate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\interfaces\DealwithStopVm.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\interfaces\Platform.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\resourcePoolManagement\VirtualMachineResourcePool.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\resourcePoolManagement\VirtualResourcePool.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\resourcePoolManagement\XMLOperationVirtualMachine.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\Constant.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\PlatformConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\Tool.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\XMLOperationPlatform.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\XMLOperationSchedulingFramework.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\BaseCommandExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\CommandExecutable.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\ConnInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\SCPUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\SSHException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\SSHFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\SSHMonitor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\SSHResult.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\jsch\CmdExecFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\jsch\JschCommandExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\jsch\JschSCP.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\jsch\JschSCPExecutable.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\jsch\JschSCPFrom.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\jsch\JschSCPTo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\jsch\JschUserInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\profile\Command.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\profile\Profile.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\util\ssh\profile\ProfileManager.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterManagement\IVirtualClusterOperation.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterManagement\VirtualCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterManagement\VirtualClusterOperationFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterManagement\XMLOperationCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterManagement\falkonCluster\FalkonClusterOperationImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterManagement\gearmanCluster\GearmanClusterOperationImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterManagement\interfaces\IVirtualClusterOperation.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterProvision\FalkonClusterProvisionImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterProvision\GearmanClusterProvisionImplI.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterProvision\VirtualClusterProvision.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterProvision\VirtualClusterProvisionFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualClusterProvision\interfaces\IVirtualClusterProvision.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualMachineManagement\IVirtualMachineOperationimpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualMachineManagement\ResponseInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualMachineManagement\VMOperationFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\java\com\cattles\virtualMachineManagement\VirtualMachineInformation.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\VirtualClusters.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\VirtualClusters_backup.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\VirtualMachines.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\VirtualMachines_backup.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\amazon_ec2\AwsCredentials.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\amazon_ec2\fg239\cloud-cert.pem" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\amazon_ec2\fg239\euca2-nicholas-d7d36811-cert.pem" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\amazon_ec2\fg239\euca2-nicholas-d7d36811-pk.pem" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\amazon_ec2\fg239\euca3-nicholas-india-fg239.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\amazon_ec2\fg239\eucarc" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\amazon_ec2\fg239\iamrc" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\amazon_ec2\fg239\jssecacerts" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\amazon_ec2\fg239\nicholas-key.pem" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\configuration.docx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\falkon\startService.sh" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\falkon\startWorker.sh" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\falkon\stopService.sh" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\cloudresourcemanager\src\main\resources\log\cattles.log" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\conf\log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\conf\platform_conf.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\conf\schedulingframework_conf.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\globus_delegation_service.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\globus_delegation_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\globus_usage_core.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\globus_usage_packets_common.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\globus_wsrf_mds_aggregator_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\globus_wsrf_rendezvous_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\globus_wsrf_rft_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\globus_wsrf_tools_test.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\org_globus_GenericPortal_services_core_WS.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\org_globus_GenericPortal_services_core_WS_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_common.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core_registry.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core_registry_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core_samples_authzService.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core_samples_authzService_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core_samples_counter.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core_samples_counter_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core_samples_mgmt.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core_samples_mgmt_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_core_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_mds_index_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_mds_usefulrp_schema_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_provider_jce.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_test.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_test_interop.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_test_interop_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_test_unit.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_test_unit_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\customlibrary\wsrf_tools.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\aws-java-sdk-1.3.26-javadoc.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\aws-java-sdk-1.3.26-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\aws-java-sdk-1.3.26.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\aws-java-sdk-flow-build-tools-1.3.26.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\aspectj-1.6\LICENSE.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\aspectj-1.6\aspectjrt.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\aspectj-1.6\aspectjweaver.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\commons-codec-1.3\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\commons-codec-1.3\commons-codec-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\commons-logging-1.1.1\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\commons-logging-1.1.1\NOTICE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\commons-logging-1.1.1\commons-logging-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\freemarker-2.3.18\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\freemarker-2.3.18\NOTICE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\freemarker-2.3.18\freemarker-2.3.18.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\httpcomponents-client-4.1.1\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\httpcomponents-client-4.1.1\NOTICE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\httpcomponents-client-4.1.1\httpclient-4.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\httpcomponents-client-4.1.1\httpcore-4.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\jackson-core-1.8\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\jackson-core-1.8\jackson-core-asl-1.8.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\jackson-mapper-1.8\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\jackson-mapper-1.8\jackson-mapper-asl-1.8.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\java-mail-1.4.3\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\java-mail-1.4.3\mail-1.4.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\spring-3.0\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\spring-3.0\spring-beans-3.0.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\spring-3.0\spring-context-3.0.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\spring-3.0\spring-core-3.0.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\stax-api-1.0.1\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\stax-api-1.0.1\stax-api-1.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\stax-ri-1.2.0\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\amazon_ec2\third-party\stax-ri-1.2.0\stax-1.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\opennebula\org.opennebula.client.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\opennebula\xmlrpc-client-3.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\opennebula\xmlrpc-common-3.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\activation.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\addressing-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\axis-url.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\axis.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\bootstrap.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\cog-axis.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\cog-jglobus.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\cog-tomcat.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\cog-url.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\commonj.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\commons-beanutils.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\commons-cli-2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\commons-collections-3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\commons-digester.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\commons-discovery.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\commons-logging.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\concurrent.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\cryptix-asn1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\cryptix.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\cryptix32.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\ganymed-ssh2-build210.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\globus_delegation_service.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\globus_delegation_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\globus_usage_core.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\globus_usage_packets_common.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\globus_wsrf_mds_aggregator_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\globus_wsrf_rendezvous_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\globus_wsrf_rft_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\globus_wsrf_tools_test.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\gram-client.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\gram-stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\gram-utils.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\jaxen-core.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\jaxen-jdom.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\jaxrpc.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\jce-jdk13-125.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\jdom.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\jgss.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\junit.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\log4j-1.2.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\mail-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\naming-common.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\naming-factory.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\naming-java.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\naming-resources.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\nom_tam.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\opensaml.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\org_globus_GenericPortal_services_core_WS.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\org_globus_GenericPortal_services_core_WS_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\puretls.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\resolver.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\saaj.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\saxpath.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\servlet.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\swing-layout-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\ws-commons-util-1.0.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsdl4j.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_common.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core_registry.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core_registry_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core_samples_authzService.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core_samples_authzService_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core_samples_counter.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core_samples_counter_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core_samples_mgmt.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core_samples_mgmt_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_core_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_mds_index_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_mds_usefulrp_schema_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_provider_jce.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_test.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_test_interop.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_test_interop_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_test_unit.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_test_unit_stubs.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wsrf_tools.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\wss4j.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\xalan.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\xerces.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\xercesImpl.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\xml-apis.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\lib\utility\xmlsec.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\BaseCommandExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\CommandExecutable.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\ConnInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\SCPUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\SSHException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\SSHFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\SSHMonitor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\SSHResult.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\jsch\CmdExecFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\jsch\JschCommandExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\jsch\JschSCP.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\jsch\JschSCPExecutable.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\jsch\JschSCPFrom.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\jsch\JschSCPTo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\jsch\JschUserInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\profile\Command.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\profile\Profile.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programming\GitHub\Cattles\schedulingmanagementservice\src\main\java\com\cattles\schedulingmanagementservice\ssh\profile\ProfileManager.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\amazon_ec2.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\amazon_ec2.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\aspectj_1_6.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\aspectj_1_6.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\commons_codec_1_3.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\commons_codec_1_3.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\commons_logging_1_1_1.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\commons_logging_1_1_1.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\customlibrary.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\customlibrary.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\euca3_nicholas_india_fg2391.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\euca3_nicholas_india_fg2391.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\freemarker_2_3_18.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\freemarker_2_3_18.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\globus_delegation_service.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\globus_delegation_service.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\httpcomponents_client_4_1_1.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\httpcomponents_client_4_1_1.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\jackson_core_asl_1_8_7.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\jackson_core_asl_1_8_7.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\jackson_mapper_asl_1_8_7.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\jackson_mapper_asl_1_8_7.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\mail_1_4_3.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\mail_1_4_3.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\opennebula.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\opennebula.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\org_globus_GenericPortal_services_core_WS.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\org_globus_GenericPortal_services_core_WS.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\copyright\profiles_settings.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\copyright\profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\scopes\scope_settings.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\scopes\scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\spring_3_0.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\spring_3_0.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\stax_1_2_0.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\stax_1_2_0.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\stax_api_1_0_1.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\stax_api_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\utility.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\utility.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\vcs.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\vcs.xml" />
-      <change type="MODIFICATION" beforePath="D:\Programming\GitHub\Cattles\.idea\libraries\wsrf_common.xml" afterPath="D:\Programming\GitHub\Cattles\.idea\libraries\wsrf_common.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1408404674649" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1408890568267" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1399040204149" ignored="false" />
@@ -422,6 +120,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -458,7 +157,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -485,7 +183,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
-    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -493,14 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonClusterExecutor.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonServerExecutor.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/commandexecutor/FalkonWorkerExecutor.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonClusterInitialization.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerInitialization.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonServerStop.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerDeregisteraton.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon/FalkonWorkerRegisteraton.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/JschSCPFrom.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/gearman/commandexecutor/ExecuteCommand.java" />
@@ -509,14 +198,15 @@
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/gearman/commandexecutor/GearmanServerExecutor.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/gearman/commandexecutor/GearmanWorkerExecutor.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/pom.xml" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/CmdExecFactory.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschCommandExecutor.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCP.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCPExecutable.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCPTo.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschUserInfo.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCPFrom.java" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -531,10 +221,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="776" />
+    <option name="x" value="62" />
+    <option name="y" value="99" />
+    <option name="width" value="1215" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -614,29 +304,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -647,16 +337,18 @@
       <recent name="com.cattles.schedulingframeworks.falkon.commandexecutor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice" />
+      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239" />
       <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon" />
       <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/gearman" />
-      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util" />
-      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/resources" />
-      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/interfaces" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cattles.schedulingframeworks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2" />
+      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/resources" />
       <recent name="$PROJECT_DIR$/lib/opennebula" />
       <recent name="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources" />
       <recent name="$PROJECT_DIR$/resource/log" />
@@ -1279,7 +971,19 @@
       <created>1403775821583</created>
       <updated>1403775821583</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="revise the README file">
+      <created>1403775934043</created>
+      <updated>1403775934043</updated>
+    </task>
+    <task id="LOCAL-00081" summary="revise the README file">
+      <created>1405431896180</created>
+      <updated>1405431896180</updated>
+    </task>
+    <task id="LOCAL-00082" summary="revise the README file">
+      <created>1405432888282</created>
+      <updated>1405432888283</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1303,34 +1007,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="62" y="99" width="1215" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4345719" sideWeight="0.49837926" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3961219" sideWeight="0.4985782" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279483" sideWeight="0.49837926" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4345719" sideWeight="0.50162077" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61354584" sideWeight="0.5014218" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41033927" sideWeight="0.49837926" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279483" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4108858" sideWeight="0.498618" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2471637" sideWeight="0.56542814" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27506426" sideWeight="0.65030676" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28768232" sideWeight="0.56542814" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28877464" sideWeight="0.65030676" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5037353" sideWeight="0.8535102" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38527215" sideWeight="0.51188505" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31696904" sideWeight="0.49695966" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38504156" sideWeight="0.51188505" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34969324" sideWeight="0.49695966" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1366,7 +1070,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
@@ -1416,105 +1120,6 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/JschUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/BaseCommandExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/CommandExecutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/ConnInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/SCPUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/SSHException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/SSHFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/SSHResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="45" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/gearman/commandexecutor/ExecuteCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="46" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.2345679">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/gearman/commandexecutor/GearmanClusterExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="18" selection-start="4945" selection-end="4945" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/gearman/commandexecutor/GearmanServerExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="19" selection-start="4944" selection-end="4944" vertical-scroll-proportion="0.6388889">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/gearman/commandexecutor/GearmanExecFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/gearman/commandexecutor/GearmanWorkerExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="89" selection-start="2830" selection-end="2830" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="14" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.7258065" />
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
