@@ -10,9 +10,8 @@ import com.jcraft.jsch.Session;
 
 import java.io.*;
 import java.util.List;
-
-import static com.cattles.schedulingmanagementservice.ssh.SCPUtil.*;
-import static com.cattles.schedulingmanagementservice.ssh.SSHResult.makeFailedResult;
+import static com.cattles.util.ssh.SCPUtil.*;
+import static com.cattles.util.ssh.SSHResult.makeFailedResult;
 
 public class JschSCPTo implements JschSCPExecutable {
     public SSHResult execSCP(Session sshSession, String origin, String dest,

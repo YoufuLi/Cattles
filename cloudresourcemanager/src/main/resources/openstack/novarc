@@ -1,0 +1,7 @@
+export FG239_OS_TENANT_NAME=fg239
+export OS_AUTH_URL=https://s77r.idp.sdsc.futuregrid.org:5000/v2.0
+export OS_CACERT=/etc/futuregrid/openstack/sierra/cacert.pem
+export OS_PASSWORD=iI0ECgBsxXTi
+export OS_TENANT_NAME=$FG239_OS_TENANT_NAME
+export OS_USERNAME=nicholas
+export OS_VERSION=grizzly
