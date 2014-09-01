@@ -10,7 +10,7 @@ package com.cattles.cloudplatforms.openstack;
 public class OpenStackConfiguration {
     public static final String KEYSTONE_AUTH_URL = "https://s77r.idp.sdsc.futuregrid.org:5000/v2.0";
 
-    public static final String KEYSTONE_USERNAME = "fg239";
+    public static final String KEYSTONE_USERNAME = "nicholas";
 
     public static final String KEYSTONE_PASSWORD = "iI0ECgBsxXTi";
 
