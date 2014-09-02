@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/ceilometer-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/ceilometer-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/glance-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/glance-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/heat-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/heat-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/keystone-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/keystone-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/nova-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/nova-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/openstack-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/openstack-client-connectors" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/openstack-client-connectors/jersey-connector" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/openstack-client-connectors/jersey2-connector" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/openstack-client-connectors/resteasy-connector" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/openstack-console" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/openstack-examples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/quantum-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/quantum-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/swift-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../openstack-java-sdk/swift-model" charset="UTF-8" />
+  </component>
 </project>
 
