@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="Openstack implementation based on JClouds">
+    <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="test for Openstack implementation">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/configuration.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239/euca3-nicholas-india-fg239.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239/jssecacerts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/AwsCredentials.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/VirtualClusters.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/VirtualClusters_backup.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/VirtualMachines.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/VirtualMachines_backup.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/log/cattles.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239/cloud-cert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239/euca2-nicholas-d7d36811-cert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239/euca2-nicholas-d7d36811-pk.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239/eucarc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239/iamrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239/nicholas-key.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/falkon/startService.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/falkon/startWorker.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/falkon/stopService.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409744402929" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409745185627" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
-    <file path="/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409731929927" ignored="false" />
+    <file path="/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409068763462" ignored="false" />
     <file path="/NodeServer.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389163113769" ignored="false" />
     <file path="/VMOperation.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387349209724" ignored="false" />
     <file path="/ResourcePool.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387853427633" ignored="false" />
@@ -22,9 +40,9 @@
     <file path="/VirtualMachines.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389365342398" ignored="false" />
     <file path="/EC2ConfigOperation.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387338408424" ignored="false" />
     <file path="/AwsConsoleApp.java" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387258637001" ignored="false" />
-    <file path="/VMOperationFactory.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409727822018" ignored="false" />
+    <file path="/VMOperationFactory.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409049430411" ignored="false" />
     <file path="/PlatformConfiguration.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1390026499822" ignored="false" />
-    <file path="/fragment.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409642879187" ignored="false" />
+    <file path="/fragment.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1399709288458" ignored="false" />
     <file path="/OpenNebulaVMOperationImpl.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1399705001927" ignored="false" />
     <file path="/Constant.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1389321891845" ignored="false" />
     <file path="/platform.conf" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1387352513434" ignored="false" />
@@ -101,38 +119,27 @@
     <file path="/FalkonFrameworkOperationImpl.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1399708399189" ignored="false" />
     <file path="/OpenNebulaConfigOperation.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1399700739327" ignored="false" />
     <file path="/OpenNebulaIVirtualMachineOperationImpl.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1399705233200" ignored="false" />
-    <file path="/OpenStackVMOperationImpl.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409737989066" ignored="false" />
+    <file path="/OpenStackVMOperationImpl.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409468979138" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/openstack-examples/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/glance-model/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/keystone-model/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/nova-client/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/swift-model/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/glance-client/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/quantum-model/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/keystone-client/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/ceilometer-model/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/swift-client/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761402" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/ceilometer-client/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761403" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/quantum-client/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761403" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/openstack-client/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761403" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/.gitignore" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761403" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/nova-model/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129761403" ignored="false" />
+    <file path="$PROJECT_DIR$/../openstack-java-sdk/openstack-java-sdk.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409129893528" ignored="false" />
     <file path="/QueryTextMatch.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409314131898" ignored="false" />
     <file path="/JschSCPTo.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409322173258" ignored="false" />
-    <file path="/OpenStackConfigOperation.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409716340221" ignored="false" />
-    <file path="/OpenStackConfiguration.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409646315029" ignored="false" />
-    <file path="/AbstractOpenStackClient.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409635653161" ignored="false" />
-    <file path="/KeystoneClient.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634714359" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/glance-model/glance-model.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/keystone-client/keystone-client.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/ceilometer-client/ceilometer-client.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/swift-client/swift-client.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/keystone-model/keystone-model.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/nova-model/nova-model.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/quantum-client/quantum-client.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/nova-client/nova-client.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/ceilometer-model/ceilometer-model.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/swift-model/swift-model.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/quantum-model/quantum-model.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="$PROJECT_DIR$/openstack-java-sdk/openstack-client/openstack-client.iml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409634984587" ignored="false" />
-    <file path="/NovaListServers.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409637667790" ignored="false" />
-    <file path="/a.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409639422345" ignored="false" />
-    <file path="/JCloudsNova.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409735574795" ignored="false" />
-    <file path="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaConfigOperation.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409729427020" ignored="false" />
-    <file path="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/VMOperationFactory.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409729427020" ignored="false" />
-    <file path="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/IVirtualMachineOperationimpl.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409729427020" ignored="false" />
-    <file path="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/VirtualMachineInformation.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409729427020" ignored="false" />
-    <file path="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaVMOperationImpl.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409729427020" ignored="false" />
-    <file path="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/PlatformConfiguration.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409729427020" ignored="false" />
-    <file path="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/Constant.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409729427020" ignored="false" />
-    <file path="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/interfaces/IVirtualMachineOperation.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409729427021" ignored="false" />
-    <file path="/upload_jar.sh" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409730887043" ignored="false" />
-    <file path="/MainApp.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409738185594" ignored="false" />
+    <file path="/OpenStackConfigOperation.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409388708467" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +154,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -183,8 +191,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -197,43 +203,61 @@
       <file leaf-file-name="OpenStackVMOperationImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackVMOperationImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="49" selection-start="5905" selection-end="5905" vertical-scroll-proportion="0.0">
+            <state line="44" column="67" selection-start="1816" selection-end="1816" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JCloudsNova.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/JCloudsNova.java">
+      <file leaf-file-name="VirtualMachineInformation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/VirtualMachineInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="55" selection-start="2258" selection-end="2277" vertical-scroll-proportion="0.0">
+            <state line="20" column="18" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainApp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/MainApp.java">
+      <file leaf-file-name="novarc" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/resources/openstack/novarc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="36" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
+            <state line="0" column="27" selection-start="13" selection-end="27" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="EC2VMOperationImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2VMOperationImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="14" selection-start="29" selection-end="29" vertical-scroll-proportion="0.083606556">
+            <state line="18" column="29" selection-start="748" selection-end="757" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpenStackConfigOperation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackConfigOperation.java">
+      <file leaf-file-name="EC2ConfigOperation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2ConfigOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="41" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
+            <state line="13" column="22" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpenNebulaVMOperationImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaVMOperationImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="52" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServersCore.class" pinned="false" current="true" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/lib/openstack-java-sdk/nova-client-2.0.0-SNAPSHOT.jar!/org/openstack/nova/api/ServersCore.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="72" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.028248588">
               <folding />
             </state>
           </provider>
@@ -264,31 +288,26 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/test/OpenStackConfiguration.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/test/NovaListServers.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/test/JCloudsNova.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackConfiguration.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/amazonec2/OpenStackVMOperationImpl.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/amazonec2/OpenStackVMOperationImpl_backup.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/VMOperationFactory.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaConfigOperation.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCPExecutable.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCPTo.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschUserInfo.java" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCPFrom.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaVMOperationImpl.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/scripts/upload_jar.sh" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/test.java" />
+        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/VMOperationFactory.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/pom.xml" />
+        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/falkon/startService.sh" />
+        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/QueryTextMatch.java" />
+        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/util/ssh/jsch/JschSCPTo.java" />
+        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/openstack/novarc" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackConfigOperation.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/JCloudsNova.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackVMOperationImpl.java" />
-        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/MainApp.java" />
+        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/NovaListServers.java" />
+        <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackConfiguration.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="/usr/apache/apache-maven-3.2.3" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -313,6 +332,10 @@
           <option name="myItemId" value="cloudresourcemanager" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -323,32 +346,14 @@
           <option name="myItemId" value="cloudresourcemanager" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Cattles" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
       </PATH>
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1217" />
-    <option name="height" value="805" />
+    <option name="x" value="109" />
+    <option name="y" value="54" />
+    <option name="width" value="1215" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -359,9 +364,6 @@
           </State>
           <State>
             <id>Android Lint</id>
-          </State>
-          <State>
-            <id>Code maturity issues</id>
           </State>
           <State>
             <id>GPath inspectionsGroovy</id>
@@ -376,12 +378,6 @@
             <id>Internationalization issues</id>
           </State>
           <State>
-            <id>Java language level migration aids</id>
-          </State>
-          <State>
-            <id>Javadoc issues</id>
-          </State>
-          <State>
             <id>Performance issues</id>
           </State>
           <State>
@@ -389,12 +385,6 @@
           </State>
           <State>
             <id>Properties Files</id>
-          </State>
-          <State>
-            <id>TestNG</id>
-          </State>
-          <State>
-            <id>Threading issues</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -414,7 +404,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -434,7 +424,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -463,60 +452,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schedulingmanagementservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schedulingmanagementservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="cloudresourcemanager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -540,234 +475,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudplatforms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudplatforms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudresourcemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudplatforms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="amazonec2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propCompiler" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/openstack-java-sdk" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cattles.cloudplatforms.amazonec2" />
-      <recent name="com.cattles.cloudplatforms.openstack" />
       <recent name="com.cattles.schedulingmanagementservice.util" />
       <recent name="com.cattles.schedulingframeworks" />
       <recent name="com.cattles.virtualClusterProvision" />
+      <recent name="com.cattles.schedulingframeworks.falkon" />
+      <recent name="com.cattles.schedulingframeworks.falkon.commandexecutor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/test" />
       <recent name="$PROJECT_DIR$/lib/openstack-java-sdk" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice" />
       <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2/fg239" />
+      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/executionservice/falkon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2" />
+      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/resources" />
+      <recent name="$PROJECT_DIR$/lib/opennebula" />
+      <recent name="$PROJECT_DIR$/cloudresourcemanagement/src/main/resources" />
+      <recent name="$PROJECT_DIR$/resource/log" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cattles.schedulingframeworks" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/conf" />
-      <recent name="$PROJECT_DIR$/.." />
-      <recent name="$PROJECT_DIR$/../" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/cloudresourcemanager/src/main/resources/amazon_ec2" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.OpenStackVMOperationImpl">
+  <component name="RunManager" selected="Application.NovaListServers">
+    <configuration default="false" name="ExecuteCommand" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cattles.schedulingframeworks.falkon.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.cattles.schedulingframeworks.falkon.commandexecutor.ExecuteCommand" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Cattles" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="VirtualResourceManagement" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="vmManagement.VirtualResourceManagement" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Cattles" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="false" name="QueryTextMatch" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -808,65 +605,18 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="cloudresourcemanager" />
       <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="KeystoneClient" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="org.openstack.keystone.KeystoneClient" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="keystone-client" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="NovaListServers" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cattles.cloudplatforms.openstack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="MAIN_CLASS_NAME" value="com.cattles.cloudplatforms.openstack.NovaListServers" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="cloudresourcemanager" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JCloudsNova" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.cattles.cloudplatforms.openstack.JCloudsNova" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -917,6 +667,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -943,19 +706,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1037,19 +787,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.XMLOperationCluster" />
       <item index="1" class="java.lang.String" itemvalue="Application.XMLOperationVirtualMachine" />
-      <item index="2" class="java.lang.String" itemvalue="Application.QueryTextMatch" />
-      <item index="3" class="java.lang.String" itemvalue="Application.OpenStackVMOperationImpl" />
-      <item index="4" class="java.lang.String" itemvalue="Application.KeystoneClient" />
-      <item index="5" class="java.lang.String" itemvalue="Application.NovaListServers" />
-      <item index="6" class="java.lang.String" itemvalue="Application.JCloudsNova" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ExecuteCommand" />
+      <item index="3" class="java.lang.String" itemvalue="Application.VirtualResourceManagement" />
+      <item index="4" class="java.lang.String" itemvalue="Application.QueryTextMatch" />
+      <item index="5" class="java.lang.String" itemvalue="Application.OpenStackVMOperationImpl" />
+      <item index="6" class="java.lang.String" itemvalue="Application.NovaListServers" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.OpenStackVMOperationImpl" />
-        <item index="1" class="java.lang.String" itemvalue="Application.JCloudsNova" />
-        <item index="2" class="java.lang.String" itemvalue="Application.JCloudsNova" />
-        <item index="3" class="java.lang.String" itemvalue="Application.NovaListServers" />
-        <item index="4" class="java.lang.String" itemvalue="Application.NovaListServers" />
+        <item index="0" class="java.lang.String" itemvalue="Application.NovaListServers" />
+        <item index="1" class="java.lang.String" itemvalue="Application.OpenStackVMOperationImpl" />
+        <item index="2" class="java.lang.String" itemvalue="Application.QueryTextMatch" />
+        <item index="3" class="java.lang.String" itemvalue="Application.VirtualResourceManagement" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ExecuteCommand" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1073,7 +823,6 @@
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
     <option name="IGNORE_EXTERNALS" value="false" />
-    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -1441,35 +1190,7 @@
       <created>1409470185453</created>
       <updated>1409470185453</updated>
     </task>
-    <task id="LOCAL-00091" summary="test for Openstack implementation">
-      <created>1409649015320</created>
-      <updated>1409649015320</updated>
-    </task>
-    <task id="LOCAL-00092" summary="test for Openstack implementation">
-      <created>1409649061752</created>
-      <updated>1409649061752</updated>
-    </task>
-    <task id="LOCAL-00093" summary="test for Openstack implementation">
-      <created>1409720103648</created>
-      <updated>1409720103648</updated>
-    </task>
-    <task id="LOCAL-00094" summary="test for Openstack implementation">
-      <created>1409720416283</created>
-      <updated>1409720416283</updated>
-    </task>
-    <task id="LOCAL-00095" summary="test for Openstack implementation">
-      <created>1409728514744</created>
-      <updated>1409728514744</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Openstack implementation based on JClouds">
-      <created>1409738330743</created>
-      <updated>1409738330743</updated>
-    </task>
-    <task id="LOCAL-00097" summary="Openstack implementation based on JClouds">
-      <created>1409744413633</created>
-      <updated>1409744413634</updated>
-    </task>
-    <option name="localTasksCounter" value="98" />
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1493,34 +1214,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1217" height="805" extended-state="6" />
+    <frame x="109" y="54" width="1215" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3957382" sideWeight="0.4985782" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878234" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3348554" sideWeight="0.502994" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61354584" sideWeight="0.5014218" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28828058" sideWeight="0.26331812" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40943682" sideWeight="0.498618" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3348554" sideWeight="0.497006" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40943682" sideWeight="0.498618" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724506" sideWeight="0.4991708" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20273738" sideWeight="0.602071" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32904884" sideWeight="0.32876712" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2677502" sideWeight="0.602071" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39792898" sideWeight="0.8528657" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28791773" sideWeight="0.32876712" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6712329" sideWeight="0.8535102" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.4991708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38356164" sideWeight="0.51188505" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38504156" sideWeight="0.51188505" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34611288" sideWeight="0.49695966" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1566,7 +1287,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Openstack implementation based on JClouds" />
+    <option name="LAST_COMMIT_MESSAGE" value="test for Openstack implementation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1580,6 +1301,7 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="define the whole structure of the system" />
     <MESSAGE value="edit the vm operation" />
     <MESSAGE value="modify the xml operation classes" />
     <MESSAGE value="import the ssh module to enable the execution of shell command remotely" />
@@ -1604,7 +1326,6 @@
     <MESSAGE value="using opsenstack-java-sdk, and upload the complied jar packages" />
     <MESSAGE value="implementation for Openstack" />
     <MESSAGE value="test for Openstack implementation" />
-    <MESSAGE value="Openstack implementation based on JClouds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1614,98 +1335,100 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/3.0/guice-3.0.jar!/com/google/inject/internal/InjectorImpl.class">
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2ConfigOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
+        <state line="13" column="22" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jclouds/jclouds-compute/1.7.0/jclouds-compute-1.7.0.jar!/org/jclouds/compute/internal/BaseComputeService.class">
+    <entry file="jar://$PROJECT_DIR$/lib/openstack-java-sdk/nova-client-2.0.0-SNAPSHOT.jar!/org/openstack/nova/api/ServersCore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="54" selection-start="8554" selection-end="8554" vertical-scroll-proportion="-3.88" />
+        <state line="78" column="72" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/3.0/guice-3.0.jar!/com/google/inject/internal/DelegatingInvocationHandler.class">
+    <entry file="jar://$PROJECT_DIR$/lib/openstack-java-sdk/nova-client-2.0.0-SNAPSHOT.jar!/org/openstack/nova/api/FlavorsCore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="356" selection-end="356" vertical-scroll-proportion="-5.08" />
+        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="-3.0" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jclouds/jclouds-compute/1.7.0/jclouds-compute-1.7.0.jar!/org/jclouds/compute/domain/internal/TemplateBuilderImpl.class">
+    <entry file="jar://$PROJECT_DIR$/lib/openstack-java-sdk/nova-client-2.0.0-SNAPSHOT.jar!/org/openstack/nova/api/ExtensionCore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="0" selection-start="13339" selection-end="13339" vertical-scroll-proportion="10.32258" />
+        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaConfigOperation.java">
+    <entry file="jar://$PROJECT_DIR$/lib/openstack-java-sdk/nova-client-2.0.0-SNAPSHOT.jar!/org/openstack/nova/NovaClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" />
+        <state line="6" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/openstack-java-sdk/nova-client-2.0.0-SNAPSHOT.jar!/org/openstack/nova/NovaCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/openstack-java-sdk/nova-model-2.0.0-SNAPSHOT.jar!/org/openstack/nova/model/ServerAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="272" column="47" selection-start="10952" selection-end="10952" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaVMOperationImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/VMOperationFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="409" selection-end="409" vertical-scroll-proportion="0.3190184" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="59" selection-start="6471" selection-end="6471" vertical-scroll-proportion="0.37804878">
+        <state line="56" column="52" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackConfigOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="41" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/JCloudsNova.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="55" selection-start="2258" selection-end="2277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jclouds/api/openstack-nova/1.8.0/openstack-nova-1.8.0.jar!/org/jclouds/openstack/nova/v2_0/features/ServerApi.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="9" selection-start="4561" selection-end="4561" vertical-scroll-proportion="-4.4" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2VMOperationImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+        <state line="18" column="29" selection-start="748" selection-end="757" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/amazonec2/EC2ConfigOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/openstack-java-sdk/keystone-model-2.0.0-SNAPSHOT.jar!/org/openstack/keystone/model/Tenants.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="66" selection-start="463" selection-end="463" vertical-scroll-proportion="0.13872832" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackVMOperationImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="49" selection-start="5905" selection-end="5905" vertical-scroll-proportion="0.0">
+        <state line="44" column="67" selection-start="1816" selection-end="1816" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/MainApp.java">
+    <entry file="jar:///usr/java/jdk1.6.0_45/src.zip!/java/net/URLClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="36" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
+        <state line="201" column="0" selection-start="7685" selection-end="7685" vertical-scroll-proportion="23.569893" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/VirtualMachineInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/resources/scripts/upload_jar.sh">
+    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/resources/openstack/novarc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+        <state line="0" column="27" selection-start="13" selection-end="27" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="jar://$PROJECT_DIR$/lib/openstack-java-sdk/nova-client-2.0.0-SNAPSHOT.jar!/org/openstack/nova/api/ServersCore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="14" selection-start="29" selection-end="29" vertical-scroll-proportion="0.083606556">
+        <state line="78" column="72" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.028248588">
           <folding />
         </state>
       </provider>
@@ -1739,7 +1462,6 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1751,7 +1473,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1763,11 +1485,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Cattles</last-edited>
+          <last-edited>schedulingmanagementservice</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1787,7 +1510,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.opennebula.client</last-edited>
+          <last-edited>openstack-java-sdk</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
