@@ -1,0 +1,1 @@
+sudo scp -r /home/youfuli/Documents/IntelliJ/Cattles/cloudresourcemanager/target/* romi@192.168.32.101:/home/romi/cloudworkflow/
