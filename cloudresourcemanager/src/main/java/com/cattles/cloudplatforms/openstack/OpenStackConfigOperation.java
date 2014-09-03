@@ -38,7 +38,7 @@ public class OpenStackConfigOperation {
         Iterable<Module> modules = ImmutableSet.<Module>of(new SLF4JLoggingModule());
 
         String provider = "openstack-nova";
-        String identity = "test02:chenyan"; // tenantName:userName
+        String identity = "test01:chenyan"; // tenantName:userName
         String credential = "chenyan123";
         String endpoint=this.KEYSTONE_AUTH_URL;
 
@@ -51,9 +51,8 @@ public class OpenStackConfigOperation {
     }
 
     public ComputeService initComputeService(){
-
         String provider = "openstack-nova";
-        String identity = "test02:chenyan"; // tenantName:userName
+        String identity = "test01:chenyan"; // tenantName:userName
         String credential = "chenyan123";
         String endpoint=this.KEYSTONE_AUTH_URL;
 

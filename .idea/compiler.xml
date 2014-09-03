@@ -35,6 +35,7 @@
     <bytecodeTargetLevel>
       <module name="ceilometer-client" target="1.6" />
       <module name="ceilometer-model" target="1.6" />
+      <module name="cloudresourcemanager" target="1.6" />
       <module name="glance-client" target="1.6" />
       <module name="glance-model" target="1.6" />
       <module name="heat-client" target="1.7" />
