@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <properties>
-        <!--jclouds.version>1.8.0</jclouds.version-->
+        <jclouds.version>1.8.0</jclouds.version>
     </properties>
 
     <artifactId>cloudresourcemanager</artifactId>
@@ -64,14 +64,72 @@
             <artifactId>jsch</artifactId>
             <version>0.1.50</version>
         </dependency>
-
-        <!-- jclouds dependencies >
+        <!--opennebula dependencies-->
         <dependency>
-            <groupId>org.apache.jclouds</groupId>
-            <artifactId>jclouds-all</artifactId>
+            <groupId>org.apache.xmlrpc</groupId>
+            <artifactId>xmlrpc-client</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlrpc</groupId>
+            <artifactId>xmlrpc-common</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+
+
+        <!-- jclouds dependencies -->
+        <dependency>
+            <groupId>org.apache.jclouds.driver</groupId>
+            <artifactId>jclouds-slf4j</artifactId>
             <version>${jclouds.version}</version>
         </dependency>
-        < 3rd party dependencies >
+        <dependency>
+            <groupId>org.apache.jclouds.driver</groupId>
+            <artifactId>jclouds-sshj</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+        <!-- jclouds OpenStack dependencies -->
+        <dependency>
+            <groupId>org.apache.jclouds.api</groupId>
+            <artifactId>openstack-keystone</artifactId>
+            <version>${jclouds.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jclouds.api</groupId>
+            <artifactId>openstack-nova</artifactId>
+            <version>${jclouds.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jclouds.labs</groupId>
+            <artifactId>openstack-swift</artifactId>
+            <version>${jclouds.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jclouds.api</groupId>
+            <artifactId>openstack-cinder</artifactId>
+            <version>${jclouds.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jclouds.api</groupId>
+            <artifactId>openstack-trove</artifactId>
+            <version>${jclouds.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jclouds.labs</groupId>
+            <artifactId>openstack-glance</artifactId>
+            <version>${jclouds.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jclouds.labs</groupId>
+            <artifactId>openstack-marconi</artifactId>
+            <version>${jclouds.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jclouds.labs</groupId>
+            <artifactId>openstack-neutron</artifactId>
+            <version>${jclouds.version}</version>
+        </dependency>
+        <!-- 3rd party dependencies -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
@@ -81,7 +139,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.25</version>
-        </dependency-->
+        </dependency>
     </dependencies>
 
 </project>

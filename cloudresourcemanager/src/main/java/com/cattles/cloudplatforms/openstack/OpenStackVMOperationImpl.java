@@ -3,27 +3,22 @@ package com.cattles.cloudplatforms.openstack;
 import com.cattles.cloudplatforms.interfaces.IVirtualMachineOperation;
 import com.cattles.util.Constant;
 import com.cattles.virtualMachineManagement.VirtualMachineInformation;
+import com.google.common.io.Closeables;
 import org.apache.log4j.Logger;
 import org.jclouds.compute.ComputeService;
 import org.jclouds.compute.domain.NodeMetadata;
 import org.jclouds.compute.domain.OsFamily;
 import org.jclouds.compute.domain.Template;
 import org.jclouds.openstack.nova.v2_0.NovaApi;
-import org.jclouds.openstack.nova.v2_0.compute.options.NodeAndNovaTemplateOptions;
-import org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptions;
-import org.openstack.keystone.KeystoneClient;
-import org.openstack.keystone.api.Authenticate;
-import org.openstack.keystone.api.ListTenants;
-import org.openstack.keystone.model.Access;
-import org.openstack.keystone.model.Tenants;
-import org.openstack.nova.NovaClient;
-import org.openstack.nova.api.FlavorsCore;
-import org.openstack.nova.api.ImagesCore;
-import org.openstack.nova.api.ServersCore;
-import org.openstack.nova.api.extensions.KeyPairsExtension;
-import org.openstack.nova.api.extensions.StartStopServerExtension;
-import org.openstack.nova.model.*;
 
+import org.jclouds.openstack.nova.v2_0.domain.ServerCreated;
+import org.jclouds.openstack.nova.v2_0.features.FlavorApi;
+import org.jclouds.openstack.nova.v2_0.features.ServerApi;
+import org.jclouds.openstack.nova.v2_0.options.CreateServerOptions;
+
+
+import java.io.Closeable;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -46,10 +41,14 @@ public class OpenStackVMOperationImpl implements IVirtualMachineOperation {
     public ArrayList<VirtualMachineInformation> createInstances(int vmNumber) throws Exception {
         ArrayList<VirtualMachineInformation> instanceList = new ArrayList<VirtualMachineInformation>();
         //Template template=computeService.templateBuilder().hardwareId("2").imageId("a3cb063c-3c08-4020-8c06-07ac48a32a5e").build();
-        Template template=computeService.templateBuilder().build();
         //template.getOptions().as(NovaTemplateOptions.class).securityGroupNames();
-        Set<? extends NodeMetadata> nodes=computeService.createNodesInGroup("default",vmNumber,template);
-        for(NodeMetadata node:nodes){
+        ServerApi serverApi= novaApi.getServerApiForZone("GrizzlyDemo");
+        CreateServerOptions options = new CreateServerOptions().availabilityZone("GrizzlyDemo");
+
+        //ServerCreated serverCreated= serverApi.create("");
+        //Set<? extends NodeMetadata> nodes=computeService.createNodesInGroup("default",vmNumber,template);
+
+        /*for(NodeMetadata node:nodes){
             VirtualMachineInformation virtualMachineInformation=new VirtualMachineInformation();
             virtualMachineInformation.setVmID(node.getId());
             virtualMachineInformation.setVmState(Constant.VIRTUAL_MACHINES_STATE_AVAILABLE);
@@ -61,7 +60,8 @@ public class OpenStackVMOperationImpl implements IVirtualMachineOperation {
 
             //the information above is not correct, need to be adjusted
             instanceList.add(virtualMachineInformation);
-        }
+        }*/
+        Closeables.close(novaApi,true);
         return instanceList;  //To change body of implemented methods use File | Settings | File Templates.
     }
 

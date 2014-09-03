@@ -7,6 +7,7 @@ import org.jclouds.compute.ComputeService;
 import org.jclouds.compute.ComputeServiceContext;
 import org.jclouds.logging.slf4j.config.SLF4JLoggingModule;
 import org.jclouds.openstack.nova.v2_0.NovaApi;
+import org.jclouds.openstack.nova.v2_0.features.ServerApi;
 import org.jclouds.sshj.config.SshjSshClientModule;
 
 import java.util.Properties;
@@ -37,8 +38,8 @@ public class OpenStackConfigOperation {
         Iterable<Module> modules = ImmutableSet.<Module>of(new SLF4JLoggingModule());
 
         String provider = "openstack-nova";
-        String identity = "serviceTenant:nova"; // tenantName:userName
-        String credential = "aipu10116";
+        String identity = "test01:test"; // tenantName:userName
+        String credential = "test123";
         String endpoint=this.KEYSTONE_AUTH_URL;
 
         novaApi = ContextBuilder.newBuilder(provider)
@@ -48,6 +49,7 @@ public class OpenStackConfigOperation {
                 .buildApi(NovaApi.class);
         return novaApi;
     }
+
     public ComputeService initComputeService(){
 
         String provider = "openstack-nova";
