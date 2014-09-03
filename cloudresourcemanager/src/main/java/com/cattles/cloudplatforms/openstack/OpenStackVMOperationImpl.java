@@ -9,8 +9,10 @@ import org.jclouds.compute.ComputeService;
 import org.jclouds.compute.domain.NodeMetadata;
 import org.jclouds.compute.domain.OsFamily;
 import org.jclouds.compute.domain.Template;
+import org.jclouds.compute.domain.TemplateBuilder;
 import org.jclouds.openstack.nova.v2_0.NovaApi;
 
+import org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptions;
 import org.jclouds.openstack.nova.v2_0.domain.ServerCreated;
 import org.jclouds.openstack.nova.v2_0.features.FlavorApi;
 import org.jclouds.openstack.nova.v2_0.features.ServerApi;
@@ -40,15 +42,16 @@ public class OpenStackVMOperationImpl implements IVirtualMachineOperation {
     @Override
     public ArrayList<VirtualMachineInformation> createInstances(int vmNumber) throws Exception {
         ArrayList<VirtualMachineInformation> instanceList = new ArrayList<VirtualMachineInformation>();
-        //Template template=computeService.templateBuilder().hardwareId("2").imageId("a3cb063c-3c08-4020-8c06-07ac48a32a5e").build();
-        //template.getOptions().as(NovaTemplateOptions.class).securityGroupNames();
-        ServerApi serverApi= novaApi.getServerApiForZone("GrizzlyDemo");
-        CreateServerOptions options = new CreateServerOptions().availabilityZone("GrizzlyDemo");
+        //Template template=computeService.templateBuilder().imageId("a3cb063c-3c08-4020-8c06-07ac48a32a5e").build();
+        Template template=computeService.templateBuilder().build();
+        template.getOptions().as(NovaTemplateOptions.class).securityGroupNames();
+        //ServerApi serverApi= novaApi.getServerApiForZone("GrizzlyDemo");
+        //CreateServerOptions options = new CreateServerOptions().availabilityZone("GrizzlyDemo");
 
         //ServerCreated serverCreated= serverApi.create("");
-        //Set<? extends NodeMetadata> nodes=computeService.createNodesInGroup("default",vmNumber,template);
+        Set<? extends NodeMetadata> nodes=computeService.createNodesInGroup("default",vmNumber,template);
 
-        /*for(NodeMetadata node:nodes){
+        for(NodeMetadata node:nodes){
             VirtualMachineInformation virtualMachineInformation=new VirtualMachineInformation();
             virtualMachineInformation.setVmID(node.getId());
             virtualMachineInformation.setVmState(Constant.VIRTUAL_MACHINES_STATE_AVAILABLE);
@@ -60,7 +63,7 @@ public class OpenStackVMOperationImpl implements IVirtualMachineOperation {
 
             //the information above is not correct, need to be adjusted
             instanceList.add(virtualMachineInformation);
-        }*/
+        }
         Closeables.close(novaApi,true);
         return instanceList;  //To change body of implemented methods use File | Settings | File Templates.
     }
@@ -68,6 +71,7 @@ public class OpenStackVMOperationImpl implements IVirtualMachineOperation {
     @Override
     public VirtualMachineInformation launchInstance(VirtualMachineInformation _VMInfo) throws Exception {
         VirtualMachineInformation virtualMachineInformation=new VirtualMachineInformation();
+
         return virtualMachineInformation;  //To change body of implemented methods use File | Settings | File Templates.
     }
 

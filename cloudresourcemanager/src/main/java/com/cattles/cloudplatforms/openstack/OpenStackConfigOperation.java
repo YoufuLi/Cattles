@@ -38,8 +38,8 @@ public class OpenStackConfigOperation {
         Iterable<Module> modules = ImmutableSet.<Module>of(new SLF4JLoggingModule());
 
         String provider = "openstack-nova";
-        String identity = "test01:test"; // tenantName:userName
-        String credential = "test123";
+        String identity = "test02:chenyan"; // tenantName:userName
+        String credential = "chenyan123";
         String endpoint=this.KEYSTONE_AUTH_URL;
 
         novaApi = ContextBuilder.newBuilder(provider)
@@ -53,14 +53,16 @@ public class OpenStackConfigOperation {
     public ComputeService initComputeService(){
 
         String provider = "openstack-nova";
-        String identity = "serviceTenant:nova"; // tenantName:userName
-        String credential = "aipu10116";
+        String identity = "test02:chenyan"; // tenantName:userName
+        String credential = "chenyan123";
+        String endpoint=this.KEYSTONE_AUTH_URL;
 
         // example of injecting a ssh implementation
         Iterable<Module> modules = ImmutableSet.<Module> of(
                 new SshjSshClientModule(),
                 new SLF4JLoggingModule());
         ComputeServiceContext computeServiceContext = ContextBuilder.newBuilder(provider)
+                .endpoint(endpoint)
                 .credentials(identity, credential)
                 .modules(modules)
                 .buildView(ComputeServiceContext.class);
