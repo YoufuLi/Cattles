@@ -33,29 +33,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ceilometer-client" target="1.6" />
-      <module name="ceilometer-model" target="1.6" />
-      <module name="cloudresourcemanager" target="1.6" />
-      <module name="glance-client" target="1.6" />
-      <module name="glance-model" target="1.6" />
-      <module name="heat-client" target="1.7" />
-      <module name="heat-model" target="1.7" />
-      <module name="jersey-connector" target="1.7" />
-      <module name="jersey2-connector" target="1.7" />
-      <module name="keystone-client" target="1.6" />
-      <module name="keystone-model" target="1.6" />
-      <module name="nova-client" target="1.6" />
-      <module name="nova-model" target="1.6" />
-      <module name="openstack-client" target="1.6" />
-      <module name="openstack-client-connectors" target="1.7" />
-      <module name="openstack-console" target="1.7" />
-      <module name="openstack-examples" target="1.6" />
-      <module name="openstack-java-sdk" target="1.6" />
-      <module name="quantum-client" target="1.6" />
-      <module name="quantum-model" target="1.6" />
-      <module name="resteasy-connector" target="1.7" />
-      <module name="swift-client" target="1.6" />
-      <module name="swift-model" target="1.6" />
+      <module name="cloudresourcemanager" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
