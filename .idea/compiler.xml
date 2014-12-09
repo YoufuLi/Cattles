@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="cloudresourcemanager" />
+        <module name="cloudworkflowservice" />
         <module name="heat-client" />
         <module name="heat-model" />
         <module name="jersey-connector" />
@@ -33,7 +34,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cloudresourcemanager" target="1.7" />
+      <module name="cloudresourcemanager" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
