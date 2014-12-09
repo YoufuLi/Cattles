@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="prepare to upload cloudworkflowservice">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloudresourcemanager/README.md" />
+    <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="prepare to modify cloudresourcemanager">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedulingmanagementservice/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cattles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1418137922981" ignored="false" />
+    <file path="/Dummy.txt" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1418138224174" ignored="false" />
     <file path="$PROJECT_DIR$/../incubator-spark/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644752766" ignored="false" />
     <file path="$PROJECT_DIR$/../apache-flume-1.4.0-cdh4.4.0-bin/.idea/workspace.xml" changelist="7bbfbd08-cf91-45c2-b62c-08eda261260f" time="1386644782519" ignored="false" />
     <file path="/pom.xml" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1409068763462" ignored="false" />
@@ -89,7 +89,7 @@
     <file path="/ISchedulingCluster.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395717089577" ignored="false" />
     <file path="/FalkonISchedulingServer.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1392198395793" ignored="false" />
     <file path="/FalkonISchedulingWorker.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1392198536962" ignored="false" />
-    <file path="/README.md" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1418138197862" ignored="false" />
+    <file path="/README.md" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1418138427241" ignored="false" />
     <file path="/.gitignore" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1397706702443" ignored="false" />
     <file path="/IExecutionServiceDeployment.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395716197174" ignored="false" />
     <file path="/lal.java" changelist="76d05002-d142-4fa9-85f9-9dc130b87726" time="1395717318981" ignored="false" />
@@ -480,10 +480,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloudresourcemanager/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="153" selection-start="146" selection-end="146" vertical-scroll-proportion="0.032967035">
+            <state line="1" column="153" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="109" selection-start="119" selection-end="119" vertical-scroll-proportion="0.032967035">
               <folding />
             </state>
           </provider>
@@ -514,7 +523,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschUserInfo.java" />
         <option value="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice/ssh/jsch/JschSCPFrom.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/opennebula/OpenNebulaVMOperationImpl.java" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/VMOperationFactory.java" />
@@ -530,6 +538,7 @@
         <option value="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackConfiguration.java" />
         <option value="$PROJECT_DIR$/cloudworkflowservice/README.md" />
         <option value="$PROJECT_DIR$/cloudresourcemanager/README.md" />
+        <option value="$PROJECT_DIR$/schedulingmanagementservice/README.md" />
       </list>
     </option>
   </component>
@@ -856,6 +865,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="schedulingmanagementservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cattles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cloudworkflowservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -908,11 +931,11 @@
       <recent name="com.cattles.schedulingframeworks.falkon.commandexecutor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/schedulingmanagementservice" />
       <recent name="$PROJECT_DIR$/cloudresourcemanager" />
       <recent name="$PROJECT_DIR$/cloudworkflowservice" />
       <recent name="$PROJECT_DIR$/lib/openstack-java-sdk" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/schedulingmanagementservice/src/main/java/com/cattles/schedulingmanagementservice" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cattles.schedulingframeworks" />
@@ -1618,7 +1641,11 @@
       <created>1418137928227</created>
       <updated>1418137928227</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="prepare to modify cloudresourcemanager">
+      <created>1418138233093</created>
+      <updated>1418138233093</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1715,7 +1742,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare to upload cloudworkflowservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="prepare to modify cloudresourcemanager" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1729,7 +1756,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="import the ssh module to enable the execution of shell command remotely" />
     <MESSAGE value="finish the falkon scheduling framework module" />
     <MESSAGE value="improve the falkon scheduling framework module" />
     <MESSAGE value="modify the coding format and some annotations" />
@@ -1754,6 +1780,7 @@
     <MESSAGE value="add some scripts" />
     <MESSAGE value="delete some unused jar packages" />
     <MESSAGE value="prepare to upload cloudworkflowservice" />
+    <MESSAGE value="prepare to modify cloudresourcemanager" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1763,13 +1790,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/virtualMachineManagement/VirtualMachineInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/resources/openstack/novarc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="13" selection-end="27" vertical-scroll-proportion="0.0">
@@ -1858,7 +1878,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="153" selection-start="146" selection-end="146" vertical-scroll-proportion="0.032967035">
+        <state line="1" column="153" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schedulingmanagementservice/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="109" selection-start="119" selection-end="119" vertical-scroll-proportion="0.032967035">
           <folding />
         </state>
       </provider>
