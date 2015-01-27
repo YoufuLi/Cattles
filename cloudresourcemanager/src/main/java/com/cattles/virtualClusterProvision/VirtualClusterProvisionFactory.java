@@ -19,7 +19,7 @@ public class VirtualClusterProvisionFactory {
             return new FalkonClusterProvisionImpl();
 
         } else if (xmlOperationSchedulingFramework.getFrameworkName().equalsIgnoreCase(Constant.GEARMAN_FRAMEWORK_NAME)) {
-            return new GearmanClusterProvisionImplI();
+            return new GearmanClusterProvisionImpl();
         }
         return null;
     }

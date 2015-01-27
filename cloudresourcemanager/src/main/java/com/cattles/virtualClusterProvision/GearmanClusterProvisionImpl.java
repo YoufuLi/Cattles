@@ -10,8 +10,8 @@ import org.apache.log4j.Logger;
  * User: youfuli
  * To change this template use File | Settings | File Templates.
  */
-public class GearmanClusterProvisionImplI implements com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision {
-    private static Logger logger = Logger.getLogger(GearmanClusterProvisionImplI.class);
+public class GearmanClusterProvisionImpl implements com.cattles.virtualClusterProvision.interfaces.IVirtualClusterProvision {
+    private static Logger logger = Logger.getLogger(GearmanClusterProvisionImpl.class);
     XMLOperationCluster xmlOperationCluster = XMLOperationCluster.getXmlOperationCluster();
     VirtualResourcePool virtualResourcePool = new VirtualResourcePool();
 

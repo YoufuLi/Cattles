@@ -7,11 +7,7 @@ import org.jclouds.compute.ComputeService;
 import org.jclouds.compute.ComputeServiceContext;
 import org.jclouds.logging.slf4j.config.SLF4JLoggingModule;
 import org.jclouds.openstack.nova.v2_0.NovaApi;
-import org.jclouds.openstack.nova.v2_0.features.ServerApi;
 import org.jclouds.sshj.config.SshjSshClientModule;
-
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 /**
  * Created with IntelliJ IDEA.
  * User: youfuli
@@ -22,15 +18,15 @@ import java.util.concurrent.TimeUnit;
 public class OpenStackConfigOperation {
     public NovaApi novaApi;
 
-    public static final String KEYSTONE_AUTH_URL = "http://192.168.32.14:5000/v2.0/";
+    public static final String KEYSTONE_AUTH_URL = "http://192.168.100.51:5000/v2.0/";
 
-    public static final String KEYSTONE_USERNAME = "nova";
+    public static final String KEYSTONE_USERNAME = "admin";
 
-    public static final String KEYSTONE_PASSWORD = "aipu10116";
+    public static final String KEYSTONE_PASSWORD = "admin_pass";
 
-    public static final String OS_TENANT_NAME="serviceTenant";
+    public static final String OS_TENANT_NAME="admin";
 
-    public static final String NOVA_ENDPOINT = "http://192.168.32.16:8774/v2.0";
+    public static final String NOVA_ENDPOINT = "http://192.168.100.51:8774/v2.0";
 
     public static final String CEILOMETER_ENDPOINT = "";
 
@@ -38,8 +34,8 @@ public class OpenStackConfigOperation {
         Iterable<Module> modules = ImmutableSet.<Module>of(new SLF4JLoggingModule());
 
         String provider = "openstack-nova";
-        String identity = "test01:chenyan"; // tenantName:userName
-        String credential = "chenyan123";
+        String identity = "admin:admin"; // tenantName:userName
+        String credential = "admin_pass";
         String endpoint=this.KEYSTONE_AUTH_URL;
 
         novaApi = ContextBuilder.newBuilder(provider)
@@ -52,8 +48,8 @@ public class OpenStackConfigOperation {
 
     public ComputeService initComputeService(){
         String provider = "openstack-nova";
-        String identity = "test01:chenyan"; // tenantName:userName
-        String credential = "chenyan123";
+        String identity = "admin:admin"; // tenantName:userName
+        String credential = "admin_pass";
         String endpoint=this.KEYSTONE_AUTH_URL;
 
         // example of injecting a ssh implementation
