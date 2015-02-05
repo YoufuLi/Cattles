@@ -6,23 +6,13 @@ import com.cattles.virtualMachineManagement.VirtualMachineInformation;
 import com.google.common.io.Closeables;
 import org.apache.log4j.Logger;
 import org.jclouds.compute.ComputeService;
-import org.jclouds.compute.domain.NodeMetadata;
-import org.jclouds.compute.domain.OsFamily;
-import org.jclouds.compute.domain.Template;
-import org.jclouds.compute.domain.TemplateBuilder;
 import org.jclouds.openstack.nova.v2_0.NovaApi;
-
-import org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptions;
 import org.jclouds.openstack.nova.v2_0.domain.RebootType;
 import org.jclouds.openstack.nova.v2_0.domain.Server;
 import org.jclouds.openstack.nova.v2_0.domain.ServerCreated;
-import org.jclouds.openstack.nova.v2_0.features.FlavorApi;
 import org.jclouds.openstack.nova.v2_0.features.ServerApi;
 import org.jclouds.openstack.nova.v2_0.options.CreateServerOptions;
 
-
-import java.io.Closeable;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -38,7 +28,7 @@ public class OpenStackVMOperationImpl implements IVirtualMachineOperation {
 
     public OpenStackConfigOperation openStackConfigOperation=new OpenStackConfigOperation();
     private final NovaApi novaApi=openStackConfigOperation.initNovaApi();
-    private final String zone="GrizzlyDemo";
+    private final String zone="RegionOne";
     public ComputeService computeService=openStackConfigOperation.initComputeService();
 
     @Override
@@ -48,11 +38,18 @@ public class OpenStackVMOperationImpl implements IVirtualMachineOperation {
         //Template template=computeService.templateBuilder().build();
         //template.getOptions().as(NovaTemplateOptions.class).securityGroupNames();
         ServerApi serverApi= novaApi.getServerApiForZone(zone);
-        CreateServerOptions options = new CreateServerOptions().availabilityZone(zone);
+        CreateServerOptions options = new CreateServerOptions().availabilityZone("nova").networks("613f9b74-1fc9-460b-ae15-b6cef678a249");
+        /*Set<Network> networks;
+        Network network=new Network("id", "tenant_id", "name", "status", "subnets", "admin_state_up", "shared", "router:external", "provider:network_type", "provider:physical_network", "provider:segmentation_id");
+                //Network network=new Network("613f9b74-1fc9-460b-ae15-b6cef678a249","","");
+
+        networks.add(network);
+        options.networks(networks);*/
         //Set<? extends NodeMetadata> nodes=computeService.createNodesInGroup("default",vmNumber,template);
 
         for(int i=0;i< vmNumber;i++){
-            ServerCreated serverCreated= serverApi.create("Hospital01","ubuntu14.04-server","m1.small",options);
+            logger.info("here");
+            ServerCreated serverCreated= serverApi.create("test01","b72e4c21-deb0-43e3-b010-9d354566b35f","2",options);
             System.out.println("#######################################lalal#########################################");
             System.out.print("server name:"+serverCreated.getName());
             Server serverDetails=serverApi.get(serverCreated.getId());
@@ -126,10 +123,20 @@ public class OpenStackVMOperationImpl implements IVirtualMachineOperation {
         }
         return true;  //To change body of implemented methods use File | Settings | File Templates.
     }
+
+    public Set<String> getZones(){
+        Set<String> zones=novaApi.getConfiguredZones();
+        return  zones;
+    }
     public static void main(String[] args){
         OpenStackVMOperationImpl openStackVMOperation=new OpenStackVMOperationImpl();
+        /*VirtualMachineInformation virtualMachineInformation=new VirtualMachineInformation();
+        virtualMachineInformation.setVmID("605855cf-46dd-4c14-8608-8bf5ac9cea73");
+        virtualMachineInformation.setVmHostname("test");
+        virtualMachineInformation.setVmPrivateIpAddress("192.168.100.10");*/
         try {
             openStackVMOperation.createInstances(1);
+            //openStackVMOperation.shutdownInstance(virtualMachineInformation);
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }

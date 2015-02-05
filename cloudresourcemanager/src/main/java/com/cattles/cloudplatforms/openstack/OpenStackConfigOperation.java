@@ -17,25 +17,26 @@ import org.jclouds.sshj.config.SshjSshClientModule;
  */
 public class OpenStackConfigOperation {
     public NovaApi novaApi;
+    public static final String PROVIDER="openstack-nova";
 
-    public static final String KEYSTONE_AUTH_URL = "http://192.168.100.51:5000/v2.0/";
+    public static final String KEYSTONE_AUTH_URL = "http://192.168.100.241:5000/v2.0/";
 
     public static final String KEYSTONE_USERNAME = "admin";
 
-    public static final String KEYSTONE_PASSWORD = "admin_pass";
+    public static final String KEYSTONE_PASSWORD = "admin";
 
     public static final String OS_TENANT_NAME="admin";
 
-    public static final String NOVA_ENDPOINT = "http://192.168.100.51:8774/v2.0";
+    public static final String NOVA_ENDPOINT = "http://192.168.100.241:8774/v2/";
 
     public static final String CEILOMETER_ENDPOINT = "";
 
     public NovaApi initNovaApi(){
         Iterable<Module> modules = ImmutableSet.<Module>of(new SLF4JLoggingModule());
 
-        String provider = "openstack-nova";
-        String identity = "admin:admin"; // tenantName:userName
-        String credential = "admin_pass";
+        String provider = PROVIDER;
+        String identity = OS_TENANT_NAME+":"+KEYSTONE_USERNAME; // tenantName:userName
+        String credential = KEYSTONE_PASSWORD;
         String endpoint=this.KEYSTONE_AUTH_URL;
 
         novaApi = ContextBuilder.newBuilder(provider)
@@ -47,9 +48,9 @@ public class OpenStackConfigOperation {
     }
 
     public ComputeService initComputeService(){
-        String provider = "openstack-nova";
-        String identity = "admin:admin"; // tenantName:userName
-        String credential = "admin_pass";
+        String provider = PROVIDER;
+        String identity = OS_TENANT_NAME+":"+KEYSTONE_USERNAME; // tenantName:userName
+        String credential = KEYSTONE_PASSWORD;
         String endpoint=this.KEYSTONE_AUTH_URL;
 
         // example of injecting a ssh implementation
