@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d05002-d142-4fa9-85f9-9dc130b87726" name="Failed commit: Default" comment="delete some unused jar packages">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackConfigOperation.java" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackConfigOperation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackVMOperationImpl.java" afterPath="$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackVMOperationImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -80,10 +79,10 @@
       <file leaf-file-name="OpenStackVMOperationImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackVMOperationImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5368782" vertical-offset="1967" max-vertical-offset="2550">
-              <caret line="63" column="85" selection-start-line="63" selection-start-column="85" selection-end-line="63" selection-end-column="85" />
+            <state vertical-scroll-proportion="0.22818792" vertical-offset="0" max-vertical-offset="2363">
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1539#1566#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1232,7 +1231,7 @@
       <workItem from="1422342813947" duration="4403000" />
       <workItem from="1422508938740" duration="7119000" />
       <workItem from="1422952172655" duration="5229000" />
-      <workItem from="1423101942432" duration="3343000" />
+      <workItem from="1423101942432" duration="3436000" />
     </task>
     <task id="LOCAL-00001" summary="define the whole structure of the system">
       <created>1386669038905</created>
@@ -1618,11 +1617,15 @@
       <created>1422347633648</created>
       <updated>1422347633648</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="delete some unused jar packages">
+      <created>1423107468972</created>
+      <updated>1423107468972</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28878000" />
+    <option name="totallyTimeSpent" value="28971000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2137,10 +2140,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudresourcemanager/src/main/java/com/cattles/cloudplatforms/openstack/OpenStackVMOperationImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5368782" vertical-offset="1967" max-vertical-offset="2550">
-          <caret line="63" column="85" selection-start-line="63" selection-start-column="85" selection-end-line="63" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.22818792" vertical-offset="0" max-vertical-offset="2363">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1539#1566#0" expanded="true" />
           </folding>
         </state>
       </provider>

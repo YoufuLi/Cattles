@@ -34,19 +34,8 @@ public class OpenStackVMOperationImpl implements IVirtualMachineOperation {
     @Override
     public ArrayList<VirtualMachineInformation> createInstances(int vmNumber) throws Exception {
         ArrayList<VirtualMachineInformation> instanceList = new ArrayList<VirtualMachineInformation>();
-        //Template template=computeService.templateBuilder().hardwareId("2").imageId("a3cb063c-3c08-4020-8c06-07ac48a32a5e").build();
-        //Template template=computeService.templateBuilder().build();
-        //template.getOptions().as(NovaTemplateOptions.class).securityGroupNames();
         ServerApi serverApi= novaApi.getServerApiForZone(zone);
         CreateServerOptions options = new CreateServerOptions().availabilityZone("nova").networks("613f9b74-1fc9-460b-ae15-b6cef678a249");
-        /*Set<Network> networks;
-        Network network=new Network("id", "tenant_id", "name", "status", "subnets", "admin_state_up", "shared", "router:external", "provider:network_type", "provider:physical_network", "provider:segmentation_id");
-                //Network network=new Network("613f9b74-1fc9-460b-ae15-b6cef678a249","","");
-
-        networks.add(network);
-        options.networks(networks);*/
-        //Set<? extends NodeMetadata> nodes=computeService.createNodesInGroup("default",vmNumber,template);
-
         for(int i=0;i< vmNumber;i++){
             logger.info("here");
             ServerCreated serverCreated= serverApi.create("test01","b72e4c21-deb0-43e3-b010-9d354566b35f","2",options);
